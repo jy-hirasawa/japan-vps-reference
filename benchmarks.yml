@@ -100,8 +100,8 @@ benchmarks:
         measured_by: unknown
         notes: 未測定
 
-  - provider_id: vultr-japan
-    plan: "1 vCPU / 1GB RAM"
+  - provider_id: webarena-indigo
+    plan: unknown
     tests:
       - metric: sysbench_cpu_events_per_sec
         value: unknown
@@ -131,8 +131,8 @@ benchmarks:
         measured_by: unknown
         notes: 未測定
 
-  - provider_id: linode-japan
-    plan: "Nanode 1GB"
+  - provider_id: kagoya-cloud-vps
+    plan: unknown
     tests:
       - metric: sysbench_cpu_events_per_sec
         value: unknown
