@@ -1,0 +1,64 @@
+# providers.yml
+# 日本の VPS プロバイダー一覧
+# 不明な情報は "unknown" と記載してください。事実を推測で補完しないでください。
+
+providers:
+  - id: sakura-vps
+    name: さくらのVPS
+    company: さくらインターネット株式会社
+    url: https://vps.sakura.ad.jp/
+    datacenter_locations:
+      - 石狩（北海道）
+      - 東京
+      - 大阪
+    support_language:
+      - 日本語
+    founded: 1996
+    notes: 国内老舗プロバイダー。法人・個人問わず広く利用されている。
+
+  - id: conoha-vps
+    name: ConoHa VPS
+    company: GMOインターネットグループ株式会社
+    url: https://www.conoha.jp/vps/
+    datacenter_locations:
+      - 東京
+      - 大阪
+      - シンガポール
+    support_language:
+      - 日本語
+    founded: 2013
+    notes: 時間課金に対応。APIによる自動化が可能。
+
+  - id: xserver-vps
+    name: Xserver VPS
+    company: エックスサーバー株式会社
+    url: https://vps.xserver.ne.jp/
+    datacenter_locations:
+      - 大阪
+    support_language:
+      - 日本語
+    founded: unknown
+    notes: 共有サーバーで実績のあるエックスサーバーのVPSサービス。
+
+  - id: vultr-japan
+    name: Vultr（日本リージョン）
+    company: Vultr Holdings LLC
+    url: https://www.vultr.com/
+    datacenter_locations:
+      - 東京
+      - 大阪
+    support_language:
+      - 英語
+    founded: 2014
+    notes: 海外プロバイダー。日本リージョンあり。
+
+  - id: linode-japan
+    name: Akamai Cloud（旧Linode）日本リージョン
+    company: Akamai Technologies, Inc.
+    url: https://www.linode.com/
+    datacenter_locations:
+      - 東京
+    support_language:
+      - 英語
+    founded: 2003
+    notes: 2022年にAkamaiに買収。東京リージョンあり。
