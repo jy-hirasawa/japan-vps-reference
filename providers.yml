@@ -40,25 +40,24 @@ providers:
     founded: unknown
     notes: 共有サーバーで実績のあるエックスサーバーのVPSサービス。
 
-  - id: vultr-japan
-    name: Vultr（日本リージョン）
-    company: Vultr Holdings LLC
-    url: https://www.vultr.com/
+  - id: webarena-indigo
+    name: WebARENA Indigo
+    company: NTTPCコミュニケーションズ株式会社
+    url: https://web.arena.ne.jp/indigo/
     datacenter_locations:
-      - 東京
-      - 大阪
+      - unknown
     support_language:
-      - 英語
-    founded: 2014
-    notes: 海外プロバイダー。日本リージョンあり。
+      - 日本語
+    founded: unknown
+    notes: NTTグループのVPSサービス。
 
-  - id: linode-japan
-    name: Akamai Cloud（旧Linode）日本リージョン
-    company: Akamai Technologies, Inc.
-    url: https://www.linode.com/
+  - id: kagoya-cloud-vps
+    name: KAGOYA CLOUD VPS
+    company: カゴヤ・ジャパン株式会社
+    url: https://www.kagoya.jp/cloud/vps/
     datacenter_locations:
-      - 東京
+      - unknown
     support_language:
-      - 英語
-    founded: 2003
-    notes: 2022年にAkamaiに買収。東京リージョンあり。
+      - 日本語
+    founded: unknown
+    notes: カゴヤ・ジャパンのクラウドVPSサービス。

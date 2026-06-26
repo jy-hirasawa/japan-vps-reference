@@ -99,7 +99,7 @@ def generate_providers_page(providers: list) -> str:
         lines.append(f"- **会社名**: {provider.get('company', UNKNOWN_LABEL)}")
         lines.append(f"- **公式サイト**: {provider.get('url', UNKNOWN_LABEL)}")
         dc = provider.get("datacenter_locations")
-        if dc and isinstance(dc, list):
+        if dc and isinstance(dc, list) and not all(str(x).strip().lower() == "unknown" for x in dc):
             lines.append(f"- **データセンター**: {', '.join(dc)}")
         else:
             lines.append(f"- **データセンター**: {UNKNOWN_LABEL}")
@@ -123,7 +123,7 @@ def main() -> int:
         "evidence": ROOT / "evidence.yml",
     }
 
-    missing = [str(p) for p in files.values() if not p.exists()]
+    missing = [str(p.relative_to(ROOT)) for p in files.values() if not p.exists()]
     if missing:
         for m in missing:
             print(f"[ERROR] ファイルが見つかりません: {m}", file=sys.stderr)
@@ -144,12 +144,12 @@ def main() -> int:
     comparison_md = generate_comparison_table(providers, features, evidence_map)
     comparison_path = DOCS_DIR / "comparison.md"
     comparison_path.write_text(comparison_md, encoding="utf-8")
-    print(f"生成しました: {comparison_path}")
+    print(f"生成しました: {comparison_path.relative_to(ROOT)}")
 
     providers_md = generate_providers_page(providers)
     providers_path = DOCS_DIR / "providers.md"
     providers_path.write_text(providers_md, encoding="utf-8")
-    print(f"生成しました: {providers_path}")
+    print(f"生成しました: {providers_path.relative_to(ROOT)}")
 
     return 0
 

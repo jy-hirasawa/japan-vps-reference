@@ -221,145 +221,145 @@ evidence:
     source: unknown
     retrieved: unknown
 
-  - provider_id: vultr-japan
+  - provider_id: webarena-indigo
     feature_id: min_price_jpy
     value: unknown
-    source: https://www.vultr.com/pricing/
-    retrieved: "2024-01-01"
+    source: unknown
+    retrieved: unknown
 
-  - provider_id: vultr-japan
+  - provider_id: webarena-indigo
     feature_id: min_ram_gb
-    value: 0.5
-    source: https://www.vultr.com/pricing/
-    retrieved: "2024-01-01"
+    value: unknown
+    source: unknown
+    retrieved: unknown
 
-  - provider_id: vultr-japan
+  - provider_id: webarena-indigo
     feature_id: min_storage_gb
-    value: 10
-    source: https://www.vultr.com/pricing/
-    retrieved: "2024-01-01"
+    value: unknown
+    source: unknown
+    retrieved: unknown
 
-  - provider_id: vultr-japan
+  - provider_id: webarena-indigo
     feature_id: min_vcpu
-    value: 1
-    source: https://www.vultr.com/pricing/
-    retrieved: "2024-01-01"
+    value: unknown
+    source: unknown
+    retrieved: unknown
 
-  - provider_id: vultr-japan
+  - provider_id: webarena-indigo
     feature_id: ipv6_support
-    value: true
-    source: https://www.vultr.com/features/
-    retrieved: "2024-01-01"
+    value: unknown
+    source: unknown
+    retrieved: unknown
 
-  - provider_id: vultr-japan
+  - provider_id: webarena-indigo
     feature_id: hourly_billing
-    value: true
-    source: https://www.vultr.com/pricing/
-    retrieved: "2024-01-01"
+    value: unknown
+    source: unknown
+    retrieved: unknown
 
-  - provider_id: vultr-japan
+  - provider_id: webarena-indigo
     feature_id: api_available
-    value: true
-    source: https://www.vultr.com/api/
-    retrieved: "2024-01-01"
+    value: unknown
+    source: unknown
+    retrieved: unknown
 
-  - provider_id: vultr-japan
+  - provider_id: webarena-indigo
     feature_id: sla_uptime_percent
     value: unknown
     source: unknown
     retrieved: unknown
 
-  - provider_id: vultr-japan
+  - provider_id: webarena-indigo
     feature_id: ddos_protection
     value: unknown
     source: unknown
     retrieved: unknown
 
-  - provider_id: vultr-japan
+  - provider_id: webarena-indigo
     feature_id: bandwidth_gbps
     value: unknown
     source: unknown
     retrieved: unknown
 
-  - provider_id: vultr-japan
+  - provider_id: webarena-indigo
     feature_id: full_disk_snapshot
-    value: true
-    source: https://www.vultr.com/features/
-    retrieved: "2024-01-01"
+    value: unknown
+    source: unknown
+    retrieved: unknown
 
-  - provider_id: vultr-japan
+  - provider_id: webarena-indigo
     feature_id: os_templates
     value: unknown
     source: unknown
     retrieved: unknown
 
-  - provider_id: linode-japan
+  - provider_id: kagoya-cloud-vps
     feature_id: min_price_jpy
     value: unknown
-    source: https://www.linode.com/pricing/
-    retrieved: "2024-01-01"
+    source: unknown
+    retrieved: unknown
 
-  - provider_id: linode-japan
+  - provider_id: kagoya-cloud-vps
     feature_id: min_ram_gb
-    value: 1
-    source: https://www.linode.com/pricing/
-    retrieved: "2024-01-01"
+    value: unknown
+    source: unknown
+    retrieved: unknown
 
-  - provider_id: linode-japan
+  - provider_id: kagoya-cloud-vps
     feature_id: min_storage_gb
-    value: 25
-    source: https://www.linode.com/pricing/
-    retrieved: "2024-01-01"
+    value: unknown
+    source: unknown
+    retrieved: unknown
 
-  - provider_id: linode-japan
+  - provider_id: kagoya-cloud-vps
     feature_id: min_vcpu
-    value: 1
-    source: https://www.linode.com/pricing/
-    retrieved: "2024-01-01"
+    value: unknown
+    source: unknown
+    retrieved: unknown
 
-  - provider_id: linode-japan
+  - provider_id: kagoya-cloud-vps
     feature_id: ipv6_support
-    value: true
-    source: https://www.linode.com/features/
-    retrieved: "2024-01-01"
+    value: unknown
+    source: unknown
+    retrieved: unknown
 
-  - provider_id: linode-japan
+  - provider_id: kagoya-cloud-vps
     feature_id: hourly_billing
-    value: true
-    source: https://www.linode.com/pricing/
-    retrieved: "2024-01-01"
+    value: unknown
+    source: unknown
+    retrieved: unknown
 
-  - provider_id: linode-japan
+  - provider_id: kagoya-cloud-vps
     feature_id: api_available
-    value: true
-    source: https://www.linode.com/docs/api/
-    retrieved: "2024-01-01"
+    value: unknown
+    source: unknown
+    retrieved: unknown
 
-  - provider_id: linode-japan
+  - provider_id: kagoya-cloud-vps
     feature_id: sla_uptime_percent
     value: unknown
     source: unknown
     retrieved: unknown
 
-  - provider_id: linode-japan
+  - provider_id: kagoya-cloud-vps
     feature_id: ddos_protection
     value: unknown
     source: unknown
     retrieved: unknown
 
-  - provider_id: linode-japan
+  - provider_id: kagoya-cloud-vps
     feature_id: bandwidth_gbps
     value: unknown
     source: unknown
     retrieved: unknown
 
-  - provider_id: linode-japan
+  - provider_id: kagoya-cloud-vps
     feature_id: full_disk_snapshot
-    value: true
-    source: https://www.linode.com/features/
-    retrieved: "2024-01-01"
+    value: unknown
+    source: unknown
+    retrieved: unknown
 
-  - provider_id: linode-japan
+  - provider_id: kagoya-cloud-vps
     feature_id: os_templates
     value: unknown
     source: unknown
