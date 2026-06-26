@@ -1,0 +1,64 @@
+# features.yml
+# 比較に使用する機能・仕様の定義一覧
+# 各機能には id, label, description, type を定義します。
+
+features:
+  - id: min_price_jpy
+    label: 最低月額料金（円）
+    description: 最も安いプランの税込月額料金（円）。不明な場合は "unknown"。
+    type: number
+
+  - id: min_ram_gb
+    label: 最小RAM（GB）
+    description: 最も安いプランのメモリ容量（GB）。
+    type: number
+
+  - id: min_storage_gb
+    label: 最小ストレージ（GB）
+    description: 最も安いプランのSSDストレージ容量（GB）。
+    type: number
+
+  - id: min_vcpu
+    label: 最小vCPU数
+    description: 最も安いプランのvCPU数。
+    type: number
+
+  - id: bandwidth_gbps
+    label: 帯域幅（Gbps）
+    description: 提供される上り帯域幅の最大値（Gbps）。不明な場合は "unknown"。
+    type: number
+
+  - id: ipv6_support
+    label: IPv6対応
+    description: IPv6アドレスの割り当てに対応しているか。
+    type: boolean
+
+  - id: hourly_billing
+    label: 時間課金
+    description: 時間単位での課金に対応しているか。
+    type: boolean
+
+  - id: full_disk_snapshot
+    label: ディスクスナップショット
+    description: ディスク全体のスナップショット取得に対応しているか。
+    type: boolean
+
+  - id: api_available
+    label: API提供
+    description: プロビジョニング・管理用のAPIが提供されているか。
+    type: boolean
+
+  - id: ddos_protection
+    label: DDoS保護
+    description: DDoS緩和機能が標準で提供されているか。不明な場合は "unknown"。
+    type: string
+
+  - id: os_templates
+    label: OSテンプレート数
+    description: 選択可能なOSテンプレートの種類数。不明な場合は "unknown"。
+    type: number
+
+  - id: sla_uptime_percent
+    label: SLA稼働率（%）
+    description: 公式SLAに記載された稼働率保証（%）。不明な場合は "unknown"。
+    type: number

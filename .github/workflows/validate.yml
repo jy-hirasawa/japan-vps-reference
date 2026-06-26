@@ -1,0 +1,32 @@
+name: Validate YAML データ検証
+
+on:
+  pull_request:
+    paths:
+      - "providers.yml"
+      - "features.yml"
+      - "evidence.yml"
+      - "benchmarks.yml"
+      - "scripts/validate.py"
+
+jobs:
+  validate:
+    name: YAMLデータの検証
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: リポジトリをチェックアウト
+        uses: actions/checkout@v4
+
+      - name: Python のセットアップ
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 依存パッケージのインストール
+        run: pip install pyyaml
+
+      - name: 検証スクリプトの実行
+        run: python scripts/validate.py

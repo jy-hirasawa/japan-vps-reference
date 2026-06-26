@@ -1,0 +1,163 @@
+# benchmarks.yml
+# ベンチマーク測定結果
+# 不明・未測定の場合は value: "unknown" と記載してください。
+# tool: 使用したベンチマークツール名
+# measured_at: 測定日（YYYY-MM-DD）または "unknown"
+# measured_by: 測定者またはソースURL（自己測定の場合は "self"）
+# notes: 補足事項
+
+benchmarks:
+  - provider_id: sakura-vps
+    plan: "1GB プラン"
+    tests:
+      - metric: sysbench_cpu_events_per_sec
+        value: unknown
+        tool: sysbench
+        measured_at: unknown
+        measured_by: unknown
+        notes: 未測定
+
+      - metric: fio_seq_read_mbps
+        value: unknown
+        tool: fio
+        measured_at: unknown
+        measured_by: unknown
+        notes: 未測定
+
+      - metric: fio_seq_write_mbps
+        value: unknown
+        tool: fio
+        measured_at: unknown
+        measured_by: unknown
+        notes: 未測定
+
+      - metric: network_speedtest_download_mbps
+        value: unknown
+        tool: speedtest-cli
+        measured_at: unknown
+        measured_by: unknown
+        notes: 未測定
+
+  - provider_id: conoha-vps
+    plan: "1GB プラン"
+    tests:
+      - metric: sysbench_cpu_events_per_sec
+        value: unknown
+        tool: sysbench
+        measured_at: unknown
+        measured_by: unknown
+        notes: 未測定
+
+      - metric: fio_seq_read_mbps
+        value: unknown
+        tool: fio
+        measured_at: unknown
+        measured_by: unknown
+        notes: 未測定
+
+      - metric: fio_seq_write_mbps
+        value: unknown
+        tool: fio
+        measured_at: unknown
+        measured_by: unknown
+        notes: 未測定
+
+      - metric: network_speedtest_download_mbps
+        value: unknown
+        tool: speedtest-cli
+        measured_at: unknown
+        measured_by: unknown
+        notes: 未測定
+
+  - provider_id: xserver-vps
+    plan: "1GB プラン"
+    tests:
+      - metric: sysbench_cpu_events_per_sec
+        value: unknown
+        tool: sysbench
+        measured_at: unknown
+        measured_by: unknown
+        notes: 未測定
+
+      - metric: fio_seq_read_mbps
+        value: unknown
+        tool: fio
+        measured_at: unknown
+        measured_by: unknown
+        notes: 未測定
+
+      - metric: fio_seq_write_mbps
+        value: unknown
+        tool: fio
+        measured_at: unknown
+        measured_by: unknown
+        notes: 未測定
+
+      - metric: network_speedtest_download_mbps
+        value: unknown
+        tool: speedtest-cli
+        measured_at: unknown
+        measured_by: unknown
+        notes: 未測定
+
+  - provider_id: vultr-japan
+    plan: "1 vCPU / 1GB RAM"
+    tests:
+      - metric: sysbench_cpu_events_per_sec
+        value: unknown
+        tool: sysbench
+        measured_at: unknown
+        measured_by: unknown
+        notes: 未測定
+
+      - metric: fio_seq_read_mbps
+        value: unknown
+        tool: fio
+        measured_at: unknown
+        measured_by: unknown
+        notes: 未測定
+
+      - metric: fio_seq_write_mbps
+        value: unknown
+        tool: fio
+        measured_at: unknown
+        measured_by: unknown
+        notes: 未測定
+
+      - metric: network_speedtest_download_mbps
+        value: unknown
+        tool: speedtest-cli
+        measured_at: unknown
+        measured_by: unknown
+        notes: 未測定
+
+  - provider_id: linode-japan
+    plan: "Nanode 1GB"
+    tests:
+      - metric: sysbench_cpu_events_per_sec
+        value: unknown
+        tool: sysbench
+        measured_at: unknown
+        measured_by: unknown
+        notes: 未測定
+
+      - metric: fio_seq_read_mbps
+        value: unknown
+        tool: fio
+        measured_at: unknown
+        measured_by: unknown
+        notes: 未測定
+
+      - metric: fio_seq_write_mbps
+        value: unknown
+        tool: fio
+        measured_at: unknown
+        measured_by: unknown
+        notes: 未測定
+
+      - metric: network_speedtest_download_mbps
+        value: unknown
+        tool: speedtest-cli
+        measured_at: unknown
+        measured_by: unknown
+        notes: 未測定
