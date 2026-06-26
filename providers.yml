@@ -1,0 +1,59 @@
+meta:
+  project: 国内VPSリファレンス
+  source_priority: official
+  policy:
+    - 国内事業者を優先
+    - 公式情報を第一ソースとする
+    - 推測は禁止
+    - 不明な項目は unknown のままにする
+    - VPSとCloudを混同しない
+
+providers:
+  - id: sakura-vps
+    name: さくらのVPS
+    service_type: vps
+    provider_country: JP
+    official_url: https://vps.sakura.ad.jp/
+    notes: unknown
+  - id: conoha-vps
+    name: ConoHa VPS
+    service_type: vps
+    provider_country: JP
+    official_url: https://www.conoha.jp/vps/
+    notes: unknown
+  - id: xserver-vps
+    name: XServer VPS
+    service_type: vps
+    provider_country: JP
+    official_url: https://vps.xserver.ne.jp/
+    notes: unknown
+  - id: webarena-indigo
+    name: WebARENA Indigo
+    service_type: vps
+    provider_country: JP
+    official_url: https://web.arena.ne.jp/indigo/
+    notes: unknown
+  - id: kagoya-cloud-vps
+    name: KAGOYA CLOUD VPS
+    service_type: vps
+    provider_country: JP
+    official_url: https://www.kagoya.jp/cloud/vps/
+    notes: unknown
+
+out_of_scope:
+  - name: AWS
+    service_type: cloud
+  - name: Azure
+    service_type: cloud
+  - name: GCP
+    service_type: cloud
+  - name: Vultr
+    service_type: vps_or_cloud
+  - name: Akamai Cloud（Linode）
+    service_type: cloud
+  - name: DigitalOcean
+    service_type: vps_or_cloud
+  - name: OCI
+    service_type: cloud
+  - name: Hetzner
+    service_type: vps_or_cloud
