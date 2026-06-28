@@ -13,12 +13,13 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 
 REQUIRED_PROVIDER_FIELDS = ["id", "name", "company", "url", "datacenter_locations", "support_language"]
-REQUIRED_FEATURE_FIELDS = ["id", "label", "description", "type"]
+REQUIRED_FEATURE_FIELDS = ["id", "category", "label", "description", "type"]
 REQUIRED_EVIDENCE_FIELDS = ["provider_id", "feature_id", "value", "source", "retrieved"]
 REQUIRED_BENCHMARK_FIELDS = ["provider_id", "plan", "tests"]
 REQUIRED_BENCHMARK_TEST_FIELDS = ["metric", "value", "tool", "measured_at", "measured_by"]
 
 VALID_FEATURE_TYPES = {"number", "boolean", "string"}
+VALID_CATEGORIES = {"BASIC", "PRICE", "SPEC", "STORAGE", "NETWORK", "SECURITY", "BACKUP", "OPS", "SUPPORT", "BENCH"}
 
 errors: list[str] = []
 
@@ -65,6 +66,9 @@ def validate_features(data: dict) -> set[str]:
             if fid in feature_ids:
                 errors.append(f"{ctx}: id '{fid}' が重複しています。")
             feature_ids.add(fid)
+        fcat = feature.get("category")
+        if fcat and fcat not in VALID_CATEGORIES:
+            errors.append(f"{ctx}: category '{fcat}' は有効なカテゴリではありません（{sorted(VALID_CATEGORIES)}）。")
         ftype = feature.get("type")
         if ftype and ftype not in VALID_FEATURE_TYPES:
             errors.append(f"{ctx}: type '{ftype}' は有効な型ではありません（{VALID_FEATURE_TYPES}）。")

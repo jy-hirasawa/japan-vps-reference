@@ -19,6 +19,20 @@ DOCS_DIR = ROOT / "docs"
 
 UNKNOWN_LABEL = "不明"
 
+CATEGORY_ORDER = ["BASIC", "PRICE", "SPEC", "STORAGE", "NETWORK", "SECURITY", "BACKUP", "OPS", "SUPPORT", "BENCH"]
+CATEGORY_LABELS = {
+    "BASIC": "基本情報",
+    "PRICE": "料金",
+    "SPEC": "CPU / メモリ / ストレージ",
+    "STORAGE": "ディスク / NVMe / スナップショット",
+    "NETWORK": "IPv4 / IPv6 / 転送量 / ローカルネットワーク",
+    "SECURITY": "Firewall / WAF / DDoS",
+    "BACKUP": "バックアップ / イメージ保存",
+    "OPS": "API / CLI / Terraform",
+    "SUPPORT": "サポート / SLA",
+    "BENCH": "ベンチマーク",
+}
+
 
 def load_yaml(path: Path):
     with open(path, encoding="utf-8") as f:
@@ -55,25 +69,67 @@ def generate_comparison_table(
     lines.append("> 「不明」は公式情報が確認できないことを示します。")
     lines.append("")
 
-    # ヘッダー行
-    header_cells = ["機能 / プロバイダー"] + [p["name"] for p in providers]
-    lines.append("| " + " | ".join(header_cells) + " |")
-    lines.append("| " + " | ".join(["---"] * len(header_cells)) + " |")
-
+    # カテゴリ別にfeaturesを分類
+    features_by_category: dict[str, list] = {}
+    uncategorized: list = []
     for feature in features:
-        fid = feature["id"]
-        ftype = feature.get("type", "string")
-        row_cells = [feature["label"]]
-        for provider in providers:
-            pid = provider["id"]
-            entry = evidence_map.get((pid, fid))
-            if entry is None:
-                row_cells.append(UNKNOWN_LABEL)
-            else:
-                row_cells.append(format_value(entry.get("value"), ftype))
-        lines.append("| " + " | ".join(row_cells) + " |")
+        cat = feature.get("category")
+        if cat:
+            features_by_category.setdefault(cat, []).append(feature)
+        else:
+            uncategorized.append(feature)
 
-    lines.append("")
+    # カテゴリ順に出力
+    ordered_categories = [c for c in CATEGORY_ORDER if c in features_by_category]
+    # CATEGORY_ORDERにないカテゴリがあれば末尾に追加
+    for cat in sorted(features_by_category):
+        if cat not in ordered_categories:
+            ordered_categories.append(cat)
+
+    header_cells = ["機能 / プロバイダー"] + [p["name"] for p in providers]
+    header_row = "| " + " | ".join(header_cells) + " |"
+    separator_row = "| " + " | ".join(["---"] * len(header_cells)) + " |"
+
+    for cat in ordered_categories:
+        cat_label = CATEGORY_LABELS.get(cat, cat)
+        lines.append(f"## {cat}: {cat_label}")
+        lines.append("")
+        lines.append(header_row)
+        lines.append(separator_row)
+        for feature in features_by_category[cat]:
+            fid = feature["id"]
+            ftype = feature.get("type", "string")
+            row_cells = [feature["label"]]
+            for provider in providers:
+                pid = provider["id"]
+                entry = evidence_map.get((pid, fid))
+                if entry is None:
+                    row_cells.append(UNKNOWN_LABEL)
+                else:
+                    row_cells.append(format_value(entry.get("value"), ftype))
+            lines.append("| " + " | ".join(row_cells) + " |")
+        lines.append("")
+
+    # カテゴリなし項目（後方互換）
+    if uncategorized:
+        lines.append("## その他")
+        lines.append("")
+        lines.append(header_row)
+        lines.append(separator_row)
+        for feature in uncategorized:
+            fid = feature["id"]
+            ftype = feature.get("type", "string")
+            row_cells = [feature["label"]]
+            for provider in providers:
+                pid = provider["id"]
+                entry = evidence_map.get((pid, fid))
+                if entry is None:
+                    row_cells.append(UNKNOWN_LABEL)
+                else:
+                    row_cells.append(format_value(entry.get("value"), ftype))
+            lines.append("| " + " | ".join(row_cells) + " |")
+        lines.append("")
+
     lines.append("## 凡例")
     lines.append("")
     lines.append("| 表示 | 意味 |")
