@@ -6,6 +6,7 @@ validate.py — providers.yml / features.yml / evidence.yml / benchmarks.yml の
     python scripts/validate.py
 """
 
+import re
 import sys
 import yaml
 from pathlib import Path
@@ -14,12 +15,19 @@ ROOT = Path(__file__).resolve().parent.parent
 
 REQUIRED_PROVIDER_FIELDS = ["id", "name", "company", "url", "datacenter_locations", "support_language"]
 REQUIRED_FEATURE_FIELDS = ["id", "category", "label", "description", "type"]
-REQUIRED_EVIDENCE_FIELDS = ["provider_id", "feature_id", "value", "source", "retrieved"]
+REQUIRED_EVIDENCE_FIELDS = [
+    "provider_id", "feature_id", "value",
+    "source_type", "source_url", "verified_at", "verification_status",
+]
 REQUIRED_BENCHMARK_FIELDS = ["provider_id", "plan", "tests"]
 REQUIRED_BENCHMARK_TEST_FIELDS = ["metric", "value", "tool", "measured_at", "measured_by"]
 
 VALID_FEATURE_TYPES = {"number", "boolean", "string"}
 VALID_CATEGORIES = {"BASIC", "PRICE", "SPEC", "STORAGE", "NETWORK", "SECURITY", "BACKUP", "OPS", "SUPPORT", "BENCH"}
+VALID_SOURCE_TYPES = {"official", "benchmark", "manual", "community", "unknown"}
+VALID_VERIFICATION_STATUSES = {"verified", "unverified", "unknown"}
+
+_DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
 errors: list[str] = []
 
@@ -94,6 +102,38 @@ def validate_evidence(data: list, provider_ids: set[str], feature_ids: set[str])
         if key in seen:
             errors.append(f"{ctx}: (provider_id, feature_id) の組み合わせが重複しています。")
         seen.add(key)
+
+        # source_type の検証
+        stype = entry.get("source_type")
+        if stype is not None and str(stype) not in VALID_SOURCE_TYPES:
+            errors.append(
+                f"{ctx}: source_type '{stype}' は有効な値ではありません"
+                f"（{sorted(VALID_SOURCE_TYPES)}）。"
+            )
+
+        # source_url の検証（unknown または http/https URL）
+        surl = entry.get("source_url")
+        if surl is not None and str(surl) != "unknown":
+            if not (str(surl).startswith("http://") or str(surl).startswith("https://")):
+                errors.append(
+                    f"{ctx}: source_url '{surl}' は有効なURLまたは 'unknown' である必要があります。"
+                )
+
+        # verified_at の検証（unknown または YYYY-MM-DD）
+        vat = entry.get("verified_at")
+        if vat is not None and str(vat) != "unknown":
+            if not _DATE_RE.match(str(vat)):
+                errors.append(
+                    f"{ctx}: verified_at '{vat}' は YYYY-MM-DD 形式または 'unknown' である必要があります。"
+                )
+
+        # verification_status の検証
+        vstatus = entry.get("verification_status")
+        if vstatus is not None and str(vstatus) not in VALID_VERIFICATION_STATUSES:
+            errors.append(
+                f"{ctx}: verification_status '{vstatus}' は有効な値ではありません"
+                f"（{sorted(VALID_VERIFICATION_STATUSES)}）。"
+            )
 
 
 def validate_benchmarks(data: dict, provider_ids: set[str]) -> None:
