@@ -1,64 +1,88 @@
 # features.yml
 # 比較に使用する機能・仕様の定義一覧
-# 各機能には id, label, description, type を定義します。
+# 各機能には id, category, label, description, type を定義します。
+#
+# カテゴリ一覧:
+#   BASIC    - 基本情報
+#   PRICE    - 料金
+#   SPEC     - CPU / メモリ / ストレージ
+#   STORAGE  - ディスク / NVMe / スナップショット
+#   NETWORK  - IPv4 / IPv6 / 転送量 / ローカルネットワーク
+#   SECURITY - Firewall / WAF / DDoS
+#   BACKUP   - バックアップ / イメージ保存
+#   OPS      - API / CLI / Terraform
+#   SUPPORT  - サポート / SLA
+#   BENCH    - ベンチマーク
 
 features:
+  - id: os_templates
+    category: BASIC
+    label: OSテンプレート数
+    description: 選択可能なOSテンプレートの種類数。不明な場合は "unknown"。
+    type: number
+
   - id: min_price_jpy
+    category: PRICE
     label: 最低月額料金（円）
     description: 最も安いプランの税込月額料金（円）。不明な場合は "unknown"。
     type: number
 
+  - id: hourly_billing
+    category: PRICE
+    label: 時間課金
+    description: 時間単位での課金に対応しているか。
+    type: boolean
+
+  - id: min_vcpu
+    category: SPEC
+    label: 最小vCPU数
+    description: 最も安いプランのvCPU数。
+    type: number
+
   - id: min_ram_gb
+    category: SPEC
     label: 最小RAM（GB）
     description: 最も安いプランのメモリ容量（GB）。
     type: number
 
   - id: min_storage_gb
+    category: SPEC
     label: 最小ストレージ（GB）
     description: 最も安いプランのSSDストレージ容量（GB）。
     type: number
 
-  - id: min_vcpu
-    label: 最小vCPU数
-    description: 最も安いプランのvCPU数。
-    type: number
+  - id: full_disk_snapshot
+    category: STORAGE
+    label: ディスクスナップショット
+    description: ディスク全体のスナップショット取得に対応しているか。
+    type: boolean
 
   - id: bandwidth_gbps
+    category: NETWORK
     label: 帯域幅（Gbps）
     description: 提供される上り帯域幅の最大値（Gbps）。不明な場合は "unknown"。
     type: number
 
   - id: ipv6_support
+    category: NETWORK
     label: IPv6対応
     description: IPv6アドレスの割り当てに対応しているか。
     type: boolean
 
-  - id: hourly_billing
-    label: 時間課金
-    description: 時間単位での課金に対応しているか。
-    type: boolean
-
-  - id: full_disk_snapshot
-    label: ディスクスナップショット
-    description: ディスク全体のスナップショット取得に対応しているか。
-    type: boolean
-
-  - id: api_available
-    label: API提供
-    description: プロビジョニング・管理用のAPIが提供されているか。
-    type: boolean
-
   - id: ddos_protection
+    category: SECURITY
     label: DDoS保護
     description: DDoS緩和機能が標準で提供されているか。不明な場合は "unknown"。
     type: string
 
-  - id: os_templates
-    label: OSテンプレート数
-    description: 選択可能なOSテンプレートの種類数。不明な場合は "unknown"。
-    type: number
+  - id: api_available
+    category: OPS
+    label: API提供
+    description: プロビジョニング・管理用のAPIが提供されているか。
+    type: boolean
 
   - id: sla_uptime_percent
+    category: SUPPORT
     label: SLA稼働率（%）
     description: 公式SLAに記載された稼働率保証（%）。不明な場合は "unknown"。
     type: number
