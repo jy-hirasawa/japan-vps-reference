@@ -1,366 +1,491 @@
 # evidence.yml
 # 各プロバイダーの機能に関する根拠データ
 # 値が不明な場合は必ず "unknown" と記載してください。推測で補完しないでください。
-# source: 公式ページのURL または "unknown"
-# retrieved: 情報取得日（YYYY-MM-DD形式）または "unknown"
+#
+# フィールド説明:
+#   source_type:         情報源の種別（official / benchmark / manual / community / unknown）
+#   source_url:          公式ページのURL または "unknown"
+#   verified_at:         情報確認日（YYYY-MM-DD形式）または "unknown"
+#   verification_status: 検証状態（verified / unverified / unknown）
+#   notes:               補足情報（任意）
 
 evidence:
   - provider_id: sakura-vps
     feature_id: min_price_jpy
     value: 522
-    source: https://vps.sakura.ad.jp/
-    retrieved: "2024-01-01"
+    source_type: official
+    source_url: https://vps.sakura.ad.jp/
+    verified_at: "2024-01-01"
+    verification_status: verified
 
   - provider_id: sakura-vps
     feature_id: min_ram_gb
     value: 0.5
-    source: https://vps.sakura.ad.jp/
-    retrieved: "2024-01-01"
+    source_type: official
+    source_url: https://vps.sakura.ad.jp/
+    verified_at: "2024-01-01"
+    verification_status: verified
 
   - provider_id: sakura-vps
     feature_id: min_storage_gb
     value: 20
-    source: https://vps.sakura.ad.jp/
-    retrieved: "2024-01-01"
+    source_type: official
+    source_url: https://vps.sakura.ad.jp/
+    verified_at: "2024-01-01"
+    verification_status: verified
 
   - provider_id: sakura-vps
     feature_id: min_vcpu
     value: 1
-    source: https://vps.sakura.ad.jp/
-    retrieved: "2024-01-01"
+    source_type: official
+    source_url: https://vps.sakura.ad.jp/
+    verified_at: "2024-01-01"
+    verification_status: verified
 
   - provider_id: sakura-vps
     feature_id: ipv6_support
     value: true
-    source: https://vps.sakura.ad.jp/
-    retrieved: "2024-01-01"
+    source_type: official
+    source_url: https://vps.sakura.ad.jp/
+    verified_at: "2024-01-01"
+    verification_status: verified
 
   - provider_id: sakura-vps
     feature_id: hourly_billing
     value: false
-    source: https://vps.sakura.ad.jp/
-    retrieved: "2024-01-01"
+    source_type: official
+    source_url: https://vps.sakura.ad.jp/
+    verified_at: "2024-01-01"
+    verification_status: verified
 
   - provider_id: sakura-vps
     feature_id: api_available
     value: true
-    source: https://manual.sakura.ad.jp/vps/api/
-    retrieved: "2024-01-01"
+    source_type: official
+    source_url: https://manual.sakura.ad.jp/vps/api/
+    verified_at: "2024-01-01"
+    verification_status: verified
 
   - provider_id: sakura-vps
     feature_id: sla_uptime_percent
     value: 99.99
-    source: https://vps.sakura.ad.jp/agreement/
-    retrieved: "2024-01-01"
+    source_type: official
+    source_url: https://vps.sakura.ad.jp/agreement/
+    verified_at: "2024-01-01"
+    verification_status: verified
 
   - provider_id: sakura-vps
     feature_id: ddos_protection
     value: unknown
-    source: unknown
-    retrieved: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
 
   - provider_id: sakura-vps
     feature_id: bandwidth_gbps
     value: unknown
-    source: unknown
-    retrieved: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
 
   - provider_id: sakura-vps
     feature_id: full_disk_snapshot
     value: true
-    source: https://vps.sakura.ad.jp/
-    retrieved: "2024-01-01"
+    source_type: official
+    source_url: https://vps.sakura.ad.jp/
+    verified_at: "2024-01-01"
+    verification_status: verified
 
   - provider_id: sakura-vps
     feature_id: os_templates
     value: unknown
-    source: unknown
-    retrieved: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
 
   - provider_id: conoha-vps
     feature_id: min_price_jpy
     value: 660
-    source: https://www.conoha.jp/vps/pricing/
-    retrieved: "2024-01-01"
+    source_type: official
+    source_url: https://www.conoha.jp/vps/pricing/
+    verified_at: "2024-01-01"
+    verification_status: verified
 
   - provider_id: conoha-vps
     feature_id: min_ram_gb
     value: 0.5
-    source: https://www.conoha.jp/vps/pricing/
-    retrieved: "2024-01-01"
+    source_type: official
+    source_url: https://www.conoha.jp/vps/pricing/
+    verified_at: "2024-01-01"
+    verification_status: verified
 
   - provider_id: conoha-vps
     feature_id: min_storage_gb
     value: 20
-    source: https://www.conoha.jp/vps/pricing/
-    retrieved: "2024-01-01"
+    source_type: official
+    source_url: https://www.conoha.jp/vps/pricing/
+    verified_at: "2024-01-01"
+    verification_status: verified
 
   - provider_id: conoha-vps
     feature_id: min_vcpu
     value: 1
-    source: https://www.conoha.jp/vps/pricing/
-    retrieved: "2024-01-01"
+    source_type: official
+    source_url: https://www.conoha.jp/vps/pricing/
+    verified_at: "2024-01-01"
+    verification_status: verified
 
   - provider_id: conoha-vps
     feature_id: ipv6_support
     value: true
-    source: https://www.conoha.jp/vps/
-    retrieved: "2024-01-01"
+    source_type: official
+    source_url: https://www.conoha.jp/vps/
+    verified_at: "2024-01-01"
+    verification_status: verified
 
   - provider_id: conoha-vps
     feature_id: hourly_billing
     value: true
-    source: https://www.conoha.jp/vps/pricing/
-    retrieved: "2024-01-01"
+    source_type: official
+    source_url: https://www.conoha.jp/vps/pricing/
+    verified_at: "2024-01-01"
+    verification_status: verified
 
   - provider_id: conoha-vps
     feature_id: api_available
     value: true
-    source: https://www.conoha.jp/vps/function/api/
-    retrieved: "2024-01-01"
+    source_type: official
+    source_url: https://www.conoha.jp/vps/function/api/
+    verified_at: "2024-01-01"
+    verification_status: verified
 
   - provider_id: conoha-vps
     feature_id: sla_uptime_percent
     value: 99.99
-    source: https://www.conoha.jp/vps/agreement/
-    retrieved: "2024-01-01"
+    source_type: official
+    source_url: https://www.conoha.jp/vps/agreement/
+    verified_at: "2024-01-01"
+    verification_status: verified
 
   - provider_id: conoha-vps
     feature_id: ddos_protection
     value: unknown
-    source: unknown
-    retrieved: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
 
   - provider_id: conoha-vps
     feature_id: bandwidth_gbps
     value: unknown
-    source: unknown
-    retrieved: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
 
   - provider_id: conoha-vps
     feature_id: full_disk_snapshot
     value: true
-    source: https://www.conoha.jp/vps/function/
-    retrieved: "2024-01-01"
+    source_type: official
+    source_url: https://www.conoha.jp/vps/function/
+    verified_at: "2024-01-01"
+    verification_status: verified
 
   - provider_id: conoha-vps
     feature_id: os_templates
     value: unknown
-    source: unknown
-    retrieved: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
 
   - provider_id: xserver-vps
     feature_id: min_price_jpy
     value: 693
-    source: https://vps.xserver.ne.jp/price/
-    retrieved: "2024-01-01"
+    source_type: official
+    source_url: https://vps.xserver.ne.jp/price/
+    verified_at: "2024-01-01"
+    verification_status: verified
 
   - provider_id: xserver-vps
     feature_id: min_ram_gb
     value: 1
-    source: https://vps.xserver.ne.jp/price/
-    retrieved: "2024-01-01"
+    source_type: official
+    source_url: https://vps.xserver.ne.jp/price/
+    verified_at: "2024-01-01"
+    verification_status: verified
 
   - provider_id: xserver-vps
     feature_id: min_storage_gb
     value: 30
-    source: https://vps.xserver.ne.jp/price/
-    retrieved: "2024-01-01"
+    source_type: official
+    source_url: https://vps.xserver.ne.jp/price/
+    verified_at: "2024-01-01"
+    verification_status: verified
 
   - provider_id: xserver-vps
     feature_id: min_vcpu
     value: 1
-    source: https://vps.xserver.ne.jp/price/
-    retrieved: "2024-01-01"
+    source_type: official
+    source_url: https://vps.xserver.ne.jp/price/
+    verified_at: "2024-01-01"
+    verification_status: verified
 
   - provider_id: xserver-vps
     feature_id: ipv6_support
     value: unknown
-    source: unknown
-    retrieved: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
 
   - provider_id: xserver-vps
     feature_id: hourly_billing
     value: false
-    source: https://vps.xserver.ne.jp/price/
-    retrieved: "2024-01-01"
+    source_type: official
+    source_url: https://vps.xserver.ne.jp/price/
+    verified_at: "2024-01-01"
+    verification_status: verified
 
   - provider_id: xserver-vps
     feature_id: api_available
     value: unknown
-    source: unknown
-    retrieved: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
 
   - provider_id: xserver-vps
     feature_id: sla_uptime_percent
     value: 99.99
-    source: https://vps.xserver.ne.jp/agreement/
-    retrieved: "2024-01-01"
+    source_type: official
+    source_url: https://vps.xserver.ne.jp/agreement/
+    verified_at: "2024-01-01"
+    verification_status: verified
 
   - provider_id: xserver-vps
     feature_id: ddos_protection
     value: unknown
-    source: unknown
-    retrieved: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
 
   - provider_id: xserver-vps
     feature_id: bandwidth_gbps
     value: unknown
-    source: unknown
-    retrieved: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
 
   - provider_id: xserver-vps
     feature_id: full_disk_snapshot
     value: unknown
-    source: unknown
-    retrieved: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
 
   - provider_id: xserver-vps
     feature_id: os_templates
     value: unknown
-    source: unknown
-    retrieved: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
 
   - provider_id: webarena-indigo
     feature_id: min_price_jpy
     value: unknown
-    source: unknown
-    retrieved: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
 
   - provider_id: webarena-indigo
     feature_id: min_ram_gb
     value: unknown
-    source: unknown
-    retrieved: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
 
   - provider_id: webarena-indigo
     feature_id: min_storage_gb
     value: unknown
-    source: unknown
-    retrieved: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
 
   - provider_id: webarena-indigo
     feature_id: min_vcpu
     value: unknown
-    source: unknown
-    retrieved: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
 
   - provider_id: webarena-indigo
     feature_id: ipv6_support
     value: unknown
-    source: unknown
-    retrieved: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
 
   - provider_id: webarena-indigo
     feature_id: hourly_billing
     value: unknown
-    source: unknown
-    retrieved: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
 
   - provider_id: webarena-indigo
     feature_id: api_available
     value: unknown
-    source: unknown
-    retrieved: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
 
   - provider_id: webarena-indigo
     feature_id: sla_uptime_percent
     value: unknown
-    source: unknown
-    retrieved: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
 
   - provider_id: webarena-indigo
     feature_id: ddos_protection
     value: unknown
-    source: unknown
-    retrieved: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
 
   - provider_id: webarena-indigo
     feature_id: bandwidth_gbps
     value: unknown
-    source: unknown
-    retrieved: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
 
   - provider_id: webarena-indigo
     feature_id: full_disk_snapshot
     value: unknown
-    source: unknown
-    retrieved: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
 
   - provider_id: webarena-indigo
     feature_id: os_templates
     value: unknown
-    source: unknown
-    retrieved: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
 
   - provider_id: kagoya-cloud-vps
     feature_id: min_price_jpy
     value: unknown
-    source: unknown
-    retrieved: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
 
   - provider_id: kagoya-cloud-vps
     feature_id: min_ram_gb
     value: unknown
-    source: unknown
-    retrieved: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
 
   - provider_id: kagoya-cloud-vps
     feature_id: min_storage_gb
     value: unknown
-    source: unknown
-    retrieved: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
 
   - provider_id: kagoya-cloud-vps
     feature_id: min_vcpu
     value: unknown
-    source: unknown
-    retrieved: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
 
   - provider_id: kagoya-cloud-vps
     feature_id: ipv6_support
     value: unknown
-    source: unknown
-    retrieved: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
 
   - provider_id: kagoya-cloud-vps
     feature_id: hourly_billing
     value: unknown
-    source: unknown
-    retrieved: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
 
   - provider_id: kagoya-cloud-vps
     feature_id: api_available
     value: unknown
-    source: unknown
-    retrieved: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
 
   - provider_id: kagoya-cloud-vps
     feature_id: sla_uptime_percent
     value: unknown
-    source: unknown
-    retrieved: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
 
   - provider_id: kagoya-cloud-vps
     feature_id: ddos_protection
     value: unknown
-    source: unknown
-    retrieved: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
 
   - provider_id: kagoya-cloud-vps
     feature_id: bandwidth_gbps
     value: unknown
-    source: unknown
-    retrieved: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
 
   - provider_id: kagoya-cloud-vps
     feature_id: full_disk_snapshot
     value: unknown
-    source: unknown
-    retrieved: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
 
   - provider_id: kagoya-cloud-vps
     feature_id: os_templates
     value: unknown
-    source: unknown
-    retrieved: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
