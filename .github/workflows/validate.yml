@@ -8,6 +8,8 @@ on:
       - "evidence.yml"
       - "benchmarks.yml"
       - "scripts/validate.py"
+      - "scripts/generate_docs.py"
+      - "docs/**"
 
 jobs:
   validate:
