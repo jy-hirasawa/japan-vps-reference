@@ -48,6 +48,25 @@ def format_value(raw, feature_type: str) -> str:
     return str(raw)
 
 
+def is_known_metadata(raw) -> bool:
+    return raw is not None and str(raw).strip() != "" and str(raw).strip().lower() != "unknown"
+
+
+def format_comparison_cell(entry: dict, feature_type: str) -> str:
+    value = format_value(entry.get("value"), feature_type)
+    parts = [value]
+
+    source_url = entry.get("source_url")
+    if is_known_metadata(source_url):
+        parts.append(f"[🔗]({source_url})")
+
+    verified_at = entry.get("verified_at")
+    if is_known_metadata(verified_at):
+        parts.append(f"({verified_at})")
+
+    return " ".join(parts)
+
+
 def build_evidence_map(evidence_list: list) -> dict[tuple[str, str], dict]:
     """(provider_id, feature_id) -> evidence エントリのマップを構築する。"""
     mapping: dict[tuple[str, str], dict] = {}
@@ -67,6 +86,7 @@ def generate_comparison_table(
     lines.append("")
     lines.append("> このファイルは `scripts/generate_docs.py` により自動生成されています。手動で編集しないでください。")
     lines.append("> 「不明」は公式情報が確認できないことを示します。")
+    lines.append("> 値の横の `🔗` は情報源リンク、`(YYYY-MM-DD)` は確認日です。")
     lines.append("")
 
     # カテゴリ別にfeaturesを分類
@@ -106,7 +126,7 @@ def generate_comparison_table(
                 if entry is None:
                     row_cells.append(UNKNOWN_LABEL)
                 else:
-                    row_cells.append(format_value(entry.get("value"), ftype))
+                    row_cells.append(format_comparison_cell(entry, ftype))
             lines.append("| " + " | ".join(row_cells) + " |")
         lines.append("")
 
@@ -126,7 +146,7 @@ def generate_comparison_table(
                 if entry is None:
                     row_cells.append(UNKNOWN_LABEL)
                 else:
-                    row_cells.append(format_value(entry.get("value"), ftype))
+                    row_cells.append(format_comparison_cell(entry, ftype))
             lines.append("| " + " | ".join(row_cells) + " |")
         lines.append("")
 
