@@ -13,7 +13,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 
-REQUIRED_PROVIDER_FIELDS = ["id", "name", "company", "url", "datacenter_locations", "support_language"]
+REQUIRED_PROVIDER_FIELDS = ["id", "name", "company", "url", "official_urls", "datacenter_locations", "support_language"]
+REQUIRED_PROVIDER_OFFICIAL_URL_FIELDS = ["top", "pricing", "specs", "support", "terms"]
 REQUIRED_FEATURE_FIELDS = ["id", "category", "label", "description", "type"]
 REQUIRED_EVIDENCE_FIELDS = [
     "provider_id", "feature_id", "value",
@@ -52,6 +53,19 @@ def validate_providers(data: dict) -> set[str]:
     for i, provider in enumerate(providers):
         ctx = f"providers.yml[{i}] (id={provider.get('id', '?')})"
         check_required_fields(provider, REQUIRED_PROVIDER_FIELDS, ctx)
+        official_urls = provider.get("official_urls")
+        if official_urls is not None:
+            if not isinstance(official_urls, dict):
+                errors.append(f"{ctx}: 'official_urls' フィールドは辞書である必要があります。")
+            else:
+                check_required_fields(official_urls, REQUIRED_PROVIDER_OFFICIAL_URL_FIELDS, f"{ctx}.official_urls")
+                for key, value in official_urls.items():
+                    if str(value) != "unknown" and not (
+                        str(value).startswith("http://") or str(value).startswith("https://")
+                    ):
+                        errors.append(
+                            f"{ctx}.official_urls: '{key}' の値 '{value}' は有効なURLまたは 'unknown' である必要があります。"
+                        )
         pid = provider.get("id")
         if pid:
             if pid in provider_ids:

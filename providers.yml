@@ -7,6 +7,12 @@ providers:
     name: さくらのVPS
     company: さくらインターネット株式会社
     url: https://vps.sakura.ad.jp/
+    official_urls:
+      top: unknown
+      pricing: unknown
+      specs: unknown
+      support: unknown
+      terms: unknown
     datacenter_locations:
       - 石狩（北海道）
       - 東京
@@ -20,6 +26,12 @@ providers:
     name: ConoHa VPS
     company: GMOインターネットグループ株式会社
     url: https://www.conoha.jp/vps/
+    official_urls:
+      top: unknown
+      pricing: unknown
+      specs: unknown
+      support: unknown
+      terms: unknown
     datacenter_locations:
       - 東京
       - 大阪
@@ -33,6 +45,12 @@ providers:
     name: Xserver VPS
     company: エックスサーバー株式会社
     url: https://vps.xserver.ne.jp/
+    official_urls:
+      top: unknown
+      pricing: unknown
+      specs: unknown
+      support: unknown
+      terms: unknown
     datacenter_locations:
       - 大阪
     support_language:
@@ -44,6 +62,12 @@ providers:
     name: WebARENA Indigo
     company: NTTPCコミュニケーションズ株式会社
     url: https://web.arena.ne.jp/indigo/
+    official_urls:
+      top: unknown
+      pricing: unknown
+      specs: unknown
+      support: unknown
+      terms: unknown
     datacenter_locations:
       - unknown
     support_language:
@@ -55,6 +79,12 @@ providers:
     name: KAGOYA CLOUD VPS
     company: カゴヤ・ジャパン株式会社
     url: https://www.kagoya.jp/cloud/vps/
+    official_urls:
+      top: unknown
+      pricing: unknown
+      specs: unknown
+      support: unknown
+      terms: unknown
     datacenter_locations:
       - unknown
     support_language:
