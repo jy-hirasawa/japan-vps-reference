@@ -76,6 +76,60 @@ def build_evidence_map(evidence_list: list) -> dict[tuple[str, str], dict]:
     return mapping
 
 
+OFFICIAL_URL_LABELS: dict[str, str] = {
+    "top": "公式サイト",
+    "pricing": "料金ページ",
+    "specs": "仕様ページ",
+    "support": "サポートページ",
+    "terms": "利用規約",
+}
+
+OFFICIAL_URL_ORDER = ["top", "pricing", "specs", "support", "terms"]
+
+
+def _latest_verified_at(official_urls: dict) -> str:
+    """official_urls の中から最新の verified_at を返す。すべて unknown なら「未確認」を返す。"""
+    known_dates = [
+        entry["verified_at"]
+        for entry in official_urls.values()
+        if isinstance(entry, dict) and is_known_metadata(entry.get("verified_at"))
+    ]
+    if not known_dates:
+        return "未確認"
+    return sorted(known_dates)[-1]
+
+
+def generate_official_urls_section(providers: list) -> list[str]:
+    """各プロバイダーの公式URLテーブルを生成する。"""
+    lines: list[str] = []
+    lines.append("## 公式URL")
+    lines.append("")
+
+    for provider in providers:
+        lines.append(f"### {provider['name']}")
+        lines.append("")
+        lines.append("| 項目 | URL |")
+        lines.append("| --- | --- |")
+
+        official_urls: dict = provider.get("official_urls") or {}
+
+        for key in OFFICIAL_URL_ORDER:
+            entry = official_urls.get(key)
+            label = OFFICIAL_URL_LABELS.get(key, key)
+            if entry is None:
+                continue
+            url = entry.get("url") if isinstance(entry, dict) else str(entry)
+            if is_known_metadata(url):
+                lines.append(f"| {label} | [{url}]({url}) |")
+            # unknown URLs are omitted per issue policy
+
+        verified = _latest_verified_at(official_urls)
+        lines.append(f"| 最終確認日 | {verified} |")
+        lines.append("")
+
+    return lines
+
+
 def generate_comparison_table(
     providers: list,
     features: list,
@@ -87,6 +141,8 @@ def generate_comparison_table(
     lines.append("> このファイルは `scripts/generate_docs.py` により自動生成されています。手動で編集しないでください。")
     lines.append("> 「不明」は公式情報が確認できないことを示します。")
     lines.append("> 値の横の `🔗` は情報源リンク、`(YYYY-MM-DD)` は確認日です。")
+    lines.append("")
+    lines.extend(generate_official_urls_section(providers))
     lines.append("")
 
     # カテゴリ別にfeaturesを分類
