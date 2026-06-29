@@ -9,8 +9,8 @@ providers:
     url: https://vps.sakura.ad.jp/
     official_urls:
       top: https://vps.sakura.ad.jp/
-      pricing: https://vps.sakura.ad.jp/
-      specs: https://vps.sakura.ad.jp/
+      pricing: https://vps.sakura.ad.jp/specification/
+      specs: https://vps.sakura.ad.jp/specification/
       support: unknown
       terms: https://vps.sakura.ad.jp/agreement/
     datacenter_locations:
@@ -64,8 +64,8 @@ providers:
     url: https://web.arena.ne.jp/indigo/
     official_urls:
       top: https://web.arena.ne.jp/indigo/
-      pricing: unknown
-      specs: unknown
+      pricing: https://web.arena.ne.jp/indigo/price/
+      specs: https://web.arena.ne.jp/indigo/price/
       support: unknown
       terms: unknown
     datacenter_locations:
@@ -81,8 +81,8 @@ providers:
     url: https://www.kagoya.jp/cloud/vps/
     official_urls:
       top: https://www.kagoya.jp/cloud/vps/
-      pricing: unknown
-      specs: unknown
+      pricing: https://www.kagoya.jp/vps/function-plan/
+      specs: https://www.kagoya.jp/vps/function-plan/
       support: unknown
       terms: unknown
     datacenter_locations:
