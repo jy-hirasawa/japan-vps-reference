@@ -28,7 +28,8 @@
 │   ├── providers.md       # プロバイダー詳細一覧
 │   └── update_candidates.md # URL更新候補一覧
 └── .github/workflows/
-    └── validate.yml       # PR時に自動検証を実行するワークフロー
+    ├── validate.yml       # PR時に自動検証を実行するワークフロー
+    └── check-links.yml    # 手動でリンクチェックを実行するワークフロー
 ```
 
 ## クイックスタート
@@ -194,6 +195,12 @@ official_urls:
 ```bash
 python scripts/check_links.py
 ```
+
+GitHub Actions で手動実行する場合:
+
+1. GitHub の **Actions** タブを開く
+2. **Check Links（手動実行）** ワークフローを選択する
+3. **Run workflow** をクリックして実行する
 
 失敗時は、以下のように `provider_id` と `url` が出力されます。
 
