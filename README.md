@@ -20,9 +20,9 @@
 ├── evidence.yml           # プロバイダーごとの機能・仕様データ（根拠URL付き）
 ├── benchmarks.yml         # ベンチマーク測定結果
 ├── scripts/
-│   ├── validate.py        # 必須フィールド検証スクリプト
-│   ├── generate_docs.py   # Markdown比較テーブル生成スクリプト
-│   └── check_links.py     # providers.yml の公式URLリンクチェック
+│   ├── validate.py
+│   ├── generate_docs.py
+│   └── check_links.py
 ├── docs/                  # 自動生成されたMarkdownドキュメント（手動編集不可）
 │   ├── comparison.md      # プロバイダー比較テーブル
 │   ├── providers.md       # プロバイダー詳細一覧
