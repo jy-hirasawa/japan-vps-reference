@@ -70,6 +70,113 @@ PRのCIでは `generate_docs.py` を実行し、`git diff --exit-code` で生成
 
 差分が検出された場合は、ローカルで `python scripts/generate_docs.py` を実行して生成物を更新し、コミットしてからプッシュしてください。
 
+## providers.yml 記述ルール
+
+`providers.yml` に Provider を追加・編集する際は、以下のルールに従ってください。
+
+### 必須フィールド
+
+各 Provider には以下のフィールドが必須です。
+
+| フィールド | 説明 |
+| --- | --- |
+| `id` | Provider の一意識別子 |
+| `name` | Provider の表示名 |
+| `company` | 運営会社名 |
+| `url` | 公式サイトURL |
+| `official_urls` | 公式URL一覧（辞書形式） |
+| `datacenter_locations` | データセンター所在地（リスト） |
+| `support_language` | サポート言語（リスト） |
+
+### id
+
+- 英小文字・数字・ハイフン（`-`）のみ使用できます（例: `my-vps`, `example-provider`）
+- リポジトリ内で重複不可
+
+### name
+
+- 空文字は不可
+
+### url
+
+- `https://` で始まる有効なURLであること
+- `unknown` は不可
+
+### official_urls
+
+`official_urls` は辞書形式で、以下のキーが必須です。各値は `url` と `verified_at` を持つ辞書です。
+
+| キー | 説明 |
+| --- | --- |
+| `top` | 公式サイトのトップページ |
+| `pricing` | 料金ページ |
+| `specs` | 仕様ページ |
+| `support` | サポートページ |
+| `terms` | 利用規約ページ |
+
+各エントリの `url` は `https://` で始まる有効なURLまたは `unknown` を指定します。
+
+```yaml
+official_urls:
+  top:
+    url: https://example.com/
+    verified_at: "2024-01-01"  # YYYY-MM-DD 形式 または unknown
+  pricing:
+    url: https://example.com/pricing/
+    verified_at: unknown
+  specs:
+    url: unknown
+    verified_at: unknown
+  support:
+    url: unknown
+    verified_at: unknown
+  terms:
+    url: https://example.com/terms/
+    verified_at: unknown
+```
+
+## validate.py 検証内容
+
+`scripts/validate.py` は以下の検証を行います。
+
+### providers.yml
+
+| 対象 | 検証内容 |
+| --- | --- |
+| `id` | 必須・英小文字/数字/ハイフンのみ・リポジトリ内で一意 |
+| `name` | 必須・空文字不可 |
+| `url` | 必須・`https://` で始まる有効なURL |
+| `official_urls` | 必須・辞書形式・各キーの `url` は `https://` で始まるURLまたは `unknown` |
+| `official_urls` の各キー | `top` / `pricing` / `specs` / `support` / `terms` が存在すること |
+| `official_urls` の各エントリ | `url` と `verified_at` が存在すること |
+
+### features.yml
+
+| 対象 | 検証内容 |
+| --- | --- |
+| `id` | 必須・リポジトリ内で一意 |
+| `category` | 必須・定義済みカテゴリ値のみ |
+| `type` | 必須・`number` / `boolean` / `string` のいずれか |
+
+### evidence.yml
+
+| 対象 | 検証内容 |
+| --- | --- |
+| `provider_id` | 必須・`providers.yml` に存在すること |
+| `feature_id` | 必須・`features.yml` に存在すること |
+| `(provider_id, feature_id)` | 組み合わせ重複不可 |
+| `source_type` | 必須・`official` / `benchmark` / `manual` / `community` / `unknown` のいずれか |
+| `source_url` | 必須・`https://` で始まるURLまたは `unknown` |
+| `verified_at` | 必須・`YYYY-MM-DD` 形式または `unknown` |
+| `verification_status` | 必須・`verified` / `unverified` / `unknown` のいずれか |
+
+### benchmarks.yml
+
+| 対象 | 検証内容 |
+| --- | --- |
+| `provider_id` | 必須・`providers.yml` に存在すること |
+| `tests` の各エントリ | `metric` / `value` / `tool` / `measured_at` / `measured_by` が存在すること |
+
 ## Evidence 管理ルール
 
 `evidence.yml` の各エントリには、値の根拠と検証状態を示す以下のメタデータを必ず記載してください。
