@@ -32,3 +32,11 @@ jobs:
 
       - name: 検証スクリプトの実行
         run: python scripts/validate.py
+
+      - name: ドキュメント生成スクリプトの実行
+        run: python scripts/generate_docs.py
+
+      - name: 生成ドキュメントの差分確認（差分があればCIを失敗させる）
+        run: |
+          git status --short docs/comparison.md docs/providers.md docs/update_candidates.md
+          git diff --exit-code docs/comparison.md docs/providers.md docs/update_candidates.md
