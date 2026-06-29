@@ -24,7 +24,8 @@
 │   └── generate_docs.py   # Markdown比較テーブル生成スクリプト
 ├── docs/                  # 自動生成されたMarkdownドキュメント（手動編集不可）
 │   ├── comparison.md      # プロバイダー比較テーブル
-│   └── providers.md       # プロバイダー詳細一覧
+│   ├── providers.md       # プロバイダー詳細一覧
+│   └── update_candidates.md # URL更新候補一覧
 └── .github/workflows/
     └── validate.yml       # PR時に自動検証を実行するワークフロー
 ```
@@ -107,7 +108,11 @@ python scripts/generate_docs.py
 
 ## 比較テーブル
 
-生成済みの比較テーブルは [`docs/comparison.md`](docs/comparison.md) を参照してください。
+生成済みドキュメント:
+
+- [`docs/comparison.md`](docs/comparison.md) — VPS比較テーブル
+- [`docs/providers.md`](docs/providers.md) — プロバイダー詳細一覧
+- [`docs/update_candidates.md`](docs/update_candidates.md) — URL更新候補一覧
 
 ## ライセンス
 
