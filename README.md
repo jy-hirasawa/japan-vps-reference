@@ -20,8 +20,9 @@
 ├── evidence.yml           # プロバイダーごとの機能・仕様データ（根拠URL付き）
 ├── benchmarks.yml         # ベンチマーク測定結果
 ├── scripts/
-│   ├── validate.py        # 必須フィールド検証スクリプト
-│   └── generate_docs.py   # Markdown比較テーブル生成スクリプト
+│   ├── validate.py
+│   ├── generate_docs.py
+│   └── check_links.py
 ├── docs/                  # 自動生成されたMarkdownドキュメント（手動編集不可）
 │   ├── comparison.md      # プロバイダー比較テーブル
 │   ├── providers.md       # プロバイダー詳細一覧
@@ -38,6 +39,9 @@ pip install pyyaml
 
 # YAMLデータの検証
 python scripts/validate.py
+
+# 公式URLリンクチェック
+python scripts/check_links.py
 
 # Markdownドキュメントの生成
 python scripts/generate_docs.py
@@ -176,6 +180,28 @@ official_urls:
 | --- | --- |
 | `provider_id` | 必須・`providers.yml` に存在すること |
 | `tests` の各エントリ | `metric` / `value` / `tool` / `measured_at` / `measured_by` が存在すること |
+
+## 公式URLリンクチェック
+
+`scripts/check_links.py` は `providers.yml` の `official_urls` を順に確認し、HTTPステータスを検証します。
+
+- 成功: `2xx` / `3xx`
+- 失敗: `4xx` / `5xx` / タイムアウト / 接続エラー
+- `url: unknown` はチェック対象外
+
+実行方法:
+
+```bash
+python scripts/check_links.py
+```
+
+失敗時は、以下のように `provider_id` と `url` が出力されます。
+
+```text
+[FAIL] provider_id=example-vps url=https://example.com/xxx (status=404)
+```
+
+一時的な外部要因で失敗する場合があるため、時間を置いて再実行し、それでも失敗する場合は `providers.yml` のURL変更有無を確認してください。
 
 ## Evidence 管理ルール
 
