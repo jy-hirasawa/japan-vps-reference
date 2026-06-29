@@ -51,6 +51,25 @@ python scripts/generate_docs.py
 4. `python scripts/generate_docs.py` で `docs/` 以下を更新します。
 5. プルリクエストを作成します。CIが自動でYAMLを検証します。
 
+## 生成ドキュメントの運用ルール
+
+`docs/` 以下のMarkdownファイルは `scripts/generate_docs.py` により自動生成される **生成物** です。手動で編集しないでください。
+
+### PRを作成する前に必ず実行してください
+
+YAMLファイル（`providers.yml` / `features.yml` / `evidence.yml` / `benchmarks.yml`）または `scripts/generate_docs.py` を変更した場合は、必ず以下を実行してから `docs/` の変更をコミットしてください。
+
+```bash
+python scripts/generate_docs.py
+```
+
+### CIによる差分検出
+
+PRのCIでは `generate_docs.py` を実行し、`git diff --exit-code` で生成物の差分を検出します。  
+**`docs/` の更新がコミットされていない場合、CIが失敗します。**
+
+差分が検出された場合は、ローカルで `python scripts/generate_docs.py` を実行して生成物を更新し、コミットしてからプッシュしてください。
+
 ## Evidence 管理ルール
 
 `evidence.yml` の各エントリには、値の根拠と検証状態を示す以下のメタデータを必ず記載してください。
