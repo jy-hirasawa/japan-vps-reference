@@ -10,6 +10,7 @@ import re
 import sys
 import yaml
 from pathlib import Path
+from urllib.parse import urlparse
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -30,8 +31,17 @@ VALID_SOURCE_TYPES = {"official", "benchmark", "manual", "community", "unknown"}
 VALID_VERIFICATION_STATUSES = {"verified", "unverified", "unknown"}
 
 _DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+_ID_RE = re.compile(r"^[a-z0-9-]+$")
 
 errors: list[str] = []
+
+
+def _is_valid_https_url(url: str) -> bool:
+    """https:// で始まる有効な URL かどうかを検証する。"""
+    if not url.startswith("https://"):
+        return False
+    parsed = urlparse(url)
+    return bool(parsed.scheme == "https" and parsed.netloc)
 
 
 def load_yaml(path: Path) -> dict | list:
@@ -54,6 +64,34 @@ def validate_providers(data: dict) -> set[str]:
     for i, provider in enumerate(providers):
         ctx = f"providers.yml[{i}] (id={provider.get('id', '?')})"
         check_required_fields(provider, REQUIRED_PROVIDER_FIELDS, ctx)
+
+        # id のフォーマット・重複検証
+        pid = provider.get("id")
+        if pid is not None:
+            if not str(pid).strip():
+                errors.append(f"{ctx}: id が空文字です。")
+            elif not _ID_RE.match(str(pid)):
+                errors.append(
+                    f"{ctx}: id '{pid}' は英小文字・数字・ハイフンのみ使用できます（例: my-provider）。"
+                )
+        if pid:
+            if pid in provider_ids:
+                errors.append(f"{ctx}: id '{pid}' が重複しています。")
+            provider_ids.add(pid)
+
+        # name の空文字検証
+        pname = provider.get("name")
+        if pname is not None and not str(pname).strip():
+            errors.append(f"{ctx}: name が空文字です。")
+
+        # url (website) の https:// 検証
+        purl = provider.get("url")
+        if purl is not None:
+            if not _is_valid_https_url(str(purl)):
+                errors.append(
+                    f"{ctx}: url '{purl}' は https:// で始まる有効なURLである必要があります。"
+                )
+
         official_urls = provider.get("official_urls")
         if official_urls is not None:
             if not isinstance(official_urls, dict):
@@ -70,9 +108,9 @@ def validate_providers(data: dict) -> set[str]:
                         check_required_fields(value, REQUIRED_OFFICIAL_URL_ENTRY_FIELDS, entry_ctx)
                         url = value.get("url")
                         if url is not None and str(url) != "unknown":
-                            if not (str(url).startswith("http://") or str(url).startswith("https://")):
+                            if not _is_valid_https_url(str(url)):
                                 errors.append(
-                                    f"{entry_ctx}: url '{url}' は有効なURLまたは 'unknown' である必要があります。"
+                                    f"{entry_ctx}: url '{url}' は https:// で始まる有効なURLまたは 'unknown' である必要があります。"
                                 )
                         vat = value.get("verified_at")
                         if vat is not None and str(vat) != "unknown":
@@ -80,11 +118,6 @@ def validate_providers(data: dict) -> set[str]:
                                 errors.append(
                                     f"{entry_ctx}: verified_at '{vat}' は YYYY-MM-DD 形式または 'unknown' である必要があります。"
                                 )
-        pid = provider.get("id")
-        if pid:
-            if pid in provider_ids:
-                errors.append(f"{ctx}: id '{pid}' が重複しています。")
-            provider_ids.add(pid)
     return provider_ids
 
 
