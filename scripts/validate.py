@@ -15,6 +15,7 @@ ROOT = Path(__file__).resolve().parent.parent
 
 REQUIRED_PROVIDER_FIELDS = ["id", "name", "company", "url", "official_urls", "datacenter_locations", "support_language"]
 REQUIRED_PROVIDER_OFFICIAL_URL_FIELDS = ["top", "pricing", "specs", "support", "terms"]
+REQUIRED_OFFICIAL_URL_ENTRY_FIELDS = ["url", "verified_at"]
 REQUIRED_FEATURE_FIELDS = ["id", "category", "label", "description", "type"]
 REQUIRED_EVIDENCE_FIELDS = [
     "provider_id", "feature_id", "value",
@@ -60,12 +61,25 @@ def validate_providers(data: dict) -> set[str]:
             else:
                 check_required_fields(official_urls, REQUIRED_PROVIDER_OFFICIAL_URL_FIELDS, f"{ctx}.official_urls")
                 for key, value in official_urls.items():
-                    if str(value) != "unknown" and not (
-                        str(value).startswith("http://") or str(value).startswith("https://")
-                    ):
+                    entry_ctx = f"{ctx}.official_urls.{key}"
+                    if not isinstance(value, dict):
                         errors.append(
-                            f"{ctx}.official_urls: '{key}' の値 '{value}' は有効なURLまたは 'unknown' である必要があります。"
+                            f"{entry_ctx}: 値は辞書（url / verified_at）である必要があります。"
                         )
+                    else:
+                        check_required_fields(value, REQUIRED_OFFICIAL_URL_ENTRY_FIELDS, entry_ctx)
+                        url = value.get("url")
+                        if url is not None and str(url) != "unknown":
+                            if not (str(url).startswith("http://") or str(url).startswith("https://")):
+                                errors.append(
+                                    f"{entry_ctx}: url '{url}' は有効なURLまたは 'unknown' である必要があります。"
+                                )
+                        vat = value.get("verified_at")
+                        if vat is not None and str(vat) != "unknown":
+                            if not _DATE_RE.match(str(vat)):
+                                errors.append(
+                                    f"{entry_ctx}: verified_at '{vat}' は YYYY-MM-DD 形式または 'unknown' である必要があります。"
+                                )
         pid = provider.get("id")
         if pid:
             if pid in provider_ids:
