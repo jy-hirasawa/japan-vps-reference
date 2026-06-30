@@ -38,11 +38,27 @@ def _make_evidence(pid: str, fid: str, value, source_url: str = "unknown", verif
     }
 
 
+_DEFAULT_CATEGORY_ORDER = ["BASIC", "PRICE", "SPEC", "STORAGE", "NETWORK",
+                           "SECURITY", "BACKUP", "OPS", "SUPPORT", "BENCH"]
+_DEFAULT_CATEGORY_LABELS = {
+    "BASIC": "基本情報", "PRICE": "料金", "SPEC": "CPU / メモリ / ストレージ",
+    "STORAGE": "ディスク / NVMe / スナップショット",
+    "NETWORK": "IPv4 / IPv6 / 転送量 / ローカルネットワーク",
+    "SECURITY": "Firewall / WAF / DDoS", "BACKUP": "バックアップ / イメージ保存",
+    "OPS": "API / CLI / Terraform", "SUPPORT": "サポート / SLA", "BENCH": "ベンチマーク",
+}
+
+
 class TestGenerateComparisonTable(unittest.TestCase):
 
-    def _generate(self, providers, features, evidence_list=None):
+    def _generate(self, providers, features, evidence_list=None,
+                  category_order=None, category_labels=None):
         evidence_map = generate_docs.build_evidence_map(evidence_list or [])
-        return generate_docs.generate_comparison_table(providers, features, evidence_map)
+        return generate_docs.generate_comparison_table(
+            providers, features, evidence_map,
+            category_order=category_order or _DEFAULT_CATEGORY_ORDER,
+            category_labels=category_labels or _DEFAULT_CATEGORY_LABELS,
+        )
 
     # ------------------------------------------------------------------
     # features.yml の定義順が反映される
@@ -157,6 +173,37 @@ class TestBuildEvidenceMap(unittest.TestCase):
         """空リストを渡した場合は空のマップが返る。"""
         result = generate_docs.build_evidence_map([])
         self.assertEqual(result, {})
+
+
+class TestBuildCategoryOrderAndLabels(unittest.TestCase):
+
+    def test_basic(self):
+        """categories リストから順序とラベルが正しく構築される。"""
+        categories = [
+            {"id": "BASIC", "label": "基本情報"},
+            {"id": "PRICE", "label": "料金"},
+            {"id": "OPS", "label": "API / CLI / Terraform"},
+        ]
+        order, labels = generate_docs._build_category_order_and_labels(categories)
+        self.assertEqual(order, ["BASIC", "PRICE", "OPS"])
+        self.assertEqual(labels["BASIC"], "基本情報")
+        self.assertEqual(labels["PRICE"], "料金")
+        self.assertEqual(labels["OPS"], "API / CLI / Terraform")
+
+    def test_empty_categories(self):
+        """空リストを渡した場合は空のリスト・辞書が返る。"""
+        order, labels = generate_docs._build_category_order_and_labels([])
+        self.assertEqual(order, [])
+        self.assertEqual(labels, {})
+
+    def test_category_order_preserved(self):
+        """categories の記載順が category_order の並び順に反映される。"""
+        categories = [
+            {"id": "OPS", "label": "API"},
+            {"id": "BASIC", "label": "基本"},
+        ]
+        order, _ = generate_docs._build_category_order_and_labels(categories)
+        self.assertEqual(order, ["OPS", "BASIC"])
 
 
 if __name__ == "__main__":

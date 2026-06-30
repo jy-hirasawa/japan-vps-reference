@@ -16,7 +16,7 @@
 ```
 .
 ├── providers.yml          # VPSプロバイダー一覧（会社名・所在地等）
-├── features.yml           # 比較項目の定義（型・説明）
+├── features.yml           # 比較項目の定義（categories: カテゴリ定義・表示順 / features: 比較項目）
 ├── evidence.yml           # プロバイダーごとの機能・仕様データ（根拠URL付き）
 ├── benchmarks.yml         # ベンチマーク測定結果
 ├── scripts/
@@ -164,9 +164,13 @@ official_urls:
 
 | 対象 | 検証内容 |
 | --- | --- |
-| `id` | 必須・リポジトリ内で一意 |
-| `category` | 必須・定義済みカテゴリ値のみ |
-| `type` | 必須・`number` / `boolean` / `string` のいずれか |
+| `categories[].id` | 必須・同一ファイル内で一意 |
+| `categories[].label` | 必須 |
+| `features[].id` | 必須・リポジトリ内で一意 |
+| `features[].category` | 必須・`categories` セクションに定義済みの値のみ |
+| `features[].type` | 必須・`number` / `boolean` / `string` のいずれか |
+
+`features.yml` は `categories` セクション（表示順・見出し名）と `features` セクション（比較項目）で構成されます。比較項目を追加・変更する場合は `features.yml` を編集し、`python scripts/generate_docs.py` を実行してください。
 
 ### evidence.yml
 

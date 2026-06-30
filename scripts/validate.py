@@ -17,6 +17,7 @@ ROOT = Path(__file__).resolve().parent.parent
 REQUIRED_PROVIDER_FIELDS = ["id", "name", "company", "url", "official_urls", "datacenter_locations", "support_language"]
 REQUIRED_PROVIDER_OFFICIAL_URL_FIELDS = ["top", "pricing", "specs", "support", "terms"]
 REQUIRED_OFFICIAL_URL_ENTRY_FIELDS = ["url", "verified_at"]
+REQUIRED_CATEGORY_FIELDS = ["id", "label"]
 REQUIRED_FEATURE_FIELDS = ["id", "category", "label", "description", "type"]
 REQUIRED_EVIDENCE_FIELDS = [
     "provider_id", "feature_id", "value",
@@ -26,7 +27,6 @@ REQUIRED_BENCHMARK_FIELDS = ["provider_id", "plan", "tests"]
 REQUIRED_BENCHMARK_TEST_FIELDS = ["metric", "value", "tool", "measured_at", "measured_by"]
 
 VALID_FEATURE_TYPES = {"number", "boolean", "string"}
-VALID_CATEGORIES = {"BASIC", "PRICE", "SPEC", "STORAGE", "NETWORK", "SECURITY", "BACKUP", "OPS", "SUPPORT", "BENCH"}
 VALID_SOURCE_TYPES = {"official", "benchmark", "manual", "community", "unknown"}
 VALID_VERIFICATION_STATUSES = {"verified", "unverified", "unknown"}
 
@@ -159,6 +159,24 @@ def validate_providers(data: dict) -> set[str]:
 
 def validate_features(data: dict) -> set[str]:
     feature_ids: set[str] = set()
+
+    # categories セクションの検証と有効カテゴリIDの収集
+    valid_category_ids: set[str] = set()
+    categories = data.get("categories", [])
+    if not isinstance(categories, list):
+        errors.append("features.yml: 'categories' キーがリストではありません。")
+    else:
+        seen_cat_ids: set[str] = set()
+        for i, cat in enumerate(categories):
+            ctx = f"features.yml categories[{i}] (id={cat.get('id', '?')})"
+            check_required_fields(cat, REQUIRED_CATEGORY_FIELDS, ctx)
+            cid = cat.get("id")
+            if cid:
+                if cid in seen_cat_ids:
+                    errors.append(f"{ctx}: categories の id '{cid}' が重複しています。")
+                seen_cat_ids.add(cid)
+                valid_category_ids.add(str(cid))
+
     features = data.get("features", [])
     if not isinstance(features, list):
         errors.append("features.yml: 'features' キーがリストではありません。")
@@ -172,8 +190,8 @@ def validate_features(data: dict) -> set[str]:
                 errors.append(f"{ctx}: id '{fid}' が重複しています。")
             feature_ids.add(fid)
         fcat = feature.get("category")
-        if fcat and fcat not in VALID_CATEGORIES:
-            errors.append(f"{ctx}: category '{fcat}' は有効なカテゴリではありません（{sorted(VALID_CATEGORIES)}）。")
+        if fcat and valid_category_ids and fcat not in valid_category_ids:
+            errors.append(f"{ctx}: category '{fcat}' は features.yml の categories に定義されていません（{sorted(valid_category_ids)}）。")
         ftype = feature.get("type")
         if ftype and ftype not in VALID_FEATURE_TYPES:
             errors.append(f"{ctx}: type '{ftype}' は有効な型ではありません（{VALID_FEATURE_TYPES}）。")
