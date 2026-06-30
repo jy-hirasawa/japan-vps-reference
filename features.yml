@@ -2,17 +2,30 @@
 # 比較に使用する機能・仕様の定義一覧
 # 各機能には id, category, label, description, type を定義します。
 #
-# カテゴリ一覧:
-#   BASIC    - 基本情報
-#   PRICE    - 料金
-#   SPEC     - CPU / メモリ / ストレージ
-#   STORAGE  - ディスク / NVMe / スナップショット
-#   NETWORK  - IPv4 / IPv6 / 転送量 / ローカルネットワーク
-#   SECURITY - Firewall / WAF / DDoS
-#   BACKUP   - バックアップ / イメージ保存
-#   OPS      - API / CLI / Terraform
-#   SUPPORT  - サポート / SLA
-#   BENCH    - ベンチマーク
+# categories セクション: カテゴリの表示順と見出し名を定義します。
+# features セクション: 比較項目を定義します。記載順が comparison.md の出力順に反映されます。
+
+categories:
+  - id: BASIC
+    label: 基本情報
+  - id: PRICE
+    label: 料金
+  - id: SPEC
+    label: CPU / メモリ / ストレージ
+  - id: STORAGE
+    label: ディスク / NVMe / スナップショット
+  - id: NETWORK
+    label: IPv4 / IPv6 / 転送量 / ローカルネットワーク
+  - id: SECURITY
+    label: Firewall / WAF / DDoS
+  - id: BACKUP
+    label: バックアップ / イメージ保存
+  - id: OPS
+    label: API / CLI / Terraform
+  - id: SUPPORT
+    label: サポート / SLA
+  - id: BENCH
+    label: ベンチマーク
 
 features:
   - id: os_templates

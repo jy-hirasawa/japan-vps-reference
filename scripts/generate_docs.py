@@ -21,24 +21,17 @@ DOCS_DIR = ROOT / "docs"
 
 UNKNOWN_LABEL = "不明"
 
-CATEGORY_ORDER = ["BASIC", "PRICE", "SPEC", "STORAGE", "NETWORK", "SECURITY", "BACKUP", "OPS", "SUPPORT", "BENCH"]
-CATEGORY_LABELS = {
-    "BASIC": "基本情報",
-    "PRICE": "料金",
-    "SPEC": "CPU / メモリ / ストレージ",
-    "STORAGE": "ディスク / NVMe / スナップショット",
-    "NETWORK": "IPv4 / IPv6 / 転送量 / ローカルネットワーク",
-    "SECURITY": "Firewall / WAF / DDoS",
-    "BACKUP": "バックアップ / イメージ保存",
-    "OPS": "API / CLI / Terraform",
-    "SUPPORT": "サポート / SLA",
-    "BENCH": "ベンチマーク",
-}
-
 
 def load_yaml(path: Path):
     with open(path, encoding="utf-8") as f:
         return yaml.safe_load(f)
+
+
+def _build_category_order_and_labels(categories: list) -> tuple[list[str], dict[str, str]]:
+    """features.yml の categories セクションからカテゴリ順とラベルを構築する。"""
+    order = [c["id"] for c in categories if "id" in c]
+    labels = {c["id"]: c.get("label", c["id"]) for c in categories if "id" in c}
+    return order, labels
 
 
 def format_value(raw, feature_type: str) -> str:
@@ -185,7 +178,14 @@ def generate_comparison_table(
     providers: list,
     features: list,
     evidence_map: dict[tuple[str, str], dict],
+    category_order: list[str] | None = None,
+    category_labels: dict[str, str] | None = None,
 ) -> str:
+    if category_order is None:
+        category_order = []
+    if category_labels is None:
+        category_labels = {}
+
     lines: list[str] = []
     lines.append("# VPS 比較テーブル")
     lines.append("")
@@ -206,9 +206,9 @@ def generate_comparison_table(
         else:
             uncategorized.append(feature)
 
-    # カテゴリ順に出力
-    ordered_categories = [c for c in CATEGORY_ORDER if c in features_by_category]
-    # CATEGORY_ORDERにないカテゴリがあれば末尾に追加
+    # features.yml の categories 定義順に出力
+    ordered_categories = [c for c in category_order if c in features_by_category]
+    # categories に含まれないカテゴリがあれば末尾に追加
     for cat in sorted(features_by_category):
         if cat not in ordered_categories:
             ordered_categories.append(cat)
@@ -218,7 +218,7 @@ def generate_comparison_table(
     separator_row = "| " + " | ".join(["---"] * len(header_cells)) + " |"
 
     for cat in ordered_categories:
-        cat_label = CATEGORY_LABELS.get(cat, cat)
+        cat_label = category_labels.get(cat, cat)
         lines.append(f"## {cat}: {cat_label}")
         lines.append("")
         lines.append(header_row)
@@ -318,13 +318,15 @@ def main() -> int:
 
     providers = providers_data.get("providers", [])
     features = features_data.get("features", [])
+    categories = features_data.get("categories", [])
     evidence_list = evidence_data.get("evidence", [])
 
     evidence_map = build_evidence_map(evidence_list)
+    category_order, category_labels = _build_category_order_and_labels(categories)
 
     DOCS_DIR.mkdir(exist_ok=True)
 
-    comparison_md = generate_comparison_table(providers, features, evidence_map)
+    comparison_md = generate_comparison_table(providers, features, evidence_map, category_order, category_labels)
     comparison_path = DOCS_DIR / "comparison.md"
     comparison_path.write_text(comparison_md, encoding="utf-8")
     print(f"生成しました: {comparison_path.relative_to(ROOT)}")

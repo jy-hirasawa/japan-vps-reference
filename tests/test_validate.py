@@ -178,5 +178,160 @@ class TestValidateProviders(unittest.TestCase):
         )
 
 
+def _make_categories(ids: list[str] | None = None) -> list[dict]:
+    """テスト用カテゴリリストを生成するヘルパー。"""
+    all_cats = {
+        "BASIC": "基本情報",
+        "PRICE": "料金",
+        "SPEC": "CPU / メモリ / ストレージ",
+        "STORAGE": "ディスク / NVMe / スナップショット",
+        "NETWORK": "IPv4 / IPv6 / 転送量 / ローカルネットワーク",
+        "SECURITY": "Firewall / WAF / DDoS",
+        "BACKUP": "バックアップ / イメージ保存",
+        "OPS": "API / CLI / Terraform",
+        "SUPPORT": "サポート / SLA",
+        "BENCH": "ベンチマーク",
+    }
+    target = ids if ids is not None else list(all_cats.keys())
+    return [{"id": cid, "label": all_cats.get(cid, cid)} for cid in target]
+
+
+def _make_feature(**kwargs) -> dict:
+    """最低限の有効な feature データを生成するヘルパー。"""
+    base = {
+        "id": "test-feature",
+        "category": "BASIC",
+        "label": "テスト項目",
+        "description": "テスト用の説明。",
+        "type": "string",
+    }
+    base.update(kwargs)
+    return base
+
+
+def _make_features_data(features: list, categories: list | None = None) -> dict:
+    """features と categories を持つ features.yml 相当のデータを生成するヘルパー。"""
+    return {
+        "categories": _make_categories() if categories is None else categories,
+        "features": features,
+    }
+
+
+class TestValidateFeatures(unittest.TestCase):
+
+    def setUp(self):
+        validate.errors.clear()
+        validate.warnings.clear()
+
+    # ------------------------------------------------------------------
+    # 正常系
+    # ------------------------------------------------------------------
+
+    def test_valid_feature_no_errors(self):
+        """正常な feature データはエラーが発生しない。"""
+        data = _make_features_data([_make_feature()])
+        validate.validate_features(data)
+        self.assertEqual(validate.errors, [])
+
+    def test_valid_feature_all_types(self):
+        """有効な type 値（number / boolean / string）はエラーにならない。"""
+        for ftype in ("number", "boolean", "string"):
+            validate.errors.clear()
+            data = _make_features_data([_make_feature(id=f"feat-{ftype}", type=ftype)])
+            validate.validate_features(data)
+            self.assertEqual(validate.errors, [], f"type='{ftype}' でエラーが発生した")
+
+    def test_valid_feature_all_categories(self):
+        """features.yml で定義されたカテゴリはすべてエラーにならない。"""
+        all_cat_ids = ["BASIC", "PRICE", "SPEC", "STORAGE", "NETWORK",
+                       "SECURITY", "BACKUP", "OPS", "SUPPORT", "BENCH"]
+        for i, cat in enumerate(all_cat_ids):
+            validate.errors.clear()
+            data = _make_features_data([_make_feature(id=f"feat-{i}", category=cat)])
+            validate.validate_features(data)
+            self.assertEqual(validate.errors, [], f"category='{cat}' でエラーが発生した")
+
+    # ------------------------------------------------------------------
+    # 必須フィールド不足
+    # ------------------------------------------------------------------
+
+    def test_missing_required_fields(self):
+        """必須フィールドが欠けている場合にエラーが発生する。"""
+        data = _make_features_data([{"id": "bare-feature"}])
+        validate.validate_features(data)
+        error_text = "\n".join(validate.errors)
+        for field in ["category", "label", "description", "type"]:
+            self.assertIn(field, error_text, f"必須フィールド '{field}' が検出されなかった")
+
+    # ------------------------------------------------------------------
+    # id の重複
+    # ------------------------------------------------------------------
+
+    def test_duplicate_feature_id(self):
+        """同じ id を持つ feature が複数存在する場合にエラーになる。"""
+        f = _make_feature(id="dup-feature")
+        data = _make_features_data([f, dict(f)])
+        validate.validate_features(data)
+        self.assertTrue(
+            any("重複" in e for e in validate.errors),
+            "feature_id の重複が検出されなかった",
+        )
+
+    # ------------------------------------------------------------------
+    # 不正な category
+    # ------------------------------------------------------------------
+
+    def test_invalid_category(self):
+        """categories に定義されていないカテゴリを指定した場合にエラーになる。"""
+        data = _make_features_data([_make_feature(category="INVALID_CATEGORY")])
+        validate.validate_features(data)
+        self.assertTrue(
+            any("INVALID_CATEGORY" in e for e in validate.errors),
+            "不正なカテゴリが検出されなかった",
+        )
+
+    # ------------------------------------------------------------------
+    # categories セクションの検証
+    # ------------------------------------------------------------------
+
+    def test_categories_required_fields(self):
+        """categories に必須フィールドが欠けている場合にエラーが発生する。"""
+        data = _make_features_data(
+            [],
+            categories=[{"id": "BASIC"}],  # label が欠けている
+        )
+        validate.validate_features(data)
+        error_text = "\n".join(validate.errors)
+        self.assertIn("label", error_text, "categories の必須フィールド 'label' が検出されなかった")
+
+    def test_duplicate_category_id(self):
+        """categories に同じ id が重複している場合にエラーになる。"""
+        data = _make_features_data(
+            [],
+            categories=[
+                {"id": "BASIC", "label": "基本情報"},
+                {"id": "BASIC", "label": "基本情報（重複）"},
+            ],
+        )
+        validate.validate_features(data)
+        self.assertTrue(
+            any("重複" in e for e in validate.errors),
+            "categories の id 重複が検出されなかった",
+        )
+
+    # ------------------------------------------------------------------
+    # 不正な type
+    # ------------------------------------------------------------------
+
+    def test_invalid_type(self):
+        """未定義の type を指定した場合にエラーになる。"""
+        data = _make_features_data([_make_feature(type="integer")])
+        validate.validate_features(data)
+        self.assertTrue(
+            any("integer" in e for e in validate.errors),
+            "不正な type が検出されなかった",
+        )
+
+
 if __name__ == "__main__":
     unittest.main()
