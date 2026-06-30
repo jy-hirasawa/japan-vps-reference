@@ -38,6 +38,9 @@
 # 依存パッケージのインストール
 pip install pyyaml
 
+# 単体テストの実行
+python -m unittest discover
+
 # YAMLデータの検証
 python scripts/validate.py
 
