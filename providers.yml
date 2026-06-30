@@ -15,7 +15,7 @@ providers:
         url: https://vps.sakura.ad.jp/specification/
         verified_at: unknown
       specs:
-        url: unknown
+        url: https://vps.sakura.ad.jp/specification/
         verified_at: unknown
       support:
         url: unknown
@@ -44,7 +44,7 @@ providers:
         url: https://www.conoha.jp/vps/pricing/
         verified_at: unknown
       specs:
-        url: unknown
+        url: https://www.conoha.jp/vps/pricing/
         verified_at: unknown
       support:
         url: unknown
@@ -73,7 +73,7 @@ providers:
         url: https://vps.xserver.ne.jp/price/
         verified_at: unknown
       specs:
-        url: unknown
+        url: https://vps.xserver.ne.jp/price/
         verified_at: unknown
       support:
         url: unknown
@@ -100,7 +100,7 @@ providers:
         url: https://web.arena.ne.jp/indigo/price/
         verified_at: unknown
       specs:
-        url: unknown
+        url: https://web.arena.ne.jp/indigo/price/
         verified_at: unknown
       support:
         url: unknown
@@ -127,7 +127,7 @@ providers:
         url: https://www.kagoya.jp/vps/function-plan/
         verified_at: unknown
       specs:
-        url: unknown
+        url: https://www.kagoya.jp/vps/function-plan/
         verified_at: unknown
       support:
         url: unknown

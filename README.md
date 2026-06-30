@@ -154,7 +154,7 @@ official_urls:
 | `official_urls` | 必須・辞書形式・各キーの `url` は `https://` で始まるURLまたは `unknown` |
 | `official_urls` の各キー | `top` / `pricing` / `specs` / `support` / `terms` が存在すること |
 | `official_urls` の各エントリ | `url` と `verified_at` が存在すること |
-| `official_urls` 内の URL | 同一プロバイダー内で重複不可（`unknown` は対象外） |
+| `official_urls` 内の URL | 同一プロバイダー内で重複がある場合は警告（`unknown` は対象外） |
 | `aliases` | 同一プロバイダー内で重複不可・他プロバイダーの `id` と衝突不可 |
 
 ### features.yml

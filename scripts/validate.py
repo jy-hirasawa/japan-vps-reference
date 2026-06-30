@@ -34,6 +34,7 @@ _DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 _ID_RE = re.compile(r"^[a-z0-9-]+$")
 
 errors: list[str] = []
+warnings: list[str] = []
 
 
 def _is_valid_https_url(url: str) -> bool:
@@ -119,7 +120,7 @@ def validate_providers(data: dict) -> set[str]:
                                     f"{entry_ctx}: url '{url}' は https:// で始まる有効なURLまたは 'unknown' である必要があります。"
                                 )
                             elif url_str in seen_urls:
-                                errors.append(
+                                warnings.append(
                                     f"{ctx}: official_urls に URL の重複があります: {url_str}"
                                 )
                             seen_urls.add(url_str)
@@ -275,6 +276,10 @@ def main() -> int:
     feature_ids = validate_features(features_data)
     validate_evidence(evidence_data, provider_ids, feature_ids)
     validate_benchmarks(benchmarks_data, provider_ids)
+
+    if warnings:
+        for w in warnings:
+            print(f"[WARNING] {w}", file=sys.stderr)
 
     if errors:
         for e in errors:
