@@ -166,8 +166,9 @@ official_urls:
 | --- | --- |
 | `categories[].id` | 必須・同一ファイル内で一意 |
 | `categories[].label` | 必須 |
-| `features[].id` | 必須・リポジトリ内で一意 |
-| `features[].category` | 必須・`categories` セクションに定義済みの値のみ |
+| `features[].id` | 必須・英小文字/数字/ハイフン/アンダースコアのみ・空文字不可・リポジトリ内で一意（重複不可） |
+| `features[].label` | 必須・空文字不可 |
+| `features[].category` | 必須・空文字不可・`categories` セクションに定義済みの値のみ |
 | `features[].type` | 必須・`number` / `boolean` / `string` のいずれか |
 
 `features.yml` は `categories` セクション（表示順・見出し名）と `features` セクション（比較項目）で構成されます。比較項目を追加・変更する場合は `features.yml` を編集し、`python scripts/generate_docs.py` を実行してください。

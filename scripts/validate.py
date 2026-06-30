@@ -32,6 +32,7 @@ VALID_VERIFICATION_STATUSES = {"verified", "unverified", "unknown"}
 
 _DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 _ID_RE = re.compile(r"^[a-z0-9-]+$")
+_FEATURE_ID_RE = re.compile(r"^[a-z0-9_-]+$")
 
 errors: list[str] = []
 warnings: list[str] = []
@@ -185,11 +186,23 @@ def validate_features(data: dict) -> set[str]:
         ctx = f"features.yml[{i}] (id={feature.get('id', '?')})"
         check_required_fields(feature, REQUIRED_FEATURE_FIELDS, ctx)
         fid = feature.get("id")
+        if fid is not None:
+            if not str(fid).strip():
+                errors.append(f"{ctx}: id が空文字です。")
+            elif not _FEATURE_ID_RE.match(str(fid)):
+                errors.append(
+                    f"{ctx}: id '{fid}' は英小文字・数字・ハイフン・アンダースコアのみ使用できます（例: my_feature）。"
+                )
         if fid:
             if fid in feature_ids:
                 errors.append(f"{ctx}: id '{fid}' が重複しています。")
             feature_ids.add(fid)
+        flabel = feature.get("label")
+        if flabel is not None and not str(flabel).strip():
+            errors.append(f"{ctx}: label が空文字です。")
         fcat = feature.get("category")
+        if fcat is not None and not str(fcat).strip():
+            errors.append(f"{ctx}: category が空文字です。")
         if fcat and valid_category_ids and fcat not in valid_category_ids:
             errors.append(f"{ctx}: category '{fcat}' は features.yml の categories に定義されていません（{sorted(valid_category_ids)}）。")
         ftype = feature.get("type")
