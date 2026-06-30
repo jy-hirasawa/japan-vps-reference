@@ -10,6 +10,7 @@ on:
       - "scripts/validate.py"
       - "scripts/generate_docs.py"
       - "docs/**"
+      - "tests/**"
 
 jobs:
   validate:
@@ -29,6 +30,9 @@ jobs:
 
       - name: 依存パッケージのインストール
         run: pip install pyyaml
+
+      - name: 単体テストの実行
+        run: python -m unittest discover
 
       - name: 検証スクリプトの実行
         run: python scripts/validate.py

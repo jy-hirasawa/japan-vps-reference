@@ -1,0 +1,182 @@
+"""
+tests/test_validate.py — scripts/validate.py の単体テスト
+"""
+
+import sys
+import unittest
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
+
+import validate
+
+
+def _make_provider(**kwargs) -> dict:
+    """最低限の有効な provider データを生成するヘルパー。"""
+    base = {
+        "id": "test-provider",
+        "name": "Test Provider",
+        "company": "Test Co",
+        "url": "https://test.example.com",
+        "official_urls": {
+            "top":     {"url": "https://test.example.com",         "verified_at": "2024-01-01"},
+            "pricing": {"url": "https://test.example.com/pricing", "verified_at": "2024-01-01"},
+            "specs":   {"url": "https://test.example.com/specs",   "verified_at": "2024-01-01"},
+            "support": {"url": "https://test.example.com/support", "verified_at": "2024-01-01"},
+            "terms":   {"url": "https://test.example.com/terms",   "verified_at": "2024-01-01"},
+        },
+        "datacenter_locations": ["Tokyo"],
+        "support_language": ["ja"],
+    }
+    base.update(kwargs)
+    return base
+
+
+class TestValidateProviders(unittest.TestCase):
+
+    def setUp(self):
+        validate.errors.clear()
+        validate.warnings.clear()
+
+    # ------------------------------------------------------------------
+    # 正常系
+    # ------------------------------------------------------------------
+
+    def test_valid_provider_no_errors(self):
+        """正常な provider データはエラー・警告が発生しない。"""
+        data = {"providers": [_make_provider()]}
+        validate.validate_providers(data)
+        self.assertEqual(validate.errors, [])
+        self.assertEqual(validate.warnings, [])
+
+    # ------------------------------------------------------------------
+    # 必須フィールド不足
+    # ------------------------------------------------------------------
+
+    def test_missing_required_fields(self):
+        """必須フィールドが欠けている場合にエラーが発生する。"""
+        data = {"providers": [{"id": "test-provider"}]}
+        validate.validate_providers(data)
+        error_text = "\n".join(validate.errors)
+        for field in ["name", "company", "url", "official_urls",
+                      "datacenter_locations", "support_language"]:
+            self.assertIn(field, error_text, f"必須フィールド '{field}' が検出されなかった")
+
+    # ------------------------------------------------------------------
+    # 不正な id
+    # ------------------------------------------------------------------
+
+    def test_invalid_id_uppercase(self):
+        """大文字を含む id はエラーになる。"""
+        data = {"providers": [_make_provider(id="Invalid-ID")]}
+        validate.validate_providers(data)
+        self.assertTrue(
+            any("Invalid-ID" in e for e in validate.errors),
+            "不正な id が検出されなかった",
+        )
+
+    def test_invalid_id_underscore(self):
+        """アンダースコアを含む id はエラーになる。"""
+        data = {"providers": [_make_provider(id="invalid_id")]}
+        validate.validate_providers(data)
+        self.assertTrue(
+            any("invalid_id" in e for e in validate.errors),
+            "アンダースコアを含む id が検出されなかった",
+        )
+
+    def test_valid_id_hyphen(self):
+        """英小文字・数字・ハイフンのみの id はエラーにならない。"""
+        data = {"providers": [_make_provider(id="valid-id-123")]}
+        validate.validate_providers(data)
+        self.assertEqual(validate.errors, [])
+
+    # ------------------------------------------------------------------
+    # provider_id の重複
+    # ------------------------------------------------------------------
+
+    def test_duplicate_provider_id(self):
+        """同じ id を持つ provider が複数存在する場合にエラーになる。"""
+        p = _make_provider(id="dup-id")
+        # id を変えずに 2 件登録
+        data = {"providers": [p, dict(p)]}
+        validate.validate_providers(data)
+        self.assertTrue(
+            any("重複" in e for e in validate.errors),
+            "provider_id の重複が検出されなかった",
+        )
+
+    # ------------------------------------------------------------------
+    # official_urls の重複 URL → Warning
+    # ------------------------------------------------------------------
+
+    def test_duplicate_official_url_is_warning(self):
+        """official_urls 内に同じ URL が複数存在する場合は Warning になる。"""
+        dup_url = "https://test.example.com/dup"
+        data = {
+            "providers": [
+                _make_provider(
+                    official_urls={
+                        "top":     {"url": dup_url,                               "verified_at": "2024-01-01"},
+                        "pricing": {"url": dup_url,                               "verified_at": "2024-01-01"},
+                        "specs":   {"url": "https://test.example.com/specs",     "verified_at": "2024-01-01"},
+                        "support": {"url": "https://test.example.com/support",   "verified_at": "2024-01-01"},
+                        "terms":   {"url": "https://test.example.com/terms",     "verified_at": "2024-01-01"},
+                    }
+                )
+            ]
+        }
+        validate.validate_providers(data)
+        self.assertEqual(validate.errors, [], "URL重複はエラーではなく Warning であるべき")
+        self.assertTrue(
+            any("重複" in w for w in validate.warnings),
+            "official_urls の URL 重複が Warning として検出されなかった",
+        )
+
+    # ------------------------------------------------------------------
+    # aliases の重複
+    # ------------------------------------------------------------------
+
+    def test_duplicate_aliases(self):
+        """aliases リスト内に重複エントリがある場合にエラーになる。"""
+        data = {
+            "providers": [
+                _make_provider(aliases=["alias-one", "alias-one"])
+            ]
+        }
+        validate.validate_providers(data)
+        self.assertTrue(
+            any("aliases" in e and "重複" in e for e in validate.errors),
+            "aliases の重複が検出されなかった",
+        )
+
+    # ------------------------------------------------------------------
+    # aliases と provider_id の衝突
+    # ------------------------------------------------------------------
+
+    def test_alias_collides_with_provider_id(self):
+        """aliases の値が別 provider の id と衝突する場合にエラーになる。"""
+        data = {
+            "providers": [
+                _make_provider(id="provider-a", aliases=["provider-b"]),
+                _make_provider(
+                    id="provider-b",
+                    url="https://b.example.com",
+                    official_urls={
+                        "top":     {"url": "https://b.example.com",         "verified_at": "2024-01-01"},
+                        "pricing": {"url": "https://b.example.com/pricing", "verified_at": "2024-01-01"},
+                        "specs":   {"url": "https://b.example.com/specs",   "verified_at": "2024-01-01"},
+                        "support": {"url": "https://b.example.com/support", "verified_at": "2024-01-01"},
+                        "terms":   {"url": "https://b.example.com/terms",   "verified_at": "2024-01-01"},
+                    },
+                ),
+            ]
+        }
+        validate.validate_providers(data)
+        self.assertTrue(
+            any("衝突" in e for e in validate.errors),
+            "alias と provider_id の衝突が検出されなかった",
+        )
+
+
+if __name__ == "__main__":
+    unittest.main()
