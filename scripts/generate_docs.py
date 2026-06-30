@@ -213,7 +213,7 @@ def generate_comparison_table(
         if cat not in ordered_categories:
             ordered_categories.append(cat)
 
-    header_cells = ["機能 / プロバイダー"] + [p["name"] for p in providers]
+    header_cells = ["#", "項目"] + [p["name"] for p in providers]
     header_row = "| " + " | ".join(header_cells) + " |"
     separator_row = "| " + " | ".join(["---"] * len(header_cells)) + " |"
 
@@ -223,10 +223,10 @@ def generate_comparison_table(
         lines.append("")
         lines.append(header_row)
         lines.append(separator_row)
-        for feature in features_by_category[cat]:
+        for row_num, feature in enumerate(features_by_category[cat], start=1):
             fid = feature["id"]
             ftype = feature.get("type", "string")
-            row_cells = [feature["label"]]
+            row_cells = [str(row_num), feature["label"]]
             for provider in providers:
                 pid = provider["id"]
                 entry = evidence_map.get((pid, fid))
@@ -243,10 +243,10 @@ def generate_comparison_table(
         lines.append("")
         lines.append(header_row)
         lines.append(separator_row)
-        for feature in uncategorized:
+        for row_num, feature in enumerate(uncategorized, start=1):
             fid = feature["id"]
             ftype = feature.get("type", "string")
-            row_cells = [feature["label"]]
+            row_cells = [str(row_num), feature["label"]]
             for provider in providers:
                 pid = provider["id"]
                 entry = evidence_map.get((pid, fid))
