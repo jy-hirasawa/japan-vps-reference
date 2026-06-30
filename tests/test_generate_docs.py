@@ -94,6 +94,14 @@ class TestGenerateComparisonTable(unittest.TestCase):
         self.assertLess(pos_basic, pos_price, "BASIC は PRICE より前に出力されるべき")
         self.assertLess(pos_price, pos_ops, "PRICE は OPS より前に出力されるべき")
 
+    def test_category_heading_uses_label_only(self):
+        """カテゴリ見出しは label のみで出力され、カテゴリ ID は含まれない。"""
+        providers = [_make_provider()]
+        features = [_make_feature("feat-a", "A項目", category="BASIC")]
+        md = self._generate(providers, features)
+        self.assertIn("## 基本情報", md)
+        self.assertNotIn("## BASIC:", md)
+
     # ------------------------------------------------------------------
     # 値のフォーマット
     # ------------------------------------------------------------------

@@ -55,20 +55,20 @@
 | 最終確認日 | 未確認 |
 
 
-## BASIC: 基本情報
+## 基本情報
 
 | # | 項目 | さくらのVPS | ConoHa VPS | Xserver VPS | WebARENA Indigo | KAGOYA CLOUD VPS |
 | --- | --- | --- | --- | --- | --- | --- |
 | 1 | OSテンプレート数 | 不明 | 不明 | 不明 | 不明 | 不明 |
 
-## PRICE: 料金
+## 料金
 
 | # | 項目 | さくらのVPS | ConoHa VPS | Xserver VPS | WebARENA Indigo | KAGOYA CLOUD VPS |
 | --- | --- | --- | --- | --- | --- | --- |
 | 1 | 最低月額料金（円） | 522 [🔗](https://vps.sakura.ad.jp/) (2024-01-01) | 660 [🔗](https://www.conoha.jp/vps/pricing/) (2024-01-01) | 693 [🔗](https://vps.xserver.ne.jp/price/) (2024-01-01) | 不明 | 不明 |
 | 2 | 時間課金 | ❌ [🔗](https://vps.sakura.ad.jp/) (2024-01-01) | ✅ [🔗](https://www.conoha.jp/vps/pricing/) (2024-01-01) | ❌ [🔗](https://vps.xserver.ne.jp/price/) (2024-01-01) | 不明 | 不明 |
 
-## SPEC: CPU / メモリ / ストレージ
+## CPU / メモリ / ストレージ
 
 | # | 項目 | さくらのVPS | ConoHa VPS | Xserver VPS | WebARENA Indigo | KAGOYA CLOUD VPS |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -76,32 +76,32 @@
 | 2 | 最小RAM（GB） | 0.5 [🔗](https://vps.sakura.ad.jp/) (2024-01-01) | 0.5 [🔗](https://www.conoha.jp/vps/pricing/) (2024-01-01) | 1 [🔗](https://vps.xserver.ne.jp/price/) (2024-01-01) | 不明 | 不明 |
 | 3 | 最小ストレージ（GB） | 20 [🔗](https://vps.sakura.ad.jp/) (2024-01-01) | 20 [🔗](https://www.conoha.jp/vps/pricing/) (2024-01-01) | 30 [🔗](https://vps.xserver.ne.jp/price/) (2024-01-01) | 不明 | 不明 |
 
-## STORAGE: ディスク / NVMe / スナップショット
+## ディスク / NVMe / スナップショット
 
 | # | 項目 | さくらのVPS | ConoHa VPS | Xserver VPS | WebARENA Indigo | KAGOYA CLOUD VPS |
 | --- | --- | --- | --- | --- | --- | --- |
 | 1 | ディスクスナップショット | ✅ [🔗](https://vps.sakura.ad.jp/) (2024-01-01) | ✅ [🔗](https://www.conoha.jp/vps/function/) (2024-01-01) | 不明 | 不明 | 不明 |
 
-## NETWORK: IPv4 / IPv6 / 転送量 / ローカルネットワーク
+## IPv4 / IPv6 / 転送量 / ローカルネットワーク
 
 | # | 項目 | さくらのVPS | ConoHa VPS | Xserver VPS | WebARENA Indigo | KAGOYA CLOUD VPS |
 | --- | --- | --- | --- | --- | --- | --- |
 | 1 | 帯域幅（Gbps） | 不明 | 不明 | 不明 | 不明 | 不明 |
 | 2 | IPv6対応 | ✅ [🔗](https://vps.sakura.ad.jp/) (2024-01-01) | ✅ [🔗](https://www.conoha.jp/vps/) (2024-01-01) | 不明 | 不明 | 不明 |
 
-## SECURITY: Firewall / WAF / DDoS
+## Firewall / WAF / DDoS
 
 | # | 項目 | さくらのVPS | ConoHa VPS | Xserver VPS | WebARENA Indigo | KAGOYA CLOUD VPS |
 | --- | --- | --- | --- | --- | --- | --- |
 | 1 | DDoS保護 | 不明 | 不明 | 不明 | 不明 | 不明 |
 
-## OPS: API / CLI / Terraform
+## API / CLI / Terraform
 
 | # | 項目 | さくらのVPS | ConoHa VPS | Xserver VPS | WebARENA Indigo | KAGOYA CLOUD VPS |
 | --- | --- | --- | --- | --- | --- | --- |
 | 1 | API提供 | ✅ [🔗](https://manual.sakura.ad.jp/vps/api/) (2024-01-01) | ✅ [🔗](https://www.conoha.jp/vps/function/api/) (2024-01-01) | 不明 | 不明 | 不明 |
 
-## SUPPORT: サポート / SLA
+## サポート / SLA
 
 | # | 項目 | さくらのVPS | ConoHa VPS | Xserver VPS | WebARENA Indigo | KAGOYA CLOUD VPS |
 | --- | --- | --- | --- | --- | --- | --- |

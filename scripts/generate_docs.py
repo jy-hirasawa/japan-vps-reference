@@ -219,7 +219,7 @@ def generate_comparison_table(
 
     for cat in ordered_categories:
         cat_label = category_labels.get(cat, cat)
-        lines.append(f"## {cat}: {cat_label}")
+        lines.append(f"## {cat_label}")
         lines.append("")
         lines.append(header_row)
         lines.append(separator_row)

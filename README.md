@@ -173,6 +173,8 @@ official_urls:
 
 `features.yml` は `categories` セクション（表示順・見出し名）と `features` セクション（比較項目）で構成されます。比較項目を追加・変更する場合は `features.yml` を編集し、`python scripts/generate_docs.py` を実行してください。
 
+`docs/comparison.md` は `categories` の定義順にカテゴリ別の見出しと表を生成します。各カテゴリ内の行番号は 1 から振り直されます。
+
 ### evidence.yml
 
 | 対象 | 検証内容 |
