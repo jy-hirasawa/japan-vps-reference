@@ -34,6 +34,7 @@ _DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 _ID_RE = re.compile(r"^[a-z0-9-]+$")
 
 errors: list[str] = []
+warnings: list[str] = []
 
 
 def _is_valid_https_url(url: str) -> bool:
@@ -61,6 +62,10 @@ def validate_providers(data: dict) -> set[str]:
     if not isinstance(providers, list):
         errors.append("providers.yml: 'providers' キーがリストではありません。")
         return provider_ids
+
+    # aliases → 所有 provider_id のマッピング（衝突検証用）
+    all_aliases: dict[str, str] = {}
+
     for i, provider in enumerate(providers):
         ctx = f"providers.yml[{i}] (id={provider.get('id', '?')})"
         check_required_fields(provider, REQUIRED_PROVIDER_FIELDS, ctx)
@@ -76,7 +81,7 @@ def validate_providers(data: dict) -> set[str]:
                 )
         if pid:
             if pid in provider_ids:
-                errors.append(f"{ctx}: id '{pid}' が重複しています。")
+                errors.append(f"{ctx}: provider_id '{pid}' が重複しています。")
             provider_ids.add(pid)
 
         # name の空文字検証
@@ -98,6 +103,7 @@ def validate_providers(data: dict) -> set[str]:
                 errors.append(f"{ctx}: 'official_urls' フィールドは辞書である必要があります。")
             else:
                 check_required_fields(official_urls, REQUIRED_PROVIDER_OFFICIAL_URL_FIELDS, f"{ctx}.official_urls")
+                seen_urls: set[str] = set()
                 for key, value in official_urls.items():
                     entry_ctx = f"{ctx}.official_urls.{key}"
                     if not isinstance(value, dict):
@@ -108,16 +114,46 @@ def validate_providers(data: dict) -> set[str]:
                         check_required_fields(value, REQUIRED_OFFICIAL_URL_ENTRY_FIELDS, entry_ctx)
                         url = value.get("url")
                         if url is not None and str(url) != "unknown":
-                            if not _is_valid_https_url(str(url)):
+                            url_str = str(url)
+                            if not _is_valid_https_url(url_str):
                                 errors.append(
                                     f"{entry_ctx}: url '{url}' は https:// で始まる有効なURLまたは 'unknown' である必要があります。"
                                 )
+                            elif url_str in seen_urls:
+                                warnings.append(
+                                    f"{ctx}: official_urls に URL の重複があります: {url_str}"
+                                )
+                            seen_urls.add(url_str)
                         vat = value.get("verified_at")
                         if vat is not None and str(vat) != "unknown":
                             if not _DATE_RE.match(str(vat)):
                                 errors.append(
                                     f"{entry_ctx}: verified_at '{vat}' は YYYY-MM-DD 形式または 'unknown' である必要があります。"
                                 )
+
+        # aliases の重複検証
+        aliases = provider.get("aliases")
+        if aliases is not None:
+            if not isinstance(aliases, list):
+                errors.append(f"{ctx}: 'aliases' フィールドはリストである必要があります。")
+            else:
+                seen_alias: set[str] = set()
+                for alias in aliases:
+                    alias_str = str(alias)
+                    if alias_str in seen_alias:
+                        errors.append(f"{ctx}: aliases に重複があります: {alias_str}")
+                    seen_alias.add(alias_str)
+                    if pid:
+                        all_aliases[alias_str] = str(pid)
+
+    # aliases と provider_id の衝突検証
+    for alias, alias_owner in all_aliases.items():
+        if alias in provider_ids:
+            errors.append(
+                f"providers.yml: aliases '{alias}' が provider_id と衝突しています"
+                f"（alias 所有者: {alias_owner}）。"
+            )
+
     return provider_ids
 
 
@@ -240,6 +276,10 @@ def main() -> int:
     feature_ids = validate_features(features_data)
     validate_evidence(evidence_data, provider_ids, feature_ids)
     validate_benchmarks(benchmarks_data, provider_ids)
+
+    if warnings:
+        for w in warnings:
+            print(f"[WARNING] {w}", file=sys.stderr)
 
     if errors:
         for e in errors:
