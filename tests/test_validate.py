@@ -332,6 +332,71 @@ class TestValidateFeatures(unittest.TestCase):
             "不正な type が検出されなかった",
         )
 
+    # ------------------------------------------------------------------
+    # id のフォーマット検証
+    # ------------------------------------------------------------------
+
+    def test_invalid_id_uppercase(self):
+        """大文字を含む feature id はエラーになる。"""
+        data = _make_features_data([_make_feature(id="Invalid-Feature")])
+        validate.validate_features(data)
+        self.assertTrue(
+            any("Invalid-Feature" in e for e in validate.errors),
+            "大文字を含む feature id が検出されなかった",
+        )
+
+    def test_invalid_id_special_chars(self):
+        """英小文字・数字・ハイフン・アンダースコア以外の文字を含む id はエラーになる。"""
+        data = _make_features_data([_make_feature(id="feat.special")])
+        validate.validate_features(data)
+        self.assertTrue(
+            any("feat.special" in e for e in validate.errors),
+            "不正な文字を含む feature id が検出されなかった",
+        )
+
+    def test_valid_id_underscore(self):
+        """アンダースコアを含む feature id はエラーにならない。"""
+        data = _make_features_data([_make_feature(id="my_feature_123")])
+        validate.validate_features(data)
+        self.assertEqual(validate.errors, [], "アンダースコアを含む feature id でエラーが発生した")
+
+    def test_valid_id_hyphen(self):
+        """ハイフンを含む feature id はエラーにならない。"""
+        data = _make_features_data([_make_feature(id="my-feature-123")])
+        validate.validate_features(data)
+        self.assertEqual(validate.errors, [], "ハイフンを含む feature id でエラーが発生した")
+
+    def test_empty_id(self):
+        """空文字の feature id はエラーになる。"""
+        data = _make_features_data([_make_feature(id="")])
+        validate.validate_features(data)
+        self.assertTrue(
+            any("id が空文字" in e for e in validate.errors),
+            "空文字の feature id が検出されなかった",
+        )
+
+    # ------------------------------------------------------------------
+    # 空の label / category 検証
+    # ------------------------------------------------------------------
+
+    def test_empty_label(self):
+        """空文字の label はエラーになる。"""
+        data = _make_features_data([_make_feature(label="")])
+        validate.validate_features(data)
+        self.assertTrue(
+            any("label が空文字" in e for e in validate.errors),
+            "空文字の label が検出されなかった",
+        )
+
+    def test_empty_category(self):
+        """空文字の category はエラーになる。"""
+        data = _make_features_data([_make_feature(category="")])
+        validate.validate_features(data)
+        self.assertTrue(
+            any("category が空文字" in e for e in validate.errors),
+            "空文字の category が検出されなかった",
+        )
+
 
 if __name__ == "__main__":
     unittest.main()
