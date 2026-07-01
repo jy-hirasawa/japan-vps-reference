@@ -94,19 +94,28 @@
 | 8 | 初期費用（円・税込） | 不明 | 不明 | 不明 | 不明 | 不明 |
 | 9 | 最低利用期間 | 不明 | 不明 | 不明 | 不明 | 不明 |
 
-## CPU / メモリ / ストレージ
+## CPU / メモリ
 
 | # | 項目 | さくらのVPS | ConoHa VPS | Xserver VPS | WebARENA Indigo | KAGOYA CLOUD VPS |
 | --- | --- | --- | --- | --- | --- | --- |
 | 1 | 最小vCPU数 | 1 [🔗](https://vps.sakura.ad.jp/) (2024-01-01) | 1 [🔗](https://www.conoha.jp/vps/pricing/) (2024-01-01) | 1 [🔗](https://vps.xserver.ne.jp/price/) (2024-01-01) | 不明 | 不明 |
 | 2 | 最小RAM（GB） | 0.5 [🔗](https://vps.sakura.ad.jp/) (2024-01-01) | 0.5 [🔗](https://www.conoha.jp/vps/pricing/) (2024-01-01) | 1 [🔗](https://vps.xserver.ne.jp/price/) (2024-01-01) | 不明 | 不明 |
-| 3 | 最小ストレージ（GB） | 20 [🔗](https://vps.sakura.ad.jp/) (2024-01-01) | 20 [🔗](https://www.conoha.jp/vps/pricing/) (2024-01-01) | 30 [🔗](https://vps.xserver.ne.jp/price/) (2024-01-01) | 不明 | 不明 |
 
-## ディスク / NVMe / スナップショット
+## ディスク / NVMe / スナップショット / バックアップ
 
 | # | 項目 | さくらのVPS | ConoHa VPS | Xserver VPS | WebARENA Indigo | KAGOYA CLOUD VPS |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | ディスクスナップショット | ✅ [🔗](https://vps.sakura.ad.jp/) (2024-01-01) | ✅ [🔗](https://www.conoha.jp/vps/function/) (2024-01-01) | 不明 | 不明 | 不明 |
+| 1 | ディスク容量（GB） | 20 [🔗](https://vps.sakura.ad.jp/) (2024-01-01) | 20 [🔗](https://www.conoha.jp/vps/pricing/) (2024-01-01) | 30 [🔗](https://vps.xserver.ne.jp/price/) (2024-01-01) | 不明 | 不明 |
+| 2 | ストレージ種別 | 不明 | 不明 | 不明 | 不明 | 不明 |
+| 3 | NVMe明記 | 不明 | 不明 | 不明 | 不明 | 不明 |
+| 4 | SSD明記 | 不明 | 不明 | 不明 | 不明 | 不明 |
+| 5 | ディスク追加 | 不明 | 不明 | 不明 | 不明 | 不明 |
+| 6 | ディスク拡張 | 不明 | 不明 | 不明 | 不明 | 不明 |
+| 7 | スナップショット | ✅ [🔗](https://vps.sakura.ad.jp/) (2024-01-01) | ✅ [🔗](https://www.conoha.jp/vps/function/) (2024-01-01) | 不明 | 不明 | 不明 |
+| 8 | 自動スナップショット | 不明 | 不明 | 不明 | 不明 | 不明 |
+| 9 | バックアップ機能 | 不明 | 不明 | 不明 | 不明 | 不明 |
+| 10 | イメージ保存 | 不明 | 不明 | 不明 | 不明 | 不明 |
+| 11 | オブジェクトストレージ連携 | 不明 | 不明 | 不明 | 不明 | 不明 |
 
 ## IPv4 / IPv6 / 転送量 / ローカルネットワーク
 
