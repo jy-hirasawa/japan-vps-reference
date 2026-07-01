@@ -72,17 +72,17 @@ features:
     description: cloud-initへの対応が公式ドキュメントに明記されているか。
     type: boolean
 
-  - id: os_templates
-    category: BASIC
-    label: OSテンプレート数
-    description: 選択可能なOSテンプレートの種類数。不明な場合は "unknown"。
-    type: number
-
   - id: standard_os_template
     category: OS_TEMPLATE
     label: 標準OSテンプレート
     description: "提供している主要な標準OSテンプレートの一覧（例: Ubuntu, CentOS, Debian 等）。不明な場合は \"unknown\"。"
     type: string
+
+  - id: os_templates
+    category: OS_TEMPLATE
+    label: OSテンプレート数
+    description: 選択可能なOSテンプレートの種類数。不明な場合は "unknown"。
+    type: number
 
   - id: app_template
     category: OS_TEMPLATE
