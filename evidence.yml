@@ -155,6 +155,78 @@ evidence:
     verification_status: verified
 
   - provider_id: sakura-vps
+    feature_id: storage_type
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: sakura-vps
+    feature_id: nvme_explicit
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: sakura-vps
+    feature_id: ssd_explicit
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: sakura-vps
+    feature_id: additional_disk
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: sakura-vps
+    feature_id: disk_expansion
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: sakura-vps
+    feature_id: auto_snapshot
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: sakura-vps
+    feature_id: backup_feature
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: sakura-vps
+    feature_id: custom_image_save
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: sakura-vps
+    feature_id: object_storage_integration
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: sakura-vps
     feature_id: os_templates
     value: unknown
     source_type: unknown
@@ -305,6 +377,78 @@ evidence:
     source_url: https://www.conoha.jp/vps/function/
     verified_at: "2024-01-01"
     verification_status: verified
+
+  - provider_id: conoha-vps
+    feature_id: storage_type
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: conoha-vps
+    feature_id: nvme_explicit
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: conoha-vps
+    feature_id: ssd_explicit
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: conoha-vps
+    feature_id: additional_disk
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: conoha-vps
+    feature_id: disk_expansion
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: conoha-vps
+    feature_id: auto_snapshot
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: conoha-vps
+    feature_id: backup_feature
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: conoha-vps
+    feature_id: custom_image_save
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: conoha-vps
+    feature_id: object_storage_integration
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
 
   - provider_id: conoha-vps
     feature_id: os_templates
@@ -459,6 +603,78 @@ evidence:
     verification_status: unknown
 
   - provider_id: xserver-vps
+    feature_id: storage_type
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: xserver-vps
+    feature_id: nvme_explicit
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: xserver-vps
+    feature_id: ssd_explicit
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: xserver-vps
+    feature_id: additional_disk
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: xserver-vps
+    feature_id: disk_expansion
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: xserver-vps
+    feature_id: auto_snapshot
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: xserver-vps
+    feature_id: backup_feature
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: xserver-vps
+    feature_id: custom_image_save
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: xserver-vps
+    feature_id: object_storage_integration
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: xserver-vps
     feature_id: os_templates
     value: unknown
     source_type: unknown
@@ -611,6 +827,78 @@ evidence:
     verification_status: unknown
 
   - provider_id: webarena-indigo
+    feature_id: storage_type
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: webarena-indigo
+    feature_id: nvme_explicit
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: webarena-indigo
+    feature_id: ssd_explicit
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: webarena-indigo
+    feature_id: additional_disk
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: webarena-indigo
+    feature_id: disk_expansion
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: webarena-indigo
+    feature_id: auto_snapshot
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: webarena-indigo
+    feature_id: backup_feature
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: webarena-indigo
+    feature_id: custom_image_save
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: webarena-indigo
+    feature_id: object_storage_integration
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: webarena-indigo
     feature_id: os_templates
     value: unknown
     source_type: unknown
@@ -756,6 +1044,78 @@ evidence:
 
   - provider_id: kagoya-cloud-vps
     feature_id: full_disk_snapshot
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: kagoya-cloud-vps
+    feature_id: storage_type
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: kagoya-cloud-vps
+    feature_id: nvme_explicit
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: kagoya-cloud-vps
+    feature_id: ssd_explicit
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: kagoya-cloud-vps
+    feature_id: additional_disk
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: kagoya-cloud-vps
+    feature_id: disk_expansion
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: kagoya-cloud-vps
+    feature_id: auto_snapshot
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: kagoya-cloud-vps
+    feature_id: backup_feature
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: kagoya-cloud-vps
+    feature_id: custom_image_save
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: kagoya-cloud-vps
+    feature_id: object_storage_integration
     value: unknown
     source_type: unknown
     source_url: unknown

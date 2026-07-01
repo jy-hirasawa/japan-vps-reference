@@ -13,9 +13,9 @@ categories:
   - id: PRICE
     label: 料金
   - id: SPEC
-    label: CPU / メモリ / ストレージ
+    label: CPU / メモリ
   - id: STORAGE
-    label: ディスク / NVMe / スナップショット
+    label: ディスク / NVMe / スナップショット / バックアップ
   - id: NETWORK
     label: IPv4 / IPv6 / 転送量 / ローカルネットワーク
   - id: SECURITY
@@ -187,15 +187,69 @@ features:
     type: number
 
   - id: min_storage_gb
-    category: SPEC
-    label: 最小ストレージ（GB）
-    description: 最も安いプランのSSDストレージ容量（GB）。
+    category: STORAGE
+    label: ディスク容量（GB）
+    description: 最も安いプランのディスク容量（GB）。
     type: number
+
+  - id: storage_type
+    category: STORAGE
+    label: ストレージ種別
+    description: "主なストレージ種別（例: ローカルストレージ、ブロックストレージ等）。不明な場合は \"unknown\"。"
+    type: string
+
+  - id: nvme_explicit
+    category: STORAGE
+    label: NVMe明記
+    description: NVMe対応が公式情報に明記されているか。
+    type: boolean
+
+  - id: ssd_explicit
+    category: STORAGE
+    label: SSD明記
+    description: SSD対応が公式情報に明記されているか。
+    type: boolean
+
+  - id: additional_disk
+    category: STORAGE
+    label: ディスク追加
+    description: 追加ディスクをアタッチできるか。
+    type: boolean
+
+  - id: disk_expansion
+    category: STORAGE
+    label: ディスク拡張
+    description: 既存ディスク容量を拡張できるか。
+    type: boolean
 
   - id: full_disk_snapshot
     category: STORAGE
-    label: ディスクスナップショット
+    label: スナップショット
     description: ディスク全体のスナップショット取得に対応しているか。
+    type: boolean
+
+  - id: auto_snapshot
+    category: STORAGE
+    label: 自動スナップショット
+    description: スケジュール設定などにより自動でスナップショットを取得できるか。
+    type: boolean
+
+  - id: backup_feature
+    category: STORAGE
+    label: バックアップ機能
+    description: バックアップ機能が公式に提供されているか。
+    type: boolean
+
+  - id: custom_image_save
+    category: STORAGE
+    label: イメージ保存
+    description: 作成済みインスタンスやディスクからカスタムイメージを保存できるか。
+    type: boolean
+
+  - id: object_storage_integration
+    category: STORAGE
+    label: オブジェクトストレージ連携
+    description: オブジェクトストレージと連携した利用方法が公式に提供されているか。
     type: boolean
 
   - id: bandwidth_gbps
