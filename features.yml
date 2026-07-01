@@ -17,9 +17,9 @@ categories:
   - id: STORAGE
     label: ディスク / NVMe / スナップショット / バックアップ
   - id: NETWORK
-    label: IPv4 / IPv6 / 転送量 / ローカルネットワーク
+    label: ネットワーク
   - id: SECURITY
-    label: Firewall / WAF / DDoS
+    label: セキュリティ
   - id: BACKUP
     label: バックアップ / イメージ保存
   - id: OPS
@@ -252,16 +252,76 @@ features:
     description: オブジェクトストレージと連携した利用方法が公式に提供されているか。
     type: boolean
 
-  - id: bandwidth_gbps
+  - id: ipv4
     category: NETWORK
-    label: 帯域幅（Gbps）
-    description: 提供される上り帯域幅の最大値（Gbps）。不明な場合は "unknown"。
-    type: number
+    label: IPv4
+    description: グローバルIPv4アドレスの提供形態。不明な場合は "unknown"。
+    type: string
 
   - id: ipv6_support
     category: NETWORK
-    label: IPv6対応
+    label: IPv6
     description: IPv6アドレスの割り当てに対応しているか。
+    type: boolean
+
+  - id: additional_ipv4
+    category: NETWORK
+    label: 追加IPv4
+    description: 追加のグローバルIPv4アドレスをオプション等で利用できるか。
+    type: boolean
+
+  - id: reverse_dns
+    category: NETWORK
+    label: 逆引きDNS
+    description: 逆引きDNS（PTRレコード）の設定に対応しているか。
+    type: boolean
+
+  - id: traffic_limit
+    category: NETWORK
+    label: 転送量制限
+    description: 月間転送量などの制限。不明な場合は "unknown"。
+    type: string
+
+  - id: bandwidth_gbps
+    category: NETWORK
+    label: 帯域目安（Gbps）
+    description: 公式情報で明記されている帯域目安（Gbps）。不明な場合は "unknown"。
+    type: number
+
+  - id: local_network
+    category: NETWORK
+    label: ローカルネットワーク
+    description: 同一サービス内でインスタンス間のローカルネットワークを利用できるか。
+    type: boolean
+
+  - id: private_network
+    category: NETWORK
+    label: プライベートネットワーク
+    description: 分離されたプライベートネットワークを利用できるか。
+    type: boolean
+
+  - id: vlan
+    category: NETWORK
+    label: VLAN
+    description: VLAN機能または同等のネットワーク分離機能を利用できるか。
+    type: boolean
+
+  - id: load_balancer
+    category: NETWORK
+    label: ロードバランサー
+    description: ロードバランサー機能またはマネージドLBサービスを利用できるか。
+    type: boolean
+
+  - id: floating_ip
+    category: NETWORK
+    label: Floating IP
+    description: インスタンス間で付け替え可能な固定グローバルIPを利用できるか。
+    type: boolean
+
+  - id: firewall_feature
+    category: NETWORK
+    label: ファイアウォール機能
+    description: ネットワーク単位またはインスタンス単位のファイアウォール機能を利用できるか。
     type: boolean
 
   - id: ddos_protection

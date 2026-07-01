@@ -1129,3 +1129,403 @@ evidence:
     source_url: unknown
     verified_at: unknown
     verification_status: unknown
+  - provider_id: sakura-vps
+    feature_id: ipv4
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: sakura-vps
+    feature_id: additional_ipv4
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: sakura-vps
+    feature_id: reverse_dns
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: sakura-vps
+    feature_id: traffic_limit
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: sakura-vps
+    feature_id: local_network
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: sakura-vps
+    feature_id: private_network
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: sakura-vps
+    feature_id: vlan
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: sakura-vps
+    feature_id: load_balancer
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: sakura-vps
+    feature_id: floating_ip
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: sakura-vps
+    feature_id: firewall_feature
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: conoha-vps
+    feature_id: ipv4
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: conoha-vps
+    feature_id: additional_ipv4
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: conoha-vps
+    feature_id: reverse_dns
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: conoha-vps
+    feature_id: traffic_limit
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: conoha-vps
+    feature_id: local_network
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: conoha-vps
+    feature_id: private_network
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: conoha-vps
+    feature_id: vlan
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: conoha-vps
+    feature_id: load_balancer
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: conoha-vps
+    feature_id: floating_ip
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: conoha-vps
+    feature_id: firewall_feature
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: xserver-vps
+    feature_id: ipv4
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: xserver-vps
+    feature_id: additional_ipv4
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: xserver-vps
+    feature_id: reverse_dns
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: xserver-vps
+    feature_id: traffic_limit
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: xserver-vps
+    feature_id: local_network
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: xserver-vps
+    feature_id: private_network
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: xserver-vps
+    feature_id: vlan
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: xserver-vps
+    feature_id: load_balancer
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: xserver-vps
+    feature_id: floating_ip
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: xserver-vps
+    feature_id: firewall_feature
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: webarena-indigo
+    feature_id: ipv4
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: webarena-indigo
+    feature_id: additional_ipv4
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: webarena-indigo
+    feature_id: reverse_dns
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: webarena-indigo
+    feature_id: traffic_limit
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: webarena-indigo
+    feature_id: local_network
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: webarena-indigo
+    feature_id: private_network
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: webarena-indigo
+    feature_id: vlan
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: webarena-indigo
+    feature_id: load_balancer
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: webarena-indigo
+    feature_id: floating_ip
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: webarena-indigo
+    feature_id: firewall_feature
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: kagoya-cloud-vps
+    feature_id: ipv4
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: kagoya-cloud-vps
+    feature_id: additional_ipv4
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: kagoya-cloud-vps
+    feature_id: reverse_dns
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: kagoya-cloud-vps
+    feature_id: traffic_limit
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: kagoya-cloud-vps
+    feature_id: local_network
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: kagoya-cloud-vps
+    feature_id: private_network
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: kagoya-cloud-vps
+    feature_id: vlan
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: kagoya-cloud-vps
+    feature_id: load_balancer
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: kagoya-cloud-vps
+    feature_id: floating_ip
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: kagoya-cloud-vps
+    feature_id: firewall_feature
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
