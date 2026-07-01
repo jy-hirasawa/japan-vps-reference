@@ -1529,3 +1529,443 @@ evidence:
     verified_at: unknown
     verification_status: unknown
 
+  - provider_id: sakura-vps
+    feature_id: waf_feature
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: sakura-vps
+    feature_id: security_group
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: sakura-vps
+    feature_id: admin_console_2fa
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: sakura-vps
+    feature_id: api_token
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: sakura-vps
+    feature_id: iam_rbac
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: sakura-vps
+    feature_id: audit_log
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: sakura-vps
+    feature_id: iso27001
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: sakura-vps
+    feature_id: isms
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: sakura-vps
+    feature_id: soc2
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: sakura-vps
+    feature_id: pci_dss
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: sakura-vps
+    feature_id: datacenter_certification
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: conoha-vps
+    feature_id: waf_feature
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: conoha-vps
+    feature_id: security_group
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: conoha-vps
+    feature_id: admin_console_2fa
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: conoha-vps
+    feature_id: api_token
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: conoha-vps
+    feature_id: iam_rbac
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: conoha-vps
+    feature_id: audit_log
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: conoha-vps
+    feature_id: iso27001
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: conoha-vps
+    feature_id: isms
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: conoha-vps
+    feature_id: soc2
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: conoha-vps
+    feature_id: pci_dss
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: conoha-vps
+    feature_id: datacenter_certification
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: xserver-vps
+    feature_id: waf_feature
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: xserver-vps
+    feature_id: security_group
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: xserver-vps
+    feature_id: admin_console_2fa
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: xserver-vps
+    feature_id: api_token
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: xserver-vps
+    feature_id: iam_rbac
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: xserver-vps
+    feature_id: audit_log
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: xserver-vps
+    feature_id: iso27001
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: xserver-vps
+    feature_id: isms
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: xserver-vps
+    feature_id: soc2
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: xserver-vps
+    feature_id: pci_dss
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: xserver-vps
+    feature_id: datacenter_certification
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: webarena-indigo
+    feature_id: waf_feature
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: webarena-indigo
+    feature_id: security_group
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: webarena-indigo
+    feature_id: admin_console_2fa
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: webarena-indigo
+    feature_id: api_token
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: webarena-indigo
+    feature_id: iam_rbac
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: webarena-indigo
+    feature_id: audit_log
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: webarena-indigo
+    feature_id: iso27001
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: webarena-indigo
+    feature_id: isms
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: webarena-indigo
+    feature_id: soc2
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: webarena-indigo
+    feature_id: pci_dss
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: webarena-indigo
+    feature_id: datacenter_certification
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: kagoya-cloud-vps
+    feature_id: waf_feature
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: kagoya-cloud-vps
+    feature_id: security_group
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: kagoya-cloud-vps
+    feature_id: admin_console_2fa
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: kagoya-cloud-vps
+    feature_id: api_token
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: kagoya-cloud-vps
+    feature_id: iam_rbac
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: kagoya-cloud-vps
+    feature_id: audit_log
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: kagoya-cloud-vps
+    feature_id: iso27001
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: kagoya-cloud-vps
+    feature_id: isms
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: kagoya-cloud-vps
+    feature_id: soc2
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: kagoya-cloud-vps
+    feature_id: pci_dss
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: kagoya-cloud-vps
+    feature_id: datacenter_certification
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+

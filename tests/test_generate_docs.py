@@ -179,7 +179,41 @@ class TestGenerateComparisonTable(unittest.TestCase):
             "VLAN",
             "ロードバランサー",
             "Floating IP",
+        ]:
+            self.assertIn(label, md)
+
+    def test_repository_security_features_are_rendered(self):
+        """実データの SECURITY 項目がセキュリティ見出し配下に出力される。"""
+        repo_root = Path(__file__).resolve().parent.parent
+        features_data = yaml.safe_load((repo_root / "features.yml").read_text(encoding="utf-8"))
+        security_features = [f for f in features_data["features"] if f["category"] == "SECURITY"]
+        category_order, category_labels = generate_docs._build_category_order_and_labels(
+            features_data["categories"]
+        )
+
+        md = self._generate(
+            [_make_provider()],
+            security_features,
+            category_order=category_order,
+            category_labels=category_labels,
+        )
+
+        self.assertIn("## セキュリティ", md)
+        for label in [
+            "SSH鍵ログイン",
             "ファイアウォール機能",
+            "DDoS保護",
+            "WAF",
+            "セキュリティグループ",
+            "二要素認証（管理画面）",
+            "APIトークン",
+            "IAM / 権限管理",
+            "監査ログ",
+            "ISO27001",
+            "ISMS",
+            "SOC 2",
+            "PCI DSS",
+            "データセンター認証",
         ]:
             self.assertIn(label, md)
 

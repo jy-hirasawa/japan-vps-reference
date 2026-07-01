@@ -55,9 +55,9 @@ features:
     type: boolean
 
   - id: ssh_key
-    category: BASIC
-    label: SSH鍵認証
-    description: SSHキーペアを登録・利用した認証に対応しているか。
+    category: SECURITY
+    label: SSH鍵ログイン
+    description: SSHキーペアを登録・利用したログイン認証に対応しているか。
     type: boolean
 
   - id: startup_script
@@ -319,7 +319,7 @@ features:
     type: boolean
 
   - id: firewall_feature
-    category: NETWORK
+    category: SECURITY
     label: ファイアウォール機能
     description: ネットワーク単位またはインスタンス単位のファイアウォール機能を利用できるか。
     type: boolean
@@ -328,6 +328,72 @@ features:
     category: SECURITY
     label: DDoS保護
     description: DDoS緩和機能が標準で提供されているか。不明な場合は "unknown"。
+    type: string
+
+  - id: waf_feature
+    category: SECURITY
+    label: WAF
+    description: WAF（Web Application Firewall）を利用できるか。
+    type: boolean
+
+  - id: security_group
+    category: SECURITY
+    label: セキュリティグループ
+    description: セキュリティグループ相当のルールベース通信制御を利用できるか。
+    type: boolean
+
+  - id: admin_console_2fa
+    category: SECURITY
+    label: 二要素認証（管理画面）
+    description: 管理画面ログインで二要素認証（2FA）を設定できるか。
+    type: boolean
+
+  - id: api_token
+    category: SECURITY
+    label: APIトークン
+    description: APIトークンを発行・管理して認証に利用できるか。
+    type: boolean
+
+  - id: iam_rbac
+    category: SECURITY
+    label: IAM / 権限管理
+    description: IAMまたはロールベースの権限管理を利用できるか。
+    type: boolean
+
+  - id: audit_log
+    category: SECURITY
+    label: 監査ログ
+    description: 操作履歴などの監査ログを確認できるか。
+    type: boolean
+
+  - id: iso27001
+    category: SECURITY
+    label: ISO27001
+    description: ISO/IEC 27001 の認証取得状況。不明な場合は "unknown"。
+    type: string
+
+  - id: isms
+    category: SECURITY
+    label: ISMS
+    description: ISMS認証の取得状況。不明な場合は "unknown"。
+    type: string
+
+  - id: soc2
+    category: SECURITY
+    label: SOC 2
+    description: SOC 2 の監査報告・適合状況。不明な場合は "unknown"。
+    type: string
+
+  - id: pci_dss
+    category: SECURITY
+    label: PCI DSS
+    description: PCI DSS の準拠・認証状況。不明な場合は "unknown"。
+    type: string
+
+  - id: datacenter_certification
+    category: SECURITY
+    label: データセンター認証
+    description: "利用データセンターの第三者認証（例: ISO27001 等）。不明な場合は \"unknown\"。"
     type: string
 
   - id: api_available
