@@ -5,6 +5,7 @@ tests/test_generate_docs.py — scripts/generate_docs.py の単体テスト
 import sys
 import unittest
 from pathlib import Path
+import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
 
@@ -148,6 +149,39 @@ class TestGenerateComparisonTable(unittest.TestCase):
         md = self._generate(providers, features)
         self.assertIn("その他", md)
         self.assertIn("カテゴリなし項目", md)
+
+    def test_repository_network_features_are_rendered(self):
+        """実データの NETWORK 項目がネットワーク見出し配下に出力される。"""
+        repo_root = Path(__file__).resolve().parent.parent
+        features_data = yaml.safe_load((repo_root / "features.yml").read_text(encoding="utf-8"))
+        network_features = [f for f in features_data["features"] if f["category"] == "NETWORK"]
+        category_order, category_labels = generate_docs._build_category_order_and_labels(
+            features_data["categories"]
+        )
+
+        md = self._generate(
+            [_make_provider()],
+            network_features,
+            category_order=category_order,
+            category_labels=category_labels,
+        )
+
+        self.assertIn("## ネットワーク", md)
+        for label in [
+            "IPv4",
+            "IPv6",
+            "追加IPv4",
+            "逆引きDNS",
+            "転送量制限",
+            "帯域目安（Gbps）",
+            "ローカルネットワーク",
+            "プライベートネットワーク",
+            "VLAN",
+            "ロードバランサー",
+            "Floating IP",
+            "ファイアウォール機能",
+        ]:
+            self.assertIn(label, md)
 
     # ------------------------------------------------------------------
     # 凡例が含まれる
