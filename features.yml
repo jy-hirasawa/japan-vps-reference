@@ -8,6 +8,8 @@
 categories:
   - id: BASIC
     label: 基本情報
+  - id: OS_TEMPLATE
+    label: OS / テンプレート
   - id: PRICE
     label: 料金
   - id: SPEC
@@ -28,11 +30,95 @@ categories:
     label: ベンチマーク
 
 features:
+  - id: root_access
+    category: BASIC
+    label: root権限
+    description: インスタンスに対してroot権限が付与されるか。
+    type: boolean
+
+  - id: linux_support
+    category: BASIC
+    label: Linux対応
+    description: Linuxディストリビューションのインスタンスを提供しているか。
+    type: boolean
+
+  - id: windows_official
+    category: BASIC
+    label: Windows公式対応
+    description: Windows Serverなどのライセンス込みWindowsインスタンスを公式に提供しているか。
+    type: boolean
+
+  - id: console_vnc
+    category: BASIC
+    label: コンソール / VNC
+    description: コントロールパネルからWebコンソール（VNC等）でインスタンスにアクセスできるか。
+    type: boolean
+
+  - id: ssh_key
+    category: BASIC
+    label: SSH鍵認証
+    description: SSHキーペアを登録・利用した認証に対応しているか。
+    type: boolean
+
+  - id: startup_script
+    category: BASIC
+    label: スタートアップスクリプト
+    description: インスタンス作成時に実行するスタートアップスクリプトを設定できるか。
+    type: boolean
+
+  - id: cloud_init
+    category: BASIC
+    label: cloud-init明記
+    description: cloud-initへの対応が公式ドキュメントに明記されているか。
+    type: boolean
+
   - id: os_templates
     category: BASIC
     label: OSテンプレート数
     description: 選択可能なOSテンプレートの種類数。不明な場合は "unknown"。
     type: number
+
+  - id: standard_os_template
+    category: OS_TEMPLATE
+    label: 標準OSテンプレート
+    description: "提供している主要な標準OSテンプレートの一覧（例: Ubuntu, CentOS, Debian 等）。不明な場合は \"unknown\"。"
+    type: string
+
+  - id: app_template
+    category: OS_TEMPLATE
+    label: アプリテンプレート
+    description: WordPress等のアプリケーションが事前設定済みのテンプレートを提供しているか。
+    type: boolean
+
+  - id: kusanagi_template
+    category: OS_TEMPLATE
+    label: KUSANAGIテンプレート
+    description: KUSANAGI（WordPress高速化エンジン）のテンプレートを提供しているか。
+    type: boolean
+
+  - id: docker_template
+    category: OS_TEMPLATE
+    label: Docker系テンプレート
+    description: DockerまたはDocker Compose等が事前設定済みのテンプレートを提供しているか。
+    type: boolean
+
+  - id: ai_template
+    category: OS_TEMPLATE
+    label: AI系テンプレート
+    description: "AI・機械学習関連（例: NVIDIA GPU対応イメージ、LLM実行環境等）のテンプレートを提供しているか。"
+    type: boolean
+
+  - id: custom_iso
+    category: OS_TEMPLATE
+    label: カスタムISO
+    description: ユーザーが独自のISOイメージを使用してインスタンスを起動できるか。
+    type: boolean
+
+  - id: iso_upload
+    category: OS_TEMPLATE
+    label: ISOアップロード
+    description: ユーザーが独自のISOイメージをアップロードできるか。
+    type: boolean
 
   - id: min_price_jpy
     category: PRICE

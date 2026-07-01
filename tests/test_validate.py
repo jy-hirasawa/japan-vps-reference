@@ -182,6 +182,7 @@ def _make_categories(ids: list[str] | None = None) -> list[dict]:
     """テスト用カテゴリリストを生成するヘルパー。"""
     all_cats = {
         "BASIC": "基本情報",
+        "OS_TEMPLATE": "OS / テンプレート",
         "PRICE": "料金",
         "SPEC": "CPU / メモリ / ストレージ",
         "STORAGE": "ディスク / NVMe / スナップショット",
@@ -243,7 +244,7 @@ class TestValidateFeatures(unittest.TestCase):
 
     def test_valid_feature_all_categories(self):
         """features.yml で定義されたカテゴリはすべてエラーにならない。"""
-        all_cat_ids = ["BASIC", "PRICE", "SPEC", "STORAGE", "NETWORK",
+        all_cat_ids = ["BASIC", "OS_TEMPLATE", "PRICE", "SPEC", "STORAGE", "NETWORK",
                        "SECURITY", "BACKUP", "OPS", "SUPPORT", "BENCH"]
         for i, cat in enumerate(all_cat_ids):
             validate.errors.clear()
