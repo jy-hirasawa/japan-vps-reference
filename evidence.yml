@@ -59,6 +59,62 @@ evidence:
     verification_status: verified
 
   - provider_id: sakura-vps
+    feature_id: price_2gb_monthly
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: sakura-vps
+    feature_id: price_2gb_hourly
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: sakura-vps
+    feature_id: price_4gb_monthly
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: sakura-vps
+    feature_id: price_4gb_hourly
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: sakura-vps
+    feature_id: monthly_cap
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: sakura-vps
+    feature_id: initial_cost
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: sakura-vps
+    feature_id: min_contract_period
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: sakura-vps
     feature_id: api_available
     value: true
     source_type: official
@@ -153,6 +209,62 @@ evidence:
     source_url: https://www.conoha.jp/vps/pricing/
     verified_at: "2024-01-01"
     verification_status: verified
+
+  - provider_id: conoha-vps
+    feature_id: price_2gb_monthly
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: conoha-vps
+    feature_id: price_2gb_hourly
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: conoha-vps
+    feature_id: price_4gb_monthly
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: conoha-vps
+    feature_id: price_4gb_hourly
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: conoha-vps
+    feature_id: monthly_cap
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: conoha-vps
+    feature_id: initial_cost
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: conoha-vps
+    feature_id: min_contract_period
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
 
   - provider_id: conoha-vps
     feature_id: api_available
@@ -251,6 +363,62 @@ evidence:
     verification_status: verified
 
   - provider_id: xserver-vps
+    feature_id: price_2gb_monthly
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: xserver-vps
+    feature_id: price_2gb_hourly
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: xserver-vps
+    feature_id: price_4gb_monthly
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: xserver-vps
+    feature_id: price_4gb_hourly
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: xserver-vps
+    feature_id: monthly_cap
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: xserver-vps
+    feature_id: initial_cost
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: xserver-vps
+    feature_id: min_contract_period
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: xserver-vps
     feature_id: api_available
     value: unknown
     source_type: unknown
@@ -347,6 +515,62 @@ evidence:
     verification_status: unknown
 
   - provider_id: webarena-indigo
+    feature_id: price_2gb_monthly
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: webarena-indigo
+    feature_id: price_2gb_hourly
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: webarena-indigo
+    feature_id: price_4gb_monthly
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: webarena-indigo
+    feature_id: price_4gb_hourly
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: webarena-indigo
+    feature_id: monthly_cap
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: webarena-indigo
+    feature_id: initial_cost
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: webarena-indigo
+    feature_id: min_contract_period
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: webarena-indigo
     feature_id: api_available
     value: unknown
     source_type: unknown
@@ -436,6 +660,62 @@ evidence:
 
   - provider_id: kagoya-cloud-vps
     feature_id: hourly_billing
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: kagoya-cloud-vps
+    feature_id: price_2gb_monthly
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: kagoya-cloud-vps
+    feature_id: price_2gb_hourly
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: kagoya-cloud-vps
+    feature_id: price_4gb_monthly
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: kagoya-cloud-vps
+    feature_id: price_4gb_hourly
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: kagoya-cloud-vps
+    feature_id: monthly_cap
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: kagoya-cloud-vps
+    feature_id: initial_cost
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: kagoya-cloud-vps
+    feature_id: min_contract_period
     value: unknown
     source_type: unknown
     source_url: unknown
