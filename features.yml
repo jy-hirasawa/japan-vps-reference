@@ -473,3 +473,75 @@ features:
     label: SLA稼働率（%）
     description: 公式SLAに記載された稼働率保証（%）。不明な場合は "unknown"。
     type: number
+
+  - id: sla_document_url
+    category: SUPPORT
+    label: SLA文書URL
+    description: SLA（サービスレベルアグリーメント）の公式文書が公開されているか。不明な場合は "unknown"。
+    type: string
+
+  - id: status_page
+    category: SUPPORT
+    label: ステータスページ
+    description: サービス稼働状況を確認できるステータスページが提供されているか。
+    type: boolean
+
+  - id: incident_page
+    category: SUPPORT
+    label: 障害情報ページ
+    description: 障害発生時の情報を公開する専用ページが提供されているか。
+    type: boolean
+
+  - id: maintenance_page
+    category: SUPPORT
+    label: メンテナンス情報ページ
+    description: 事前メンテナンス情報を公開する専用ページが提供されているか。
+    type: boolean
+
+  - id: email_notification
+    category: SUPPORT
+    label: メール通知
+    description: 障害・メンテナンスなどの情報をメールで通知するサービスが提供されているか。
+    type: boolean
+
+  - id: support_contact
+    category: SUPPORT
+    label: サポート窓口
+    description: "利用可能なサポート窓口の種別（例: メール, チャット, 電話 等）。不明な場合は \"unknown\"。"
+    type: string
+
+  - id: phone_support
+    category: SUPPORT
+    label: 電話サポート
+    description: 電話によるサポート窓口が提供されているか。
+    type: boolean
+
+  - id: chat_support
+    category: SUPPORT
+    label: チャットサポート
+    description: チャットによるサポート窓口が提供されているか。
+    type: boolean
+
+  - id: inquiry_form
+    category: SUPPORT
+    label: 問い合わせフォーム
+    description: Webフォームによる問い合わせ手段が提供されているか。
+    type: boolean
+
+  - id: enterprise_support
+    category: SUPPORT
+    label: 法人向けサポート
+    description: 法人向けの専用サポートプランや優先対応が提供されているか。
+    type: boolean
+
+  - id: japanese_support
+    category: SUPPORT
+    label: 日本語サポート
+    description: 日本語でのサポート対応が提供されているか。
+    type: boolean
+
+  - id: knowledge_base
+    category: SUPPORT
+    label: ナレッジベース / FAQ
+    description: 公式ナレッジベースまたはFAQページが提供されているか。
+    type: boolean
