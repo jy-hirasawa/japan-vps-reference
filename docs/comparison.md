@@ -155,7 +155,18 @@
 
 | # | 項目 | さくらのVPS | ConoHa VPS | Xserver VPS | WebARENA Indigo | KAGOYA CLOUD VPS |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | API提供 | ✅ [🔗](https://manual.sakura.ad.jp/vps/api/) (2024-01-01) | ✅ [🔗](https://www.conoha.jp/vps/function/api/) (2024-01-01) | 不明 | 不明 | 不明 |
+| 1 | REST API | ✅ [🔗](https://manual.sakura.ad.jp/vps/api/) (2024-01-01) | ✅ [🔗](https://www.conoha.jp/vps/function/api/) (2024-01-01) | 不明 | 不明 | 不明 |
+| 2 | OpenAPI公開 | 不明 | 不明 | 不明 | 不明 | 不明 |
+| 3 | CLI | 不明 | 不明 | 不明 | 不明 | 不明 |
+| 4 | Terraform Provider | 不明 | 不明 | 不明 | 不明 | 不明 |
+| 5 | Pulumi対応 | 不明 | 不明 | 不明 | 不明 | 不明 |
+| 6 | Ansible対応 | 不明 | 不明 | 不明 | 不明 | 不明 |
+| 7 | メタデータサービス | 不明 | 不明 | 不明 | 不明 | 不明 |
+| 8 | APIレート制限公開 | 不明 | 不明 | 不明 | 不明 | 不明 |
+| 9 | Webhook | 不明 | 不明 | 不明 | 不明 | 不明 |
+| 10 | SDK（Go） | 不明 | 不明 | 不明 | 不明 | 不明 |
+| 11 | SDK（Python） | 不明 | 不明 | 不明 | 不明 | 不明 |
+| 12 | SDK（Node.js） | 不明 | 不明 | 不明 | 不明 | 不明 |
 
 ## サポート / SLA
 

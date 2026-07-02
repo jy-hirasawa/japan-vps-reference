@@ -22,7 +22,7 @@ categories:
     label: セキュリティ
   - id: BACKUP
     label: バックアップ / イメージ保存
-  - id: OPS
+  - id: automation
     label: API / CLI / Terraform
   - id: SUPPORT
     label: サポート / SLA
@@ -397,9 +397,75 @@ features:
     type: string
 
   - id: api_available
-    category: OPS
-    label: API提供
-    description: プロビジョニング・管理用のAPIが提供されているか。
+    category: automation
+    label: REST API
+    description: プロビジョニング・管理用のREST APIが提供されているか。
+    type: boolean
+
+  - id: openapi_published
+    category: automation
+    label: OpenAPI公開
+    description: OpenAPI（Swagger）仕様が公式に公開されているか。
+    type: boolean
+
+  - id: cli_available
+    category: automation
+    label: CLI
+    description: 公式CLIツールが提供されているか。
+    type: boolean
+
+  - id: terraform_provider
+    category: automation
+    label: Terraform Provider
+    description: Terraform Provider が提供されているか。
+    type: boolean
+
+  - id: pulumi_support
+    category: automation
+    label: Pulumi対応
+    description: Pulumi での利用方法や公式対応が提供されているか。
+    type: boolean
+
+  - id: ansible_support
+    category: automation
+    label: Ansible対応
+    description: Ansibleで利用できる公式情報やモジュールが提供されているか。
+    type: boolean
+
+  - id: metadata_service
+    category: automation
+    label: メタデータサービス
+    description: インスタンスメタデータサービスが提供されているか。
+    type: boolean
+
+  - id: api_rate_limit_published
+    category: automation
+    label: APIレート制限公開
+    description: APIレート制限の仕様が公式に公開されているか。
+    type: boolean
+
+  - id: webhook
+    category: automation
+    label: Webhook
+    description: Webhook通知機能が提供されているか。
+    type: boolean
+
+  - id: sdk_go
+    category: automation
+    label: SDK（Go）
+    description: Go向けの公式SDKが提供されているか。
+    type: boolean
+
+  - id: sdk_python
+    category: automation
+    label: SDK（Python）
+    description: Python向けの公式SDKが提供されているか。
+    type: boolean
+
+  - id: sdk_nodejs
+    category: automation
+    label: SDK（Node.js）
+    description: Node.js向けの公式SDKが提供されているか。
     type: boolean
 
   - id: sla_uptime_percent
