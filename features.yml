@@ -396,6 +396,72 @@ features:
     description: "利用データセンターの第三者認証（例: ISO27001 等）。不明な場合は \"unknown\"。"
     type: string
 
+  - id: manual_backup
+    category: BACKUP
+    label: 手動バックアップ
+    description: 任意のタイミングで手動バックアップを作成できるか。
+    type: boolean
+
+  - id: auto_backup
+    category: BACKUP
+    label: 自動バックアップ
+    description: スケジュール設定などにより自動でバックアップを取得できるか。
+    type: boolean
+
+  - id: backup_schedule
+    category: BACKUP
+    label: バックアップスケジュール設定
+    description: バックアップの実行スケジュール（時刻・頻度等）を任意に設定できるか。
+    type: boolean
+
+  - id: backup_retention_period
+    category: BACKUP
+    label: バックアップ保持期間
+    description: "バックアップデータが保持される期間（例: 7日、14日 等）。不明な場合は \"unknown\"。"
+    type: string
+
+  - id: backup_generations
+    category: BACKUP
+    label: バックアップ世代数
+    description: 保持できるバックアップの最大世代数。不明な場合は "unknown"。
+    type: string
+
+  - id: restore_from_backup
+    category: BACKUP
+    label: バックアップからの復元
+    description: バックアップからインスタンスを復元できるか。
+    type: boolean
+
+  - id: backup_encryption
+    category: BACKUP
+    label: バックアップ暗号化
+    description: バックアップデータの暗号化に対応しているか。
+    type: boolean
+
+  - id: backup_to_object_storage
+    category: BACKUP
+    label: オブジェクトストレージへのバックアップ
+    description: バックアップデータをオブジェクトストレージへ転送・保存できるか。
+    type: boolean
+
+  - id: cross_region_backup
+    category: BACKUP
+    label: リージョン間バックアップ
+    description: バックアップを別リージョンに保存・転送できるか。
+    type: boolean
+
+  - id: dr_support
+    category: BACKUP
+    label: DR（災害復旧）対応
+    description: "DR（Disaster Recovery）向けの機能・構成オプションが提供されているか。不明な場合は \"unknown\"。"
+    type: string
+
+  - id: backup_billing
+    category: BACKUP
+    label: バックアップ課金
+    description: "バックアップの課金形態（例: 無料、容量課金、プラン料金込み 等）。不明な場合は \"unknown\"。"
+    type: string
+
   - id: api_available
     category: automation
     label: REST API
