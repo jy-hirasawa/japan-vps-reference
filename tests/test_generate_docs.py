@@ -282,5 +282,92 @@ class TestBuildCategoryOrderAndLabels(unittest.TestCase):
         self.assertEqual(order, ["OPS", "BASIC"])
 
 
+class TestCollectProviderLatestVerifiedAt(unittest.TestCase):
+
+    def test_returns_latest_date_per_provider(self):
+        """複数エントリがある場合は最新の verified_at を返す。"""
+        providers = [_make_provider("p1", "P1")]
+        evidence_list = [
+            _make_evidence("p1", "f1", "v1", verified_at="2024-01-01"),
+            _make_evidence("p1", "f2", "v2", verified_at="2024-06-15"),
+            _make_evidence("p1", "f3", "v3", verified_at="2024-03-10"),
+        ]
+        result = generate_docs.collect_provider_latest_verified_at(providers, evidence_list)
+        self.assertEqual(result["p1"], "2024-06-15")
+
+    def test_ignores_unknown_verified_at(self):
+        """verified_at が unknown のエントリは無視され、有効な日付のみ集計される。"""
+        providers = [_make_provider("p1", "P1")]
+        evidence_list = [
+            _make_evidence("p1", "f1", "v1", verified_at="unknown"),
+            _make_evidence("p1", "f2", "v2", verified_at="2024-05-01"),
+        ]
+        result = generate_docs.collect_provider_latest_verified_at(providers, evidence_list)
+        self.assertEqual(result["p1"], "2024-05-01")
+
+    def test_all_unknown_returns_unconfirmed(self):
+        """有効な verified_at が存在しないプロバイダーは「未確認」を返す。"""
+        providers = [_make_provider("p1", "P1")]
+        evidence_list = [
+            _make_evidence("p1", "f1", "v1", verified_at="unknown"),
+        ]
+        result = generate_docs.collect_provider_latest_verified_at(providers, evidence_list)
+        self.assertEqual(result["p1"], "未確認")
+
+    def test_no_evidence_returns_unconfirmed(self):
+        """evidence が空の場合は全プロバイダーが「未確認」になる。"""
+        providers = [_make_provider("p1", "P1"), _make_provider("p2", "P2")]
+        result = generate_docs.collect_provider_latest_verified_at(providers, [])
+        self.assertEqual(result["p1"], "未確認")
+        self.assertEqual(result["p2"], "未確認")
+
+    def test_multiple_providers_independent(self):
+        """複数プロバイダーの最終確認日がそれぞれ独立して集計される。"""
+        providers = [_make_provider("p1", "P1"), _make_provider("p2", "P2")]
+        evidence_list = [
+            _make_evidence("p1", "f1", "v1", verified_at="2024-01-01"),
+            _make_evidence("p2", "f1", "v2", verified_at="2024-12-31"),
+        ]
+        result = generate_docs.collect_provider_latest_verified_at(providers, evidence_list)
+        self.assertEqual(result["p1"], "2024-01-01")
+        self.assertEqual(result["p2"], "2024-12-31")
+
+
+class TestGenerateEvidenceVerifiedAtSection(unittest.TestCase):
+
+    def test_section_contains_provider_name_and_date(self):
+        """生成されたセクションにプロバイダー名と最終確認日が含まれる。"""
+        providers = [_make_provider("p1", "テストVPS")]
+        evidence_list = [_make_evidence("p1", "f1", "v1", verified_at="2024-06-20")]
+        lines = generate_docs.generate_evidence_verified_at_section(providers, evidence_list)
+        section = "\n".join(lines)
+        self.assertIn("最終確認日", section)
+        self.assertIn("テストVPS", section)
+        self.assertIn("2024-06-20", section)
+
+    def test_section_shows_unconfirmed_for_unknown_only(self):
+        """verified_at がすべて unknown のプロバイダーは「未確認」と表示される。"""
+        providers = [_make_provider("p1", "テストVPS")]
+        evidence_list = [_make_evidence("p1", "f1", "v1", verified_at="unknown")]
+        lines = generate_docs.generate_evidence_verified_at_section(providers, evidence_list)
+        section = "\n".join(lines)
+        self.assertIn("未確認", section)
+
+    def test_comparison_table_includes_verified_at_section(self):
+        """generate_comparison_table の出力に最終確認日セクションが含まれる。"""
+        providers = [_make_provider("p1", "P1")]
+        features = [_make_feature("f1", "項目1")]
+        evidence_list = [_make_evidence("p1", "f1", "val", verified_at="2024-06-01")]
+        evidence_map = generate_docs.build_evidence_map(evidence_list)
+        md = generate_docs.generate_comparison_table(
+            providers, features, evidence_map,
+            category_order=_DEFAULT_CATEGORY_ORDER,
+            category_labels=_DEFAULT_CATEGORY_LABELS,
+            evidence_list=evidence_list,
+        )
+        self.assertIn("## 最終確認日", md)
+        self.assertIn("2024-06-01", md)
+
+
 if __name__ == "__main__":
     unittest.main()

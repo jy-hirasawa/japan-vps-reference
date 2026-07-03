@@ -71,6 +71,44 @@ def build_evidence_map(evidence_list: list) -> dict[tuple[str, str], dict]:
     return mapping
 
 
+def collect_provider_latest_verified_at(providers: list, evidence_list: list) -> dict[str, str]:
+    """各プロバイダーの evidence.yml における最新の verified_at を収集する。
+
+    verified_at が unknown または未設定のエントリは無視する。
+    有効な日付がないプロバイダーは「未確認」を返す。
+    """
+    latest: dict[str, str] = {}
+    for entry in evidence_list:
+        pid = entry.get("provider_id")
+        verified_at = entry.get("verified_at")
+        if pid is None or not is_known_metadata(verified_at):
+            continue
+        current = latest.get(pid)
+        if current is None or str(verified_at) > current:
+            latest[pid] = str(verified_at)
+
+    result: dict[str, str] = {}
+    for provider in providers:
+        pid = provider["id"]
+        result[pid] = latest.get(pid, "未確認")
+    return result
+
+
+def generate_evidence_verified_at_section(providers: list, evidence_list: list) -> list[str]:
+    """Providerごとの最終確認日テーブルを生成する。"""
+    latest = collect_provider_latest_verified_at(providers, evidence_list)
+    lines: list[str] = []
+    lines.append("## 最終確認日")
+    lines.append("")
+    lines.append("| Provider | 最終確認日 |")
+    lines.append("| --- | --- |")
+    for provider in providers:
+        pid = provider["id"]
+        lines.append(f"| {provider['name']} | {latest[pid]} |")
+    lines.append("")
+    return lines
+
+
 OFFICIAL_URL_LABELS: dict[str, str] = {
     "top": "公式サイト",
     "pricing": "料金ページ",
@@ -180,11 +218,14 @@ def generate_comparison_table(
     evidence_map: dict[tuple[str, str], dict],
     category_order: list[str] | None = None,
     category_labels: dict[str, str] | None = None,
+    evidence_list: list | None = None,
 ) -> str:
     if category_order is None:
         category_order = []
     if category_labels is None:
         category_labels = {}
+    if evidence_list is None:
+        evidence_list = []
 
     lines: list[str] = []
     lines.append("# VPS 比較テーブル")
@@ -193,6 +234,7 @@ def generate_comparison_table(
     lines.append("> 「不明」は公式情報が確認できないことを示します。")
     lines.append("> 値の横の `🔗` は情報源リンク、`(YYYY-MM-DD)` は確認日です。")
     lines.append("")
+    lines.extend(generate_evidence_verified_at_section(providers, evidence_list))
     lines.extend(generate_official_urls_section(providers))
     lines.append("")
 
@@ -326,7 +368,7 @@ def main() -> int:
 
     DOCS_DIR.mkdir(exist_ok=True)
 
-    comparison_md = generate_comparison_table(providers, features, evidence_map, category_order, category_labels)
+    comparison_md = generate_comparison_table(providers, features, evidence_map, category_order, category_labels, evidence_list)
     comparison_path = DOCS_DIR / "comparison.md"
     comparison_path.write_text(comparison_md, encoding="utf-8")
     print(f"生成しました: {comparison_path.relative_to(ROOT)}")
