@@ -192,6 +192,7 @@ def _make_categories(ids: list[str] | None = None) -> list[dict]:
         "OPS": "API / CLI / Terraform",
         "SUPPORT": "サポート / SLA",
         "BENCH": "ベンチマーク",
+        "datacenter": "データセンター / リージョン",
     }
     target = ids if ids is not None else list(all_cats.keys())
     return [{"id": cid, "label": all_cats.get(cid, cid)} for cid in target]
@@ -245,7 +246,7 @@ class TestValidateFeatures(unittest.TestCase):
     def test_valid_feature_all_categories(self):
         """features.yml で定義されたカテゴリはすべてエラーにならない。"""
         all_cat_ids = ["BASIC", "OS_TEMPLATE", "PRICE", "SPEC", "STORAGE", "NETWORK",
-                       "SECURITY", "BACKUP", "OPS", "SUPPORT", "BENCH"]
+                       "SECURITY", "BACKUP", "OPS", "SUPPORT", "BENCH", "datacenter"]
         for i, cat in enumerate(all_cat_ids):
             validate.errors.clear()
             data = _make_features_data([_make_feature(id=f"feat-{i}", category=cat)])
