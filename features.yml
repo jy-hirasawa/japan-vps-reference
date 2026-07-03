@@ -26,6 +26,8 @@ categories:
     label: API / CLI / Terraform
   - id: SUPPORT
     label: サポート / SLA
+  - id: datacenter
+    label: データセンター / リージョン
   - id: BENCH
     label: ベンチマーク
 
@@ -611,3 +613,75 @@ features:
     label: ナレッジベース / FAQ
     description: 公式ナレッジベースまたはFAQページが提供されているか。
     type: boolean
+
+  - id: domestic_region_count
+    category: datacenter
+    label: 国内リージョン数
+    description: 利用可能な国内（日本国内）リージョンの数。不明な場合は "unknown"。
+    type: number
+
+  - id: overseas_regions
+    category: datacenter
+    label: 海外リージョン
+    description: 海外リージョンが提供されているか。不明な場合は "unknown"。
+    type: string
+
+  - id: datacenter_location
+    category: datacenter
+    label: データセンター所在地
+    description: "利用可能なデータセンターの所在地一覧（例: 東京、大阪 等）。不明な場合は \"unknown\"。"
+    type: string
+
+  - id: region_selection
+    category: datacenter
+    label: リージョン選択
+    description: インスタンス作成時にリージョンを選択できるか。
+    type: boolean
+
+  - id: zone_selection
+    category: datacenter
+    label: ゾーン選択
+    description: インスタンス作成時にアベイラビリティゾーン（ゾーン）を選択できるか。
+    type: boolean
+
+  - id: same_region_redundancy
+    category: datacenter
+    label: 同一リージョン内冗長
+    description: 同一リージョン内での冗長構成（マルチゾーン等）をサポートしているか。不明な場合は "unknown"。
+    type: string
+
+  - id: multi_region_deployment
+    category: datacenter
+    label: 複数リージョン構成
+    description: 複数リージョンにまたがる構成・デプロイをサポートしているか。
+    type: boolean
+
+  - id: power_redundancy
+    category: datacenter
+    label: 電源冗長
+    description: データセンターの電源冗長化（UPS・自家発電等）が公式情報に明記されているか。不明な場合は "unknown"。
+    type: string
+
+  - id: network_redundancy
+    category: datacenter
+    label: ネットワーク冗長
+    description: データセンターのネットワーク冗長化が公式情報に明記されているか。不明な場合は "unknown"。
+    type: string
+
+  - id: seismic_resistance
+    category: datacenter
+    label: 耐震・免震
+    description: データセンターの耐震・免震対策が公式情報に明記されているか。不明な場合は "unknown"。
+    type: string
+
+  - id: dc_certification
+    category: datacenter
+    label: データセンター認証
+    description: "データセンター設備の第三者認証（例: ISO 27001、SSAE 18 等）。不明な場合は \"unknown\"。"
+    type: string
+
+  - id: green_energy
+    category: datacenter
+    label: グリーン電力対応
+    description: データセンターでの再生可能エネルギー・グリーン電力利用が公式情報に明記されているか。不明な場合は "unknown"。
+    type: string
