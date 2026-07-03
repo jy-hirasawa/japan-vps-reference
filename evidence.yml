@@ -12,36 +12,34 @@
 evidence:
   - provider_id: sakura-vps
     feature_id: min_price_jpy
-    value: 522
+    value: 643
     source_type: official
-    source_url: https://vps.sakura.ad.jp/
-    verified_at: "2024-01-01"
+    source_url: https://vps.sakura.ad.jp/specification/
+    verified_at: "2026-07-03"
     verification_status: verified
-
+    notes: 石狩リージョン 512MBプラン 月払い（随時払い）。
   - provider_id: sakura-vps
     feature_id: min_ram_gb
     value: 0.5
     source_type: official
-    source_url: https://vps.sakura.ad.jp/
-    verified_at: "2024-01-01"
+    source_url: https://vps.sakura.ad.jp/specification/
+    verified_at: "2026-07-03"
     verification_status: verified
-
   - provider_id: sakura-vps
     feature_id: min_storage_gb
-    value: 20
+    value: 25
     source_type: official
-    source_url: https://vps.sakura.ad.jp/
-    verified_at: "2024-01-01"
+    source_url: https://vps.sakura.ad.jp/specification/
+    verified_at: "2026-07-03"
     verification_status: verified
-
+    notes: 石狩リージョン 512MBプランのSSD 25GB。
   - provider_id: sakura-vps
     feature_id: min_vcpu
     value: 1
     source_type: official
-    source_url: https://vps.sakura.ad.jp/
-    verified_at: "2024-01-01"
+    source_url: https://vps.sakura.ad.jp/specification/
+    verified_at: "2026-07-03"
     verification_status: verified
-
   - provider_id: sakura-vps
     feature_id: ipv6_support
     value: true
@@ -60,60 +58,58 @@ evidence:
 
   - provider_id: sakura-vps
     feature_id: price_2gb_monthly
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
+    value: 1738
+    source_type: official
+    source_url: https://vps.sakura.ad.jp/specification/
+    verified_at: "2026-07-03"
+    verification_status: verified
+    notes: 石狩リージョン 2GBプラン 月払い（随時払い）通常価格。年額一括は月換算1,594円。
   - provider_id: sakura-vps
     feature_id: price_2gb_hourly
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
+    value: "-"
+    source_type: official
+    source_url: https://vps.sakura.ad.jp/specification/
+    verified_at: "2026-07-03"
+    verification_status: verified
+    notes: 時間課金は非対応。月額のみ。
   - provider_id: sakura-vps
     feature_id: price_4gb_monthly
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
+    value: 3520
+    source_type: official
+    source_url: https://vps.sakura.ad.jp/specification/
+    verified_at: "2026-07-03"
+    verification_status: verified
+    notes: 石狩リージョン 4GBプラン 月払い（随時払い）通常価格。年額一括は月換算3,227円。
   - provider_id: sakura-vps
     feature_id: price_4gb_hourly
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
+    value: "-"
+    source_type: official
+    source_url: https://vps.sakura.ad.jp/specification/
+    verified_at: "2026-07-03"
+    verification_status: verified
+    notes: 時間課金は非対応。月額のみ。
   - provider_id: sakura-vps
     feature_id: monthly_cap
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
+    value: "-"
+    source_type: official
+    source_url: https://vps.sakura.ad.jp/specification/
+    verified_at: "2026-07-03"
+    verification_status: verified
+    notes: 時間課金は非対応のため月額上限なし。
   - provider_id: sakura-vps
     feature_id: initial_cost
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
+    value: 0
+    source_type: official
+    source_url: https://vps.sakura.ad.jp/specification/
+    verified_at: "2026-07-03"
+    verification_status: verified
   - provider_id: sakura-vps
     feature_id: min_contract_period
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
+    value: 1ヶ月
+    source_type: official
+    source_url: https://vps.sakura.ad.jp/specification/
+    verified_at: "2026-07-03"
+    verification_status: verified
   - provider_id: sakura-vps
     feature_id: api_available
     value: true
@@ -236,36 +232,34 @@ evidence:
 
   - provider_id: conoha-vps
     feature_id: min_price_jpy
-    value: 660
+    value: 460
     source_type: official
     source_url: https://www.conoha.jp/vps/pricing/
-    verified_at: "2024-01-01"
+    verified_at: "2026-07-03"
     verification_status: verified
-
+    notes: 512MBプラン まとめトク1ヶ月。2026年7月1日改定料金（サービス維持調整費廃止後）。
   - provider_id: conoha-vps
     feature_id: min_ram_gb
     value: 0.5
     source_type: official
     source_url: https://www.conoha.jp/vps/pricing/
-    verified_at: "2024-01-01"
+    verified_at: "2026-07-03"
     verification_status: verified
-
   - provider_id: conoha-vps
     feature_id: min_storage_gb
-    value: 20
+    value: 30
     source_type: official
     source_url: https://www.conoha.jp/vps/pricing/
-    verified_at: "2024-01-01"
+    verified_at: "2026-07-03"
     verification_status: verified
-
+    notes: 512MBプランのSSD 30GB。
   - provider_id: conoha-vps
     feature_id: min_vcpu
     value: 1
     source_type: official
     source_url: https://www.conoha.jp/vps/pricing/
-    verified_at: "2024-01-01"
+    verified_at: "2026-07-03"
     verification_status: verified
-
   - provider_id: conoha-vps
     feature_id: ipv6_support
     value: true
@@ -284,60 +278,59 @@ evidence:
 
   - provider_id: conoha-vps
     feature_id: price_2gb_monthly
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
+    value: 1259
+    source_type: official
+    source_url: https://www.conoha.jp/vps/pricing/
+    verified_at: "2026-07-03"
+    verification_status: verified
+    notes: 2GBプラン まとめトク1ヶ月。時間課金の場合は月額上限2,033円。
   - provider_id: conoha-vps
     feature_id: price_2gb_hourly
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
+    value: 3.7
+    source_type: official
+    source_url: https://www.conoha.jp/vps/pricing/
+    verified_at: "2026-07-03"
+    verification_status: verified
+    notes: 2GBプラン 時間課金（円/時）。月額上限2,033円。
   - provider_id: conoha-vps
     feature_id: price_4gb_monthly
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
+    value: 2189
+    source_type: official
+    source_url: https://www.conoha.jp/vps/pricing/
+    verified_at: "2026-07-03"
+    verification_status: verified
+    notes: 4GBプラン まとめトク1ヶ月。時間課金の場合は月額上限3,608円。
   - provider_id: conoha-vps
     feature_id: price_4gb_hourly
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
+    value: 6.6
+    source_type: official
+    source_url: https://www.conoha.jp/vps/pricing/
+    verified_at: "2026-07-03"
+    verification_status: verified
+    notes: 4GBプラン 時間課金（円/時）。月額上限3,608円。
   - provider_id: conoha-vps
     feature_id: monthly_cap
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
+    value: 751
+    source_type: official
+    source_url: https://www.conoha.jp/vps/pricing/
+    verified_at: "2026-07-03"
+    verification_status: verified
+    notes: 最小プラン（512MB）の時間課金月額上限。2GBプランは2,033円、4GBプランは3,608円。
   - provider_id: conoha-vps
     feature_id: initial_cost
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
+    value: 0
+    source_type: official
+    source_url: https://www.conoha.jp/vps/pricing/
+    verified_at: "2026-07-03"
+    verification_status: verified
   - provider_id: conoha-vps
     feature_id: min_contract_period
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
+    value: なし
+    source_type: official
+    source_url: https://www.conoha.jp/vps/pricing/
+    verified_at: "2026-07-03"
+    verification_status: verified
+    notes: 時間課金は最低利用期間なし。まとめトクは1ヶ月〜の前払いプラン。
   - provider_id: conoha-vps
     feature_id: api_available
     value: true
@@ -460,36 +453,36 @@ evidence:
 
   - provider_id: xserver-vps
     feature_id: min_price_jpy
-    value: 693
+    value: 1496
     source_type: official
     source_url: https://vps.xserver.ne.jp/price/
-    verified_at: "2024-01-01"
+    verified_at: "2026-07-03"
     verification_status: verified
-
+    notes: 2GBプラン 1ヶ月契約。2025年12月1日料金改定後。12ヶ月契約は1,170円/月、36ヶ月契約は990円/月。
   - provider_id: xserver-vps
     feature_id: min_ram_gb
-    value: 1
+    value: 2
     source_type: official
     source_url: https://vps.xserver.ne.jp/price/
-    verified_at: "2024-01-01"
+    verified_at: "2026-07-03"
     verification_status: verified
-
+    notes: 最小プランは2GB。1GB以下のプランは廃止済み。
   - provider_id: xserver-vps
     feature_id: min_storage_gb
-    value: 30
+    value: 50
     source_type: official
     source_url: https://vps.xserver.ne.jp/price/
-    verified_at: "2024-01-01"
+    verified_at: "2026-07-03"
     verification_status: verified
-
+    notes: 2GBプランのNVMe SSD 50GB。
   - provider_id: xserver-vps
     feature_id: min_vcpu
-    value: 1
+    value: 3
     source_type: official
     source_url: https://vps.xserver.ne.jp/price/
-    verified_at: "2024-01-01"
+    verified_at: "2026-07-03"
     verification_status: verified
-
+    notes: 2GBプランのvCPU 3コア。
   - provider_id: xserver-vps
     feature_id: ipv6_support
     value: unknown
@@ -508,60 +501,58 @@ evidence:
 
   - provider_id: xserver-vps
     feature_id: price_2gb_monthly
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
+    value: 1496
+    source_type: official
+    source_url: https://vps.xserver.ne.jp/price/
+    verified_at: "2026-07-03"
+    verification_status: verified
+    notes: 2GBプラン 1ヶ月契約。2025年12月1日改定後。12ヶ月契約は1,170円/月、36ヶ月契約は990円/月。
   - provider_id: xserver-vps
     feature_id: price_2gb_hourly
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
+    value: "-"
+    source_type: official
+    source_url: https://vps.xserver.ne.jp/price/
+    verified_at: "2026-07-03"
+    verification_status: verified
+    notes: 時間課金は非対応。
   - provider_id: xserver-vps
     feature_id: price_4gb_monthly
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
+    value: "-"
+    source_type: official
+    source_url: https://vps.xserver.ne.jp/price/
+    verified_at: "2026-07-03"
+    verification_status: verified
+    notes: 単体4GBプランは存在しない。最近接プランは6GBプラン（4GB＋2GB無料増設）で1,700円/月（1ヶ月契約）。
   - provider_id: xserver-vps
     feature_id: price_4gb_hourly
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
+    value: "-"
+    source_type: official
+    source_url: https://vps.xserver.ne.jp/price/
+    verified_at: "2026-07-03"
+    verification_status: verified
+    notes: 時間課金は非対応。
   - provider_id: xserver-vps
     feature_id: monthly_cap
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
+    value: "-"
+    source_type: official
+    source_url: https://vps.xserver.ne.jp/price/
+    verified_at: "2026-07-03"
+    verification_status: verified
+    notes: 時間課金は非対応のため月額上限なし。
   - provider_id: xserver-vps
     feature_id: initial_cost
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
+    value: 0
+    source_type: official
+    source_url: https://vps.xserver.ne.jp/price/
+    verified_at: "2026-07-03"
+    verification_status: verified
   - provider_id: xserver-vps
     feature_id: min_contract_period
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
+    value: 1ヶ月
+    source_type: official
+    source_url: https://vps.xserver.ne.jp/price/
+    verified_at: "2026-07-03"
+    verification_status: verified
   - provider_id: xserver-vps
     feature_id: api_available
     value: unknown
@@ -684,36 +675,34 @@ evidence:
 
   - provider_id: webarena-indigo
     feature_id: min_price_jpy
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
+    value: 319
+    source_type: official
+    source_url: https://web.arena.ne.jp/indigo/price/
+    verified_at: "2026-07-03"
+    verification_status: verified
+    notes: 768MBプランの月額上限（時間課金）。IPv6のみ対応プラン。
   - provider_id: webarena-indigo
     feature_id: min_ram_gb
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
+    value: 0.75
+    source_type: official
+    source_url: https://web.arena.ne.jp/indigo/price/
+    verified_at: "2026-07-03"
+    verification_status: verified
+    notes: 768MB（0.75GB）プラン。IPv6のみ対応の最安プラン。
   - provider_id: webarena-indigo
     feature_id: min_storage_gb
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
+    value: 20
+    source_type: official
+    source_url: https://web.arena.ne.jp/indigo/price/
+    verified_at: "2026-07-03"
+    verification_status: verified
   - provider_id: webarena-indigo
     feature_id: min_vcpu
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
+    value: 1
+    source_type: official
+    source_url: https://web.arena.ne.jp/indigo/price/
+    verified_at: "2026-07-03"
+    verification_status: verified
   - provider_id: webarena-indigo
     feature_id: ipv6_support
     value: unknown
@@ -732,60 +721,58 @@ evidence:
 
   - provider_id: webarena-indigo
     feature_id: price_2gb_monthly
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
+    value: 814
+    source_type: official
+    source_url: https://web.arena.ne.jp/indigo/price/
+    verified_at: "2026-07-03"
+    verification_status: verified
+    notes: 2GBプランの月額上限（時間課金）。2vCPU、SSD 40GB。
   - provider_id: webarena-indigo
     feature_id: price_2gb_hourly
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
+    value: 1.27
+    source_type: official
+    source_url: https://web.arena.ne.jp/indigo/price/
+    verified_at: "2026-07-03"
+    verification_status: verified
+    notes: 2GBプラン 時間課金（円/時）。月額上限814円。
   - provider_id: webarena-indigo
     feature_id: price_4gb_monthly
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
+    value: 1630
+    source_type: official
+    source_url: https://web.arena.ne.jp/indigo/price/
+    verified_at: "2026-07-03"
+    verification_status: verified
+    notes: 4GBプランの月額上限（時間課金）。4vCPU、SSD 80GB。
   - provider_id: webarena-indigo
     feature_id: price_4gb_hourly
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
+    value: 2.55
+    source_type: official
+    source_url: https://web.arena.ne.jp/indigo/price/
+    verified_at: "2026-07-03"
+    verification_status: verified
+    notes: 4GBプラン 時間課金（円/時）。月額上限1,630円。
   - provider_id: webarena-indigo
     feature_id: monthly_cap
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
+    value: 319
+    source_type: official
+    source_url: https://web.arena.ne.jp/indigo/price/
+    verified_at: "2026-07-03"
+    verification_status: verified
+    notes: 最小プラン（768MB）の月額上限（時間課金）。
   - provider_id: webarena-indigo
     feature_id: initial_cost
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
+    value: 0
+    source_type: official
+    source_url: https://web.arena.ne.jp/indigo/price/
+    verified_at: "2026-07-03"
+    verification_status: verified
   - provider_id: webarena-indigo
     feature_id: min_contract_period
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
+    value: なし
+    source_type: official
+    source_url: https://web.arena.ne.jp/indigo/price/
+    verified_at: "2026-07-03"
+    verification_status: verified
   - provider_id: webarena-indigo
     feature_id: api_available
     value: unknown
@@ -908,36 +895,34 @@ evidence:
 
   - provider_id: kagoya-cloud-vps
     feature_id: min_price_jpy
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
+    value: 550
+    source_type: official
+    source_url: https://www.kagoya.jp/vps/
+    verified_at: "2026-07-03"
+    verification_status: verified
+    notes: 1GBプランの月額上限（日額課金）。日額20円。
   - provider_id: kagoya-cloud-vps
     feature_id: min_ram_gb
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
+    value: 1
+    source_type: official
+    source_url: https://www.kagoya.jp/vps/
+    verified_at: "2026-07-03"
+    verification_status: verified
   - provider_id: kagoya-cloud-vps
     feature_id: min_storage_gb
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
+    value: 100
+    source_type: official
+    source_url: https://www.kagoya.jp/vps/
+    verified_at: "2026-07-03"
+    verification_status: verified
+    notes: 1GBプランのNVMe SSD 100GB。
   - provider_id: kagoya-cloud-vps
     feature_id: min_vcpu
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
+    value: 1
+    source_type: official
+    source_url: https://www.kagoya.jp/vps/
+    verified_at: "2026-07-03"
+    verification_status: verified
   - provider_id: kagoya-cloud-vps
     feature_id: ipv6_support
     value: unknown
@@ -956,60 +941,59 @@ evidence:
 
   - provider_id: kagoya-cloud-vps
     feature_id: price_2gb_monthly
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
+    value: 770
+    source_type: official
+    source_url: https://www.kagoya.jp/vps/
+    verified_at: "2026-07-03"
+    verification_status: verified
+    notes: 2GBプランの月額上限（日額課金）。日額28円。年額8,580円（月換算715円）。
   - provider_id: kagoya-cloud-vps
     feature_id: price_2gb_hourly
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
+    value: "-"
+    source_type: official
+    source_url: https://www.kagoya.jp/vps/
+    verified_at: "2026-07-03"
+    verification_status: verified
+    notes: 時間課金は非対応。日額（1日単位）課金。
   - provider_id: kagoya-cloud-vps
     feature_id: price_4gb_monthly
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
+    value: 1760
+    source_type: official
+    source_url: https://www.kagoya.jp/vps/
+    verified_at: "2026-07-03"
+    verification_status: verified
+    notes: 4GBプランの月額上限（日額課金）。日額63円。
   - provider_id: kagoya-cloud-vps
     feature_id: price_4gb_hourly
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
+    value: "-"
+    source_type: official
+    source_url: https://www.kagoya.jp/vps/
+    verified_at: "2026-07-03"
+    verification_status: verified
+    notes: 時間課金は非対応。日額（1日単位）課金。
   - provider_id: kagoya-cloud-vps
     feature_id: monthly_cap
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
+    value: 550
+    source_type: official
+    source_url: https://www.kagoya.jp/vps/
+    verified_at: "2026-07-03"
+    verification_status: verified
+    notes: 最小プラン（1GB）の月額上限（日額課金）。
   - provider_id: kagoya-cloud-vps
     feature_id: initial_cost
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
+    value: 0
+    source_type: official
+    source_url: https://www.kagoya.jp/vps/
+    verified_at: "2026-07-03"
+    verification_status: verified
   - provider_id: kagoya-cloud-vps
     feature_id: min_contract_period
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
+    value: なし
+    source_type: official
+    source_url: https://www.kagoya.jp/vps/
+    verified_at: "2026-07-03"
+    verification_status: verified
+    notes: 日額課金のため最低利用期間なし。
   - provider_id: kagoya-cloud-vps
     feature_id: api_available
     value: unknown

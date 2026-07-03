@@ -8,11 +8,11 @@
 
 | Provider | 最終確認日 |
 | --- | --- |
-| さくらのVPS | 2024-01-01 |
-| ConoHa VPS | 2024-01-01 |
-| Xserver VPS | 2024-01-01 |
-| WebARENA Indigo | 未確認 |
-| KAGOYA CLOUD VPS | 未確認 |
+| さくらのVPS | 2026-07-03 |
+| ConoHa VPS | 2026-07-03 |
+| Xserver VPS | 2026-07-03 |
+| WebARENA Indigo | 2026-07-03 |
+| KAGOYA CLOUD VPS | 2026-07-03 |
 
 ## 公式URL
 
@@ -93,28 +93,28 @@
 
 | # | 項目 | さくらのVPS | ConoHa VPS | Xserver VPS | WebARENA Indigo | KAGOYA CLOUD VPS |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | 最低月額料金（円） | 522 [🔗](https://vps.sakura.ad.jp/) (2024-01-01) | 660 [🔗](https://www.conoha.jp/vps/pricing/) (2024-01-01) | 693 [🔗](https://vps.xserver.ne.jp/price/) (2024-01-01) | 不明 | 不明 |
+| 1 | 最低月額料金（円） | 643 [🔗](https://vps.sakura.ad.jp/specification/) (2026-07-03) | 460 [🔗](https://www.conoha.jp/vps/pricing/) (2026-07-03) | 1496 [🔗](https://vps.xserver.ne.jp/price/) (2026-07-03) | 319 [🔗](https://web.arena.ne.jp/indigo/price/) (2026-07-03) | 550 [🔗](https://www.kagoya.jp/vps/) (2026-07-03) |
 | 2 | 時間課金 | ❌ [🔗](https://vps.sakura.ad.jp/) (2024-01-01) | ✅ [🔗](https://www.conoha.jp/vps/pricing/) (2024-01-01) | ❌ [🔗](https://vps.xserver.ne.jp/price/) (2024-01-01) | 不明 | 不明 |
-| 3 | 2GBプラン月額（円・税込） | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 4 | 2GBプラン時間課金（円/時・税込） | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 5 | 4GBプラン月額（円・税込） | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 6 | 4GBプラン時間課金（円/時・税込） | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 7 | 月額上限（円・税込） | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 8 | 初期費用（円・税込） | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 9 | 最低利用期間 | 不明 | 不明 | 不明 | 不明 | 不明 |
+| 3 | 2GBプラン月額（円・税込） | 1738 [🔗](https://vps.sakura.ad.jp/specification/) (2026-07-03) | 1259 [🔗](https://www.conoha.jp/vps/pricing/) (2026-07-03) | 1496 [🔗](https://vps.xserver.ne.jp/price/) (2026-07-03) | 814 [🔗](https://web.arena.ne.jp/indigo/price/) (2026-07-03) | 770 [🔗](https://www.kagoya.jp/vps/) (2026-07-03) |
+| 4 | 2GBプラン時間課金（円/時・税込） | - [🔗](https://vps.sakura.ad.jp/specification/) (2026-07-03) | 3.7 [🔗](https://www.conoha.jp/vps/pricing/) (2026-07-03) | - [🔗](https://vps.xserver.ne.jp/price/) (2026-07-03) | 1.27 [🔗](https://web.arena.ne.jp/indigo/price/) (2026-07-03) | - [🔗](https://www.kagoya.jp/vps/) (2026-07-03) |
+| 5 | 4GBプラン月額（円・税込） | 3520 [🔗](https://vps.sakura.ad.jp/specification/) (2026-07-03) | 2189 [🔗](https://www.conoha.jp/vps/pricing/) (2026-07-03) | - [🔗](https://vps.xserver.ne.jp/price/) (2026-07-03) | 1630 [🔗](https://web.arena.ne.jp/indigo/price/) (2026-07-03) | 1760 [🔗](https://www.kagoya.jp/vps/) (2026-07-03) |
+| 6 | 4GBプラン時間課金（円/時・税込） | - [🔗](https://vps.sakura.ad.jp/specification/) (2026-07-03) | 6.6 [🔗](https://www.conoha.jp/vps/pricing/) (2026-07-03) | - [🔗](https://vps.xserver.ne.jp/price/) (2026-07-03) | 2.55 [🔗](https://web.arena.ne.jp/indigo/price/) (2026-07-03) | - [🔗](https://www.kagoya.jp/vps/) (2026-07-03) |
+| 7 | 月額上限（円・税込） | - [🔗](https://vps.sakura.ad.jp/specification/) (2026-07-03) | 751 [🔗](https://www.conoha.jp/vps/pricing/) (2026-07-03) | - [🔗](https://vps.xserver.ne.jp/price/) (2026-07-03) | 319 [🔗](https://web.arena.ne.jp/indigo/price/) (2026-07-03) | 550 [🔗](https://www.kagoya.jp/vps/) (2026-07-03) |
+| 8 | 初期費用（円・税込） | 0 [🔗](https://vps.sakura.ad.jp/specification/) (2026-07-03) | 0 [🔗](https://www.conoha.jp/vps/pricing/) (2026-07-03) | 0 [🔗](https://vps.xserver.ne.jp/price/) (2026-07-03) | 0 [🔗](https://web.arena.ne.jp/indigo/price/) (2026-07-03) | 0 [🔗](https://www.kagoya.jp/vps/) (2026-07-03) |
+| 9 | 最低利用期間 | 1ヶ月 [🔗](https://vps.sakura.ad.jp/specification/) (2026-07-03) | なし [🔗](https://www.conoha.jp/vps/pricing/) (2026-07-03) | 1ヶ月 [🔗](https://vps.xserver.ne.jp/price/) (2026-07-03) | なし [🔗](https://web.arena.ne.jp/indigo/price/) (2026-07-03) | なし [🔗](https://www.kagoya.jp/vps/) (2026-07-03) |
 
 ## CPU / メモリ
 
 | # | 項目 | さくらのVPS | ConoHa VPS | Xserver VPS | WebARENA Indigo | KAGOYA CLOUD VPS |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | 最小vCPU数 | 1 [🔗](https://vps.sakura.ad.jp/) (2024-01-01) | 1 [🔗](https://www.conoha.jp/vps/pricing/) (2024-01-01) | 1 [🔗](https://vps.xserver.ne.jp/price/) (2024-01-01) | 不明 | 不明 |
-| 2 | 最小RAM（GB） | 0.5 [🔗](https://vps.sakura.ad.jp/) (2024-01-01) | 0.5 [🔗](https://www.conoha.jp/vps/pricing/) (2024-01-01) | 1 [🔗](https://vps.xserver.ne.jp/price/) (2024-01-01) | 不明 | 不明 |
+| 1 | 最小vCPU数 | 1 [🔗](https://vps.sakura.ad.jp/specification/) (2026-07-03) | 1 [🔗](https://www.conoha.jp/vps/pricing/) (2026-07-03) | 3 [🔗](https://vps.xserver.ne.jp/price/) (2026-07-03) | 1 [🔗](https://web.arena.ne.jp/indigo/price/) (2026-07-03) | 1 [🔗](https://www.kagoya.jp/vps/) (2026-07-03) |
+| 2 | 最小RAM（GB） | 0.5 [🔗](https://vps.sakura.ad.jp/specification/) (2026-07-03) | 0.5 [🔗](https://www.conoha.jp/vps/pricing/) (2026-07-03) | 2 [🔗](https://vps.xserver.ne.jp/price/) (2026-07-03) | 0.75 [🔗](https://web.arena.ne.jp/indigo/price/) (2026-07-03) | 1 [🔗](https://www.kagoya.jp/vps/) (2026-07-03) |
 
 ## ディスク / NVMe / スナップショット / バックアップ
 
 | # | 項目 | さくらのVPS | ConoHa VPS | Xserver VPS | WebARENA Indigo | KAGOYA CLOUD VPS |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | ディスク容量（GB） | 20 [🔗](https://vps.sakura.ad.jp/) (2024-01-01) | 20 [🔗](https://www.conoha.jp/vps/pricing/) (2024-01-01) | 30 [🔗](https://vps.xserver.ne.jp/price/) (2024-01-01) | 不明 | 不明 |
+| 1 | ディスク容量（GB） | 25 [🔗](https://vps.sakura.ad.jp/specification/) (2026-07-03) | 30 [🔗](https://www.conoha.jp/vps/pricing/) (2026-07-03) | 50 [🔗](https://vps.xserver.ne.jp/price/) (2026-07-03) | 20 [🔗](https://web.arena.ne.jp/indigo/price/) (2026-07-03) | 100 [🔗](https://www.kagoya.jp/vps/) (2026-07-03) |
 | 2 | ストレージ種別 | 不明 | 不明 | 不明 | 不明 | 不明 |
 | 3 | NVMe明記 | 不明 | 不明 | 不明 | 不明 | 不明 |
 | 4 | SSD明記 | 不明 | 不明 | 不明 | 不明 | 不明 |
