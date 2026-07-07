@@ -64,7 +64,7 @@
 | ロードバランサー | 不明 | 不明 | 不明 | 不明 | 不明 |
 | プライベートネットワーク | 不明 | 不明 | 不明 | 不明 | 不明 |
 | 自動バックアップ | ✅ [🔗](https://vps.sakura.ad.jp/contents/info/acronis-cyber-protect-cloud-acronis-hosted/) (2026-07-07) | ✅ [🔗](https://support.conoha.jp/v/vps-autobackup/) (2026-07-07) | ✅ [🔗](https://vps.xserver.ne.jp/support/faq/service_server_backup.php) (2026-07-07) | 不明 | ✅ [🔗](https://www.kagoya.jp/vps/feature/customize/) (2026-07-07) |
-| バックアップ保持期間 | 不明 | 最大30世代（VPS 3.0）、最大3世代（VPS 2.0） [🔗](https://doc.conoha.jp/products/vps-v3/storage-v3/autobackup-v3/) (2026-07-07) | 不明 | 不明 | 不明 |
+| バックアップ保持期間 | 不明 | 不明 | 不明 | 不明 | 不明 |
 | ファイアウォール機能 | 不明 | 不明 | 不明 | 不明 | 不明 |
 | DDoS保護 | 不明 | 不明 | 不明 | 不明 | 不明 |
 | ステータスページ | 不明 | 不明 | 不明 | 不明 | 不明 |
@@ -83,7 +83,7 @@
 | 手動バックアップ | ✅ [🔗](https://vps.sakura.ad.jp/contents/info/acronis-cyber-protect-cloud-acronis-hosted/) (2026-07-07) | ✅ [🔗](https://support.conoha.jp/v/snapshot/) (2026-07-07) | ✅ [🔗](https://vps.xserver.ne.jp/support/manual/man_server_image.php) (2026-07-07) | ✅ [🔗](https://web.arena.ne.jp/indigo/spec/) (2026-07-07) | ✅ [🔗](https://www.kagoya.jp/vps/feature/customize/) (2026-07-07) |
 | 自動バックアップ | ✅ [🔗](https://vps.sakura.ad.jp/contents/info/acronis-cyber-protect-cloud-acronis-hosted/) (2026-07-07) | ✅ [🔗](https://support.conoha.jp/v/vps-autobackup/) (2026-07-07) | ✅ [🔗](https://vps.xserver.ne.jp/support/faq/service_server_backup.php) (2026-07-07) | 不明 | ✅ [🔗](https://www.kagoya.jp/vps/feature/customize/) (2026-07-07) |
 | バックアップスケジュール設定 | ✅ [🔗](https://vps.sakura.ad.jp/contents/info/acronis-cyber-protect-cloud-acronis-hosted/) (2026-07-07) | ❌ [🔗](https://doc.conoha.jp/products/vps-v3/storage-v3/autobackup-v3/) (2026-07-07) | 不明 | 不明 | 不明 |
-| バックアップ保持期間 | 不明 | 最大30世代（VPS 3.0）、最大3世代（VPS 2.0） [🔗](https://doc.conoha.jp/products/vps-v3/storage-v3/autobackup-v3/) (2026-07-07) | 不明 | 不明 | 不明 |
+| バックアップ保持期間 | 不明 | 不明 | 不明 | 不明 | 不明 |
 | バックアップ世代数 | 不明 | 14世代（デフォルト）、最大30世代（VPS 3.0） [🔗](https://doc.conoha.jp/products/vps-v3/storage-v3/autobackup-v3/) (2026-07-07) | ビジネスプラン標準1世代、バックアップ拡張オプションで最大3世代 [🔗](https://vps.xserver.ne.jp/support/faq/service_server_backup.php) (2026-07-07) | 最大5個/インスタンス（スナップショット） [🔗](https://web.arena.ne.jp/indigo/spec/) (2026-07-07) | 最大7世代（定期スナップショット） [🔗](https://www.kagoya.jp/vps/feature/customize/) (2026-07-07) |
 | バックアップからの復元 | ✅ [🔗](https://vps.sakura.ad.jp/contents/info/acronis-cyber-protect-cloud-acronis-hosted/) (2026-07-07) | ✅ [🔗](https://support.conoha.jp/v/vps-autobackup/) (2026-07-07) | 不明 | ✅ [🔗](https://web.arena.ne.jp/indigo/spec/) (2026-07-07) | ✅ [🔗](https://www.kagoya.jp/vps/feature/customize/) (2026-07-07) |
 | バックアップ暗号化 | 不明 | 不明 | 不明 | 不明 | 不明 |

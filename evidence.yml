@@ -1721,11 +1721,11 @@ evidence:
 
   - provider_id: conoha-vps
     feature_id: backup_retention_period
-    value: "最大30世代（VPS 3.0）、最大3世代（VPS 2.0）"
-    source_type: official
-    source_url: https://doc.conoha.jp/products/vps-v3/storage-v3/autobackup-v3/
-    verified_at: "2026-07-07"
-    verification_status: verified
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
 
   - provider_id: conoha-vps
     feature_id: backup_generations
