@@ -440,5 +440,47 @@ class TestGenerateUseCasesPage(unittest.TestCase):
         self.assertIn("MyVPS", md)
 
 
+class TestFormatComparisonCell(unittest.TestCase):
+    """format_comparison_cell のセル出力フォーマットを検証する。"""
+
+    def test_value_only(self):
+        """source_url と verified_at が unknown の場合は値のみ返す。"""
+        entry = _make_evidence("p1", "f1", "460")
+        result = generate_docs.format_comparison_cell(entry, "string")
+        self.assertEqual(result, "460")
+
+    def test_value_with_source_url(self):
+        """source_url がある場合は値とリンクをスペースで結合する。"""
+        entry = _make_evidence("p1", "f1", "460", source_url="https://example.com")
+        result = generate_docs.format_comparison_cell(entry, "string")
+        self.assertEqual(result, "460 [🔗](https://example.com)")
+
+    def test_value_with_verified_at(self):
+        """verified_at がある場合は <br> で改行して確認日を追加する。"""
+        entry = _make_evidence("p1", "f1", "460", verified_at="2026-07-03")
+        result = generate_docs.format_comparison_cell(entry, "string")
+        self.assertEqual(result, "460<br>(2026-07-03)")
+
+    def test_value_with_source_url_and_verified_at(self):
+        """source_url と verified_at がある場合は値・リンクを1行目、確認日を2行目に表示する。"""
+        entry = _make_evidence("p1", "f1", "460",
+                               source_url="https://example.com", verified_at="2026-07-03")
+        result = generate_docs.format_comparison_cell(entry, "string")
+        self.assertEqual(result, "460 [🔗](https://example.com)<br>(2026-07-03)")
+
+    def test_boolean_true_with_verified_at(self):
+        """boolean true は ✅ で表示され、confirmed_at は <br> で改行される。"""
+        entry = _make_evidence("p1", "f1", True, verified_at="2026-07-03")
+        result = generate_docs.format_comparison_cell(entry, "boolean")
+        self.assertEqual(result, "✅<br>(2026-07-03)")
+
+    def test_unknown_verified_at_no_br(self):
+        """verified_at が unknown の場合は <br> を追加しない。"""
+        entry = _make_evidence("p1", "f1", "460", verified_at="unknown")
+        result = generate_docs.format_comparison_cell(entry, "string")
+        self.assertNotIn("<br>", result)
+        self.assertNotIn("unknown", result)
+
+
 if __name__ == "__main__":
     unittest.main()

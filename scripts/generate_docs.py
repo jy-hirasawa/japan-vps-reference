@@ -50,17 +50,19 @@ def is_known_metadata(raw) -> bool:
 
 def format_comparison_cell(entry: dict, feature_type: str) -> str:
     value = format_value(entry.get("value"), feature_type)
-    parts = [value]
+    first_line_parts = [value]
 
     source_url = entry.get("source_url")
     if is_known_metadata(source_url):
-        parts.append(f"[🔗]({source_url})")
+        first_line_parts.append(f"[🔗]({source_url})")
+
+    first_line = " ".join(first_line_parts)
 
     verified_at = entry.get("verified_at")
     if is_known_metadata(verified_at):
-        parts.append(f"({verified_at})")
+        return f"{first_line}<br>({verified_at})"
 
-    return " ".join(parts)
+    return first_line
 
 
 def build_evidence_map(evidence_list: list) -> dict[tuple[str, str], dict]:
