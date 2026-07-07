@@ -200,11 +200,12 @@ evidence:
 
   - provider_id: sakura-vps
     feature_id: backup_feature
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
+    value: true
+    source_type: official
+    source_url: https://vps.sakura.ad.jp/feature/backup/
+    verified_at: "2026-07-07"
+    verification_status: verified
+    notes: Acronis Cyber Protect Cloud（有料オプション）によるバックアップ機能を公式提供
 
   - provider_id: sakura-vps
     feature_id: custom_image_save
@@ -539,19 +540,21 @@ evidence:
 
   - provider_id: conoha-vps
     feature_id: auto_snapshot
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
+    value: false
+    source_type: official
+    source_url: https://support.conoha.jp/v/snapshot/
+    verified_at: "2026-07-07"
+    verification_status: verified
+    notes: スナップショットは手動取得のみ（取得から24時間で自動削除、1世代のみ保持）。VPS 3.0のみ対応
 
   - provider_id: conoha-vps
     feature_id: backup_feature
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
+    value: true
+    source_type: official
+    source_url: https://support.conoha.jp/v/vps-autobackup/
+    verified_at: "2026-07-07"
+    verification_status: verified
+    notes: 自動バックアップ機能（有料オプション）あり
 
   - provider_id: conoha-vps
     feature_id: custom_image_save
@@ -930,11 +933,12 @@ evidence:
 
   - provider_id: xserver-vps
     feature_id: full_disk_snapshot
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
+    value: true
+    source_type: official
+    source_url: https://vps.xserver.ne.jp/support/manual/man_server_image.php
+    verified_at: "2026-07-07"
+    verification_status: verified
+    notes: 「イメージ保存」機能によりサーバー全体をファイルとして保存可能。サーバー停止状態で実行
 
   - provider_id: xserver-vps
     feature_id: storage_type
@@ -986,19 +990,21 @@ evidence:
 
   - provider_id: xserver-vps
     feature_id: backup_feature
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
+    value: true
+    source_type: official
+    source_url: https://vps.xserver.ne.jp/support/faq/service_server_backup.php
+    verified_at: "2026-07-07"
+    verification_status: verified
+    notes: 自動バックアップ機能あり（ビジネスプラン標準搭載、他プランはバックアップ拡張オプション）
 
   - provider_id: xserver-vps
     feature_id: custom_image_save
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
+    value: true
+    source_type: official
+    source_url: https://vps.xserver.ne.jp/support/manual/man_server_image.php
+    verified_at: "2026-07-07"
+    verification_status: verified
+    notes: 「イメージ保存」機能によりサーバー全体をカスタムイメージとして保存可能
 
   - provider_id: xserver-vps
     feature_id: object_storage_integration
@@ -1269,11 +1275,12 @@ evidence:
 
   - provider_id: webarena-indigo
     feature_id: full_disk_snapshot
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
+    value: true
+    source_type: official
+    source_url: https://web.arena.ne.jp/indigo/spec/
+    verified_at: "2026-07-07"
+    verification_status: verified
+    notes: スナップショット機能（オプションサービス）あり。1インスタンスあたり最大5個まで保存可
 
   - provider_id: webarena-indigo
     feature_id: storage_type
@@ -1511,11 +1518,12 @@ evidence:
 
   - provider_id: kagoya-cloud-vps
     feature_id: full_disk_snapshot
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
+    value: true
+    source_type: official
+    source_url: https://www.kagoya.jp/vps/feature/customize/
+    verified_at: "2026-07-07"
+    verification_status: verified
+    notes: スナップショット機能あり。コントロールパネルから任意のタイミングで作成・管理可能
 
   - provider_id: kagoya-cloud-vps
     feature_id: storage_type
@@ -1559,27 +1567,30 @@ evidence:
 
   - provider_id: kagoya-cloud-vps
     feature_id: auto_snapshot
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
+    value: true
+    source_type: official
+    source_url: https://www.kagoya.jp/vps/feature/customize/
+    verified_at: "2026-07-07"
+    verification_status: verified
+    notes: 定期スナップショット機能あり（毎日自動取得、最大7世代）
 
   - provider_id: kagoya-cloud-vps
     feature_id: backup_feature
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
+    value: true
+    source_type: official
+    source_url: https://www.kagoya.jp/vps/feature/customize/
+    verified_at: "2026-07-07"
+    verification_status: verified
+    notes: 定期スナップショット（自動バックアップ）機能あり
 
   - provider_id: kagoya-cloud-vps
     feature_id: custom_image_save
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
+    value: true
+    source_type: official
+    source_url: https://www.kagoya.jp/vps/feature/customize/
+    verified_at: "2026-07-07"
+    verification_status: verified
+    notes: スナップショットから新しいインスタンスを作成可能（クローン機能）
 
   - provider_id: kagoya-cloud-vps
     feature_id: object_storage_integration
@@ -1588,6 +1599,461 @@ evidence:
     source_url: unknown
     verified_at: unknown
     verification_status: unknown
+
+  - provider_id: sakura-vps
+    feature_id: manual_backup
+    value: true
+    source_type: official
+    source_url: https://vps.sakura.ad.jp/contents/info/acronis-cyber-protect-cloud-acronis-hosted/
+    verified_at: "2026-07-07"
+    verification_status: verified
+    notes: Acronis Cyber Protect Cloud（有料オプション）によるOS全体の手動バックアップ対応
+
+  - provider_id: sakura-vps
+    feature_id: auto_backup
+    value: true
+    source_type: official
+    source_url: https://vps.sakura.ad.jp/contents/info/acronis-cyber-protect-cloud-acronis-hosted/
+    verified_at: "2026-07-07"
+    verification_status: verified
+    notes: Acronis Cyber Protect Cloud（有料オプション）によるスケジュールバックアップ対応
+
+  - provider_id: sakura-vps
+    feature_id: backup_schedule
+    value: true
+    source_type: official
+    source_url: https://vps.sakura.ad.jp/contents/info/acronis-cyber-protect-cloud-acronis-hosted/
+    verified_at: "2026-07-07"
+    verification_status: verified
+    notes: Acronis コンソールよりバックアップ実行スケジュール（時刻・頻度）設定可
+
+  - provider_id: sakura-vps
+    feature_id: backup_retention_period
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: sakura-vps
+    feature_id: backup_generations
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: sakura-vps
+    feature_id: restore_from_backup
+    value: true
+    source_type: official
+    source_url: https://vps.sakura.ad.jp/contents/info/acronis-cyber-protect-cloud-acronis-hosted/
+    verified_at: "2026-07-07"
+    verification_status: verified
+    notes: Acronis Cyber Protect Cloudによるファイル・ディスク単位の復元対応
+
+  - provider_id: sakura-vps
+    feature_id: backup_encryption
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: sakura-vps
+    feature_id: backup_to_object_storage
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: sakura-vps
+    feature_id: cross_region_backup
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: sakura-vps
+    feature_id: dr_support
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: sakura-vps
+    feature_id: backup_billing
+    value: "有料オプション（Acronis Cyber Protect Cloud: 1,760円/月〜(100GB)）"
+    source_type: official
+    source_url: https://vps.sakura.ad.jp/contents/info/acronis-cyber-protect-cloud-acronis-hosted/
+    verified_at: "2026-07-07"
+    verification_status: verified
+
+  - provider_id: conoha-vps
+    feature_id: manual_backup
+    value: true
+    source_type: official
+    source_url: https://support.conoha.jp/v/snapshot/
+    verified_at: "2026-07-07"
+    verification_status: verified
+    notes: スナップショット機能（無料、24時間有効、1世代）による手動バックアップ対応（VPS 3.0のみ）
+
+  - provider_id: conoha-vps
+    feature_id: auto_backup
+    value: true
+    source_type: official
+    source_url: https://support.conoha.jp/v/vps-autobackup/
+    verified_at: "2026-07-07"
+    verification_status: verified
+    notes: 自動バックアップ（有料オプション）：VPS 3.0は日次、VPS 2.0は週次
+
+  - provider_id: conoha-vps
+    feature_id: backup_schedule
+    value: false
+    source_type: official
+    source_url: https://doc.conoha.jp/products/vps-v3/storage-v3/autobackup-v3/
+    verified_at: "2026-07-07"
+    verification_status: verified
+    notes: バックアップ実行スケジュール（時刻・頻度）の任意設定不可。VPS 3.0は日次固定
+
+  - provider_id: conoha-vps
+    feature_id: backup_retention_period
+    value: "最大30世代（VPS 3.0）、最大3世代（VPS 2.0）"
+    source_type: official
+    source_url: https://doc.conoha.jp/products/vps-v3/storage-v3/autobackup-v3/
+    verified_at: "2026-07-07"
+    verification_status: verified
+
+  - provider_id: conoha-vps
+    feature_id: backup_generations
+    value: "14世代（デフォルト）、最大30世代（VPS 3.0）"
+    source_type: official
+    source_url: https://doc.conoha.jp/products/vps-v3/storage-v3/autobackup-v3/
+    verified_at: "2026-07-07"
+    verification_status: verified
+
+  - provider_id: conoha-vps
+    feature_id: restore_from_backup
+    value: true
+    source_type: official
+    source_url: https://support.conoha.jp/v/vps-autobackup/
+    verified_at: "2026-07-07"
+    verification_status: verified
+    notes: コントロールパネルからバックアップを選択してリストア可能
+
+  - provider_id: conoha-vps
+    feature_id: backup_encryption
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: conoha-vps
+    feature_id: backup_to_object_storage
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: conoha-vps
+    feature_id: cross_region_backup
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: conoha-vps
+    feature_id: dr_support
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: conoha-vps
+    feature_id: backup_billing
+    value: "有料オプション（世代数により料金変動）"
+    source_type: official
+    source_url: https://support.conoha.jp/v/vps-autobackup/
+    verified_at: "2026-07-07"
+    verification_status: verified
+
+  - provider_id: xserver-vps
+    feature_id: manual_backup
+    value: true
+    source_type: official
+    source_url: https://vps.xserver.ne.jp/support/manual/man_server_image.php
+    verified_at: "2026-07-07"
+    verification_status: verified
+    notes: 「イメージ保存」機能による手動バックアップ対応（サーバー停止状態で実行）
+
+  - provider_id: xserver-vps
+    feature_id: auto_backup
+    value: true
+    source_type: official
+    source_url: https://vps.xserver.ne.jp/support/faq/service_server_backup.php
+    verified_at: "2026-07-07"
+    verification_status: verified
+    notes: 自動バックアップ機能あり（ビジネスプラン標準搭載：週1回・1世代、バックアップ拡張オプションで最大3世代）
+
+  - provider_id: xserver-vps
+    feature_id: backup_schedule
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: xserver-vps
+    feature_id: backup_retention_period
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: xserver-vps
+    feature_id: backup_generations
+    value: "ビジネスプラン標準1世代、バックアップ拡張オプションで最大3世代"
+    source_type: official
+    source_url: https://vps.xserver.ne.jp/support/faq/service_server_backup.php
+    verified_at: "2026-07-07"
+    verification_status: verified
+
+  - provider_id: xserver-vps
+    feature_id: restore_from_backup
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: xserver-vps
+    feature_id: backup_encryption
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: xserver-vps
+    feature_id: backup_to_object_storage
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: xserver-vps
+    feature_id: cross_region_backup
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: xserver-vps
+    feature_id: dr_support
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: xserver-vps
+    feature_id: backup_billing
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: webarena-indigo
+    feature_id: manual_backup
+    value: true
+    source_type: official
+    source_url: https://web.arena.ne.jp/indigo/spec/
+    verified_at: "2026-07-07"
+    verification_status: verified
+    notes: スナップショット機能（オプション）による手動バックアップ対応
+
+  - provider_id: webarena-indigo
+    feature_id: auto_backup
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: webarena-indigo
+    feature_id: backup_schedule
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: webarena-indigo
+    feature_id: backup_retention_period
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: webarena-indigo
+    feature_id: backup_generations
+    value: "最大5個/インスタンス（スナップショット）"
+    source_type: official
+    source_url: https://web.arena.ne.jp/indigo/spec/
+    verified_at: "2026-07-07"
+    verification_status: verified
+
+  - provider_id: webarena-indigo
+    feature_id: restore_from_backup
+    value: true
+    source_type: official
+    source_url: https://web.arena.ne.jp/indigo/spec/
+    verified_at: "2026-07-07"
+    verification_status: verified
+    notes: スナップショットからのインスタンス復元対応
+
+  - provider_id: webarena-indigo
+    feature_id: backup_encryption
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: webarena-indigo
+    feature_id: backup_to_object_storage
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: webarena-indigo
+    feature_id: cross_region_backup
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: webarena-indigo
+    feature_id: dr_support
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: webarena-indigo
+    feature_id: backup_billing
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: kagoya-cloud-vps
+    feature_id: manual_backup
+    value: true
+    source_type: official
+    source_url: https://www.kagoya.jp/vps/feature/customize/
+    verified_at: "2026-07-07"
+    verification_status: verified
+    notes: 手動スナップショット機能（任意のタイミング）によるバックアップ対応
+
+  - provider_id: kagoya-cloud-vps
+    feature_id: auto_backup
+    value: true
+    source_type: official
+    source_url: https://www.kagoya.jp/vps/feature/customize/
+    verified_at: "2026-07-07"
+    verification_status: verified
+    notes: 定期スナップショット機能（毎日自動取得、最大7世代）
+
+  - provider_id: kagoya-cloud-vps
+    feature_id: backup_schedule
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: kagoya-cloud-vps
+    feature_id: backup_retention_period
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: kagoya-cloud-vps
+    feature_id: backup_generations
+    value: "最大7世代（定期スナップショット）"
+    source_type: official
+    source_url: https://www.kagoya.jp/vps/feature/customize/
+    verified_at: "2026-07-07"
+    verification_status: verified
+
+  - provider_id: kagoya-cloud-vps
+    feature_id: restore_from_backup
+    value: true
+    source_type: official
+    source_url: https://www.kagoya.jp/vps/feature/customize/
+    verified_at: "2026-07-07"
+    verification_status: verified
+    notes: スナップショットからのリストア対応
+
+  - provider_id: kagoya-cloud-vps
+    feature_id: backup_encryption
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: kagoya-cloud-vps
+    feature_id: backup_to_object_storage
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: kagoya-cloud-vps
+    feature_id: cross_region_backup
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: kagoya-cloud-vps
+    feature_id: dr_support
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+
+  - provider_id: kagoya-cloud-vps
+    feature_id: backup_billing
+    value: "有料（容量課金：スナップショット10GBあたり日額4.4円）"
+    source_type: official
+    source_url: https://www.kagoya.jp/vps/feature/customize/
+    verified_at: "2026-07-07"
+    verification_status: verified
 
   - provider_id: kagoya-cloud-vps
     feature_id: os_templates
