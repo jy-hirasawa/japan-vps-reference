@@ -50,7 +50,7 @@
 | スナップショット | ✅ [🔗](https://vps.sakura.ad.jp/) (2024-01-01) | ✅ [🔗](https://www.conoha.jp/vps/function/) (2024-01-01) | ✅ [🔗](https://vps.xserver.ne.jp/support/manual/man_server_image.php) (2026-07-07) | ✅ [🔗](https://web.arena.ne.jp/indigo/spec/) (2026-07-07) | ✅ [🔗](https://www.kagoya.jp/vps/feature/customize/) (2026-07-07) |
 | ファイアウォール機能 | 不明 | 不明 | 不明 | 不明 | 不明 |
 | DDoS保護 | 不明 | 不明 | 不明 | 不明 | 不明 |
-| ロードバランサー | 不明 | 不明 | 不明 | 不明 | 不明 |
+| ロードバランサー | 不明 | 不明 | 不明 | 不明 | ✅ [🔗](https://support.kagoya.jp/vps/charge/index.html) (2026-07-07) |
 | SLA稼働率（%） | 99.99 [🔗](https://vps.sakura.ad.jp/agreement/) (2024-01-01) | 99.99 [🔗](https://www.conoha.jp/vps/agreement/) (2024-01-01) | 99.99 [🔗](https://vps.xserver.ne.jp/agreement/) (2024-01-01) | 不明 | 不明 |
 
 ## 本番サービス運用
@@ -61,8 +61,8 @@
 | --- | --- | --- | --- | --- | --- |
 | SLA稼働率（%） | 99.99 [🔗](https://vps.sakura.ad.jp/agreement/) (2024-01-01) | 99.99 [🔗](https://www.conoha.jp/vps/agreement/) (2024-01-01) | 99.99 [🔗](https://vps.xserver.ne.jp/agreement/) (2024-01-01) | 不明 | 不明 |
 | SLA文書URL | 不明 | 不明 | 不明 | 不明 | 不明 |
-| ロードバランサー | 不明 | 不明 | 不明 | 不明 | 不明 |
-| プライベートネットワーク | 不明 | 不明 | 不明 | 不明 | 不明 |
+| ロードバランサー | 不明 | 不明 | 不明 | 不明 | ✅ [🔗](https://support.kagoya.jp/vps/charge/index.html) (2026-07-07) |
+| プライベートネットワーク | 不明 | 不明 | 不明 | 不明 | ✅ [🔗](https://support.kagoya.jp/vps/charge/index.html) (2026-07-07) |
 | 自動バックアップ | ✅ [🔗](https://vps.sakura.ad.jp/contents/info/acronis-cyber-protect-cloud-acronis-hosted/) (2026-07-07) | ✅ [🔗](https://support.conoha.jp/v/vps-autobackup/) (2026-07-07) | ✅ [🔗](https://vps.xserver.ne.jp/support/faq/service_server_backup.php) (2026-07-07) | 不明 | ✅ [🔗](https://www.kagoya.jp/vps/feature/customize/) (2026-07-07) |
 | バックアップ保持期間 | 不明 | 不明 | 不明 | 不明 | 不明 |
 | ファイアウォール機能 | 不明 | 不明 | 不明 | 不明 | 不明 |

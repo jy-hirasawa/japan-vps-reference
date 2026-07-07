@@ -130,17 +130,17 @@
 
 | # | 項目 | さくらのVPS | ConoHa VPS | Xserver VPS | WebARENA Indigo | KAGOYA CLOUD VPS |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | IPv4 | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 2 | IPv6 | ✅ [🔗](https://vps.sakura.ad.jp/) (2024-01-01) | ✅ [🔗](https://www.conoha.jp/vps/) (2024-01-01) | 不明 | 不明 | 不明 |
-| 3 | 追加IPv4 | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 4 | 逆引きDNS | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 5 | 転送量制限 | 不明 | 不明 | 不明 | 不明 | 不明 |
+| 1 | IPv4 | 不明 | 不明 | 不明 | 768MBプランはなし（IPv6のみ）/ 1GB以上は1個 [🔗](https://web.arena.ne.jp/indigo/spec/) (2026-07-07) | 不明 |
+| 2 | IPv6 | ✅ [🔗](https://manual.sakura.ad.jp/vps/network/index.html) (2026-07-07) | ✅ [🔗](https://doc.conoha.jp/products/vps-v3/network-v3/ipv6-v3/) (2026-07-07) | 不明 | ✅ [🔗](https://web.arena.ne.jp/indigo/spec/) (2026-07-07) | ✅ [🔗](https://support.kagoya.jp/vps/charge/index.html) (2026-07-07) |
+| 3 | 追加IPv4 | ❌ [🔗](https://manual.sakura.ad.jp/vps/support/technical/ip-address.html) (2026-07-07) | ✅ [🔗](https://doc.conoha.jp/products/vps-v2/network-v2/addip-v2/) (2026-07-07) | 不明 | ❌ [🔗](https://web.arena.ne.jp/indigo/spec/) (2026-07-07) | ✅ [🔗](https://support.kagoya.jp/vps/manual/index.php?action=artikel&cat=18&id=69) (2026-07-07) |
+| 4 | 逆引きDNS | ✅ [🔗](https://manual.sakura.ad.jp/vps/support/technical/ip-address.html) (2026-07-07) | ✅ [🔗](https://support.conoha.jp/vps/faq/ip-q/) (2026-07-07) | 不明 | ❌ [🔗](https://web.arena.ne.jp/indigo/spec/) (2026-07-07) | 不明 |
+| 5 | 転送量制限 | 不明 | 不明 | 不明 | 無制限 [🔗](https://web.arena.ne.jp/indigo/spec/) (2026-07-07) | 無制限 [🔗](https://www.kagoya.jp/vps/) (2026-07-07) |
 | 6 | 帯域目安（Gbps） | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 7 | ローカルネットワーク | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 8 | プライベートネットワーク | 不明 | 不明 | 不明 | 不明 | 不明 |
+| 7 | ローカルネットワーク | ✅ [🔗](https://manual.sakura.ad.jp/vps/network/index.html) (2026-07-07) | 不明 | 不明 | 不明 | 不明 |
+| 8 | プライベートネットワーク | 不明 | 不明 | 不明 | 不明 | ✅ [🔗](https://support.kagoya.jp/vps/charge/index.html) (2026-07-07) |
 | 9 | VLAN | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 10 | ロードバランサー | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 11 | Floating IP | 不明 | 不明 | 不明 | 不明 | 不明 |
+| 10 | ロードバランサー | 不明 | 不明 | 不明 | 不明 | ✅ [🔗](https://support.kagoya.jp/vps/charge/index.html) (2026-07-07) |
+| 11 | Floating IP | 不明 | 不明 | 不明 | 不明 | ✅ [🔗](https://support.kagoya.jp/vps/manual/index.php?action=artikel&cat=18&id=69) (2026-07-07) |
 
 ## セキュリティ
 
