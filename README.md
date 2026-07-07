@@ -23,10 +23,11 @@
 │   ├── validate.py
 │   ├── generate_docs.py
 │   └── check_links.py
-├── docs/                  # 自動生成されたMarkdownドキュメント（手動編集不可）
-│   ├── comparison.md      # プロバイダー比較テーブル
-│   ├── providers.md       # プロバイダー詳細一覧
-│   └── update_candidates.md # URL更新候補一覧
+├── docs/                  # ドキュメント置き場
+│   ├── comparison.md      # プロバイダー比較テーブル（自動生成）
+│   ├── providers.md       # プロバイダー詳細一覧（自動生成）
+│   ├── update_candidates.md # URL更新候補一覧（自動生成）
+│   └── data-policy.md     # 値の表現ルール・データポリシー（手動管理）
 └── .github/workflows/
     ├── validate.yml       # PR時に自動検証を実行するワークフロー
     └── check-links.yml    # 手動でリンクチェックを実行するワークフロー
@@ -61,7 +62,9 @@ python scripts/generate_docs.py
 
 ## 生成ドキュメントの運用ルール
 
-`docs/` 以下のMarkdownファイルは `scripts/generate_docs.py` により自動生成される **生成物** です。手動で編集しないでください。
+`docs/` 以下のMarkdownファイルのうち、`comparison.md` / `providers.md` / `update_candidates.md` は `scripts/generate_docs.py` により自動生成される **生成物** です。手動で編集しないでください。
+
+`docs/data-policy.md` は手動で管理するポリシードキュメントです。生成スクリプトの対象外です。
 
 ### PRを作成する前に必ず実行してください
 
@@ -226,6 +229,22 @@ GitHub Actions で手動実行する場合:
 
 `evidence.yml` の各エントリには、値の根拠と検証状態を示す以下のメタデータを必ず記載してください。
 
+値の表現ルール（`unknown` / `"-"` / `0` / `false` の違いなど）の詳細は [`docs/data-policy.md`](docs/data-policy.md) を参照してください。
+
+### 値の表現ルール（概要）
+
+| 値 | 意味 |
+| --- | --- |
+| `unknown` | 未確認・公式情報から判断できない |
+| `"-"` | プランなし・非対応・該当なし（確認済み） |
+| `0` | 数値として 0（確認済み） |
+| `false` | 機能として非対応（boolean 型、確認済み） |
+| `true` | 機能として対応（boolean 型、確認済み） |
+
+- `unknown` は情報が**不明**な場合に使用します。推測で補完しないでください。
+- `"-"` は公式情報で**該当なし・非対応**が確認済みの場合に使用します。
+- `0` と `false` はどちらも「確認済みの非対応・ゼロ」ですが、feature の `type` に合わせて使い分けてください。
+
 ### 必須フィールド
 
 | フィールド | 説明 | 許容値 |
@@ -284,6 +303,7 @@ GitHub Actions で手動実行する場合:
 - [`docs/comparison.md`](docs/comparison.md) — VPS比較テーブル
 - [`docs/providers.md`](docs/providers.md) — プロバイダー詳細一覧
 - [`docs/update_candidates.md`](docs/update_candidates.md) — URL更新候補一覧
+- [`docs/data-policy.md`](docs/data-policy.md) — 値の表現ルール・データポリシー
 
 ## ライセンス
 
