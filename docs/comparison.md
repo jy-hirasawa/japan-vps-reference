@@ -120,10 +120,10 @@
 | 4 | SSD明記 | 不明 | 不明 | 不明 | 不明 | 不明 |
 | 5 | ディスク追加 | 不明 | 不明 | 不明 | 不明 | 不明 |
 | 6 | ディスク拡張 | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 7 | スナップショット | ✅ [🔗](https://vps.sakura.ad.jp/) (2024-01-01) | ✅ [🔗](https://www.conoha.jp/vps/function/) (2024-01-01) | 不明 | 不明 | 不明 |
-| 8 | 自動スナップショット | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 9 | バックアップ機能 | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 10 | イメージ保存 | 不明 | 不明 | 不明 | 不明 | 不明 |
+| 7 | スナップショット | ✅ [🔗](https://vps.sakura.ad.jp/) (2024-01-01) | ✅ [🔗](https://www.conoha.jp/vps/function/) (2024-01-01) | ✅ [🔗](https://vps.xserver.ne.jp/support/manual/man_server_image.php) (2026-07-07) | ✅ [🔗](https://web.arena.ne.jp/indigo/spec/) (2026-07-07) | ✅ [🔗](https://www.kagoya.jp/vps/feature/customize/) (2026-07-07) |
+| 8 | 自動スナップショット | 不明 | ❌ [🔗](https://support.conoha.jp/v/snapshot/) (2026-07-07) | 不明 | 不明 | ✅ [🔗](https://www.kagoya.jp/vps/feature/customize/) (2026-07-07) |
+| 9 | バックアップ機能 | ✅ [🔗](https://vps.sakura.ad.jp/feature/backup/) (2026-07-07) | ✅ [🔗](https://support.conoha.jp/v/vps-autobackup/) (2026-07-07) | ✅ [🔗](https://vps.xserver.ne.jp/support/faq/service_server_backup.php) (2026-07-07) | 不明 | ✅ [🔗](https://www.kagoya.jp/vps/feature/customize/) (2026-07-07) |
+| 10 | イメージ保存 | 不明 | 不明 | ✅ [🔗](https://vps.xserver.ne.jp/support/manual/man_server_image.php) (2026-07-07) | 不明 | ✅ [🔗](https://www.kagoya.jp/vps/feature/customize/) (2026-07-07) |
 | 11 | オブジェクトストレージ連携 | 不明 | 不明 | 不明 | 不明 | 不明 |
 
 ## ネットワーク
@@ -165,17 +165,17 @@
 
 | # | 項目 | さくらのVPS | ConoHa VPS | Xserver VPS | WebARENA Indigo | KAGOYA CLOUD VPS |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | 手動バックアップ | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 2 | 自動バックアップ | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 3 | バックアップスケジュール設定 | 不明 | 不明 | 不明 | 不明 | 不明 |
+| 1 | 手動バックアップ | ✅ [🔗](https://vps.sakura.ad.jp/contents/info/acronis-cyber-protect-cloud-acronis-hosted/) (2026-07-07) | ✅ [🔗](https://support.conoha.jp/v/snapshot/) (2026-07-07) | ✅ [🔗](https://vps.xserver.ne.jp/support/manual/man_server_image.php) (2026-07-07) | ✅ [🔗](https://web.arena.ne.jp/indigo/spec/) (2026-07-07) | ✅ [🔗](https://www.kagoya.jp/vps/feature/customize/) (2026-07-07) |
+| 2 | 自動バックアップ | ✅ [🔗](https://vps.sakura.ad.jp/contents/info/acronis-cyber-protect-cloud-acronis-hosted/) (2026-07-07) | ✅ [🔗](https://support.conoha.jp/v/vps-autobackup/) (2026-07-07) | ✅ [🔗](https://vps.xserver.ne.jp/support/faq/service_server_backup.php) (2026-07-07) | 不明 | ✅ [🔗](https://www.kagoya.jp/vps/feature/customize/) (2026-07-07) |
+| 3 | バックアップスケジュール設定 | ✅ [🔗](https://vps.sakura.ad.jp/contents/info/acronis-cyber-protect-cloud-acronis-hosted/) (2026-07-07) | ❌ [🔗](https://doc.conoha.jp/products/vps-v3/storage-v3/autobackup-v3/) (2026-07-07) | 不明 | 不明 | 不明 |
 | 4 | バックアップ保持期間 | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 5 | バックアップ世代数 | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 6 | バックアップからの復元 | 不明 | 不明 | 不明 | 不明 | 不明 |
+| 5 | バックアップ世代数 | 不明 | 14世代（デフォルト）、最大30世代（VPS 3.0） [🔗](https://doc.conoha.jp/products/vps-v3/storage-v3/autobackup-v3/) (2026-07-07) | ビジネスプラン標準1世代、バックアップ拡張オプションで最大3世代 [🔗](https://vps.xserver.ne.jp/support/faq/service_server_backup.php) (2026-07-07) | 最大5個/インスタンス（スナップショット） [🔗](https://web.arena.ne.jp/indigo/spec/) (2026-07-07) | 最大7世代（定期スナップショット） [🔗](https://www.kagoya.jp/vps/feature/customize/) (2026-07-07) |
+| 6 | バックアップからの復元 | ✅ [🔗](https://vps.sakura.ad.jp/contents/info/acronis-cyber-protect-cloud-acronis-hosted/) (2026-07-07) | ✅ [🔗](https://support.conoha.jp/v/vps-autobackup/) (2026-07-07) | 不明 | ✅ [🔗](https://web.arena.ne.jp/indigo/spec/) (2026-07-07) | ✅ [🔗](https://www.kagoya.jp/vps/feature/customize/) (2026-07-07) |
 | 7 | バックアップ暗号化 | 不明 | 不明 | 不明 | 不明 | 不明 |
 | 8 | オブジェクトストレージへのバックアップ | 不明 | 不明 | 不明 | 不明 | 不明 |
 | 9 | リージョン間バックアップ | 不明 | 不明 | 不明 | 不明 | 不明 |
 | 10 | DR（災害復旧）対応 | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 11 | バックアップ課金 | 不明 | 不明 | 不明 | 不明 | 不明 |
+| 11 | バックアップ課金 | 有料オプション（Acronis Cyber Protect Cloud: 1,760円/月〜(100GB)） [🔗](https://vps.sakura.ad.jp/contents/info/acronis-cyber-protect-cloud-acronis-hosted/) (2026-07-07) | 有料オプション（世代数により料金変動） [🔗](https://support.conoha.jp/v/vps-autobackup/) (2026-07-07) | 不明 | 不明 | 有料（容量課金：スナップショット10GBあたり日額4.4円） [🔗](https://www.kagoya.jp/vps/feature/customize/) (2026-07-07) |
 
 ## API / CLI / Terraform
 
