@@ -369,5 +369,76 @@ class TestGenerateEvidenceVerifiedAtSection(unittest.TestCase):
         self.assertIn("2024-06-01", md)
 
 
+class TestGenerateUseCasesPage(unittest.TestCase):
+
+    def _generate(self, providers, features, evidence_list=None):
+        evidence_map = generate_docs.build_evidence_map(evidence_list or [])
+        return generate_docs.generate_use_cases_page(providers, features, evidence_map)
+
+    def test_header_and_auto_gen_notice(self):
+        """生成された Markdown に見出しと自動生成注記が含まれる。"""
+        providers = [_make_provider()]
+        features = [_make_feature("min_price_jpy", "最低月額料金（円）", category="PRICE", ftype="number")]
+        md = self._generate(providers, features)
+        self.assertIn("# 用途別 VPS 比較", md)
+        self.assertIn("自動生成", md)
+
+    def test_all_use_case_sections_present(self):
+        """全用途のセクション見出しが出力される。"""
+        providers = [_make_provider()]
+        features = []
+        md = self._generate(providers, features)
+        for uc in generate_docs.USE_CASES:
+            self.assertIn(f"## {uc['label']}", md)
+
+    def test_known_feature_id_renders_in_table(self):
+        """USE_CASES に含まれる feature_id が evidence 付きで表示される。"""
+        providers = [_make_provider("prov-a", "ProvA")]
+        features = [_make_feature("min_price_jpy", "最低月額料金（円）", category="PRICE", ftype="number")]
+        evidence = [_make_evidence("prov-a", "min_price_jpy", 500)]
+        md = self._generate(providers, features, evidence)
+        self.assertIn("最低月額料金（円）", md)
+        self.assertIn("500", md)
+
+    def test_unknown_feature_id_shows_unknown_label(self):
+        """evidence がない場合は UNKNOWN_LABEL が表示される。"""
+        providers = [_make_provider("prov-a", "ProvA")]
+        features = [_make_feature("min_price_jpy", "最低月額料金（円）", category="PRICE", ftype="number")]
+        md = self._generate(providers, features, [])
+        self.assertIn(generate_docs.UNKNOWN_LABEL, md)
+
+    def test_feature_not_in_features_list_is_skipped(self):
+        """features リストに存在しない feature_id はスキップされる。"""
+        providers = [_make_provider()]
+        # features に何も渡さない → USE_CASES の全 feature_id が feature_index に存在しない
+        md = self._generate(providers, [])
+        self.assertIn("（対応する比較項目がありません）", md)
+
+    def test_legend_section_included(self):
+        """凡例セクションが含まれる。"""
+        providers = [_make_provider()]
+        features = []
+        md = self._generate(providers, features)
+        self.assertIn("## 凡例", md)
+        self.assertIn("対応あり", md)
+        self.assertIn("非対応", md)
+
+    def test_boolean_true_displays_check(self):
+        """boolean: true は ✅ として表示される。"""
+        providers = [_make_provider("prov-a", "ProvA")]
+        # api_available は automation 用途の USE_CASES に含まれる
+        features = [_make_feature("api_available", "REST API", category="automation", ftype="boolean")]
+        evidence = [_make_evidence("prov-a", "api_available", True)]
+        md = self._generate(providers, features, evidence)
+        self.assertIn("✅", md)
+
+    def test_provider_name_appears_in_header(self):
+        """プロバイダー名がテーブルヘッダーに含まれる。"""
+        providers = [_make_provider("p1", "MyVPS")]
+        features = [_make_feature("api_available", "REST API", category="automation", ftype="boolean")]
+        md = self._generate(providers, features)
+        self.assertIn("MyVPS", md)
+
+
 if __name__ == "__main__":
     unittest.main()
