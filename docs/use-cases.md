@@ -41,7 +41,7 @@
 
 | 項目 | さくらのVPS | ConoHa VPS | Xserver VPS | WebARENA Indigo | KAGOYA CLOUD VPS |
 | --- | --- | --- | --- | --- | --- |
-| アプリテンプレート | ✅ [🔗](https://vps.sakura.ad.jp/specification/#specification_application) (2026-07-07) | ✅ [🔗](https://vps.conoha.jp/function/template/?btn_id=top--function_function-template) (2026-07-07) | ✅ [🔗](https://vps.xserver.ne.jp/os-list.php) (2026-07-07) | ✅ [🔗](https://web.arena.ne.jp/indigo/spec/kusanagi.html) (2026-07-07) | 不明 |
+| アプリテンプレート | ✅ [🔗](https://vps.sakura.ad.jp/specification/#specification_application) (2026-07-07) | ✅ [🔗](https://vps.conoha.jp/function/template/?btn_id=top--function_function-template) (2026-07-07) | ✅ [🔗](https://vps.xserver.ne.jp/os-list.php) (2026-07-07) | 不明 | 不明 |
 | KUSANAGIテンプレート | ✅ [🔗](https://vps.sakura.ad.jp/specification/#specification_application) (2026-07-07) | ✅ [🔗](https://vps.conoha.jp/function/template/?btn_id=top--function_function-template) (2026-07-07) | ✅ [🔗](https://vps.xserver.ne.jp/support/manual/man_server_app_use_kusanagi.php) (2026-07-07) | ✅ [🔗](https://web.arena.ne.jp/indigo/spec/kusanagi.html) (2026-07-07) | 不明 |
 | 最低月額料金（円） | 643 [🔗](https://vps.sakura.ad.jp/specification/) (2026-07-03) | 460 [🔗](https://www.conoha.jp/vps/pricing/) (2026-07-03) | 1496 [🔗](https://vps.xserver.ne.jp/price/) (2026-07-03) | 319 [🔗](https://web.arena.ne.jp/indigo/price/) (2026-07-03) | 550 [🔗](https://www.kagoya.jp/vps/) (2026-07-03) |
 | 2GBプラン月額（円・税込） | 1738 [🔗](https://vps.sakura.ad.jp/specification/) (2026-07-03) | 1259 [🔗](https://www.conoha.jp/vps/pricing/) (2026-07-03) | 1496 [🔗](https://vps.xserver.ne.jp/price/) (2026-07-03) | 814 [🔗](https://web.arena.ne.jp/indigo/price/) (2026-07-03) | 770 [🔗](https://www.kagoya.jp/vps/) (2026-07-03) |

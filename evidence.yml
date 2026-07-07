@@ -1013,11 +1013,11 @@ evidence:
     verification_status: verified
   - provider_id: webarena-indigo
     feature_id: app_template
-    value: true
-    source_type: official
-    source_url: https://web.arena.ne.jp/indigo/spec/kusanagi.html
-    verified_at: "2026-07-07"
-    verification_status: verified
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
   - provider_id: webarena-indigo
     feature_id: kusanagi_template
     value: true
