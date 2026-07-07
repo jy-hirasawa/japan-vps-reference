@@ -27,6 +27,7 @@
 │   ├── comparison.md      # プロバイダー比較テーブル（自動生成）
 │   ├── providers.md       # プロバイダー詳細一覧（自動生成）
 │   ├── update_candidates.md # URL更新候補一覧（自動生成）
+│   ├── use-cases.md       # 用途別比較ページ（自動生成）
 │   └── data-policy.md     # 値の表現ルール・データポリシー（手動管理）
 └── .github/workflows/
     ├── validate.yml       # PR時に自動検証を実行するワークフロー
@@ -62,7 +63,7 @@ python scripts/generate_docs.py
 
 ## 生成ドキュメントの運用ルール
 
-`docs/` 以下のMarkdownファイルのうち、`comparison.md` / `providers.md` / `update_candidates.md` は `scripts/generate_docs.py` により自動生成される **生成物** です。手動で編集しないでください。
+`docs/` 以下のMarkdownファイルのうち、`comparison.md` / `providers.md` / `update_candidates.md` / `use-cases.md` は `scripts/generate_docs.py` により自動生成される **生成物** です。手動で編集しないでください。
 
 `docs/data-policy.md` は手動で管理するポリシードキュメントです。生成スクリプトの対象外です。
 
@@ -303,6 +304,7 @@ GitHub Actions で手動実行する場合:
 - [`docs/comparison.md`](docs/comparison.md) — VPS比較テーブル
 - [`docs/providers.md`](docs/providers.md) — プロバイダー詳細一覧
 - [`docs/update_candidates.md`](docs/update_candidates.md) — URL更新候補一覧
+- [`docs/use-cases.md`](docs/use-cases.md) — 用途別比較ページ
 - [`docs/data-policy.md`](docs/data-policy.md) — 値の表現ルール・データポリシー
 
 ## ライセンス
