@@ -8,11 +8,11 @@
 
 | Provider | 最終確認日 |
 | --- | --- |
-| さくらのVPS | 2026-07-03 |
-| ConoHa VPS | 2026-07-03 |
-| Xserver VPS | 2026-07-03 |
-| WebARENA Indigo | 2026-07-03 |
-| KAGOYA CLOUD VPS | 2026-07-03 |
+| さくらのVPS | 2026-07-07 |
+| ConoHa VPS | 2026-07-07 |
+| Xserver VPS | 2026-07-07 |
+| WebARENA Indigo | 2026-07-07 |
+| KAGOYA CLOUD VPS | 2026-07-07 |
 
 ## 公式URL
 
@@ -73,20 +73,20 @@
 | 2 | Linux対応 | 不明 | 不明 | 不明 | 不明 | 不明 |
 | 3 | Windows公式対応 | 不明 | 不明 | 不明 | 不明 | 不明 |
 | 4 | コンソール / VNC | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 5 | スタートアップスクリプト | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 6 | cloud-init明記 | 不明 | 不明 | 不明 | 不明 | 不明 |
+| 5 | スタートアップスクリプト | ✅ [🔗](https://manual.sakura.ad.jp/vps/startupscript/startupscript.html) (2026-07-07) | ✅ [🔗](https://vps.conoha.jp/function/startupscript/) (2026-07-07) | 不明 | 不明 | ✅ [🔗](https://www.kagoya.jp/cloud/vps/manual/instance/) (2026-07-07) |
+| 6 | cloud-init明記 | 不明 | 不明 | 不明 | 不明 | ✅ [🔗](https://www.kagoya.jp/cloud/vps/manual/instance/) (2026-07-07) |
 
 ## OS / テンプレート
 
 | # | 項目 | さくらのVPS | ConoHa VPS | Xserver VPS | WebARENA Indigo | KAGOYA CLOUD VPS |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | 標準OSテンプレート | 不明 | 不明 | 不明 | 不明 | 不明 |
+| 1 | 標準OSテンプレート | AlmaLinux, Rocky Linux, Ubuntu, Debian, FreeBSD [🔗](https://vps.sakura.ad.jp/specification/#specification_os) (2026-07-07) | AlmaLinux, Rocky Linux, Ubuntu, Debian, Fedora, FreeBSD, Windows Server [🔗](https://vps.conoha.jp/function/template/?btn_id=top--function_function-template) (2026-07-07) | AlmaLinux, Rocky Linux, Ubuntu, Debian, Fedora [🔗](https://vps.xserver.ne.jp/os-list.php) (2026-07-07) | AlmaLinux, Rocky Linux, Ubuntu, Debian, Windows Server [🔗](https://web.arena.ne.jp/indigo/spec/os.html) (2026-07-07) | AlmaLinux, Rocky Linux, Ubuntu [🔗](https://www.kagoya.jp/cloud/vps/manual/list/) (2026-07-07) |
 | 2 | OSテンプレート数 | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 3 | アプリテンプレート | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 4 | KUSANAGIテンプレート | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 5 | Docker系テンプレート | 不明 | 不明 | 不明 | 不明 | 不明 |
+| 3 | アプリテンプレート | ✅ [🔗](https://vps.sakura.ad.jp/specification/#specification_application) (2026-07-07) | ✅ [🔗](https://vps.conoha.jp/function/template/?btn_id=top--function_function-template) (2026-07-07) | ✅ [🔗](https://vps.xserver.ne.jp/os-list.php) (2026-07-07) | 不明 | 不明 |
+| 4 | KUSANAGIテンプレート | ✅ [🔗](https://vps.sakura.ad.jp/specification/#specification_application) (2026-07-07) | ✅ [🔗](https://vps.conoha.jp/function/template/?btn_id=top--function_function-template) (2026-07-07) | ✅ [🔗](https://vps.xserver.ne.jp/support/manual/man_server_app_use_kusanagi.php) (2026-07-07) | ✅ [🔗](https://web.arena.ne.jp/indigo/spec/kusanagi.html) (2026-07-07) | 不明 |
+| 5 | Docker系テンプレート | ✅ [🔗](https://vps.sakura.ad.jp/specification/#specification_application) (2026-07-07) | ✅ [🔗](https://vps.conoha.jp/function/template/?btn_id=top--function_function-template) (2026-07-07) | ✅ [🔗](https://vps.xserver.ne.jp/os-list.php) (2026-07-07) | 不明 | 不明 |
 | 6 | AI系テンプレート | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 7 | カスタムISO | 不明 | 不明 | 不明 | 不明 | 不明 |
+| 7 | カスタムISO | ✅ [🔗](https://manual.sakura.ad.jp/vps/os-reinstall/iso-install.html) (2026-07-07) | ✅ [🔗](https://support.conoha.jp/vps/iso-upload/) (2026-07-07) | 不明 | 不明 | ✅ [🔗](https://www.kagoya.jp/support/category/cloud/vps/vps_manual/iso/) (2026-07-07) |
 | 8 | ISOアップロード | 不明 | 不明 | 不明 | 不明 | 不明 |
 
 ## 料金

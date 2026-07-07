@@ -229,6 +229,48 @@ evidence:
     source_url: unknown
     verified_at: unknown
     verification_status: unknown
+  - provider_id: sakura-vps
+    feature_id: standard_os_template
+    value: AlmaLinux, Rocky Linux, Ubuntu, Debian, FreeBSD
+    source_type: official
+    source_url: https://vps.sakura.ad.jp/specification/#specification_os
+    verified_at: "2026-07-07"
+    verification_status: verified
+  - provider_id: sakura-vps
+    feature_id: app_template
+    value: true
+    source_type: official
+    source_url: https://vps.sakura.ad.jp/specification/#specification_application
+    verified_at: "2026-07-07"
+    verification_status: verified
+  - provider_id: sakura-vps
+    feature_id: docker_template
+    value: true
+    source_type: official
+    source_url: https://vps.sakura.ad.jp/specification/#specification_application
+    verified_at: "2026-07-07"
+    verification_status: verified
+  - provider_id: sakura-vps
+    feature_id: kusanagi_template
+    value: true
+    source_type: official
+    source_url: https://vps.sakura.ad.jp/specification/#specification_application
+    verified_at: "2026-07-07"
+    verification_status: verified
+  - provider_id: sakura-vps
+    feature_id: custom_iso
+    value: true
+    source_type: official
+    source_url: https://manual.sakura.ad.jp/vps/os-reinstall/iso-install.html
+    verified_at: "2026-07-07"
+    verification_status: verified
+  - provider_id: sakura-vps
+    feature_id: startup_script
+    value: true
+    source_type: official
+    source_url: https://manual.sakura.ad.jp/vps/startupscript/startupscript.html
+    verified_at: "2026-07-07"
+    verification_status: verified
 
   - provider_id: conoha-vps
     feature_id: min_price_jpy
@@ -450,6 +492,48 @@ evidence:
     source_url: unknown
     verified_at: unknown
     verification_status: unknown
+  - provider_id: conoha-vps
+    feature_id: standard_os_template
+    value: AlmaLinux, Rocky Linux, Ubuntu, Debian, Fedora, FreeBSD, Windows Server
+    source_type: official
+    source_url: https://vps.conoha.jp/function/template/?btn_id=top--function_function-template
+    verified_at: "2026-07-07"
+    verification_status: verified
+  - provider_id: conoha-vps
+    feature_id: app_template
+    value: true
+    source_type: official
+    source_url: https://vps.conoha.jp/function/template/?btn_id=top--function_function-template
+    verified_at: "2026-07-07"
+    verification_status: verified
+  - provider_id: conoha-vps
+    feature_id: docker_template
+    value: true
+    source_type: official
+    source_url: https://vps.conoha.jp/function/template/?btn_id=top--function_function-template
+    verified_at: "2026-07-07"
+    verification_status: verified
+  - provider_id: conoha-vps
+    feature_id: kusanagi_template
+    value: true
+    source_type: official
+    source_url: https://vps.conoha.jp/function/template/?btn_id=top--function_function-template
+    verified_at: "2026-07-07"
+    verification_status: verified
+  - provider_id: conoha-vps
+    feature_id: custom_iso
+    value: true
+    source_type: official
+    source_url: https://support.conoha.jp/vps/iso-upload/
+    verified_at: "2026-07-07"
+    verification_status: verified
+  - provider_id: conoha-vps
+    feature_id: startup_script
+    value: true
+    source_type: official
+    source_url: https://vps.conoha.jp/function/startupscript/
+    verified_at: "2026-07-07"
+    verification_status: verified
 
   - provider_id: xserver-vps
     feature_id: min_price_jpy
@@ -672,6 +756,34 @@ evidence:
     source_url: unknown
     verified_at: unknown
     verification_status: unknown
+  - provider_id: xserver-vps
+    feature_id: standard_os_template
+    value: AlmaLinux, Rocky Linux, Ubuntu, Debian, Fedora
+    source_type: official
+    source_url: https://vps.xserver.ne.jp/os-list.php
+    verified_at: "2026-07-07"
+    verification_status: verified
+  - provider_id: xserver-vps
+    feature_id: app_template
+    value: true
+    source_type: official
+    source_url: https://vps.xserver.ne.jp/os-list.php
+    verified_at: "2026-07-07"
+    verification_status: verified
+  - provider_id: xserver-vps
+    feature_id: docker_template
+    value: true
+    source_type: official
+    source_url: https://vps.xserver.ne.jp/os-list.php
+    verified_at: "2026-07-07"
+    verification_status: verified
+  - provider_id: xserver-vps
+    feature_id: kusanagi_template
+    value: true
+    source_type: official
+    source_url: https://vps.xserver.ne.jp/support/manual/man_server_app_use_kusanagi.php
+    verified_at: "2026-07-07"
+    verification_status: verified
 
   - provider_id: webarena-indigo
     feature_id: min_price_jpy
@@ -892,6 +1004,27 @@ evidence:
     source_url: unknown
     verified_at: unknown
     verification_status: unknown
+  - provider_id: webarena-indigo
+    feature_id: standard_os_template
+    value: AlmaLinux, Rocky Linux, Ubuntu, Debian, Windows Server
+    source_type: official
+    source_url: https://web.arena.ne.jp/indigo/spec/os.html
+    verified_at: "2026-07-07"
+    verification_status: verified
+  - provider_id: webarena-indigo
+    feature_id: app_template
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: webarena-indigo
+    feature_id: kusanagi_template
+    value: true
+    source_type: official
+    source_url: https://web.arena.ne.jp/indigo/spec/kusanagi.html
+    verified_at: "2026-07-07"
+    verification_status: verified
 
   - provider_id: kagoya-cloud-vps
     feature_id: min_price_jpy
@@ -1113,6 +1246,35 @@ evidence:
     source_url: unknown
     verified_at: unknown
     verification_status: unknown
+  - provider_id: kagoya-cloud-vps
+    feature_id: standard_os_template
+    value: AlmaLinux, Rocky Linux, Ubuntu
+    source_type: official
+    source_url: https://www.kagoya.jp/cloud/vps/manual/list/
+    verified_at: "2026-07-07"
+    verification_status: verified
+  - provider_id: kagoya-cloud-vps
+    feature_id: custom_iso
+    value: true
+    source_type: official
+    source_url: https://www.kagoya.jp/support/category/cloud/vps/vps_manual/iso/
+    verified_at: "2026-07-07"
+    verification_status: verified
+  - provider_id: kagoya-cloud-vps
+    feature_id: startup_script
+    value: true
+    source_type: official
+    source_url: https://www.kagoya.jp/cloud/vps/manual/instance/
+    verified_at: "2026-07-07"
+    verification_status: verified
+  - provider_id: kagoya-cloud-vps
+    feature_id: cloud_init
+    value: true
+    source_type: official
+    source_url: https://www.kagoya.jp/cloud/vps/manual/instance/
+    verified_at: "2026-07-07"
+    verification_status: verified
+
   - provider_id: sakura-vps
     feature_id: ipv4
     value: unknown
