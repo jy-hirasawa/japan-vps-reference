@@ -356,7 +356,6 @@ USE_CASES: list[dict] = [
             "price_2gb_hourly",
             "price_4gb_monthly",
             "price_4gb_hourly",
-            "hourly_billing",
             "monthly_cap",
             "initial_cost",
             "min_contract_period",
@@ -367,7 +366,6 @@ USE_CASES: list[dict] = [
         "label": "開発・検証環境",
         "description": "開発・検証用途で重要な自動化・スクリプト・スナップショット等の比較項目です。",
         "feature_ids": [
-            "hourly_billing",
             "startup_script",
             "cloud_init",
             "docker_template",
