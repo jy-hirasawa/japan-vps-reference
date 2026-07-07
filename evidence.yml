@@ -115,7 +115,7 @@ evidence:
     value: true
     source_type: official
     source_url: https://manual.sakura.ad.jp/vps/api/
-    verified_at: "2024-01-01"
+    verified_at: "2026-07-07"
     verification_status: verified
 
   - provider_id: sakura-vps
@@ -271,6 +271,90 @@ evidence:
     source_url: https://manual.sakura.ad.jp/vps/startupscript/startupscript.html
     verified_at: "2026-07-07"
     verification_status: verified
+  - provider_id: sakura-vps
+    feature_id: openapi_published
+    value: true
+    source_type: official
+    source_url: https://manual.sakura.ad.jp/vps/api/api-doc/index.html
+    verified_at: "2026-07-07"
+    verification_status: verified
+  - provider_id: sakura-vps
+    feature_id: cli_available
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: sakura-vps
+    feature_id: terraform_provider
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: sakura-vps
+    feature_id: pulumi_support
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: sakura-vps
+    feature_id: ansible_support
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: sakura-vps
+    feature_id: metadata_service
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: sakura-vps
+    feature_id: api_rate_limit_published
+    value: true
+    source_type: official
+    source_url: https://manual.sakura.ad.jp/vps/api/api-doc/index.html
+    verified_at: "2026-07-07"
+    verification_status: verified
+  - provider_id: sakura-vps
+    feature_id: webhook
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: sakura-vps
+    feature_id: sdk_go
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: sakura-vps
+    feature_id: sdk_python
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: sakura-vps
+    feature_id: sdk_nodejs
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: sakura-vps
+    feature_id: cloud_init
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
 
   - provider_id: conoha-vps
     feature_id: min_price_jpy
@@ -378,7 +462,7 @@ evidence:
     value: true
     source_type: official
     source_url: https://www.conoha.jp/vps/function/api/
-    verified_at: "2024-01-01"
+    verified_at: "2026-07-07"
     verification_status: verified
 
   - provider_id: conoha-vps
@@ -534,6 +618,90 @@ evidence:
     source_url: https://vps.conoha.jp/function/startupscript/
     verified_at: "2026-07-07"
     verification_status: verified
+  - provider_id: conoha-vps
+    feature_id: openapi_published
+    value: true
+    source_type: official
+    source_url: https://github.com/gmo-internet/conoha_vps_openapi
+    verified_at: "2026-07-07"
+    verification_status: verified
+  - provider_id: conoha-vps
+    feature_id: cli_available
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: conoha-vps
+    feature_id: terraform_provider
+    value: true
+    source_type: official
+    source_url: https://vps.conoha.jp/terraform_provider/
+    verified_at: "2026-07-07"
+    verification_status: verified
+  - provider_id: conoha-vps
+    feature_id: pulumi_support
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: conoha-vps
+    feature_id: ansible_support
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: conoha-vps
+    feature_id: metadata_service
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: conoha-vps
+    feature_id: api_rate_limit_published
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: conoha-vps
+    feature_id: webhook
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: conoha-vps
+    feature_id: sdk_go
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: conoha-vps
+    feature_id: sdk_python
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: conoha-vps
+    feature_id: sdk_nodejs
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: conoha-vps
+    feature_id: cloud_init
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
 
   - provider_id: xserver-vps
     feature_id: min_price_jpy
@@ -639,6 +807,97 @@ evidence:
     verification_status: verified
   - provider_id: xserver-vps
     feature_id: api_available
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: xserver-vps
+    feature_id: openapi_published
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: xserver-vps
+    feature_id: cli_available
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: xserver-vps
+    feature_id: terraform_provider
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: xserver-vps
+    feature_id: pulumi_support
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: xserver-vps
+    feature_id: ansible_support
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: xserver-vps
+    feature_id: metadata_service
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: xserver-vps
+    feature_id: api_rate_limit_published
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: xserver-vps
+    feature_id: webhook
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: xserver-vps
+    feature_id: sdk_go
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: xserver-vps
+    feature_id: sdk_python
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: xserver-vps
+    feature_id: sdk_nodejs
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: xserver-vps
+    feature_id: cloud_init
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: xserver-vps
+    feature_id: startup_script
     value: unknown
     source_type: unknown
     source_url: unknown
@@ -887,6 +1146,97 @@ evidence:
     verification_status: verified
   - provider_id: webarena-indigo
     feature_id: api_available
+    value: true
+    source_type: official
+    source_url: https://web.arena.ne.jp/indigo/spec/
+    verified_at: "2026-07-07"
+    verification_status: verified
+  - provider_id: webarena-indigo
+    feature_id: openapi_published
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: webarena-indigo
+    feature_id: cli_available
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: webarena-indigo
+    feature_id: terraform_provider
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: webarena-indigo
+    feature_id: pulumi_support
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: webarena-indigo
+    feature_id: ansible_support
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: webarena-indigo
+    feature_id: metadata_service
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: webarena-indigo
+    feature_id: api_rate_limit_published
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: webarena-indigo
+    feature_id: webhook
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: webarena-indigo
+    feature_id: sdk_go
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: webarena-indigo
+    feature_id: sdk_python
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: webarena-indigo
+    feature_id: sdk_nodejs
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: webarena-indigo
+    feature_id: cloud_init
+    value: true
+    source_type: official
+    source_url: https://web.arena.ne.jp/indigo/spec/
+    verified_at: "2026-07-07"
+    verification_status: verified
+  - provider_id: webarena-indigo
+    feature_id: startup_script
     value: unknown
     source_type: unknown
     source_url: unknown
@@ -1274,6 +1624,83 @@ evidence:
     source_url: https://www.kagoya.jp/cloud/vps/manual/instance/
     verified_at: "2026-07-07"
     verification_status: verified
+  - provider_id: kagoya-cloud-vps
+    feature_id: openapi_published
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: kagoya-cloud-vps
+    feature_id: cli_available
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: kagoya-cloud-vps
+    feature_id: terraform_provider
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: kagoya-cloud-vps
+    feature_id: pulumi_support
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: kagoya-cloud-vps
+    feature_id: ansible_support
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: kagoya-cloud-vps
+    feature_id: metadata_service
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: kagoya-cloud-vps
+    feature_id: api_rate_limit_published
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: kagoya-cloud-vps
+    feature_id: webhook
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: kagoya-cloud-vps
+    feature_id: sdk_go
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: kagoya-cloud-vps
+    feature_id: sdk_python
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
+  - provider_id: kagoya-cloud-vps
+    feature_id: sdk_nodejs
+    value: unknown
+    source_type: unknown
+    source_url: unknown
+    verified_at: unknown
+    verification_status: unknown
 
   - provider_id: sakura-vps
     feature_id: ipv4
