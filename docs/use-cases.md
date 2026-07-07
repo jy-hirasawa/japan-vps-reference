@@ -24,10 +24,10 @@
 
 | 項目 | さくらのVPS | ConoHa VPS | Xserver VPS | WebARENA Indigo | KAGOYA CLOUD VPS |
 | --- | --- | --- | --- | --- | --- |
-| スタートアップスクリプト | 不明 | 不明 | 不明 | 不明 | 不明 |
-| cloud-init明記 | 不明 | 不明 | 不明 | 不明 | 不明 |
-| Docker系テンプレート | 不明 | 不明 | 不明 | 不明 | 不明 |
-| カスタムISO | 不明 | 不明 | 不明 | 不明 | 不明 |
+| スタートアップスクリプト | ✅ [🔗](https://manual.sakura.ad.jp/vps/startupscript/startupscript.html) (2026-07-07) | ✅ [🔗](https://vps.conoha.jp/function/startupscript/) (2026-07-07) | 不明 | 不明 | ✅ [🔗](https://www.kagoya.jp/cloud/vps/manual/instance/) (2026-07-07) |
+| cloud-init明記 | 不明 | 不明 | 不明 | 不明 | ✅ [🔗](https://www.kagoya.jp/cloud/vps/manual/instance/) (2026-07-07) |
+| Docker系テンプレート | ✅ [🔗](https://vps.sakura.ad.jp/specification/#specification_application) (2026-07-07) | ✅ [🔗](https://vps.conoha.jp/function/template/?btn_id=top--function_function-template) (2026-07-07) | ✅ [🔗](https://vps.xserver.ne.jp/os-list.php) (2026-07-07) | 不明 | 不明 |
+| カスタムISO | ✅ [🔗](https://manual.sakura.ad.jp/vps/os-reinstall/iso-install.html) (2026-07-07) | ✅ [🔗](https://support.conoha.jp/vps/iso-upload/) (2026-07-07) | 不明 | 不明 | ✅ [🔗](https://www.kagoya.jp/support/category/cloud/vps/vps_manual/iso/) (2026-07-07) |
 | REST API | ✅ [🔗](https://manual.sakura.ad.jp/vps/api/) (2024-01-01) | ✅ [🔗](https://www.conoha.jp/vps/function/api/) (2024-01-01) | 不明 | 不明 | 不明 |
 | CLI | 不明 | 不明 | 不明 | 不明 | 不明 |
 | Terraform Provider | 不明 | 不明 | 不明 | 不明 | 不明 |
@@ -41,8 +41,8 @@
 
 | 項目 | さくらのVPS | ConoHa VPS | Xserver VPS | WebARENA Indigo | KAGOYA CLOUD VPS |
 | --- | --- | --- | --- | --- | --- |
-| アプリテンプレート | 不明 | 不明 | 不明 | 不明 | 不明 |
-| KUSANAGIテンプレート | 不明 | 不明 | 不明 | 不明 | 不明 |
+| アプリテンプレート | ✅ [🔗](https://vps.sakura.ad.jp/specification/#specification_application) (2026-07-07) | ✅ [🔗](https://vps.conoha.jp/function/template/?btn_id=top--function_function-template) (2026-07-07) | ✅ [🔗](https://vps.xserver.ne.jp/os-list.php) (2026-07-07) | ✅ [🔗](https://web.arena.ne.jp/indigo/spec/kusanagi.html) (2026-07-07) | 不明 |
+| KUSANAGIテンプレート | ✅ [🔗](https://vps.sakura.ad.jp/specification/#specification_application) (2026-07-07) | ✅ [🔗](https://vps.conoha.jp/function/template/?btn_id=top--function_function-template) (2026-07-07) | ✅ [🔗](https://vps.xserver.ne.jp/support/manual/man_server_app_use_kusanagi.php) (2026-07-07) | ✅ [🔗](https://web.arena.ne.jp/indigo/spec/kusanagi.html) (2026-07-07) | 不明 |
 | 最低月額料金（円） | 643 [🔗](https://vps.sakura.ad.jp/specification/) (2026-07-03) | 460 [🔗](https://www.conoha.jp/vps/pricing/) (2026-07-03) | 1496 [🔗](https://vps.xserver.ne.jp/price/) (2026-07-03) | 319 [🔗](https://web.arena.ne.jp/indigo/price/) (2026-07-03) | 550 [🔗](https://www.kagoya.jp/vps/) (2026-07-03) |
 | 2GBプラン月額（円・税込） | 1738 [🔗](https://vps.sakura.ad.jp/specification/) (2026-07-03) | 1259 [🔗](https://www.conoha.jp/vps/pricing/) (2026-07-03) | 1496 [🔗](https://vps.xserver.ne.jp/price/) (2026-07-03) | 814 [🔗](https://web.arena.ne.jp/indigo/price/) (2026-07-03) | 770 [🔗](https://www.kagoya.jp/vps/) (2026-07-03) |
 | バックアップ機能 | 不明 | 不明 | 不明 | 不明 | 不明 |
@@ -112,8 +112,8 @@
 | SDK（Go） | 不明 | 不明 | 不明 | 不明 | 不明 |
 | SDK（Python） | 不明 | 不明 | 不明 | 不明 | 不明 |
 | SDK（Node.js） | 不明 | 不明 | 不明 | 不明 | 不明 |
-| スタートアップスクリプト | 不明 | 不明 | 不明 | 不明 | 不明 |
-| cloud-init明記 | 不明 | 不明 | 不明 | 不明 | 不明 |
+| スタートアップスクリプト | ✅ [🔗](https://manual.sakura.ad.jp/vps/startupscript/startupscript.html) (2026-07-07) | ✅ [🔗](https://vps.conoha.jp/function/startupscript/) (2026-07-07) | 不明 | 不明 | ✅ [🔗](https://www.kagoya.jp/cloud/vps/manual/instance/) (2026-07-07) |
+| cloud-init明記 | 不明 | 不明 | 不明 | 不明 | ✅ [🔗](https://www.kagoya.jp/cloud/vps/manual/instance/) (2026-07-07) |
 
 ## 凡例
 
