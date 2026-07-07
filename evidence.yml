@@ -44,8 +44,8 @@ evidence:
     feature_id: ipv6_support
     value: true
     source_type: official
-    source_url: https://vps.sakura.ad.jp/
-    verified_at: "2024-01-01"
+    source_url: https://manual.sakura.ad.jp/vps/network/index.html
+    verified_at: "2026-07-07"
     verification_status: verified
 
   - provider_id: sakura-vps
@@ -391,8 +391,8 @@ evidence:
     feature_id: ipv6_support
     value: true
     source_type: official
-    source_url: https://www.conoha.jp/vps/
-    verified_at: "2024-01-01"
+    source_url: https://doc.conoha.jp/products/vps-v3/network-v3/ipv6-v3/
+    verified_at: "2026-07-07"
     verification_status: verified
 
   - provider_id: conoha-vps
@@ -1082,11 +1082,12 @@ evidence:
     verification_status: verified
   - provider_id: webarena-indigo
     feature_id: ipv6_support
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
+    value: true
+    source_type: official
+    source_url: https://web.arena.ne.jp/indigo/spec/
+    verified_at: "2026-07-07"
+    verification_status: verified
+    notes: 768MBプランはIPv6のみ、1GB以上はIPv4/IPv6デュアルスタック。
 
   - provider_id: webarena-indigo
     feature_id: hourly_billing
@@ -1415,11 +1416,12 @@ evidence:
     verification_status: verified
   - provider_id: kagoya-cloud-vps
     feature_id: ipv6_support
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
+    value: true
+    source_type: official
+    source_url: https://support.kagoya.jp/vps/charge/index.html
+    verified_at: "2026-07-07"
+    verification_status: verified
+    notes: インスタンスごとにIPv6アドレス標準提供。
 
   - provider_id: kagoya-cloud-vps
     feature_id: hourly_billing
@@ -2178,19 +2180,19 @@ evidence:
 
   - provider_id: sakura-vps
     feature_id: additional_ipv4
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
+    value: false
+    source_type: official
+    source_url: https://manual.sakura.ad.jp/vps/support/technical/ip-address.html
+    verified_at: "2026-07-07"
+    verification_status: verified
 
   - provider_id: sakura-vps
     feature_id: reverse_dns
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
+    value: true
+    source_type: official
+    source_url: https://manual.sakura.ad.jp/vps/support/technical/ip-address.html
+    verified_at: "2026-07-07"
+    verification_status: verified
 
   - provider_id: sakura-vps
     feature_id: traffic_limit
@@ -2202,11 +2204,11 @@ evidence:
 
   - provider_id: sakura-vps
     feature_id: local_network
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
+    value: true
+    source_type: official
+    source_url: https://manual.sakura.ad.jp/vps/network/index.html
+    verified_at: "2026-07-07"
+    verification_status: verified
 
   - provider_id: sakura-vps
     feature_id: private_network
@@ -2258,19 +2260,20 @@ evidence:
 
   - provider_id: conoha-vps
     feature_id: additional_ipv4
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
+    value: true
+    source_type: official
+    source_url: https://doc.conoha.jp/products/vps-v2/network-v2/addip-v2/
+    verified_at: "2026-07-07"
+    verification_status: verified
+    notes: 1台のVPSに追加IPv4を最大16個まで割り当て可能。
 
   - provider_id: conoha-vps
     feature_id: reverse_dns
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
+    value: true
+    source_type: official
+    source_url: https://support.conoha.jp/vps/faq/ip-q/
+    verified_at: "2026-07-07"
+    verification_status: verified
 
   - provider_id: conoha-vps
     feature_id: traffic_limit
@@ -2410,35 +2413,36 @@ evidence:
 
   - provider_id: webarena-indigo
     feature_id: ipv4
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
+    value: 768MBプランはなし（IPv6のみ）/ 1GB以上は1個
+    source_type: official
+    source_url: https://web.arena.ne.jp/indigo/spec/
+    verified_at: "2026-07-07"
+    verification_status: verified
 
   - provider_id: webarena-indigo
     feature_id: additional_ipv4
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
+    value: false
+    source_type: official
+    source_url: https://web.arena.ne.jp/indigo/spec/
+    verified_at: "2026-07-07"
+    verification_status: verified
 
   - provider_id: webarena-indigo
     feature_id: reverse_dns
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
+    value: false
+    source_type: official
+    source_url: https://web.arena.ne.jp/indigo/spec/
+    verified_at: "2026-07-07"
+    verification_status: verified
+    notes: 逆引きDNSは既定値が設定済みで、利用者による変更は不可。
 
   - provider_id: webarena-indigo
     feature_id: traffic_limit
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
+    value: 無制限
+    source_type: official
+    source_url: https://web.arena.ne.jp/indigo/spec/
+    verified_at: "2026-07-07"
+    verification_status: verified
 
   - provider_id: webarena-indigo
     feature_id: local_network
@@ -2498,11 +2502,12 @@ evidence:
 
   - provider_id: kagoya-cloud-vps
     feature_id: additional_ipv4
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
+    value: true
+    source_type: official
+    source_url: https://support.kagoya.jp/vps/manual/index.php?action=artikel&cat=18&id=69
+    verified_at: "2026-07-07"
+    verification_status: verified
+    notes: 追加IPv4（フローティングIP）を提供。
 
   - provider_id: kagoya-cloud-vps
     feature_id: reverse_dns
@@ -2514,11 +2519,11 @@ evidence:
 
   - provider_id: kagoya-cloud-vps
     feature_id: traffic_limit
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
+    value: 無制限
+    source_type: official
+    source_url: https://www.kagoya.jp/vps/
+    verified_at: "2026-07-07"
+    verification_status: verified
 
   - provider_id: kagoya-cloud-vps
     feature_id: local_network
@@ -2530,11 +2535,12 @@ evidence:
 
   - provider_id: kagoya-cloud-vps
     feature_id: private_network
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
+    value: true
+    source_type: official
+    source_url: https://support.kagoya.jp/vps/charge/index.html
+    verified_at: "2026-07-07"
+    verification_status: verified
+    notes: ローカルネットワーク（KVMローカルネットワーク）を提供。
 
   - provider_id: kagoya-cloud-vps
     feature_id: vlan
@@ -2546,19 +2552,19 @@ evidence:
 
   - provider_id: kagoya-cloud-vps
     feature_id: load_balancer
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
+    value: true
+    source_type: official
+    source_url: https://support.kagoya.jp/vps/charge/index.html
+    verified_at: "2026-07-07"
+    verification_status: verified
 
   - provider_id: kagoya-cloud-vps
     feature_id: floating_ip
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
+    value: true
+    source_type: official
+    source_url: https://support.kagoya.jp/vps/manual/index.php?action=artikel&cat=18&id=69
+    verified_at: "2026-07-07"
+    verification_status: verified
 
   - provider_id: kagoya-cloud-vps
     feature_id: firewall_feature
