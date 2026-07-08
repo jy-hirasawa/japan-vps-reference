@@ -54,7 +54,7 @@ def format_comparison_cell(entry: dict, feature_type: str) -> str:
 
     source_url = entry.get("source_url")
     if is_known_metadata(source_url):
-        first_line_parts.append(f"[🔗]({source_url})")
+        first_line_parts.append(f"[公式]({source_url})")
 
     first_line = " ".join(first_line_parts)
 

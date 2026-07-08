@@ -454,7 +454,7 @@ class TestFormatComparisonCell(unittest.TestCase):
         """source_url がある場合は値とリンクをスペースで結合する。"""
         entry = _make_evidence("p1", "f1", "460", source_url="https://example.com")
         result = generate_docs.format_comparison_cell(entry, "string")
-        self.assertEqual(result, "460 [🔗](https://example.com)")
+        self.assertEqual(result, "460 [公式](https://example.com)")
 
     def test_value_with_verified_at(self):
         """verified_at がある場合は <br> で改行して確認日を追加する。"""
@@ -467,7 +467,7 @@ class TestFormatComparisonCell(unittest.TestCase):
         entry = _make_evidence("p1", "f1", "460",
                                source_url="https://example.com", verified_at="2026-07-03")
         result = generate_docs.format_comparison_cell(entry, "string")
-        self.assertEqual(result, "460 [🔗](https://example.com)<br>(2026-07-03)")
+        self.assertEqual(result, "460 [公式](https://example.com)<br>(2026-07-03)")
 
     def test_boolean_true_with_verified_at(self):
         """boolean true は ✅ で表示され、confirmed_at は <br> で改行される。"""
