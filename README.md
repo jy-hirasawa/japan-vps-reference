@@ -26,7 +26,7 @@
 ├── docs/                  # ドキュメント置き場
 │   ├── comparison.md      # プロバイダー比較テーブル（自動生成）
 │   ├── providers.md       # プロバイダー詳細一覧（自動生成）
-│   ├── update_candidates.md # URL更新候補一覧（自動生成）
+│   ├── update_candidates.md # 未確認項目の更新候補一覧（自動生成）
 │   ├── use-cases.md       # 用途別比較ページ（自動生成）
 │   └── data-policy.md     # 値の表現ルール・データポリシー（手動管理）
 └── .github/workflows/
@@ -303,7 +303,7 @@ GitHub Actions で手動実行する場合:
 
 - [`docs/comparison.md`](docs/comparison.md) — VPS比較テーブル
 - [`docs/providers.md`](docs/providers.md) — プロバイダー詳細一覧
-- [`docs/update_candidates.md`](docs/update_candidates.md) — URL更新候補一覧
+- [`docs/update_candidates.md`](docs/update_candidates.md) — 未確認項目の更新候補一覧（優先度付き）
 - [`docs/use-cases.md`](docs/use-cases.md) — 用途別比較ページ
 - [`docs/data-policy.md`](docs/data-policy.md) — 値の表現ルール・データポリシー
 
