@@ -8,11 +8,11 @@
 
 | Provider | 最終確認日 |
 | --- | --- |
-| さくらのVPS | 2026-07-07 |
-| ConoHa VPS | 2026-07-07 |
-| Xserver VPS | 2026-07-07 |
-| WebARENA Indigo | 2026-07-07 |
-| KAGOYA CLOUD VPS | 2026-07-07 |
+| さくらのVPS | 2026-07-08 |
+| ConoHa VPS | 2026-07-08 |
+| Xserver VPS | 2026-07-08 |
+| WebARENA Indigo | 2026-07-08 |
+| KAGOYA CLOUD VPS | 2026-07-08 |
 
 ## 公式URL
 
@@ -200,9 +200,9 @@
 | --- | --- | --- | --- | --- | --- | --- |
 | 1 | SLA稼働率（%） | 99.99 [🔗](https://vps.sakura.ad.jp/agreement/)<br>(2024-01-01) | 99.99 [🔗](https://www.conoha.jp/vps/agreement/)<br>(2024-01-01) | 99.99 [🔗](https://vps.xserver.ne.jp/agreement/)<br>(2024-01-01) | 不明 | 不明 |
 | 2 | SLA文書URL | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 3 | ステータスページ | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 4 | 障害情報ページ | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 5 | メンテナンス情報ページ | 不明 | 不明 | 不明 | 不明 | 不明 |
+| 3 | ステータスページ | ✅ [🔗](https://www.sakura.ad.jp/status/)<br>(2026-07-08) | 不明 | 不明 | 不明 | 不明 |
+| 4 | 障害情報ページ | ✅ [🔗](https://support.sakura.ad.jp/mainte/)<br>(2026-07-08) | ✅ [🔗](https://www.conoha.jp/news/)<br>(2026-07-08) | ✅ [🔗](https://vps.xserver.ne.jp/support/information/)<br>(2026-07-08) | ✅ [🔗](https://help.arena.ne.jp/hc/ja/sections/900000494023)<br>(2026-07-08) | ✅ [🔗](https://www.kagoya.jp/news/)<br>(2026-07-08) |
+| 5 | メンテナンス情報ページ | ✅ [🔗](https://support.sakura.ad.jp/mainte/)<br>(2026-07-08) | ✅ [🔗](https://www.conoha.jp/news/)<br>(2026-07-08) | ✅ [🔗](https://vps.xserver.ne.jp/support/information/)<br>(2026-07-08) | ✅ [🔗](https://help.arena.ne.jp/hc/ja/sections/900000494023)<br>(2026-07-08) | ✅ [🔗](https://www.kagoya.jp/news/)<br>(2026-07-08) |
 | 6 | メール通知 | 不明 | 不明 | 不明 | 不明 | 不明 |
 | 7 | サポート窓口 | 不明 | 不明 | 不明 | 不明 | 不明 |
 | 8 | 電話サポート | 不明 | 不明 | 不明 | 不明 | 不明 |
