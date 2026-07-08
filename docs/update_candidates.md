@@ -6,8 +6,8 @@
 
 ## 優先度定義
 
-- 高: BACKUP, BASIC, NETWORK, OS_TEMPLATE, PRICE, SPEC, STORAGE, SUPPORT
-- 中: OPS, SECURITY, automation, datacenter
+- 高: バックアップ / イメージ保存, 基本情報, ネットワーク, OS / テンプレート, 料金, CPU / メモリ, ディスク / NVMe / スナップショット / バックアップ, サポート / SLA
+- 中: OPS, セキュリティ, API / CLI / Terraform, データセンター / リージョン
 - 低: 上記以外のカテゴリ
 
 ## カテゴリ別 unknown 集計

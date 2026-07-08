@@ -545,6 +545,8 @@ class TestGenerateUpdateCandidatesPage(unittest.TestCase):
         self.assertIn("| 高 | 料金 | 1 / 2 |", md)
         self.assertIn("| 料金 | 最低月額料金（円） | 1 / 2 | 1 / 2 |", md)
         self.assertIn("| 中 | API / CLI / Terraform | REST API |", md)
+        self.assertNotIn("automation", md)
+        self.assertNotIn("datacenter", md)
 
     def test_keeps_official_url_update_table(self):
         """公式URL更新候補テーブルが出力され、Status 判定が維持される。"""

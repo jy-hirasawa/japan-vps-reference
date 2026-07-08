@@ -203,6 +203,17 @@ def classify_priority_by_category(category_id: str) -> str:
     return "低"
 
 
+def _format_priority_category_list(category_ids: set[str], category_labels: dict[str, str]) -> str:
+    names: list[str] = []
+    for category_id in sorted(category_ids):
+        label = category_labels.get(category_id)
+        if isinstance(label, str) and label.strip():
+            names.append(label)
+        else:
+            names.append(category_id.upper() if category_id.islower() else category_id)
+    return ", ".join(names)
+
+
 def generate_update_candidates_page(
     providers: list,
     features: list,
@@ -322,8 +333,8 @@ def generate_update_candidates_page(
     lines.append("")
     lines.append("## 優先度定義")
     lines.append("")
-    lines.append(f"- 高: {', '.join(sorted(PRIORITY_HIGH_CATEGORIES))}")
-    lines.append(f"- 中: {', '.join(sorted(PRIORITY_MEDIUM_CATEGORIES))}")
+    lines.append(f"- 高: {_format_priority_category_list(PRIORITY_HIGH_CATEGORIES, category_labels)}")
+    lines.append(f"- 中: {_format_priority_category_list(PRIORITY_MEDIUM_CATEGORIES, category_labels)}")
     lines.append("- 低: 上記以外のカテゴリ")
     lines.append("")
     lines.append("## カテゴリ別 unknown 集計")
