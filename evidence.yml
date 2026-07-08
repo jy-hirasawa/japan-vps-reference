@@ -3027,27 +3027,27 @@ evidence:
 
   - provider_id: sakura-vps
     feature_id: status_page
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
+    value: true
+    source_type: official
+    source_url: https://www.sakura.ad.jp/status/
+    verified_at: "2026-07-08"
+    verification_status: unverified
 
   - provider_id: sakura-vps
     feature_id: incident_page
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
+    value: true
+    source_type: official
+    source_url: https://support.sakura.ad.jp/mainte/
+    verified_at: "2026-07-08"
+    verification_status: unverified
 
   - provider_id: sakura-vps
     feature_id: maintenance_page
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
+    value: true
+    source_type: official
+    source_url: https://support.sakura.ad.jp/mainte/
+    verified_at: "2026-07-08"
+    verification_status: unverified
 
   - provider_id: sakura-vps
     feature_id: email_notification
@@ -3131,19 +3131,19 @@ evidence:
 
   - provider_id: conoha-vps
     feature_id: incident_page
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
+    value: true
+    source_type: official
+    source_url: https://www.conoha.jp/news/
+    verified_at: "2026-07-08"
+    verification_status: unverified
 
   - provider_id: conoha-vps
     feature_id: maintenance_page
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
+    value: true
+    source_type: official
+    source_url: https://www.conoha.jp/news/
+    verified_at: "2026-07-08"
+    verification_status: unverified
 
   - provider_id: conoha-vps
     feature_id: email_notification
@@ -3227,19 +3227,19 @@ evidence:
 
   - provider_id: xserver-vps
     feature_id: incident_page
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
+    value: true
+    source_type: official
+    source_url: https://vps.xserver.ne.jp/support/information/
+    verified_at: "2026-07-08"
+    verification_status: unverified
 
   - provider_id: xserver-vps
     feature_id: maintenance_page
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
+    value: true
+    source_type: official
+    source_url: https://vps.xserver.ne.jp/support/information/
+    verified_at: "2026-07-08"
+    verification_status: unverified
 
   - provider_id: xserver-vps
     feature_id: email_notification
@@ -3323,19 +3323,19 @@ evidence:
 
   - provider_id: webarena-indigo
     feature_id: incident_page
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
+    value: true
+    source_type: official
+    source_url: https://help.arena.ne.jp/hc/ja/sections/900000494023
+    verified_at: "2026-07-08"
+    verification_status: unverified
 
   - provider_id: webarena-indigo
     feature_id: maintenance_page
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
+    value: true
+    source_type: official
+    source_url: https://help.arena.ne.jp/hc/ja/sections/900000494023
+    verified_at: "2026-07-08"
+    verification_status: unverified
 
   - provider_id: webarena-indigo
     feature_id: email_notification
@@ -3419,19 +3419,19 @@ evidence:
 
   - provider_id: kagoya-cloud-vps
     feature_id: incident_page
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
+    value: true
+    source_type: official
+    source_url: https://www.kagoya.jp/news/
+    verified_at: "2026-07-08"
+    verification_status: unverified
 
   - provider_id: kagoya-cloud-vps
     feature_id: maintenance_page
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
+    value: true
+    source_type: official
+    source_url: https://www.kagoya.jp/news/
+    verified_at: "2026-07-08"
+    verification_status: unverified
 
   - provider_id: kagoya-cloud-vps
     feature_id: email_notification

@@ -54,7 +54,7 @@ def format_comparison_cell(entry: dict, feature_type: str) -> str:
 
     source_url = entry.get("source_url")
     if is_known_metadata(source_url):
-        first_line_parts.append(f"[🔗]({source_url})")
+        first_line_parts.append(f"[公式]({source_url})")
 
     first_line = " ".join(first_line_parts)
 
@@ -425,7 +425,7 @@ def generate_comparison_table(
     lines.append("")
     lines.append("> このファイルは `scripts/generate_docs.py` により自動生成されています。手動で編集しないでください。")
     lines.append("> 「不明」は公式情報が確認できないことを示します。")
-    lines.append("> 値の横の `🔗` は情報源リンク、`(YYYY-MM-DD)` は確認日です。")
+    lines.append("> 値の横の `[公式]` は情報源リンク、`(YYYY-MM-DD)` は確認日です。")
     lines.append("")
     lines.extend(generate_evidence_verified_at_section(providers, evidence_list))
     lines.extend(generate_official_urls_section(providers))
