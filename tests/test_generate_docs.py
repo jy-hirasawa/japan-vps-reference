@@ -5,6 +5,7 @@ tests/test_generate_docs.py — scripts/generate_docs.py の単体テスト
 import sys
 import unittest
 from pathlib import Path
+from datetime import date
 import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
@@ -480,6 +481,95 @@ class TestFormatComparisonCell(unittest.TestCase):
         result = generate_docs.format_comparison_cell(entry, "string")
         self.assertNotIn("<br>", result)
         self.assertNotIn("unknown", result)
+
+
+class TestGenerateUpdateCandidatesPage(unittest.TestCase):
+
+    def test_prioritized_unknown_sections(self):
+        """unknown 項目が優先度付きで整理され、次の調査対象と確認困難項目が分離される。"""
+        providers = [
+            {
+                "id": "p1",
+                "name": "Provider A",
+                "official_urls": {},
+            },
+            {
+                "id": "p2",
+                "name": "Provider B",
+                "official_urls": {},
+            },
+        ]
+        features = [
+            _make_feature("min_price_jpy", "最低月額料金（円）", category="PRICE", ftype="number"),
+            _make_feature("api_available", "REST API", category="OPS", ftype="boolean"),
+        ]
+        evidence_list = [
+            {
+                "provider_id": "p1",
+                "feature_id": "min_price_jpy",
+                "value": 500,
+                "source_type": "official",
+                "source_url": "https://example.com/pricing",
+                "verified_at": "2026-07-01",
+                "verification_status": "verified",
+            },
+            {
+                "provider_id": "p1",
+                "feature_id": "api_available",
+                "value": "unknown",
+                "source_type": "unknown",
+                "source_url": "unknown",
+                "verified_at": "unknown",
+                "verification_status": "unknown",
+            },
+            {
+                "provider_id": "p2",
+                "feature_id": "api_available",
+                "value": "unknown",
+                "source_type": "unknown",
+                "source_url": "unknown",
+                "verified_at": "unknown",
+                "verification_status": "unknown",
+            },
+        ]
+        category_labels = {
+            "PRICE": "料金",
+            "OPS": "API / CLI / Terraform",
+        }
+
+        md = generate_docs.generate_update_candidates_page(
+            providers, features, evidence_list, category_labels
+        )
+
+        self.assertIn("## カテゴリ別 unknown 集計", md)
+        self.assertIn("| 高 | 料金 | 1 / 2 |", md)
+        self.assertIn("| 料金 | 最低月額料金（円） | 1 / 2 | 1 / 2 |", md)
+        self.assertIn("| 中 | API / CLI / Terraform | REST API |", md)
+
+    def test_keeps_official_url_update_table(self):
+        """公式URL更新候補テーブルが出力され、Status 判定が維持される。"""
+        providers = [
+            {
+                "id": "p1",
+                "name": "Provider A",
+                "official_urls": {
+                    "top": {"url": "https://example.com", "verified_at": "2020-01-01"},
+                    "pricing": {"url": "unknown", "verified_at": "unknown"},
+                    "specs": {"url": "unknown", "verified_at": "unknown"},
+                    "support": {"url": "unknown", "verified_at": "unknown"},
+                    "terms": {"url": "unknown", "verified_at": "unknown"},
+                },
+            }
+        ]
+        features = [_make_feature("f1", "項目", category="PRICE")]
+        evidence_list = []
+
+        md = generate_docs.generate_update_candidates_page(
+            providers, features, evidence_list, {"PRICE": "料金"}, today=date(2026, 7, 8)
+        )
+
+        self.assertIn("## 公式URL更新候補", md)
+        self.assertIn("| Provider A | top | https://example.com | 2020-01-01 | STALE |", md)
 
 
 if __name__ == "__main__":
