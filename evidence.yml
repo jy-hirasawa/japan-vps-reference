@@ -1648,12 +1648,11 @@ evidence:
   notes: バックアップ実行スケジュール（時刻・頻度）の任意設定不可。VPS 3.0は日次固定
 - provider_id: conoha-vps
   feature_id: backup_retention_period
-  value: 最大30世代（日次バックアップ）
-  source_type: official
-  source_url: https://vps.conoha.jp/function/autobk/
-  verified_at: '2026-07-08'
-  verification_status: verified
-  notes: 1日1回自動バックアップを取得、最大30世代分を保持。
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
 - provider_id: conoha-vps
   feature_id: backup_generations
   value: 14世代（デフォルト）、最大30世代（VPS 3.0）
@@ -1729,12 +1728,11 @@ evidence:
   verification_status: unknown
 - provider_id: xserver-vps
   feature_id: backup_retention_period
-  value: 1世代（1週間）、オプションで最大3世代
-  source_type: official
-  source_url: https://vps.xserver.ne.jp/support/manual/man_server_auto_backup_gene.php
-  verified_at: '2026-07-08'
-  verification_status: verified
-  notes: ビジネスプラン標準で週1回・1世代保存。拡張オプションで最大3世代まで保存可能。
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
 - provider_id: xserver-vps
   feature_id: backup_generations
   value: ビジネスプラン標準1世代、バックアップ拡張オプションで最大3世代
@@ -1811,12 +1809,11 @@ evidence:
   verification_status: unknown
 - provider_id: webarena-indigo
   feature_id: backup_retention_period
-  value: 最大5個（スナップショット）
-  source_type: official
-  source_url: https://web.arena.ne.jp/indigo/spec/
-  verified_at: '2026-07-08'
-  verification_status: verified
-  notes: スナップショットとして最大5個保存可能。有料オプションの可能性あり。
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
 - provider_id: webarena-indigo
   feature_id: backup_generations
   value: 最大5個/インスタンス（スナップショット）
@@ -1894,12 +1891,11 @@ evidence:
   notes: 有料バックアップサービス（日次・週次・月次）のスケジューリング設定が可能。Liteプラン（無料）とProプラン（有料）あり。
 - provider_id: kagoya-cloud-vps
   feature_id: backup_retention_period
-  value: Liteプラン：1世代、Proプラン：世代数無制限（有料オプション）
-  source_type: official
-  source_url: https://www.kagoya.jp/option/backup/
-  verified_at: '2026-07-08'
-  verification_status: verified
-  notes: バックアップサービスのLiteプラン（10GBまで・1世代）、Proプラン（最大2TB・世代数無制限）。
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
 - provider_id: kagoya-cloud-vps
   feature_id: backup_generations
   value: 最大7世代（定期スナップショット）
