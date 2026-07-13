@@ -10,3489 +10,3268 @@
 #   notes:               補足情報（任意）
 
 evidence:
-  - provider_id: sakura-vps
-    feature_id: min_price_jpy
-    value: 643
-    source_type: official
-    source_url: https://vps.sakura.ad.jp/specification/
-    verified_at: "2026-07-03"
-    verification_status: verified
-    notes: 石狩リージョン 512MBプラン 月払い（随時払い）。
-  - provider_id: sakura-vps
-    feature_id: min_ram_gb
-    value: 0.5
-    source_type: official
-    source_url: https://vps.sakura.ad.jp/specification/
-    verified_at: "2026-07-03"
-    verification_status: verified
-  - provider_id: sakura-vps
-    feature_id: min_storage_gb
-    value: 25
-    source_type: official
-    source_url: https://vps.sakura.ad.jp/specification/
-    verified_at: "2026-07-03"
-    verification_status: verified
-    notes: 石狩リージョン 512MBプランのSSD 25GB。
-  - provider_id: sakura-vps
-    feature_id: min_vcpu
-    value: 1
-    source_type: official
-    source_url: https://vps.sakura.ad.jp/specification/
-    verified_at: "2026-07-03"
-    verification_status: verified
-  - provider_id: sakura-vps
-    feature_id: ipv6_support
-    value: true
-    source_type: official
-    source_url: https://manual.sakura.ad.jp/vps/network/index.html
-    verified_at: "2026-07-07"
-    verification_status: verified
-
-  - provider_id: sakura-vps
-    feature_id: hourly_billing
-    value: false
-    source_type: official
-    source_url: https://vps.sakura.ad.jp/
-    verified_at: "2024-01-01"
-    verification_status: verified
-
-  - provider_id: sakura-vps
-    feature_id: price_2gb_monthly
-    value: 1738
-    source_type: official
-    source_url: https://vps.sakura.ad.jp/specification/
-    verified_at: "2026-07-03"
-    verification_status: verified
-    notes: 石狩リージョン 2GBプラン 月払い（随時払い）通常価格。年額一括は月換算1,594円。
-  - provider_id: sakura-vps
-    feature_id: price_2gb_hourly
-    value: "-"
-    source_type: official
-    source_url: https://vps.sakura.ad.jp/specification/
-    verified_at: "2026-07-03"
-    verification_status: verified
-    notes: 時間課金は非対応。月額のみ。
-  - provider_id: sakura-vps
-    feature_id: price_4gb_monthly
-    value: 3520
-    source_type: official
-    source_url: https://vps.sakura.ad.jp/specification/
-    verified_at: "2026-07-03"
-    verification_status: verified
-    notes: 石狩リージョン 4GBプラン 月払い（随時払い）通常価格。年額一括は月換算3,227円。
-  - provider_id: sakura-vps
-    feature_id: price_4gb_hourly
-    value: "-"
-    source_type: official
-    source_url: https://vps.sakura.ad.jp/specification/
-    verified_at: "2026-07-03"
-    verification_status: verified
-    notes: 時間課金は非対応。月額のみ。
-  - provider_id: sakura-vps
-    feature_id: monthly_cap
-    value: "-"
-    source_type: official
-    source_url: https://vps.sakura.ad.jp/specification/
-    verified_at: "2026-07-03"
-    verification_status: verified
-    notes: 時間課金は非対応のため月額上限なし。
-  - provider_id: sakura-vps
-    feature_id: initial_cost
-    value: 0
-    source_type: official
-    source_url: https://vps.sakura.ad.jp/specification/
-    verified_at: "2026-07-03"
-    verification_status: verified
-  - provider_id: sakura-vps
-    feature_id: min_contract_period
-    value: 1ヶ月
-    source_type: official
-    source_url: https://vps.sakura.ad.jp/specification/
-    verified_at: "2026-07-03"
-    verification_status: verified
-  - provider_id: sakura-vps
-    feature_id: api_available
-    value: true
-    source_type: official
-    source_url: https://manual.sakura.ad.jp/vps/api/
-    verified_at: "2026-07-07"
-    verification_status: verified
-
-  - provider_id: sakura-vps
-    feature_id: sla_uptime_percent
-    value: 99.99
-    source_type: official
-    source_url: https://vps.sakura.ad.jp/agreement/
-    verified_at: "2024-01-01"
-    verification_status: verified
-
-  - provider_id: sakura-vps
-    feature_id: ddos_protection
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: sakura-vps
-    feature_id: bandwidth_gbps
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: sakura-vps
-    feature_id: full_disk_snapshot
-    value: true
-    source_type: official
-    source_url: https://vps.sakura.ad.jp/
-    verified_at: "2024-01-01"
-    verification_status: verified
-
-  - provider_id: sakura-vps
-    feature_id: storage_type
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: sakura-vps
-    feature_id: nvme_explicit
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: sakura-vps
-    feature_id: ssd_explicit
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: sakura-vps
-    feature_id: additional_disk
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: sakura-vps
-    feature_id: disk_expansion
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: sakura-vps
-    feature_id: auto_snapshot
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: sakura-vps
-    feature_id: backup_feature
-    value: true
-    source_type: official
-    source_url: https://vps.sakura.ad.jp/feature/backup/
-    verified_at: "2026-07-07"
-    verification_status: verified
-    notes: Acronis Cyber Protect Cloud（有料オプション）によるバックアップ機能を公式提供
-
-  - provider_id: sakura-vps
-    feature_id: custom_image_save
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: sakura-vps
-    feature_id: object_storage_integration
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: sakura-vps
-    feature_id: os_templates
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: sakura-vps
-    feature_id: standard_os_template
-    value: AlmaLinux, Rocky Linux, Ubuntu, Debian, FreeBSD
-    source_type: official
-    source_url: https://vps.sakura.ad.jp/specification/#specification_os
-    verified_at: "2026-07-07"
-    verification_status: verified
-  - provider_id: sakura-vps
-    feature_id: app_template
-    value: true
-    source_type: official
-    source_url: https://vps.sakura.ad.jp/specification/#specification_application
-    verified_at: "2026-07-07"
-    verification_status: verified
-  - provider_id: sakura-vps
-    feature_id: docker_template
-    value: true
-    source_type: official
-    source_url: https://vps.sakura.ad.jp/specification/#specification_application
-    verified_at: "2026-07-07"
-    verification_status: verified
-  - provider_id: sakura-vps
-    feature_id: kusanagi_template
-    value: true
-    source_type: official
-    source_url: https://vps.sakura.ad.jp/specification/#specification_application
-    verified_at: "2026-07-07"
-    verification_status: verified
-  - provider_id: sakura-vps
-    feature_id: custom_iso
-    value: true
-    source_type: official
-    source_url: https://manual.sakura.ad.jp/vps/os-reinstall/iso-install.html
-    verified_at: "2026-07-07"
-    verification_status: verified
-  - provider_id: sakura-vps
-    feature_id: startup_script
-    value: true
-    source_type: official
-    source_url: https://manual.sakura.ad.jp/vps/startupscript/startupscript.html
-    verified_at: "2026-07-07"
-    verification_status: verified
-  - provider_id: sakura-vps
-    feature_id: openapi_published
-    value: true
-    source_type: official
-    source_url: https://manual.sakura.ad.jp/vps/api/api-doc/index.html
-    verified_at: "2026-07-07"
-    verification_status: verified
-  - provider_id: sakura-vps
-    feature_id: cli_available
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: sakura-vps
-    feature_id: terraform_provider
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: sakura-vps
-    feature_id: pulumi_support
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: sakura-vps
-    feature_id: ansible_support
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: sakura-vps
-    feature_id: metadata_service
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: sakura-vps
-    feature_id: api_rate_limit_published
-    value: true
-    source_type: official
-    source_url: https://manual.sakura.ad.jp/vps/api/api-doc/index.html
-    verified_at: "2026-07-07"
-    verification_status: verified
-  - provider_id: sakura-vps
-    feature_id: webhook
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: sakura-vps
-    feature_id: sdk_go
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: sakura-vps
-    feature_id: sdk_python
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: sakura-vps
-    feature_id: sdk_nodejs
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: sakura-vps
-    feature_id: cloud_init
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: conoha-vps
-    feature_id: min_price_jpy
-    value: 460
-    source_type: official
-    source_url: https://www.conoha.jp/vps/pricing/
-    verified_at: "2026-07-03"
-    verification_status: verified
-    notes: 512MBプラン まとめトク1ヶ月。2026年7月1日改定料金（サービス維持調整費廃止後）。
-  - provider_id: conoha-vps
-    feature_id: min_ram_gb
-    value: 0.5
-    source_type: official
-    source_url: https://www.conoha.jp/vps/pricing/
-    verified_at: "2026-07-03"
-    verification_status: verified
-  - provider_id: conoha-vps
-    feature_id: min_storage_gb
-    value: 30
-    source_type: official
-    source_url: https://www.conoha.jp/vps/pricing/
-    verified_at: "2026-07-03"
-    verification_status: verified
-    notes: 512MBプランのSSD 30GB。
-  - provider_id: conoha-vps
-    feature_id: min_vcpu
-    value: 1
-    source_type: official
-    source_url: https://www.conoha.jp/vps/pricing/
-    verified_at: "2026-07-03"
-    verification_status: verified
-  - provider_id: conoha-vps
-    feature_id: ipv6_support
-    value: true
-    source_type: official
-    source_url: https://doc.conoha.jp/products/vps-v3/network-v3/ipv6-v3/
-    verified_at: "2026-07-07"
-    verification_status: verified
-
-  - provider_id: conoha-vps
-    feature_id: hourly_billing
-    value: true
-    source_type: official
-    source_url: https://www.conoha.jp/vps/pricing/
-    verified_at: "2024-01-01"
-    verification_status: verified
-
-  - provider_id: conoha-vps
-    feature_id: price_2gb_monthly
-    value: 1259
-    source_type: official
-    source_url: https://www.conoha.jp/vps/pricing/
-    verified_at: "2026-07-03"
-    verification_status: verified
-    notes: 2GBプラン まとめトク1ヶ月。時間課金の場合は月額上限2,033円。
-  - provider_id: conoha-vps
-    feature_id: price_2gb_hourly
-    value: 3.7
-    source_type: official
-    source_url: https://www.conoha.jp/vps/pricing/
-    verified_at: "2026-07-03"
-    verification_status: verified
-    notes: 2GBプラン 時間課金（円/時）。月額上限2,033円。
-  - provider_id: conoha-vps
-    feature_id: price_4gb_monthly
-    value: 2189
-    source_type: official
-    source_url: https://www.conoha.jp/vps/pricing/
-    verified_at: "2026-07-03"
-    verification_status: verified
-    notes: 4GBプラン まとめトク1ヶ月。時間課金の場合は月額上限3,608円。
-  - provider_id: conoha-vps
-    feature_id: price_4gb_hourly
-    value: 6.6
-    source_type: official
-    source_url: https://www.conoha.jp/vps/pricing/
-    verified_at: "2026-07-03"
-    verification_status: verified
-    notes: 4GBプラン 時間課金（円/時）。月額上限3,608円。
-  - provider_id: conoha-vps
-    feature_id: monthly_cap
-    value: 751
-    source_type: official
-    source_url: https://www.conoha.jp/vps/pricing/
-    verified_at: "2026-07-03"
-    verification_status: verified
-    notes: 最小プラン（512MB）の時間課金月額上限。2GBプランは2,033円、4GBプランは3,608円。
-  - provider_id: conoha-vps
-    feature_id: initial_cost
-    value: 0
-    source_type: official
-    source_url: https://www.conoha.jp/vps/pricing/
-    verified_at: "2026-07-03"
-    verification_status: verified
-  - provider_id: conoha-vps
-    feature_id: min_contract_period
-    value: なし
-    source_type: official
-    source_url: https://www.conoha.jp/vps/pricing/
-    verified_at: "2026-07-03"
-    verification_status: verified
-    notes: 時間課金は最低利用期間なし。まとめトクは1ヶ月〜の前払いプラン。
-  - provider_id: conoha-vps
-    feature_id: api_available
-    value: true
-    source_type: official
-    source_url: https://www.conoha.jp/vps/function/api/
-    verified_at: "2026-07-07"
-    verification_status: verified
-
-  - provider_id: conoha-vps
-    feature_id: sla_uptime_percent
-    value: 99.99
-    source_type: official
-    source_url: https://www.conoha.jp/vps/agreement/
-    verified_at: "2024-01-01"
-    verification_status: verified
-
-  - provider_id: conoha-vps
-    feature_id: ddos_protection
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: conoha-vps
-    feature_id: bandwidth_gbps
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: conoha-vps
-    feature_id: full_disk_snapshot
-    value: true
-    source_type: official
-    source_url: https://www.conoha.jp/vps/function/
-    verified_at: "2024-01-01"
-    verification_status: verified
-
-  - provider_id: conoha-vps
-    feature_id: storage_type
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: conoha-vps
-    feature_id: nvme_explicit
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: conoha-vps
-    feature_id: ssd_explicit
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: conoha-vps
-    feature_id: additional_disk
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: conoha-vps
-    feature_id: disk_expansion
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: conoha-vps
-    feature_id: auto_snapshot
-    value: false
-    source_type: official
-    source_url: https://support.conoha.jp/v/snapshot/
-    verified_at: "2026-07-07"
-    verification_status: verified
-    notes: スナップショットは手動取得のみ（取得から24時間で自動削除、1世代のみ保持）。VPS 3.0のみ対応
-
-  - provider_id: conoha-vps
-    feature_id: backup_feature
-    value: true
-    source_type: official
-    source_url: https://support.conoha.jp/v/vps-autobackup/
-    verified_at: "2026-07-07"
-    verification_status: verified
-    notes: 自動バックアップ機能（有料オプション）あり
-
-  - provider_id: conoha-vps
-    feature_id: custom_image_save
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: conoha-vps
-    feature_id: object_storage_integration
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: conoha-vps
-    feature_id: os_templates
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: conoha-vps
-    feature_id: standard_os_template
-    value: AlmaLinux, Rocky Linux, Ubuntu, Debian, Fedora, FreeBSD, Windows Server
-    source_type: official
-    source_url: https://vps.conoha.jp/function/template/?btn_id=top--function_function-template
-    verified_at: "2026-07-07"
-    verification_status: verified
-  - provider_id: conoha-vps
-    feature_id: app_template
-    value: true
-    source_type: official
-    source_url: https://vps.conoha.jp/function/template/?btn_id=top--function_function-template
-    verified_at: "2026-07-07"
-    verification_status: verified
-  - provider_id: conoha-vps
-    feature_id: docker_template
-    value: true
-    source_type: official
-    source_url: https://vps.conoha.jp/function/template/?btn_id=top--function_function-template
-    verified_at: "2026-07-07"
-    verification_status: verified
-  - provider_id: conoha-vps
-    feature_id: kusanagi_template
-    value: true
-    source_type: official
-    source_url: https://vps.conoha.jp/function/template/?btn_id=top--function_function-template
-    verified_at: "2026-07-07"
-    verification_status: verified
-  - provider_id: conoha-vps
-    feature_id: custom_iso
-    value: true
-    source_type: official
-    source_url: https://support.conoha.jp/vps/iso-upload/
-    verified_at: "2026-07-07"
-    verification_status: verified
-  - provider_id: conoha-vps
-    feature_id: startup_script
-    value: true
-    source_type: official
-    source_url: https://vps.conoha.jp/function/startupscript/
-    verified_at: "2026-07-07"
-    verification_status: verified
-  - provider_id: conoha-vps
-    feature_id: openapi_published
-    value: true
-    source_type: official
-    source_url: https://github.com/gmo-internet/conoha_vps_openapi
-    verified_at: "2026-07-07"
-    verification_status: verified
-  - provider_id: conoha-vps
-    feature_id: cli_available
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: conoha-vps
-    feature_id: terraform_provider
-    value: true
-    source_type: official
-    source_url: https://vps.conoha.jp/terraform_provider/
-    verified_at: "2026-07-07"
-    verification_status: verified
-  - provider_id: conoha-vps
-    feature_id: pulumi_support
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: conoha-vps
-    feature_id: ansible_support
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: conoha-vps
-    feature_id: metadata_service
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: conoha-vps
-    feature_id: api_rate_limit_published
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: conoha-vps
-    feature_id: webhook
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: conoha-vps
-    feature_id: sdk_go
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: conoha-vps
-    feature_id: sdk_python
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: conoha-vps
-    feature_id: sdk_nodejs
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: conoha-vps
-    feature_id: cloud_init
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: xserver-vps
-    feature_id: min_price_jpy
-    value: 1496
-    source_type: official
-    source_url: https://vps.xserver.ne.jp/price/
-    verified_at: "2026-07-03"
-    verification_status: verified
-    notes: 2GBプラン 1ヶ月契約。2025年12月1日料金改定後。12ヶ月契約は1,170円/月、36ヶ月契約は990円/月。
-  - provider_id: xserver-vps
-    feature_id: min_ram_gb
-    value: 2
-    source_type: official
-    source_url: https://vps.xserver.ne.jp/price/
-    verified_at: "2026-07-03"
-    verification_status: verified
-    notes: 最小プランは2GB。1GB以下のプランは廃止済み。
-  - provider_id: xserver-vps
-    feature_id: min_storage_gb
-    value: 50
-    source_type: official
-    source_url: https://vps.xserver.ne.jp/price/
-    verified_at: "2026-07-03"
-    verification_status: verified
-    notes: 2GBプランのNVMe SSD 50GB。
-  - provider_id: xserver-vps
-    feature_id: min_vcpu
-    value: 3
-    source_type: official
-    source_url: https://vps.xserver.ne.jp/price/
-    verified_at: "2026-07-03"
-    verification_status: verified
-    notes: 2GBプランのvCPU 3コア。
-  - provider_id: xserver-vps
-    feature_id: ipv6_support
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: xserver-vps
-    feature_id: hourly_billing
-    value: false
-    source_type: official
-    source_url: https://vps.xserver.ne.jp/price/
-    verified_at: "2024-01-01"
-    verification_status: verified
-
-  - provider_id: xserver-vps
-    feature_id: price_2gb_monthly
-    value: 1496
-    source_type: official
-    source_url: https://vps.xserver.ne.jp/price/
-    verified_at: "2026-07-03"
-    verification_status: verified
-    notes: 2GBプラン 1ヶ月契約。2025年12月1日改定後。12ヶ月契約は1,170円/月、36ヶ月契約は990円/月。
-  - provider_id: xserver-vps
-    feature_id: price_2gb_hourly
-    value: "-"
-    source_type: official
-    source_url: https://vps.xserver.ne.jp/price/
-    verified_at: "2026-07-03"
-    verification_status: verified
-    notes: 時間課金は非対応。
-  - provider_id: xserver-vps
-    feature_id: price_4gb_monthly
-    value: "-"
-    source_type: official
-    source_url: https://vps.xserver.ne.jp/price/
-    verified_at: "2026-07-03"
-    verification_status: verified
-    notes: 単体4GBプランは存在しない。最近接プランは6GBプラン（4GB＋2GB無料増設）で1,700円/月（1ヶ月契約）。
-  - provider_id: xserver-vps
-    feature_id: price_4gb_hourly
-    value: "-"
-    source_type: official
-    source_url: https://vps.xserver.ne.jp/price/
-    verified_at: "2026-07-03"
-    verification_status: verified
-    notes: 時間課金は非対応。
-  - provider_id: xserver-vps
-    feature_id: monthly_cap
-    value: "-"
-    source_type: official
-    source_url: https://vps.xserver.ne.jp/price/
-    verified_at: "2026-07-03"
-    verification_status: verified
-    notes: 時間課金は非対応のため月額上限なし。
-  - provider_id: xserver-vps
-    feature_id: initial_cost
-    value: 0
-    source_type: official
-    source_url: https://vps.xserver.ne.jp/price/
-    verified_at: "2026-07-03"
-    verification_status: verified
-  - provider_id: xserver-vps
-    feature_id: min_contract_period
-    value: 1ヶ月
-    source_type: official
-    source_url: https://vps.xserver.ne.jp/price/
-    verified_at: "2026-07-03"
-    verification_status: verified
-  - provider_id: xserver-vps
-    feature_id: api_available
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: xserver-vps
-    feature_id: openapi_published
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: xserver-vps
-    feature_id: cli_available
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: xserver-vps
-    feature_id: terraform_provider
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: xserver-vps
-    feature_id: pulumi_support
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: xserver-vps
-    feature_id: ansible_support
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: xserver-vps
-    feature_id: metadata_service
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: xserver-vps
-    feature_id: api_rate_limit_published
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: xserver-vps
-    feature_id: webhook
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: xserver-vps
-    feature_id: sdk_go
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: xserver-vps
-    feature_id: sdk_python
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: xserver-vps
-    feature_id: sdk_nodejs
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: xserver-vps
-    feature_id: cloud_init
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: xserver-vps
-    feature_id: startup_script
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: xserver-vps
-    feature_id: sla_uptime_percent
-    value: 99.99
-    source_type: official
-    source_url: https://vps.xserver.ne.jp/agreement/
-    verified_at: "2024-01-01"
-    verification_status: verified
-
-  - provider_id: xserver-vps
-    feature_id: ddos_protection
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: xserver-vps
-    feature_id: bandwidth_gbps
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: xserver-vps
-    feature_id: full_disk_snapshot
-    value: true
-    source_type: official
-    source_url: https://vps.xserver.ne.jp/support/manual/man_server_image.php
-    verified_at: "2026-07-07"
-    verification_status: verified
-    notes: 「イメージ保存」機能によりサーバー全体をファイルとして保存可能。サーバー停止状態で実行
-
-  - provider_id: xserver-vps
-    feature_id: storage_type
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: xserver-vps
-    feature_id: nvme_explicit
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: xserver-vps
-    feature_id: ssd_explicit
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: xserver-vps
-    feature_id: additional_disk
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: xserver-vps
-    feature_id: disk_expansion
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: xserver-vps
-    feature_id: auto_snapshot
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: xserver-vps
-    feature_id: backup_feature
-    value: true
-    source_type: official
-    source_url: https://vps.xserver.ne.jp/support/faq/service_server_backup.php
-    verified_at: "2026-07-07"
-    verification_status: verified
-    notes: 自動バックアップ機能あり（ビジネスプラン標準搭載、他プランはバックアップ拡張オプション）
-
-  - provider_id: xserver-vps
-    feature_id: custom_image_save
-    value: true
-    source_type: official
-    source_url: https://vps.xserver.ne.jp/support/manual/man_server_image.php
-    verified_at: "2026-07-07"
-    verification_status: verified
-    notes: 「イメージ保存」機能によりサーバー全体をカスタムイメージとして保存可能
-
-  - provider_id: xserver-vps
-    feature_id: object_storage_integration
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: xserver-vps
-    feature_id: os_templates
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: xserver-vps
-    feature_id: standard_os_template
-    value: AlmaLinux, Rocky Linux, Ubuntu, Debian, Fedora
-    source_type: official
-    source_url: https://vps.xserver.ne.jp/os-list.php
-    verified_at: "2026-07-07"
-    verification_status: verified
-  - provider_id: xserver-vps
-    feature_id: app_template
-    value: true
-    source_type: official
-    source_url: https://vps.xserver.ne.jp/os-list.php
-    verified_at: "2026-07-07"
-    verification_status: verified
-  - provider_id: xserver-vps
-    feature_id: docker_template
-    value: true
-    source_type: official
-    source_url: https://vps.xserver.ne.jp/os-list.php
-    verified_at: "2026-07-07"
-    verification_status: verified
-  - provider_id: xserver-vps
-    feature_id: kusanagi_template
-    value: true
-    source_type: official
-    source_url: https://vps.xserver.ne.jp/support/manual/man_server_app_use_kusanagi.php
-    verified_at: "2026-07-07"
-    verification_status: verified
-
-  - provider_id: webarena-indigo
-    feature_id: min_price_jpy
-    value: 319
-    source_type: official
-    source_url: https://web.arena.ne.jp/indigo/price/
-    verified_at: "2026-07-03"
-    verification_status: verified
-    notes: 768MBプランの月額上限（時間課金）。IPv6のみ対応プラン。
-  - provider_id: webarena-indigo
-    feature_id: min_ram_gb
-    value: 0.75
-    source_type: official
-    source_url: https://web.arena.ne.jp/indigo/price/
-    verified_at: "2026-07-03"
-    verification_status: verified
-    notes: 768MB（0.75GB）プラン。IPv6のみ対応の最安プラン。
-  - provider_id: webarena-indigo
-    feature_id: min_storage_gb
-    value: 20
-    source_type: official
-    source_url: https://web.arena.ne.jp/indigo/price/
-    verified_at: "2026-07-03"
-    verification_status: verified
-  - provider_id: webarena-indigo
-    feature_id: min_vcpu
-    value: 1
-    source_type: official
-    source_url: https://web.arena.ne.jp/indigo/price/
-    verified_at: "2026-07-03"
-    verification_status: verified
-  - provider_id: webarena-indigo
-    feature_id: ipv6_support
-    value: true
-    source_type: official
-    source_url: https://web.arena.ne.jp/indigo/spec/
-    verified_at: "2026-07-07"
-    verification_status: verified
-    notes: 768MBプランはIPv6のみ、1GB以上はIPv4/IPv6デュアルスタック。
-
-  - provider_id: webarena-indigo
-    feature_id: hourly_billing
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: webarena-indigo
-    feature_id: price_2gb_monthly
-    value: 814
-    source_type: official
-    source_url: https://web.arena.ne.jp/indigo/price/
-    verified_at: "2026-07-03"
-    verification_status: verified
-    notes: 2GBプランの月額上限（時間課金）。2vCPU、SSD 40GB。
-  - provider_id: webarena-indigo
-    feature_id: price_2gb_hourly
-    value: 1.27
-    source_type: official
-    source_url: https://web.arena.ne.jp/indigo/price/
-    verified_at: "2026-07-03"
-    verification_status: verified
-    notes: 2GBプラン 時間課金（円/時）。月額上限814円。
-  - provider_id: webarena-indigo
-    feature_id: price_4gb_monthly
-    value: 1630
-    source_type: official
-    source_url: https://web.arena.ne.jp/indigo/price/
-    verified_at: "2026-07-03"
-    verification_status: verified
-    notes: 4GBプランの月額上限（時間課金）。4vCPU、SSD 80GB。
-  - provider_id: webarena-indigo
-    feature_id: price_4gb_hourly
-    value: 2.55
-    source_type: official
-    source_url: https://web.arena.ne.jp/indigo/price/
-    verified_at: "2026-07-03"
-    verification_status: verified
-    notes: 4GBプラン 時間課金（円/時）。月額上限1,630円。
-  - provider_id: webarena-indigo
-    feature_id: monthly_cap
-    value: 319
-    source_type: official
-    source_url: https://web.arena.ne.jp/indigo/price/
-    verified_at: "2026-07-03"
-    verification_status: verified
-    notes: 最小プラン（768MB）の月額上限（時間課金）。
-  - provider_id: webarena-indigo
-    feature_id: initial_cost
-    value: 0
-    source_type: official
-    source_url: https://web.arena.ne.jp/indigo/price/
-    verified_at: "2026-07-03"
-    verification_status: verified
-  - provider_id: webarena-indigo
-    feature_id: min_contract_period
-    value: なし
-    source_type: official
-    source_url: https://web.arena.ne.jp/indigo/price/
-    verified_at: "2026-07-03"
-    verification_status: verified
-  - provider_id: webarena-indigo
-    feature_id: api_available
-    value: true
-    source_type: official
-    source_url: https://web.arena.ne.jp/indigo/spec/
-    verified_at: "2026-07-07"
-    verification_status: verified
-  - provider_id: webarena-indigo
-    feature_id: openapi_published
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: webarena-indigo
-    feature_id: cli_available
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: webarena-indigo
-    feature_id: terraform_provider
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: webarena-indigo
-    feature_id: pulumi_support
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: webarena-indigo
-    feature_id: ansible_support
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: webarena-indigo
-    feature_id: metadata_service
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: webarena-indigo
-    feature_id: api_rate_limit_published
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: webarena-indigo
-    feature_id: webhook
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: webarena-indigo
-    feature_id: sdk_go
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: webarena-indigo
-    feature_id: sdk_python
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: webarena-indigo
-    feature_id: sdk_nodejs
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: webarena-indigo
-    feature_id: cloud_init
-    value: true
-    source_type: official
-    source_url: https://web.arena.ne.jp/indigo/spec/
-    verified_at: "2026-07-07"
-    verification_status: verified
-  - provider_id: webarena-indigo
-    feature_id: startup_script
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: webarena-indigo
-    feature_id: sla_uptime_percent
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: webarena-indigo
-    feature_id: ddos_protection
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: webarena-indigo
-    feature_id: bandwidth_gbps
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: webarena-indigo
-    feature_id: full_disk_snapshot
-    value: true
-    source_type: official
-    source_url: https://web.arena.ne.jp/indigo/spec/
-    verified_at: "2026-07-07"
-    verification_status: verified
-    notes: スナップショット機能（オプションサービス）あり。1インスタンスあたり最大5個まで保存可
-
-  - provider_id: webarena-indigo
-    feature_id: storage_type
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: webarena-indigo
-    feature_id: nvme_explicit
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: webarena-indigo
-    feature_id: ssd_explicit
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: webarena-indigo
-    feature_id: additional_disk
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: webarena-indigo
-    feature_id: disk_expansion
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: webarena-indigo
-    feature_id: auto_snapshot
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: webarena-indigo
-    feature_id: backup_feature
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: webarena-indigo
-    feature_id: custom_image_save
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: webarena-indigo
-    feature_id: object_storage_integration
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: webarena-indigo
-    feature_id: os_templates
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: webarena-indigo
-    feature_id: standard_os_template
-    value: AlmaLinux, Rocky Linux, Ubuntu, Debian, Windows Server
-    source_type: official
-    source_url: https://web.arena.ne.jp/indigo/spec/os.html
-    verified_at: "2026-07-07"
-    verification_status: verified
-  - provider_id: webarena-indigo
-    feature_id: app_template
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: webarena-indigo
-    feature_id: kusanagi_template
-    value: true
-    source_type: official
-    source_url: https://web.arena.ne.jp/indigo/spec/kusanagi.html
-    verified_at: "2026-07-07"
-    verification_status: verified
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: min_price_jpy
-    value: 550
-    source_type: official
-    source_url: https://www.kagoya.jp/vps/
-    verified_at: "2026-07-03"
-    verification_status: verified
-    notes: 1GBプランの月額上限（日額課金）。日額20円。
-  - provider_id: kagoya-cloud-vps
-    feature_id: min_ram_gb
-    value: 1
-    source_type: official
-    source_url: https://www.kagoya.jp/vps/
-    verified_at: "2026-07-03"
-    verification_status: verified
-  - provider_id: kagoya-cloud-vps
-    feature_id: min_storage_gb
-    value: 100
-    source_type: official
-    source_url: https://www.kagoya.jp/vps/
-    verified_at: "2026-07-03"
-    verification_status: verified
-    notes: 1GBプランのNVMe SSD 100GB。
-  - provider_id: kagoya-cloud-vps
-    feature_id: min_vcpu
-    value: 1
-    source_type: official
-    source_url: https://www.kagoya.jp/vps/
-    verified_at: "2026-07-03"
-    verification_status: verified
-  - provider_id: kagoya-cloud-vps
-    feature_id: ipv6_support
-    value: true
-    source_type: official
-    source_url: https://support.kagoya.jp/vps/charge/index.html
-    verified_at: "2026-07-07"
-    verification_status: verified
-    notes: インスタンスごとにIPv6アドレス標準提供。
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: hourly_billing
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: price_2gb_monthly
-    value: 770
-    source_type: official
-    source_url: https://www.kagoya.jp/vps/
-    verified_at: "2026-07-03"
-    verification_status: verified
-    notes: 2GBプランの月額上限（日額課金）。日額28円。年額8,580円（月換算715円）。
-  - provider_id: kagoya-cloud-vps
-    feature_id: price_2gb_hourly
-    value: "-"
-    source_type: official
-    source_url: https://www.kagoya.jp/vps/
-    verified_at: "2026-07-03"
-    verification_status: verified
-    notes: 時間課金は非対応。日額（1日単位）課金。
-  - provider_id: kagoya-cloud-vps
-    feature_id: price_4gb_monthly
-    value: 1760
-    source_type: official
-    source_url: https://www.kagoya.jp/vps/
-    verified_at: "2026-07-03"
-    verification_status: verified
-    notes: 4GBプランの月額上限（日額課金）。日額63円。
-  - provider_id: kagoya-cloud-vps
-    feature_id: price_4gb_hourly
-    value: "-"
-    source_type: official
-    source_url: https://www.kagoya.jp/vps/
-    verified_at: "2026-07-03"
-    verification_status: verified
-    notes: 時間課金は非対応。日額（1日単位）課金。
-  - provider_id: kagoya-cloud-vps
-    feature_id: monthly_cap
-    value: 550
-    source_type: official
-    source_url: https://www.kagoya.jp/vps/
-    verified_at: "2026-07-03"
-    verification_status: verified
-    notes: 最小プラン（1GB）の月額上限（日額課金）。
-  - provider_id: kagoya-cloud-vps
-    feature_id: initial_cost
-    value: 0
-    source_type: official
-    source_url: https://www.kagoya.jp/vps/
-    verified_at: "2026-07-03"
-    verification_status: verified
-  - provider_id: kagoya-cloud-vps
-    feature_id: min_contract_period
-    value: なし
-    source_type: official
-    source_url: https://www.kagoya.jp/vps/
-    verified_at: "2026-07-03"
-    verification_status: verified
-    notes: 日額課金のため最低利用期間なし。
-  - provider_id: kagoya-cloud-vps
-    feature_id: api_available
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: sla_uptime_percent
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: ddos_protection
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: bandwidth_gbps
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: full_disk_snapshot
-    value: true
-    source_type: official
-    source_url: https://www.kagoya.jp/vps/feature/customize/
-    verified_at: "2026-07-07"
-    verification_status: verified
-    notes: スナップショット機能あり。コントロールパネルから任意のタイミングで作成・管理可能
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: storage_type
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: nvme_explicit
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: ssd_explicit
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: additional_disk
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: disk_expansion
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: auto_snapshot
-    value: true
-    source_type: official
-    source_url: https://www.kagoya.jp/vps/feature/customize/
-    verified_at: "2026-07-07"
-    verification_status: verified
-    notes: 定期スナップショット機能あり（毎日自動取得、最大7世代）
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: backup_feature
-    value: true
-    source_type: official
-    source_url: https://www.kagoya.jp/vps/feature/customize/
-    verified_at: "2026-07-07"
-    verification_status: verified
-    notes: 定期スナップショット（自動バックアップ）機能あり
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: custom_image_save
-    value: true
-    source_type: official
-    source_url: https://www.kagoya.jp/vps/feature/customize/
-    verified_at: "2026-07-07"
-    verification_status: verified
-    notes: スナップショットから新しいインスタンスを作成可能（クローン機能）
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: object_storage_integration
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: sakura-vps
-    feature_id: manual_backup
-    value: true
-    source_type: official
-    source_url: https://vps.sakura.ad.jp/contents/info/acronis-cyber-protect-cloud-acronis-hosted/
-    verified_at: "2026-07-07"
-    verification_status: verified
-    notes: Acronis Cyber Protect Cloud（有料オプション）によるOS全体の手動バックアップ対応
-
-  - provider_id: sakura-vps
-    feature_id: auto_backup
-    value: true
-    source_type: official
-    source_url: https://vps.sakura.ad.jp/contents/info/acronis-cyber-protect-cloud-acronis-hosted/
-    verified_at: "2026-07-07"
-    verification_status: verified
-    notes: Acronis Cyber Protect Cloud（有料オプション）によるスケジュールバックアップ対応
-
-  - provider_id: sakura-vps
-    feature_id: backup_schedule
-    value: true
-    source_type: official
-    source_url: https://vps.sakura.ad.jp/contents/info/acronis-cyber-protect-cloud-acronis-hosted/
-    verified_at: "2026-07-07"
-    verification_status: verified
-    notes: Acronis コンソールよりバックアップ実行スケジュール（時刻・頻度）設定可
-
-  - provider_id: sakura-vps
-    feature_id: backup_retention_period
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: sakura-vps
-    feature_id: backup_generations
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: sakura-vps
-    feature_id: restore_from_backup
-    value: true
-    source_type: official
-    source_url: https://vps.sakura.ad.jp/contents/info/acronis-cyber-protect-cloud-acronis-hosted/
-    verified_at: "2026-07-07"
-    verification_status: verified
-    notes: Acronis Cyber Protect Cloudによるファイル・ディスク単位の復元対応
-
-  - provider_id: sakura-vps
-    feature_id: backup_encryption
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: sakura-vps
-    feature_id: backup_to_object_storage
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: sakura-vps
-    feature_id: cross_region_backup
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: sakura-vps
-    feature_id: dr_support
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: sakura-vps
-    feature_id: backup_billing
-    value: "有料オプション（Acronis Cyber Protect Cloud: 1,760円/月〜(100GB)）"
-    source_type: official
-    source_url: https://vps.sakura.ad.jp/contents/info/acronis-cyber-protect-cloud-acronis-hosted/
-    verified_at: "2026-07-07"
-    verification_status: verified
-
-  - provider_id: conoha-vps
-    feature_id: manual_backup
-    value: true
-    source_type: official
-    source_url: https://support.conoha.jp/v/snapshot/
-    verified_at: "2026-07-07"
-    verification_status: verified
-    notes: スナップショット機能（無料、24時間有効、1世代）による手動バックアップ対応（VPS 3.0のみ）
-
-  - provider_id: conoha-vps
-    feature_id: auto_backup
-    value: true
-    source_type: official
-    source_url: https://support.conoha.jp/v/vps-autobackup/
-    verified_at: "2026-07-07"
-    verification_status: verified
-    notes: 自動バックアップ（有料オプション）：VPS 3.0は日次、VPS 2.0は週次
-
-  - provider_id: conoha-vps
-    feature_id: backup_schedule
-    value: false
-    source_type: official
-    source_url: https://doc.conoha.jp/products/vps-v3/storage-v3/autobackup-v3/
-    verified_at: "2026-07-07"
-    verification_status: verified
-    notes: バックアップ実行スケジュール（時刻・頻度）の任意設定不可。VPS 3.0は日次固定
-
-  - provider_id: conoha-vps
-    feature_id: backup_retention_period
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: conoha-vps
-    feature_id: backup_generations
-    value: "14世代（デフォルト）、最大30世代（VPS 3.0）"
-    source_type: official
-    source_url: https://doc.conoha.jp/products/vps-v3/storage-v3/autobackup-v3/
-    verified_at: "2026-07-07"
-    verification_status: verified
-
-  - provider_id: conoha-vps
-    feature_id: restore_from_backup
-    value: true
-    source_type: official
-    source_url: https://support.conoha.jp/v/vps-autobackup/
-    verified_at: "2026-07-07"
-    verification_status: verified
-    notes: コントロールパネルからバックアップを選択してリストア可能
-
-  - provider_id: conoha-vps
-    feature_id: backup_encryption
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: conoha-vps
-    feature_id: backup_to_object_storage
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: conoha-vps
-    feature_id: cross_region_backup
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: conoha-vps
-    feature_id: dr_support
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: conoha-vps
-    feature_id: backup_billing
-    value: "有料オプション（世代数により料金変動）"
-    source_type: official
-    source_url: https://support.conoha.jp/v/vps-autobackup/
-    verified_at: "2026-07-07"
-    verification_status: verified
-
-  - provider_id: xserver-vps
-    feature_id: manual_backup
-    value: true
-    source_type: official
-    source_url: https://vps.xserver.ne.jp/support/manual/man_server_image.php
-    verified_at: "2026-07-07"
-    verification_status: verified
-    notes: 「イメージ保存」機能による手動バックアップ対応（サーバー停止状態で実行）
-
-  - provider_id: xserver-vps
-    feature_id: auto_backup
-    value: true
-    source_type: official
-    source_url: https://vps.xserver.ne.jp/support/faq/service_server_backup.php
-    verified_at: "2026-07-07"
-    verification_status: verified
-    notes: 自動バックアップ機能あり（ビジネスプラン標準搭載：週1回・1世代、バックアップ拡張オプションで最大3世代）
-
-  - provider_id: xserver-vps
-    feature_id: backup_schedule
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: xserver-vps
-    feature_id: backup_retention_period
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: xserver-vps
-    feature_id: backup_generations
-    value: "ビジネスプラン標準1世代、バックアップ拡張オプションで最大3世代"
-    source_type: official
-    source_url: https://vps.xserver.ne.jp/support/faq/service_server_backup.php
-    verified_at: "2026-07-07"
-    verification_status: verified
-
-  - provider_id: xserver-vps
-    feature_id: restore_from_backup
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: xserver-vps
-    feature_id: backup_encryption
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: xserver-vps
-    feature_id: backup_to_object_storage
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: xserver-vps
-    feature_id: cross_region_backup
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: xserver-vps
-    feature_id: dr_support
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: xserver-vps
-    feature_id: backup_billing
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: webarena-indigo
-    feature_id: manual_backup
-    value: true
-    source_type: official
-    source_url: https://web.arena.ne.jp/indigo/spec/
-    verified_at: "2026-07-07"
-    verification_status: verified
-    notes: スナップショット機能（オプション）による手動バックアップ対応
-
-  - provider_id: webarena-indigo
-    feature_id: auto_backup
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: webarena-indigo
-    feature_id: backup_schedule
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: webarena-indigo
-    feature_id: backup_retention_period
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: webarena-indigo
-    feature_id: backup_generations
-    value: "最大5個/インスタンス（スナップショット）"
-    source_type: official
-    source_url: https://web.arena.ne.jp/indigo/spec/
-    verified_at: "2026-07-07"
-    verification_status: verified
-
-  - provider_id: webarena-indigo
-    feature_id: restore_from_backup
-    value: true
-    source_type: official
-    source_url: https://web.arena.ne.jp/indigo/spec/
-    verified_at: "2026-07-07"
-    verification_status: verified
-    notes: スナップショットからのインスタンス復元対応
-
-  - provider_id: webarena-indigo
-    feature_id: backup_encryption
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: webarena-indigo
-    feature_id: backup_to_object_storage
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: webarena-indigo
-    feature_id: cross_region_backup
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: webarena-indigo
-    feature_id: dr_support
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: webarena-indigo
-    feature_id: backup_billing
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: manual_backup
-    value: true
-    source_type: official
-    source_url: https://www.kagoya.jp/vps/feature/customize/
-    verified_at: "2026-07-07"
-    verification_status: verified
-    notes: 手動スナップショット機能（任意のタイミング）によるバックアップ対応
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: auto_backup
-    value: true
-    source_type: official
-    source_url: https://www.kagoya.jp/vps/feature/customize/
-    verified_at: "2026-07-07"
-    verification_status: verified
-    notes: 定期スナップショット機能（毎日自動取得、最大7世代）
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: backup_schedule
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: backup_retention_period
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: backup_generations
-    value: "最大7世代（定期スナップショット）"
-    source_type: official
-    source_url: https://www.kagoya.jp/vps/feature/customize/
-    verified_at: "2026-07-07"
-    verification_status: verified
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: restore_from_backup
-    value: true
-    source_type: official
-    source_url: https://www.kagoya.jp/vps/feature/customize/
-    verified_at: "2026-07-07"
-    verification_status: verified
-    notes: スナップショットからのリストア対応
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: backup_encryption
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: backup_to_object_storage
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: cross_region_backup
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: dr_support
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: backup_billing
-    value: "有料（容量課金：スナップショット10GBあたり日額4.4円）"
-    source_type: official
-    source_url: https://www.kagoya.jp/vps/feature/customize/
-    verified_at: "2026-07-07"
-    verification_status: verified
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: os_templates
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: kagoya-cloud-vps
-    feature_id: standard_os_template
-    value: AlmaLinux, Rocky Linux, Ubuntu
-    source_type: official
-    source_url: https://www.kagoya.jp/cloud/vps/manual/list/
-    verified_at: "2026-07-07"
-    verification_status: verified
-  - provider_id: kagoya-cloud-vps
-    feature_id: custom_iso
-    value: true
-    source_type: official
-    source_url: https://www.kagoya.jp/support/category/cloud/vps/vps_manual/iso/
-    verified_at: "2026-07-07"
-    verification_status: verified
-  - provider_id: kagoya-cloud-vps
-    feature_id: startup_script
-    value: true
-    source_type: official
-    source_url: https://www.kagoya.jp/cloud/vps/manual/instance/
-    verified_at: "2026-07-07"
-    verification_status: verified
-  - provider_id: kagoya-cloud-vps
-    feature_id: cloud_init
-    value: true
-    source_type: official
-    source_url: https://www.kagoya.jp/cloud/vps/manual/instance/
-    verified_at: "2026-07-07"
-    verification_status: verified
-  - provider_id: kagoya-cloud-vps
-    feature_id: openapi_published
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: kagoya-cloud-vps
-    feature_id: cli_available
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: kagoya-cloud-vps
-    feature_id: terraform_provider
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: kagoya-cloud-vps
-    feature_id: pulumi_support
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: kagoya-cloud-vps
-    feature_id: ansible_support
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: kagoya-cloud-vps
-    feature_id: metadata_service
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: kagoya-cloud-vps
-    feature_id: api_rate_limit_published
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: kagoya-cloud-vps
-    feature_id: webhook
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: kagoya-cloud-vps
-    feature_id: sdk_go
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: kagoya-cloud-vps
-    feature_id: sdk_python
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-  - provider_id: kagoya-cloud-vps
-    feature_id: sdk_nodejs
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: sakura-vps
-    feature_id: ipv4
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: sakura-vps
-    feature_id: additional_ipv4
-    value: false
-    source_type: official
-    source_url: https://manual.sakura.ad.jp/vps/support/technical/ip-address.html
-    verified_at: "2026-07-07"
-    verification_status: verified
-
-  - provider_id: sakura-vps
-    feature_id: reverse_dns
-    value: true
-    source_type: official
-    source_url: https://manual.sakura.ad.jp/vps/support/technical/ip-address.html
-    verified_at: "2026-07-07"
-    verification_status: verified
-
-  - provider_id: sakura-vps
-    feature_id: traffic_limit
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: sakura-vps
-    feature_id: local_network
-    value: true
-    source_type: official
-    source_url: https://manual.sakura.ad.jp/vps/network/index.html
-    verified_at: "2026-07-07"
-    verification_status: verified
-
-  - provider_id: sakura-vps
-    feature_id: private_network
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: sakura-vps
-    feature_id: vlan
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: sakura-vps
-    feature_id: load_balancer
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: sakura-vps
-    feature_id: floating_ip
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: sakura-vps
-    feature_id: firewall_feature
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: conoha-vps
-    feature_id: ipv4
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: conoha-vps
-    feature_id: additional_ipv4
-    value: true
-    source_type: official
-    source_url: https://doc.conoha.jp/products/vps-v2/network-v2/addip-v2/
-    verified_at: "2026-07-07"
-    verification_status: verified
-    notes: 1台のVPSに追加IPv4を最大16個まで割り当て可能。
-
-  - provider_id: conoha-vps
-    feature_id: reverse_dns
-    value: true
-    source_type: official
-    source_url: https://support.conoha.jp/vps/faq/ip-q/
-    verified_at: "2026-07-07"
-    verification_status: verified
-
-  - provider_id: conoha-vps
-    feature_id: traffic_limit
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: conoha-vps
-    feature_id: local_network
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: conoha-vps
-    feature_id: private_network
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: conoha-vps
-    feature_id: vlan
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: conoha-vps
-    feature_id: load_balancer
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: conoha-vps
-    feature_id: floating_ip
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: conoha-vps
-    feature_id: firewall_feature
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: xserver-vps
-    feature_id: ipv4
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: xserver-vps
-    feature_id: additional_ipv4
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: xserver-vps
-    feature_id: reverse_dns
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: xserver-vps
-    feature_id: traffic_limit
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: xserver-vps
-    feature_id: local_network
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: xserver-vps
-    feature_id: private_network
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: xserver-vps
-    feature_id: vlan
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: xserver-vps
-    feature_id: load_balancer
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: xserver-vps
-    feature_id: floating_ip
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: xserver-vps
-    feature_id: firewall_feature
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: webarena-indigo
-    feature_id: ipv4
-    value: 768MBプランはなし（IPv6のみ）/ 1GB以上は1個
-    source_type: official
-    source_url: https://web.arena.ne.jp/indigo/spec/
-    verified_at: "2026-07-07"
-    verification_status: verified
-
-  - provider_id: webarena-indigo
-    feature_id: additional_ipv4
-    value: false
-    source_type: official
-    source_url: https://web.arena.ne.jp/indigo/spec/
-    verified_at: "2026-07-07"
-    verification_status: verified
-
-  - provider_id: webarena-indigo
-    feature_id: reverse_dns
-    value: false
-    source_type: official
-    source_url: https://web.arena.ne.jp/indigo/spec/
-    verified_at: "2026-07-07"
-    verification_status: verified
-    notes: 逆引きDNSは既定値が設定済みで、利用者による変更は不可。
-
-  - provider_id: webarena-indigo
-    feature_id: traffic_limit
-    value: 無制限
-    source_type: official
-    source_url: https://web.arena.ne.jp/indigo/spec/
-    verified_at: "2026-07-07"
-    verification_status: verified
-
-  - provider_id: webarena-indigo
-    feature_id: local_network
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: webarena-indigo
-    feature_id: private_network
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: webarena-indigo
-    feature_id: vlan
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: webarena-indigo
-    feature_id: load_balancer
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: webarena-indigo
-    feature_id: floating_ip
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: webarena-indigo
-    feature_id: firewall_feature
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: ipv4
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: additional_ipv4
-    value: true
-    source_type: official
-    source_url: https://support.kagoya.jp/vps/manual/index.php?action=artikel&cat=18&id=69
-    verified_at: "2026-07-07"
-    verification_status: verified
-    notes: 追加IPv4（フローティングIP）を提供。
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: reverse_dns
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: traffic_limit
-    value: 無制限
-    source_type: official
-    source_url: https://www.kagoya.jp/vps/
-    verified_at: "2026-07-07"
-    verification_status: verified
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: local_network
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: private_network
-    value: true
-    source_type: official
-    source_url: https://support.kagoya.jp/vps/charge/index.html
-    verified_at: "2026-07-07"
-    verification_status: verified
-    notes: ローカルネットワーク（KVMローカルネットワーク）を提供。
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: vlan
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: load_balancer
-    value: true
-    source_type: official
-    source_url: https://support.kagoya.jp/vps/charge/index.html
-    verified_at: "2026-07-07"
-    verification_status: verified
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: floating_ip
-    value: true
-    source_type: official
-    source_url: https://support.kagoya.jp/vps/manual/index.php?action=artikel&cat=18&id=69
-    verified_at: "2026-07-07"
-    verification_status: verified
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: firewall_feature
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: sakura-vps
-    feature_id: waf_feature
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: sakura-vps
-    feature_id: security_group
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: sakura-vps
-    feature_id: admin_console_2fa
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: sakura-vps
-    feature_id: api_token
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: sakura-vps
-    feature_id: iam_rbac
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: sakura-vps
-    feature_id: audit_log
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: sakura-vps
-    feature_id: iso27001
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: sakura-vps
-    feature_id: isms
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: sakura-vps
-    feature_id: soc2
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: sakura-vps
-    feature_id: pci_dss
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: sakura-vps
-    feature_id: datacenter_certification
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: conoha-vps
-    feature_id: waf_feature
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: conoha-vps
-    feature_id: security_group
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: conoha-vps
-    feature_id: admin_console_2fa
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: conoha-vps
-    feature_id: api_token
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: conoha-vps
-    feature_id: iam_rbac
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: conoha-vps
-    feature_id: audit_log
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: conoha-vps
-    feature_id: iso27001
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: conoha-vps
-    feature_id: isms
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: conoha-vps
-    feature_id: soc2
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: conoha-vps
-    feature_id: pci_dss
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: conoha-vps
-    feature_id: datacenter_certification
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: xserver-vps
-    feature_id: waf_feature
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: xserver-vps
-    feature_id: security_group
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: xserver-vps
-    feature_id: admin_console_2fa
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: xserver-vps
-    feature_id: api_token
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: xserver-vps
-    feature_id: iam_rbac
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: xserver-vps
-    feature_id: audit_log
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: xserver-vps
-    feature_id: iso27001
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: xserver-vps
-    feature_id: isms
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: xserver-vps
-    feature_id: soc2
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: xserver-vps
-    feature_id: pci_dss
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: xserver-vps
-    feature_id: datacenter_certification
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: webarena-indigo
-    feature_id: waf_feature
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: webarena-indigo
-    feature_id: security_group
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: webarena-indigo
-    feature_id: admin_console_2fa
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: webarena-indigo
-    feature_id: api_token
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: webarena-indigo
-    feature_id: iam_rbac
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: webarena-indigo
-    feature_id: audit_log
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: webarena-indigo
-    feature_id: iso27001
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: webarena-indigo
-    feature_id: isms
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: webarena-indigo
-    feature_id: soc2
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: webarena-indigo
-    feature_id: pci_dss
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: webarena-indigo
-    feature_id: datacenter_certification
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: waf_feature
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: security_group
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: admin_console_2fa
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: api_token
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: iam_rbac
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: audit_log
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: iso27001
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: isms
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: soc2
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: pci_dss
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: datacenter_certification
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-
-  # --- SUPPORT カテゴリ（新規追加） ---
-
-  - provider_id: sakura-vps
-    feature_id: sla_document_url
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: sakura-vps
-    feature_id: status_page
-    value: true
-    source_type: official
-    source_url: https://www.sakura.ad.jp/status/
-    verified_at: "2026-07-08"
-    verification_status: unverified
-
-  - provider_id: sakura-vps
-    feature_id: incident_page
-    value: true
-    source_type: official
-    source_url: https://support.sakura.ad.jp/mainte/
-    verified_at: "2026-07-08"
-    verification_status: unverified
-
-  - provider_id: sakura-vps
-    feature_id: maintenance_page
-    value: true
-    source_type: official
-    source_url: https://support.sakura.ad.jp/mainte/
-    verified_at: "2026-07-08"
-    verification_status: unverified
-
-  - provider_id: sakura-vps
-    feature_id: email_notification
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: sakura-vps
-    feature_id: support_contact
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: sakura-vps
-    feature_id: phone_support
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: sakura-vps
-    feature_id: chat_support
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: sakura-vps
-    feature_id: inquiry_form
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: sakura-vps
-    feature_id: enterprise_support
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: sakura-vps
-    feature_id: japanese_support
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: sakura-vps
-    feature_id: knowledge_base
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: conoha-vps
-    feature_id: sla_document_url
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: conoha-vps
-    feature_id: status_page
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: conoha-vps
-    feature_id: incident_page
-    value: true
-    source_type: official
-    source_url: https://www.conoha.jp/news/
-    verified_at: "2026-07-08"
-    verification_status: unverified
-
-  - provider_id: conoha-vps
-    feature_id: maintenance_page
-    value: true
-    source_type: official
-    source_url: https://www.conoha.jp/news/
-    verified_at: "2026-07-08"
-    verification_status: unverified
-
-  - provider_id: conoha-vps
-    feature_id: email_notification
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: conoha-vps
-    feature_id: support_contact
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: conoha-vps
-    feature_id: phone_support
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: conoha-vps
-    feature_id: chat_support
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: conoha-vps
-    feature_id: inquiry_form
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: conoha-vps
-    feature_id: enterprise_support
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: conoha-vps
-    feature_id: japanese_support
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: conoha-vps
-    feature_id: knowledge_base
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: xserver-vps
-    feature_id: sla_document_url
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: xserver-vps
-    feature_id: status_page
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: xserver-vps
-    feature_id: incident_page
-    value: true
-    source_type: official
-    source_url: https://vps.xserver.ne.jp/support/information/
-    verified_at: "2026-07-08"
-    verification_status: unverified
-
-  - provider_id: xserver-vps
-    feature_id: maintenance_page
-    value: true
-    source_type: official
-    source_url: https://vps.xserver.ne.jp/support/information/
-    verified_at: "2026-07-08"
-    verification_status: unverified
-
-  - provider_id: xserver-vps
-    feature_id: email_notification
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: xserver-vps
-    feature_id: support_contact
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: xserver-vps
-    feature_id: phone_support
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: xserver-vps
-    feature_id: chat_support
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: xserver-vps
-    feature_id: inquiry_form
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: xserver-vps
-    feature_id: enterprise_support
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: xserver-vps
-    feature_id: japanese_support
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: xserver-vps
-    feature_id: knowledge_base
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: webarena-indigo
-    feature_id: sla_document_url
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: webarena-indigo
-    feature_id: status_page
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: webarena-indigo
-    feature_id: incident_page
-    value: true
-    source_type: official
-    source_url: https://help.arena.ne.jp/hc/ja/sections/900000494023
-    verified_at: "2026-07-08"
-    verification_status: unverified
-
-  - provider_id: webarena-indigo
-    feature_id: maintenance_page
-    value: true
-    source_type: official
-    source_url: https://help.arena.ne.jp/hc/ja/sections/900000494023
-    verified_at: "2026-07-08"
-    verification_status: unverified
-
-  - provider_id: webarena-indigo
-    feature_id: email_notification
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: webarena-indigo
-    feature_id: support_contact
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: webarena-indigo
-    feature_id: phone_support
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: webarena-indigo
-    feature_id: chat_support
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: webarena-indigo
-    feature_id: inquiry_form
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: webarena-indigo
-    feature_id: enterprise_support
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: webarena-indigo
-    feature_id: japanese_support
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: webarena-indigo
-    feature_id: knowledge_base
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: sla_document_url
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: status_page
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: incident_page
-    value: true
-    source_type: official
-    source_url: https://www.kagoya.jp/news/
-    verified_at: "2026-07-08"
-    verification_status: unverified
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: maintenance_page
-    value: true
-    source_type: official
-    source_url: https://www.kagoya.jp/news/
-    verified_at: "2026-07-08"
-    verification_status: unverified
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: email_notification
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: support_contact
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: phone_support
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: chat_support
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: inquiry_form
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: enterprise_support
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: japanese_support
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
-
-  - provider_id: kagoya-cloud-vps
-    feature_id: knowledge_base
-    value: unknown
-    source_type: unknown
-    source_url: unknown
-    verified_at: unknown
-    verification_status: unknown
+- provider_id: sakura-vps
+  feature_id: min_price_jpy
+  value: 643
+  source_type: official
+  source_url: https://vps.sakura.ad.jp/specification/
+  verified_at: '2026-07-03'
+  verification_status: verified
+  notes: 石狩リージョン 512MBプラン 月払い（随時払い）。
+- provider_id: sakura-vps
+  feature_id: min_ram_gb
+  value: 0.5
+  source_type: official
+  source_url: https://vps.sakura.ad.jp/specification/
+  verified_at: '2026-07-03'
+  verification_status: verified
+- provider_id: sakura-vps
+  feature_id: min_storage_gb
+  value: 25
+  source_type: official
+  source_url: https://vps.sakura.ad.jp/specification/
+  verified_at: '2026-07-03'
+  verification_status: verified
+  notes: 石狩リージョン 512MBプランのSSD 25GB。
+- provider_id: sakura-vps
+  feature_id: min_vcpu
+  value: 1
+  source_type: official
+  source_url: https://vps.sakura.ad.jp/specification/
+  verified_at: '2026-07-03'
+  verification_status: verified
+- provider_id: sakura-vps
+  feature_id: ipv6_support
+  value: true
+  source_type: official
+  source_url: https://manual.sakura.ad.jp/vps/network/index.html
+  verified_at: '2026-07-07'
+  verification_status: verified
+- provider_id: sakura-vps
+  feature_id: hourly_billing
+  value: false
+  source_type: official
+  source_url: https://vps.sakura.ad.jp/
+  verified_at: '2024-01-01'
+  verification_status: verified
+- provider_id: sakura-vps
+  feature_id: price_2gb_monthly
+  value: 1738
+  source_type: official
+  source_url: https://vps.sakura.ad.jp/specification/
+  verified_at: '2026-07-03'
+  verification_status: verified
+  notes: 石狩リージョン 2GBプラン 月払い（随時払い）通常価格。年額一括は月換算1,594円。
+- provider_id: sakura-vps
+  feature_id: price_2gb_hourly
+  value: '-'
+  source_type: official
+  source_url: https://vps.sakura.ad.jp/specification/
+  verified_at: '2026-07-03'
+  verification_status: verified
+  notes: 時間課金は非対応。月額のみ。
+- provider_id: sakura-vps
+  feature_id: price_4gb_monthly
+  value: 3520
+  source_type: official
+  source_url: https://vps.sakura.ad.jp/specification/
+  verified_at: '2026-07-03'
+  verification_status: verified
+  notes: 石狩リージョン 4GBプラン 月払い（随時払い）通常価格。年額一括は月換算3,227円。
+- provider_id: sakura-vps
+  feature_id: price_4gb_hourly
+  value: '-'
+  source_type: official
+  source_url: https://vps.sakura.ad.jp/specification/
+  verified_at: '2026-07-03'
+  verification_status: verified
+  notes: 時間課金は非対応。月額のみ。
+- provider_id: sakura-vps
+  feature_id: monthly_cap
+  value: '-'
+  source_type: official
+  source_url: https://vps.sakura.ad.jp/specification/
+  verified_at: '2026-07-03'
+  verification_status: verified
+  notes: 時間課金は非対応のため月額上限なし。
+- provider_id: sakura-vps
+  feature_id: initial_cost
+  value: 0
+  source_type: official
+  source_url: https://vps.sakura.ad.jp/specification/
+  verified_at: '2026-07-03'
+  verification_status: verified
+- provider_id: sakura-vps
+  feature_id: min_contract_period
+  value: 1ヶ月
+  source_type: official
+  source_url: https://vps.sakura.ad.jp/specification/
+  verified_at: '2026-07-03'
+  verification_status: verified
+- provider_id: sakura-vps
+  feature_id: api_available
+  value: true
+  source_type: official
+  source_url: https://manual.sakura.ad.jp/vps/api/
+  verified_at: '2026-07-07'
+  verification_status: verified
+- provider_id: sakura-vps
+  feature_id: sla_uptime_percent
+  value: 99.99
+  source_type: official
+  source_url: https://vps.sakura.ad.jp/agreement/
+  verified_at: '2024-01-01'
+  verification_status: verified
+- provider_id: sakura-vps
+  feature_id: ddos_protection
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: sakura-vps
+  feature_id: bandwidth_gbps
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: sakura-vps
+  feature_id: full_disk_snapshot
+  value: true
+  source_type: official
+  source_url: https://vps.sakura.ad.jp/
+  verified_at: '2024-01-01'
+  verification_status: verified
+- provider_id: sakura-vps
+  feature_id: storage_type
+  value: SSD（NVMe対応）
+  source_type: official
+  source_url: https://vps.sakura.ad.jp/specification/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: プランによりNVMe SSDまたはSATAストレージを採用。
+- provider_id: sakura-vps
+  feature_id: nvme_explicit
+  value: true
+  source_type: official
+  source_url: https://vps.sakura.ad.jp/specification/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: 一部プランでNVMe SSDを採用。公式スペックページに記載。
+- provider_id: sakura-vps
+  feature_id: ssd_explicit
+  value: true
+  source_type: official
+  source_url: https://vps.sakura.ad.jp/specification/
+  verified_at: '2026-07-08'
+  verification_status: verified
+- provider_id: sakura-vps
+  feature_id: additional_disk
+  value: true
+  source_type: official
+  source_url: https://vps.sakura.ad.jp/feature/nfs.html
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: NFS追加ストレージをコントロールパネルから申し込み・利用可能。
+- provider_id: sakura-vps
+  feature_id: disk_expansion
+  value: true
+  source_type: official
+  source_url: https://manual.sakura.ad.jp/vps/server/storage-change-option.html
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: ストレージ変更オプションで既存プランのディスク容量を拡張可能（有料オプション）。
+- provider_id: sakura-vps
+  feature_id: auto_snapshot
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: sakura-vps
+  feature_id: backup_feature
+  value: true
+  source_type: official
+  source_url: https://vps.sakura.ad.jp/feature/backup/
+  verified_at: '2026-07-07'
+  verification_status: verified
+  notes: Acronis Cyber Protect Cloud（有料オプション）によるバックアップ機能を公式提供
+- provider_id: sakura-vps
+  feature_id: custom_image_save
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: sakura-vps
+  feature_id: object_storage_integration
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: sakura-vps
+  feature_id: os_templates
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: sakura-vps
+  feature_id: standard_os_template
+  value: AlmaLinux, Rocky Linux, Ubuntu, Debian, FreeBSD
+  source_type: official
+  source_url: https://vps.sakura.ad.jp/specification/#specification_os
+  verified_at: '2026-07-07'
+  verification_status: verified
+- provider_id: sakura-vps
+  feature_id: app_template
+  value: true
+  source_type: official
+  source_url: https://vps.sakura.ad.jp/specification/#specification_application
+  verified_at: '2026-07-07'
+  verification_status: verified
+- provider_id: sakura-vps
+  feature_id: docker_template
+  value: true
+  source_type: official
+  source_url: https://vps.sakura.ad.jp/specification/#specification_application
+  verified_at: '2026-07-07'
+  verification_status: verified
+- provider_id: sakura-vps
+  feature_id: kusanagi_template
+  value: true
+  source_type: official
+  source_url: https://vps.sakura.ad.jp/specification/#specification_application
+  verified_at: '2026-07-07'
+  verification_status: verified
+- provider_id: sakura-vps
+  feature_id: custom_iso
+  value: true
+  source_type: official
+  source_url: https://manual.sakura.ad.jp/vps/os-reinstall/iso-install.html
+  verified_at: '2026-07-07'
+  verification_status: verified
+- provider_id: sakura-vps
+  feature_id: startup_script
+  value: true
+  source_type: official
+  source_url: https://manual.sakura.ad.jp/vps/startupscript/startupscript.html
+  verified_at: '2026-07-07'
+  verification_status: verified
+- provider_id: sakura-vps
+  feature_id: openapi_published
+  value: true
+  source_type: official
+  source_url: https://manual.sakura.ad.jp/vps/api/api-doc/index.html
+  verified_at: '2026-07-07'
+  verification_status: verified
+- provider_id: sakura-vps
+  feature_id: cli_available
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: sakura-vps
+  feature_id: terraform_provider
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: sakura-vps
+  feature_id: pulumi_support
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: sakura-vps
+  feature_id: ansible_support
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: sakura-vps
+  feature_id: metadata_service
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: sakura-vps
+  feature_id: api_rate_limit_published
+  value: true
+  source_type: official
+  source_url: https://manual.sakura.ad.jp/vps/api/api-doc/index.html
+  verified_at: '2026-07-07'
+  verification_status: verified
+- provider_id: sakura-vps
+  feature_id: webhook
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: sakura-vps
+  feature_id: sdk_go
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: sakura-vps
+  feature_id: sdk_python
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: sakura-vps
+  feature_id: sdk_nodejs
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: sakura-vps
+  feature_id: cloud_init
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: conoha-vps
+  feature_id: min_price_jpy
+  value: 460
+  source_type: official
+  source_url: https://www.conoha.jp/vps/pricing/
+  verified_at: '2026-07-03'
+  verification_status: verified
+  notes: 512MBプラン まとめトク1ヶ月。2026年7月1日改定料金（サービス維持調整費廃止後）。
+- provider_id: conoha-vps
+  feature_id: min_ram_gb
+  value: 0.5
+  source_type: official
+  source_url: https://www.conoha.jp/vps/pricing/
+  verified_at: '2026-07-03'
+  verification_status: verified
+- provider_id: conoha-vps
+  feature_id: min_storage_gb
+  value: 30
+  source_type: official
+  source_url: https://www.conoha.jp/vps/pricing/
+  verified_at: '2026-07-03'
+  verification_status: verified
+  notes: 512MBプランのSSD 30GB。
+- provider_id: conoha-vps
+  feature_id: min_vcpu
+  value: 1
+  source_type: official
+  source_url: https://www.conoha.jp/vps/pricing/
+  verified_at: '2026-07-03'
+  verification_status: verified
+- provider_id: conoha-vps
+  feature_id: ipv6_support
+  value: true
+  source_type: official
+  source_url: https://doc.conoha.jp/products/vps-v3/network-v3/ipv6-v3/
+  verified_at: '2026-07-07'
+  verification_status: verified
+- provider_id: conoha-vps
+  feature_id: hourly_billing
+  value: true
+  source_type: official
+  source_url: https://www.conoha.jp/vps/pricing/
+  verified_at: '2024-01-01'
+  verification_status: verified
+- provider_id: conoha-vps
+  feature_id: price_2gb_monthly
+  value: 1259
+  source_type: official
+  source_url: https://www.conoha.jp/vps/pricing/
+  verified_at: '2026-07-03'
+  verification_status: verified
+  notes: 2GBプラン まとめトク1ヶ月。時間課金の場合は月額上限2,033円。
+- provider_id: conoha-vps
+  feature_id: price_2gb_hourly
+  value: 3.7
+  source_type: official
+  source_url: https://www.conoha.jp/vps/pricing/
+  verified_at: '2026-07-03'
+  verification_status: verified
+  notes: 2GBプラン 時間課金（円/時）。月額上限2,033円。
+- provider_id: conoha-vps
+  feature_id: price_4gb_monthly
+  value: 2189
+  source_type: official
+  source_url: https://www.conoha.jp/vps/pricing/
+  verified_at: '2026-07-03'
+  verification_status: verified
+  notes: 4GBプラン まとめトク1ヶ月。時間課金の場合は月額上限3,608円。
+- provider_id: conoha-vps
+  feature_id: price_4gb_hourly
+  value: 6.6
+  source_type: official
+  source_url: https://www.conoha.jp/vps/pricing/
+  verified_at: '2026-07-03'
+  verification_status: verified
+  notes: 4GBプラン 時間課金（円/時）。月額上限3,608円。
+- provider_id: conoha-vps
+  feature_id: monthly_cap
+  value: 751
+  source_type: official
+  source_url: https://www.conoha.jp/vps/pricing/
+  verified_at: '2026-07-03'
+  verification_status: verified
+  notes: 最小プラン（512MB）の時間課金月額上限。2GBプランは2,033円、4GBプランは3,608円。
+- provider_id: conoha-vps
+  feature_id: initial_cost
+  value: 0
+  source_type: official
+  source_url: https://www.conoha.jp/vps/pricing/
+  verified_at: '2026-07-03'
+  verification_status: verified
+- provider_id: conoha-vps
+  feature_id: min_contract_period
+  value: なし
+  source_type: official
+  source_url: https://www.conoha.jp/vps/pricing/
+  verified_at: '2026-07-03'
+  verification_status: verified
+  notes: 時間課金は最低利用期間なし。まとめトクは1ヶ月〜の前払いプラン。
+- provider_id: conoha-vps
+  feature_id: api_available
+  value: true
+  source_type: official
+  source_url: https://www.conoha.jp/vps/function/api/
+  verified_at: '2026-07-07'
+  verification_status: verified
+- provider_id: conoha-vps
+  feature_id: sla_uptime_percent
+  value: 99.99
+  source_type: official
+  source_url: https://www.conoha.jp/vps/agreement/
+  verified_at: '2024-01-01'
+  verification_status: verified
+- provider_id: conoha-vps
+  feature_id: ddos_protection
+  value: あり（DDoS攻撃対策システムを標準搭載）
+  source_type: official
+  source_url: https://vps.conoha.jp/features/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: ConoHa VPSはDDoS攻撃対策システムを標準搭載していると公式に明記。
+- provider_id: conoha-vps
+  feature_id: bandwidth_gbps
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: conoha-vps
+  feature_id: full_disk_snapshot
+  value: true
+  source_type: official
+  source_url: https://www.conoha.jp/vps/function/
+  verified_at: '2024-01-01'
+  verification_status: verified
+- provider_id: conoha-vps
+  feature_id: storage_type
+  value: NVMe SSD（分散ストレージ）
+  source_type: official
+  source_url: https://doc.conoha.jp/products/vps-v3/storage-v3/boot-storage-v3/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: 全プラン高耐障害性の分散型NVMe SSDストレージを採用。
+- provider_id: conoha-vps
+  feature_id: nvme_explicit
+  value: true
+  source_type: official
+  source_url: https://doc.conoha.jp/products/vps-v3/storage-v3/boot-storage-v3/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: 全プランNVMe SSD採用（分散ストレージ構成）。
+- provider_id: conoha-vps
+  feature_id: ssd_explicit
+  value: true
+  source_type: official
+  source_url: https://doc.conoha.jp/products/vps-v3/storage-v3/boot-storage-v3/
+  verified_at: '2026-07-08'
+  verification_status: verified
+- provider_id: conoha-vps
+  feature_id: additional_disk
+  value: true
+  source_type: official
+  source_url: https://support.conoha.jp/v/addssd/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: 追加SSD（追加ストレージ）を稼働中のVPSにアタッチ可能。容量は200GB〜10TB。
+- provider_id: conoha-vps
+  feature_id: disk_expansion
+  value: true
+  source_type: official
+  source_url: https://support.conoha.jp/v/changedisk/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: 追加ストレージのアタッチおよびディスク最大容量の変更に対応。
+- provider_id: conoha-vps
+  feature_id: auto_snapshot
+  value: false
+  source_type: official
+  source_url: https://support.conoha.jp/v/snapshot/
+  verified_at: '2026-07-07'
+  verification_status: verified
+  notes: スナップショットは手動取得のみ（取得から24時間で自動削除、1世代のみ保持）。VPS 3.0のみ対応
+- provider_id: conoha-vps
+  feature_id: backup_feature
+  value: true
+  source_type: official
+  source_url: https://support.conoha.jp/v/vps-autobackup/
+  verified_at: '2026-07-07'
+  verification_status: verified
+  notes: 自動バックアップ機能（有料オプション）あり
+- provider_id: conoha-vps
+  feature_id: custom_image_save
+  value: true
+  source_type: official
+  source_url: https://vps.conoha.jp/function/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: サーバーの状態を「イメージ」として保存し、再構築・新規サーバー作成に利用可能。各リージョン50GBまで無料。
+- provider_id: conoha-vps
+  feature_id: object_storage_integration
+  value: true
+  source_type: official
+  source_url: https://support.conoha.jp/vps/guide/objectstorage/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: ConoHa Object Storageと連携した利用方法が公式ガイドに掲載。swift/REST API経由でアクセス可能。
+- provider_id: conoha-vps
+  feature_id: os_templates
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: conoha-vps
+  feature_id: standard_os_template
+  value: AlmaLinux, Rocky Linux, Ubuntu, Debian, Fedora, FreeBSD, Windows Server
+  source_type: official
+  source_url: https://vps.conoha.jp/function/template/?btn_id=top--function_function-template
+  verified_at: '2026-07-07'
+  verification_status: verified
+- provider_id: conoha-vps
+  feature_id: app_template
+  value: true
+  source_type: official
+  source_url: https://vps.conoha.jp/function/template/?btn_id=top--function_function-template
+  verified_at: '2026-07-07'
+  verification_status: verified
+- provider_id: conoha-vps
+  feature_id: docker_template
+  value: true
+  source_type: official
+  source_url: https://vps.conoha.jp/function/template/?btn_id=top--function_function-template
+  verified_at: '2026-07-07'
+  verification_status: verified
+- provider_id: conoha-vps
+  feature_id: kusanagi_template
+  value: true
+  source_type: official
+  source_url: https://vps.conoha.jp/function/template/?btn_id=top--function_function-template
+  verified_at: '2026-07-07'
+  verification_status: verified
+- provider_id: conoha-vps
+  feature_id: custom_iso
+  value: true
+  source_type: official
+  source_url: https://support.conoha.jp/vps/iso-upload/
+  verified_at: '2026-07-07'
+  verification_status: verified
+- provider_id: conoha-vps
+  feature_id: startup_script
+  value: true
+  source_type: official
+  source_url: https://vps.conoha.jp/function/startupscript/
+  verified_at: '2026-07-07'
+  verification_status: verified
+- provider_id: conoha-vps
+  feature_id: openapi_published
+  value: true
+  source_type: official
+  source_url: https://github.com/gmo-internet/conoha_vps_openapi
+  verified_at: '2026-07-07'
+  verification_status: verified
+- provider_id: conoha-vps
+  feature_id: cli_available
+  value: true
+  source_type: official
+  source_url: https://doc.conoha.jp/reference/openstack-cli/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: OpenStack CLIによるVPS管理が公式にサポートされている。
+- provider_id: conoha-vps
+  feature_id: terraform_provider
+  value: true
+  source_type: official
+  source_url: https://vps.conoha.jp/terraform_provider/
+  verified_at: '2026-07-07'
+  verification_status: verified
+- provider_id: conoha-vps
+  feature_id: pulumi_support
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: conoha-vps
+  feature_id: ansible_support
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: conoha-vps
+  feature_id: metadata_service
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: conoha-vps
+  feature_id: api_rate_limit_published
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: conoha-vps
+  feature_id: webhook
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: conoha-vps
+  feature_id: sdk_go
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: conoha-vps
+  feature_id: sdk_python
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: conoha-vps
+  feature_id: sdk_nodejs
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: conoha-vps
+  feature_id: cloud_init
+  value: true
+  source_type: official
+  source_url: https://support.conoha.jp/v/startupscript/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: スタートアップスクリプトでcloud-config形式を正式サポート。
+- provider_id: xserver-vps
+  feature_id: min_price_jpy
+  value: 1496
+  source_type: official
+  source_url: https://vps.xserver.ne.jp/price/
+  verified_at: '2026-07-03'
+  verification_status: verified
+  notes: 2GBプラン 1ヶ月契約。2025年12月1日料金改定後。12ヶ月契約は1,170円/月、36ヶ月契約は990円/月。
+- provider_id: xserver-vps
+  feature_id: min_ram_gb
+  value: 2
+  source_type: official
+  source_url: https://vps.xserver.ne.jp/price/
+  verified_at: '2026-07-03'
+  verification_status: verified
+  notes: 最小プランは2GB。1GB以下のプランは廃止済み。
+- provider_id: xserver-vps
+  feature_id: min_storage_gb
+  value: 50
+  source_type: official
+  source_url: https://vps.xserver.ne.jp/price/
+  verified_at: '2026-07-03'
+  verification_status: verified
+  notes: 2GBプランのNVMe SSD 50GB。
+- provider_id: xserver-vps
+  feature_id: min_vcpu
+  value: 3
+  source_type: official
+  source_url: https://vps.xserver.ne.jp/price/
+  verified_at: '2026-07-03'
+  verification_status: verified
+  notes: 2GBプランのvCPU 3コア。
+- provider_id: xserver-vps
+  feature_id: ipv6_support
+  value: true
+  source_type: official
+  source_url: https://vps.xserver.ne.jp/support/news_detail.php?view_id=11190
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: 全プラン標準でIPv6対応。DNS管理でAAAAレコードの追加・編集が可能。
+- provider_id: xserver-vps
+  feature_id: hourly_billing
+  value: false
+  source_type: official
+  source_url: https://vps.xserver.ne.jp/price/
+  verified_at: '2024-01-01'
+  verification_status: verified
+- provider_id: xserver-vps
+  feature_id: price_2gb_monthly
+  value: 1496
+  source_type: official
+  source_url: https://vps.xserver.ne.jp/price/
+  verified_at: '2026-07-03'
+  verification_status: verified
+  notes: 2GBプラン 1ヶ月契約。2025年12月1日改定後。12ヶ月契約は1,170円/月、36ヶ月契約は990円/月。
+- provider_id: xserver-vps
+  feature_id: price_2gb_hourly
+  value: '-'
+  source_type: official
+  source_url: https://vps.xserver.ne.jp/price/
+  verified_at: '2026-07-03'
+  verification_status: verified
+  notes: 時間課金は非対応。
+- provider_id: xserver-vps
+  feature_id: price_4gb_monthly
+  value: '-'
+  source_type: official
+  source_url: https://vps.xserver.ne.jp/price/
+  verified_at: '2026-07-03'
+  verification_status: verified
+  notes: 単体4GBプランは存在しない。最近接プランは6GBプラン（4GB＋2GB無料増設）で1,700円/月（1ヶ月契約）。
+- provider_id: xserver-vps
+  feature_id: price_4gb_hourly
+  value: '-'
+  source_type: official
+  source_url: https://vps.xserver.ne.jp/price/
+  verified_at: '2026-07-03'
+  verification_status: verified
+  notes: 時間課金は非対応。
+- provider_id: xserver-vps
+  feature_id: monthly_cap
+  value: '-'
+  source_type: official
+  source_url: https://vps.xserver.ne.jp/price/
+  verified_at: '2026-07-03'
+  verification_status: verified
+  notes: 時間課金は非対応のため月額上限なし。
+- provider_id: xserver-vps
+  feature_id: initial_cost
+  value: 0
+  source_type: official
+  source_url: https://vps.xserver.ne.jp/price/
+  verified_at: '2026-07-03'
+  verification_status: verified
+- provider_id: xserver-vps
+  feature_id: min_contract_period
+  value: 1ヶ月
+  source_type: official
+  source_url: https://vps.xserver.ne.jp/price/
+  verified_at: '2026-07-03'
+  verification_status: verified
+- provider_id: xserver-vps
+  feature_id: api_available
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: xserver-vps
+  feature_id: openapi_published
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: xserver-vps
+  feature_id: cli_available
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: xserver-vps
+  feature_id: terraform_provider
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: xserver-vps
+  feature_id: pulumi_support
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: xserver-vps
+  feature_id: ansible_support
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: xserver-vps
+  feature_id: metadata_service
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: xserver-vps
+  feature_id: api_rate_limit_published
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: xserver-vps
+  feature_id: webhook
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: xserver-vps
+  feature_id: sdk_go
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: xserver-vps
+  feature_id: sdk_python
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: xserver-vps
+  feature_id: sdk_nodejs
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: xserver-vps
+  feature_id: cloud_init
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: xserver-vps
+  feature_id: startup_script
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: xserver-vps
+  feature_id: sla_uptime_percent
+  value: 99.99
+  source_type: official
+  source_url: https://vps.xserver.ne.jp/agreement/
+  verified_at: '2024-01-01'
+  verification_status: verified
+- provider_id: xserver-vps
+  feature_id: ddos_protection
+  value: あり（グローバル規模のDDoS対策システム標準提供）
+  source_type: official
+  source_url: https://vps.xserver.ne.jp/support/news_detail.php?view_id=15098
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: 2025年3月に対外接続容量1Tbps突破とDDoS対策システムの強化を公式発表。
+- provider_id: xserver-vps
+  feature_id: bandwidth_gbps
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: xserver-vps
+  feature_id: full_disk_snapshot
+  value: true
+  source_type: official
+  source_url: https://vps.xserver.ne.jp/support/manual/man_server_image.php
+  verified_at: '2026-07-07'
+  verification_status: verified
+  notes: 「イメージ保存」機能によりサーバー全体をファイルとして保存可能。サーバー停止状態で実行
+- provider_id: xserver-vps
+  feature_id: storage_type
+  value: NVMe SSD
+  source_type: official
+  source_url: https://vps.xserver.ne.jp/feature.php
+  verified_at: '2026-07-08'
+  verification_status: verified
+- provider_id: xserver-vps
+  feature_id: nvme_explicit
+  value: true
+  source_type: official
+  source_url: https://vps.xserver.ne.jp/feature.php
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: 全プラン高速NVMe SSD採用。
+- provider_id: xserver-vps
+  feature_id: ssd_explicit
+  value: true
+  source_type: official
+  source_url: https://vps.xserver.ne.jp/feature.php
+  verified_at: '2026-07-08'
+  verification_status: verified
+- provider_id: xserver-vps
+  feature_id: additional_disk
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: xserver-vps
+  feature_id: disk_expansion
+  value: true
+  source_type: official
+  source_url: https://vps.xserver.ne.jp/support/manual/man_server_storage_expansion.php
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: プラン変更によるディスク容量拡張が可能。ストレージ増設オプションは2025年2月以降新規停止。
+- provider_id: xserver-vps
+  feature_id: auto_snapshot
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: xserver-vps
+  feature_id: backup_feature
+  value: true
+  source_type: official
+  source_url: https://vps.xserver.ne.jp/support/faq/service_server_backup.php
+  verified_at: '2026-07-07'
+  verification_status: verified
+  notes: 自動バックアップ機能あり（ビジネスプラン標準搭載、他プランはバックアップ拡張オプション）
+- provider_id: xserver-vps
+  feature_id: custom_image_save
+  value: true
+  source_type: official
+  source_url: https://vps.xserver.ne.jp/support/manual/man_server_image.php
+  verified_at: '2026-07-07'
+  verification_status: verified
+  notes: 「イメージ保存」機能によりサーバー全体をカスタムイメージとして保存可能
+- provider_id: xserver-vps
+  feature_id: object_storage_integration
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: xserver-vps
+  feature_id: os_templates
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: xserver-vps
+  feature_id: standard_os_template
+  value: AlmaLinux, Rocky Linux, Ubuntu, Debian, Fedora
+  source_type: official
+  source_url: https://vps.xserver.ne.jp/os-list.php
+  verified_at: '2026-07-07'
+  verification_status: verified
+- provider_id: xserver-vps
+  feature_id: app_template
+  value: true
+  source_type: official
+  source_url: https://vps.xserver.ne.jp/os-list.php
+  verified_at: '2026-07-07'
+  verification_status: verified
+- provider_id: xserver-vps
+  feature_id: docker_template
+  value: true
+  source_type: official
+  source_url: https://vps.xserver.ne.jp/os-list.php
+  verified_at: '2026-07-07'
+  verification_status: verified
+- provider_id: xserver-vps
+  feature_id: kusanagi_template
+  value: true
+  source_type: official
+  source_url: https://vps.xserver.ne.jp/support/manual/man_server_app_use_kusanagi.php
+  verified_at: '2026-07-07'
+  verification_status: verified
+- provider_id: webarena-indigo
+  feature_id: min_price_jpy
+  value: 319
+  source_type: official
+  source_url: https://web.arena.ne.jp/indigo/price/
+  verified_at: '2026-07-03'
+  verification_status: verified
+  notes: 768MBプランの月額上限（時間課金）。IPv6のみ対応プラン。
+- provider_id: webarena-indigo
+  feature_id: min_ram_gb
+  value: 0.75
+  source_type: official
+  source_url: https://web.arena.ne.jp/indigo/price/
+  verified_at: '2026-07-03'
+  verification_status: verified
+  notes: 768MB（0.75GB）プラン。IPv6のみ対応の最安プラン。
+- provider_id: webarena-indigo
+  feature_id: min_storage_gb
+  value: 20
+  source_type: official
+  source_url: https://web.arena.ne.jp/indigo/price/
+  verified_at: '2026-07-03'
+  verification_status: verified
+- provider_id: webarena-indigo
+  feature_id: min_vcpu
+  value: 1
+  source_type: official
+  source_url: https://web.arena.ne.jp/indigo/price/
+  verified_at: '2026-07-03'
+  verification_status: verified
+- provider_id: webarena-indigo
+  feature_id: ipv6_support
+  value: true
+  source_type: official
+  source_url: https://web.arena.ne.jp/indigo/spec/
+  verified_at: '2026-07-07'
+  verification_status: verified
+  notes: 768MBプランはIPv6のみ、1GB以上はIPv4/IPv6デュアルスタック。
+- provider_id: webarena-indigo
+  feature_id: hourly_billing
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: webarena-indigo
+  feature_id: price_2gb_monthly
+  value: 814
+  source_type: official
+  source_url: https://web.arena.ne.jp/indigo/price/
+  verified_at: '2026-07-03'
+  verification_status: verified
+  notes: 2GBプランの月額上限（時間課金）。2vCPU、SSD 40GB。
+- provider_id: webarena-indigo
+  feature_id: price_2gb_hourly
+  value: 1.27
+  source_type: official
+  source_url: https://web.arena.ne.jp/indigo/price/
+  verified_at: '2026-07-03'
+  verification_status: verified
+  notes: 2GBプラン 時間課金（円/時）。月額上限814円。
+- provider_id: webarena-indigo
+  feature_id: price_4gb_monthly
+  value: 1630
+  source_type: official
+  source_url: https://web.arena.ne.jp/indigo/price/
+  verified_at: '2026-07-03'
+  verification_status: verified
+  notes: 4GBプランの月額上限（時間課金）。4vCPU、SSD 80GB。
+- provider_id: webarena-indigo
+  feature_id: price_4gb_hourly
+  value: 2.55
+  source_type: official
+  source_url: https://web.arena.ne.jp/indigo/price/
+  verified_at: '2026-07-03'
+  verification_status: verified
+  notes: 4GBプラン 時間課金（円/時）。月額上限1,630円。
+- provider_id: webarena-indigo
+  feature_id: monthly_cap
+  value: 319
+  source_type: official
+  source_url: https://web.arena.ne.jp/indigo/price/
+  verified_at: '2026-07-03'
+  verification_status: verified
+  notes: 最小プラン（768MB）の月額上限（時間課金）。
+- provider_id: webarena-indigo
+  feature_id: initial_cost
+  value: 0
+  source_type: official
+  source_url: https://web.arena.ne.jp/indigo/price/
+  verified_at: '2026-07-03'
+  verification_status: verified
+- provider_id: webarena-indigo
+  feature_id: min_contract_period
+  value: なし
+  source_type: official
+  source_url: https://web.arena.ne.jp/indigo/price/
+  verified_at: '2026-07-03'
+  verification_status: verified
+- provider_id: webarena-indigo
+  feature_id: api_available
+  value: true
+  source_type: official
+  source_url: https://web.arena.ne.jp/indigo/spec/
+  verified_at: '2026-07-07'
+  verification_status: verified
+- provider_id: webarena-indigo
+  feature_id: openapi_published
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: webarena-indigo
+  feature_id: cli_available
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: webarena-indigo
+  feature_id: terraform_provider
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: webarena-indigo
+  feature_id: pulumi_support
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: webarena-indigo
+  feature_id: ansible_support
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: webarena-indigo
+  feature_id: metadata_service
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: webarena-indigo
+  feature_id: api_rate_limit_published
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: webarena-indigo
+  feature_id: webhook
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: webarena-indigo
+  feature_id: sdk_go
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: webarena-indigo
+  feature_id: sdk_python
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: webarena-indigo
+  feature_id: sdk_nodejs
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: webarena-indigo
+  feature_id: cloud_init
+  value: true
+  source_type: official
+  source_url: https://web.arena.ne.jp/indigo/spec/
+  verified_at: '2026-07-07'
+  verification_status: verified
+- provider_id: webarena-indigo
+  feature_id: startup_script
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: webarena-indigo
+  feature_id: sla_uptime_percent
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: webarena-indigo
+  feature_id: ddos_protection
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: webarena-indigo
+  feature_id: bandwidth_gbps
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: webarena-indigo
+  feature_id: full_disk_snapshot
+  value: true
+  source_type: official
+  source_url: https://web.arena.ne.jp/indigo/spec/
+  verified_at: '2026-07-07'
+  verification_status: verified
+  notes: スナップショット機能（オプションサービス）あり。1インスタンスあたり最大5個まで保存可
+- provider_id: webarena-indigo
+  feature_id: storage_type
+  value: SSD
+  source_type: official
+  source_url: https://web.arena.ne.jp/indigo/spec/
+  verified_at: '2026-07-08'
+  verification_status: verified
+- provider_id: webarena-indigo
+  feature_id: nvme_explicit
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: webarena-indigo
+  feature_id: ssd_explicit
+  value: true
+  source_type: official
+  source_url: https://web.arena.ne.jp/indigo/spec/
+  verified_at: '2026-07-08'
+  verification_status: verified
+- provider_id: webarena-indigo
+  feature_id: additional_disk
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: webarena-indigo
+  feature_id: disk_expansion
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: webarena-indigo
+  feature_id: auto_snapshot
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: webarena-indigo
+  feature_id: backup_feature
+  value: true
+  source_type: official
+  source_url: https://web.arena.ne.jp/indigo/spec/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: スナップショット機能（有料オプション）でバックアップが可能。最大5個まで作成可能。
+- provider_id: webarena-indigo
+  feature_id: custom_image_save
+  value: true
+  source_type: official
+  source_url: https://web.arena.ne.jp/indigo/spec/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: スナップショット機能として最大5個のイメージを保存可能。バックアップ・複製に利用できる。
+- provider_id: webarena-indigo
+  feature_id: object_storage_integration
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: webarena-indigo
+  feature_id: os_templates
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: webarena-indigo
+  feature_id: standard_os_template
+  value: AlmaLinux, Rocky Linux, Ubuntu, Debian, Windows Server
+  source_type: official
+  source_url: https://web.arena.ne.jp/indigo/spec/os.html
+  verified_at: '2026-07-07'
+  verification_status: verified
+- provider_id: webarena-indigo
+  feature_id: app_template
+  value: true
+  source_type: official
+  source_url: https://web.arena.ne.jp/indigo/spec/kusanagi.html
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: KUSANAGIテンプレート（WordPress向け）が公式に提供されている。
+- provider_id: webarena-indigo
+  feature_id: kusanagi_template
+  value: true
+  source_type: official
+  source_url: https://web.arena.ne.jp/indigo/spec/kusanagi.html
+  verified_at: '2026-07-07'
+  verification_status: verified
+- provider_id: kagoya-cloud-vps
+  feature_id: min_price_jpy
+  value: 550
+  source_type: official
+  source_url: https://www.kagoya.jp/vps/
+  verified_at: '2026-07-03'
+  verification_status: verified
+  notes: 1GBプランの月額上限（日額課金）。日額20円。
+- provider_id: kagoya-cloud-vps
+  feature_id: min_ram_gb
+  value: 1
+  source_type: official
+  source_url: https://www.kagoya.jp/vps/
+  verified_at: '2026-07-03'
+  verification_status: verified
+- provider_id: kagoya-cloud-vps
+  feature_id: min_storage_gb
+  value: 100
+  source_type: official
+  source_url: https://www.kagoya.jp/vps/
+  verified_at: '2026-07-03'
+  verification_status: verified
+  notes: 1GBプランのNVMe SSD 100GB。
+- provider_id: kagoya-cloud-vps
+  feature_id: min_vcpu
+  value: 1
+  source_type: official
+  source_url: https://www.kagoya.jp/vps/
+  verified_at: '2026-07-03'
+  verification_status: verified
+- provider_id: kagoya-cloud-vps
+  feature_id: ipv6_support
+  value: true
+  source_type: official
+  source_url: https://support.kagoya.jp/vps/charge/index.html
+  verified_at: '2026-07-07'
+  verification_status: verified
+  notes: インスタンスごとにIPv6アドレス標準提供。
+- provider_id: kagoya-cloud-vps
+  feature_id: hourly_billing
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: kagoya-cloud-vps
+  feature_id: price_2gb_monthly
+  value: 770
+  source_type: official
+  source_url: https://www.kagoya.jp/vps/
+  verified_at: '2026-07-03'
+  verification_status: verified
+  notes: 2GBプランの月額上限（日額課金）。日額28円。年額8,580円（月換算715円）。
+- provider_id: kagoya-cloud-vps
+  feature_id: price_2gb_hourly
+  value: '-'
+  source_type: official
+  source_url: https://www.kagoya.jp/vps/
+  verified_at: '2026-07-03'
+  verification_status: verified
+  notes: 時間課金は非対応。日額（1日単位）課金。
+- provider_id: kagoya-cloud-vps
+  feature_id: price_4gb_monthly
+  value: 1760
+  source_type: official
+  source_url: https://www.kagoya.jp/vps/
+  verified_at: '2026-07-03'
+  verification_status: verified
+  notes: 4GBプランの月額上限（日額課金）。日額63円。
+- provider_id: kagoya-cloud-vps
+  feature_id: price_4gb_hourly
+  value: '-'
+  source_type: official
+  source_url: https://www.kagoya.jp/vps/
+  verified_at: '2026-07-03'
+  verification_status: verified
+  notes: 時間課金は非対応。日額（1日単位）課金。
+- provider_id: kagoya-cloud-vps
+  feature_id: monthly_cap
+  value: 550
+  source_type: official
+  source_url: https://www.kagoya.jp/vps/
+  verified_at: '2026-07-03'
+  verification_status: verified
+  notes: 最小プラン（1GB）の月額上限（日額課金）。
+- provider_id: kagoya-cloud-vps
+  feature_id: initial_cost
+  value: 0
+  source_type: official
+  source_url: https://www.kagoya.jp/vps/
+  verified_at: '2026-07-03'
+  verification_status: verified
+- provider_id: kagoya-cloud-vps
+  feature_id: min_contract_period
+  value: なし
+  source_type: official
+  source_url: https://www.kagoya.jp/vps/
+  verified_at: '2026-07-03'
+  verification_status: verified
+  notes: 日額課金のため最低利用期間なし。
+- provider_id: kagoya-cloud-vps
+  feature_id: api_available
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: kagoya-cloud-vps
+  feature_id: sla_uptime_percent
+  value: 99.999
+  source_type: official
+  source_url: https://www.kagoya.jp/vps/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: 公式サイトに「サーバー稼働率99.999%」と明記。詳細なSLA規定の確認は要問い合わせ。
+- provider_id: kagoya-cloud-vps
+  feature_id: ddos_protection
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: kagoya-cloud-vps
+  feature_id: bandwidth_gbps
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: kagoya-cloud-vps
+  feature_id: full_disk_snapshot
+  value: true
+  source_type: official
+  source_url: https://www.kagoya.jp/vps/feature/customize/
+  verified_at: '2026-07-07'
+  verification_status: verified
+  notes: スナップショット機能あり。コントロールパネルから任意のタイミングで作成・管理可能
+- provider_id: kagoya-cloud-vps
+  feature_id: storage_type
+  value: NVMe SSD
+  source_type: official
+  source_url: https://www.kagoya.jp/vps/function-plan/
+  verified_at: '2026-07-08'
+  verification_status: verified
+- provider_id: kagoya-cloud-vps
+  feature_id: nvme_explicit
+  value: true
+  source_type: official
+  source_url: https://www.kagoya.jp/vps/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: 全プランNVMe SSD採用。
+- provider_id: kagoya-cloud-vps
+  feature_id: ssd_explicit
+  value: true
+  source_type: official
+  source_url: https://www.kagoya.jp/vps/function-plan/
+  verified_at: '2026-07-08'
+  verification_status: verified
+- provider_id: kagoya-cloud-vps
+  feature_id: additional_disk
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: kagoya-cloud-vps
+  feature_id: disk_expansion
+  value: true
+  source_type: official
+  source_url: https://support.kagoya.jp/vps/charge/index.html
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: スペック変更（上位プランへの変更）によりディスク容量を拡張可能。
+- provider_id: kagoya-cloud-vps
+  feature_id: auto_snapshot
+  value: true
+  source_type: official
+  source_url: https://www.kagoya.jp/vps/feature/customize/
+  verified_at: '2026-07-07'
+  verification_status: verified
+  notes: 定期スナップショット機能あり（毎日自動取得、最大7世代）
+- provider_id: kagoya-cloud-vps
+  feature_id: backup_feature
+  value: true
+  source_type: official
+  source_url: https://www.kagoya.jp/vps/feature/customize/
+  verified_at: '2026-07-07'
+  verification_status: verified
+  notes: 定期スナップショット（自動バックアップ）機能あり
+- provider_id: kagoya-cloud-vps
+  feature_id: custom_image_save
+  value: true
+  source_type: official
+  source_url: https://www.kagoya.jp/vps/feature/customize/
+  verified_at: '2026-07-07'
+  verification_status: verified
+  notes: スナップショットから新しいインスタンスを作成可能（クローン機能）
+- provider_id: kagoya-cloud-vps
+  feature_id: object_storage_integration
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: sakura-vps
+  feature_id: manual_backup
+  value: true
+  source_type: official
+  source_url: https://vps.sakura.ad.jp/contents/info/acronis-cyber-protect-cloud-acronis-hosted/
+  verified_at: '2026-07-07'
+  verification_status: verified
+  notes: Acronis Cyber Protect Cloud（有料オプション）によるOS全体の手動バックアップ対応
+- provider_id: sakura-vps
+  feature_id: auto_backup
+  value: true
+  source_type: official
+  source_url: https://vps.sakura.ad.jp/contents/info/acronis-cyber-protect-cloud-acronis-hosted/
+  verified_at: '2026-07-07'
+  verification_status: verified
+  notes: Acronis Cyber Protect Cloud（有料オプション）によるスケジュールバックアップ対応
+- provider_id: sakura-vps
+  feature_id: backup_schedule
+  value: true
+  source_type: official
+  source_url: https://vps.sakura.ad.jp/contents/info/acronis-cyber-protect-cloud-acronis-hosted/
+  verified_at: '2026-07-07'
+  verification_status: verified
+  notes: Acronis コンソールよりバックアップ実行スケジュール（時刻・頻度）設定可
+- provider_id: sakura-vps
+  feature_id: backup_retention_period
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: sakura-vps
+  feature_id: backup_generations
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: sakura-vps
+  feature_id: restore_from_backup
+  value: true
+  source_type: official
+  source_url: https://vps.sakura.ad.jp/contents/info/acronis-cyber-protect-cloud-acronis-hosted/
+  verified_at: '2026-07-07'
+  verification_status: verified
+  notes: Acronis Cyber Protect Cloudによるファイル・ディスク単位の復元対応
+- provider_id: sakura-vps
+  feature_id: backup_encryption
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: sakura-vps
+  feature_id: backup_to_object_storage
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: sakura-vps
+  feature_id: cross_region_backup
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: sakura-vps
+  feature_id: dr_support
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: sakura-vps
+  feature_id: backup_billing
+  value: '有料オプション（Acronis Cyber Protect Cloud: 1,760円/月〜(100GB)）'
+  source_type: official
+  source_url: https://vps.sakura.ad.jp/contents/info/acronis-cyber-protect-cloud-acronis-hosted/
+  verified_at: '2026-07-07'
+  verification_status: verified
+- provider_id: conoha-vps
+  feature_id: manual_backup
+  value: true
+  source_type: official
+  source_url: https://support.conoha.jp/v/snapshot/
+  verified_at: '2026-07-07'
+  verification_status: verified
+  notes: スナップショット機能（無料、24時間有効、1世代）による手動バックアップ対応（VPS 3.0のみ）
+- provider_id: conoha-vps
+  feature_id: auto_backup
+  value: true
+  source_type: official
+  source_url: https://support.conoha.jp/v/vps-autobackup/
+  verified_at: '2026-07-07'
+  verification_status: verified
+  notes: 自動バックアップ（有料オプション）：VPS 3.0は日次、VPS 2.0は週次
+- provider_id: conoha-vps
+  feature_id: backup_schedule
+  value: false
+  source_type: official
+  source_url: https://doc.conoha.jp/products/vps-v3/storage-v3/autobackup-v3/
+  verified_at: '2026-07-07'
+  verification_status: verified
+  notes: バックアップ実行スケジュール（時刻・頻度）の任意設定不可。VPS 3.0は日次固定
+- provider_id: conoha-vps
+  feature_id: backup_retention_period
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: conoha-vps
+  feature_id: backup_generations
+  value: 14世代（デフォルト）、最大30世代（VPS 3.0）
+  source_type: official
+  source_url: https://doc.conoha.jp/products/vps-v3/storage-v3/autobackup-v3/
+  verified_at: '2026-07-07'
+  verification_status: verified
+- provider_id: conoha-vps
+  feature_id: restore_from_backup
+  value: true
+  source_type: official
+  source_url: https://support.conoha.jp/v/vps-autobackup/
+  verified_at: '2026-07-07'
+  verification_status: verified
+  notes: コントロールパネルからバックアップを選択してリストア可能
+- provider_id: conoha-vps
+  feature_id: backup_encryption
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: conoha-vps
+  feature_id: backup_to_object_storage
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: conoha-vps
+  feature_id: cross_region_backup
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: conoha-vps
+  feature_id: dr_support
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: conoha-vps
+  feature_id: backup_billing
+  value: 有料オプション（世代数により料金変動）
+  source_type: official
+  source_url: https://support.conoha.jp/v/vps-autobackup/
+  verified_at: '2026-07-07'
+  verification_status: verified
+- provider_id: xserver-vps
+  feature_id: manual_backup
+  value: true
+  source_type: official
+  source_url: https://vps.xserver.ne.jp/support/manual/man_server_image.php
+  verified_at: '2026-07-07'
+  verification_status: verified
+  notes: 「イメージ保存」機能による手動バックアップ対応（サーバー停止状態で実行）
+- provider_id: xserver-vps
+  feature_id: auto_backup
+  value: true
+  source_type: official
+  source_url: https://vps.xserver.ne.jp/support/faq/service_server_backup.php
+  verified_at: '2026-07-07'
+  verification_status: verified
+  notes: 自動バックアップ機能あり（ビジネスプラン標準搭載：週1回・1世代、バックアップ拡張オプションで最大3世代）
+- provider_id: xserver-vps
+  feature_id: backup_schedule
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: xserver-vps
+  feature_id: backup_retention_period
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: xserver-vps
+  feature_id: backup_generations
+  value: ビジネスプラン標準1世代、バックアップ拡張オプションで最大3世代
+  source_type: official
+  source_url: https://vps.xserver.ne.jp/support/faq/service_server_backup.php
+  verified_at: '2026-07-07'
+  verification_status: verified
+- provider_id: xserver-vps
+  feature_id: restore_from_backup
+  value: true
+  source_type: official
+  source_url: https://vps.xserver.ne.jp/business.php
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: ビジネスプランではバックアップからの復元が可能。
+- provider_id: xserver-vps
+  feature_id: backup_encryption
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: xserver-vps
+  feature_id: backup_to_object_storage
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: xserver-vps
+  feature_id: cross_region_backup
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: xserver-vps
+  feature_id: dr_support
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: xserver-vps
+  feature_id: backup_billing
+  value: ビジネスプラン料金に含む（追加世代は有料オプション）
+  source_type: official
+  source_url: https://vps.xserver.ne.jp/support/manual/man_server_auto_backup_gene.php
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: ビジネスプランでは1世代バックアップが無料。追加世代保存は有料の拡張オプション。
+- provider_id: webarena-indigo
+  feature_id: manual_backup
+  value: true
+  source_type: official
+  source_url: https://web.arena.ne.jp/indigo/spec/
+  verified_at: '2026-07-07'
+  verification_status: verified
+  notes: スナップショット機能（オプション）による手動バックアップ対応
+- provider_id: webarena-indigo
+  feature_id: auto_backup
+  value: true
+  source_type: official
+  source_url: https://web.arena.ne.jp/indigo/spec/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: Indigo VPSにはバックアップ機能（スナップショット）が提供されている。有料オプションの場合あり。
+- provider_id: webarena-indigo
+  feature_id: backup_schedule
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: webarena-indigo
+  feature_id: backup_retention_period
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: webarena-indigo
+  feature_id: backup_generations
+  value: 最大5個/インスタンス（スナップショット）
+  source_type: official
+  source_url: https://web.arena.ne.jp/indigo/spec/
+  verified_at: '2026-07-07'
+  verification_status: verified
+- provider_id: webarena-indigo
+  feature_id: restore_from_backup
+  value: true
+  source_type: official
+  source_url: https://web.arena.ne.jp/indigo/spec/
+  verified_at: '2026-07-07'
+  verification_status: verified
+  notes: スナップショットからのインスタンス復元対応
+- provider_id: webarena-indigo
+  feature_id: backup_encryption
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: webarena-indigo
+  feature_id: backup_to_object_storage
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: webarena-indigo
+  feature_id: cross_region_backup
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: webarena-indigo
+  feature_id: dr_support
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: webarena-indigo
+  feature_id: backup_billing
+  value: 有料オプション
+  source_type: official
+  source_url: https://web.arena.ne.jp/indigo/spec/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: スナップショット（バックアップ）機能は有料オプション。
+- provider_id: kagoya-cloud-vps
+  feature_id: manual_backup
+  value: true
+  source_type: official
+  source_url: https://www.kagoya.jp/vps/feature/customize/
+  verified_at: '2026-07-07'
+  verification_status: verified
+  notes: 手動スナップショット機能（任意のタイミング）によるバックアップ対応
+- provider_id: kagoya-cloud-vps
+  feature_id: auto_backup
+  value: true
+  source_type: official
+  source_url: https://www.kagoya.jp/vps/feature/customize/
+  verified_at: '2026-07-07'
+  verification_status: verified
+  notes: 定期スナップショット機能（毎日自動取得、最大7世代）
+- provider_id: kagoya-cloud-vps
+  feature_id: backup_schedule
+  value: true
+  source_type: official
+  source_url: https://www.kagoya.jp/option/backup/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: 有料バックアップサービス（日次・週次・月次）のスケジューリング設定が可能。Liteプラン（無料）とProプラン（有料）あり。
+- provider_id: kagoya-cloud-vps
+  feature_id: backup_retention_period
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: kagoya-cloud-vps
+  feature_id: backup_generations
+  value: 最大7世代（定期スナップショット）
+  source_type: official
+  source_url: https://www.kagoya.jp/vps/feature/customize/
+  verified_at: '2026-07-07'
+  verification_status: verified
+- provider_id: kagoya-cloud-vps
+  feature_id: restore_from_backup
+  value: true
+  source_type: official
+  source_url: https://www.kagoya.jp/vps/feature/customize/
+  verified_at: '2026-07-07'
+  verification_status: verified
+  notes: スナップショットからのリストア対応
+- provider_id: kagoya-cloud-vps
+  feature_id: backup_encryption
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: kagoya-cloud-vps
+  feature_id: backup_to_object_storage
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: kagoya-cloud-vps
+  feature_id: cross_region_backup
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: kagoya-cloud-vps
+  feature_id: dr_support
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: kagoya-cloud-vps
+  feature_id: backup_billing
+  value: 有料（容量課金：スナップショット10GBあたり日額4.4円）
+  source_type: official
+  source_url: https://www.kagoya.jp/vps/feature/customize/
+  verified_at: '2026-07-07'
+  verification_status: verified
+- provider_id: kagoya-cloud-vps
+  feature_id: os_templates
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: kagoya-cloud-vps
+  feature_id: standard_os_template
+  value: AlmaLinux, Rocky Linux, Ubuntu
+  source_type: official
+  source_url: https://www.kagoya.jp/cloud/vps/manual/list/
+  verified_at: '2026-07-07'
+  verification_status: verified
+- provider_id: kagoya-cloud-vps
+  feature_id: custom_iso
+  value: true
+  source_type: official
+  source_url: https://www.kagoya.jp/support/category/cloud/vps/vps_manual/iso/
+  verified_at: '2026-07-07'
+  verification_status: verified
+- provider_id: kagoya-cloud-vps
+  feature_id: startup_script
+  value: true
+  source_type: official
+  source_url: https://www.kagoya.jp/cloud/vps/manual/instance/
+  verified_at: '2026-07-07'
+  verification_status: verified
+- provider_id: kagoya-cloud-vps
+  feature_id: cloud_init
+  value: true
+  source_type: official
+  source_url: https://www.kagoya.jp/cloud/vps/manual/instance/
+  verified_at: '2026-07-07'
+  verification_status: verified
+- provider_id: kagoya-cloud-vps
+  feature_id: openapi_published
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: kagoya-cloud-vps
+  feature_id: cli_available
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: kagoya-cloud-vps
+  feature_id: terraform_provider
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: kagoya-cloud-vps
+  feature_id: pulumi_support
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: kagoya-cloud-vps
+  feature_id: ansible_support
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: kagoya-cloud-vps
+  feature_id: metadata_service
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: kagoya-cloud-vps
+  feature_id: api_rate_limit_published
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: kagoya-cloud-vps
+  feature_id: webhook
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: kagoya-cloud-vps
+  feature_id: sdk_go
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: kagoya-cloud-vps
+  feature_id: sdk_python
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: kagoya-cloud-vps
+  feature_id: sdk_nodejs
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: sakura-vps
+  feature_id: ipv4
+  value: 静的グローバルIPv4 1個標準付与
+  source_type: official
+  source_url: https://vps.sakura.ad.jp/specification/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: 各VPSにグローバルIPv4アドレスを標準で1個付与。
+- provider_id: sakura-vps
+  feature_id: additional_ipv4
+  value: false
+  source_type: official
+  source_url: https://manual.sakura.ad.jp/vps/support/technical/ip-address.html
+  verified_at: '2026-07-07'
+  verification_status: verified
+- provider_id: sakura-vps
+  feature_id: reverse_dns
+  value: true
+  source_type: official
+  source_url: https://manual.sakura.ad.jp/vps/support/technical/ip-address.html
+  verified_at: '2026-07-07'
+  verification_status: verified
+- provider_id: sakura-vps
+  feature_id: traffic_limit
+  value: 転送量制限なし（著しい高負荷時は帯域制限の場合あり）
+  source_type: official
+  source_url: https://manual.sakura.ad.jp/vps/support/technical/resource-limit.html
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: 明確な転送量制限は非公開。著しい高負荷時に帯域制限が実施される場合あり。
+- provider_id: sakura-vps
+  feature_id: local_network
+  value: true
+  source_type: official
+  source_url: https://manual.sakura.ad.jp/vps/network/index.html
+  verified_at: '2026-07-07'
+  verification_status: verified
+- provider_id: sakura-vps
+  feature_id: private_network
+  value: true
+  source_type: official
+  source_url: https://manual.sakura.ad.jp/vps/network/localnetwork.html
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: 仮想スイッチ機能でVPS間のプライベートネットワーク通信が可能。
+- provider_id: sakura-vps
+  feature_id: vlan
+  value: true
+  source_type: official
+  source_url: https://manual.sakura.ad.jp/vps/network/index.html
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: 仮想スイッチ機能によりVLAN相当のネットワーク分離機能を利用可能。
+- provider_id: sakura-vps
+  feature_id: load_balancer
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: sakura-vps
+  feature_id: floating_ip
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: sakura-vps
+  feature_id: firewall_feature
+  value: true
+  source_type: official
+  source_url: https://vps.sakura.ad.jp/feature/packetfilter.html
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: パケットフィルター機能を提供。ポート・IP単位のルールベース通信制御が可能。
+- provider_id: conoha-vps
+  feature_id: ipv4
+  value: 静的グローバルIPv4 1個標準付与
+  source_type: official
+  source_url: https://vps.conoha.jp/spec/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: 各VPSにグローバルIPv4アドレスを標準で1個付与。
+- provider_id: conoha-vps
+  feature_id: additional_ipv4
+  value: true
+  source_type: official
+  source_url: https://doc.conoha.jp/products/vps-v2/network-v2/addip-v2/
+  verified_at: '2026-07-07'
+  verification_status: verified
+  notes: 1台のVPSに追加IPv4を最大16個まで割り当て可能。
+- provider_id: conoha-vps
+  feature_id: reverse_dns
+  value: true
+  source_type: official
+  source_url: https://support.conoha.jp/vps/faq/ip-q/
+  verified_at: '2026-07-07'
+  verification_status: verified
+- provider_id: conoha-vps
+  feature_id: traffic_limit
+  value: 転送量制限なし（ベストエフォート）
+  source_type: official
+  source_url: https://support.conoha.jp/vps/faq/vps-q/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: 月間転送量の制限は設けていない（ベストエフォート型帯域）。
+- provider_id: conoha-vps
+  feature_id: local_network
+  value: true
+  source_type: official
+  source_url: https://support.conoha.jp/v/privatenetwork/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: プライベートネットワーク機能によりVPS間のローカル通信が可能。最大10セグメント。
+- provider_id: conoha-vps
+  feature_id: private_network
+  value: true
+  source_type: official
+  source_url: https://support.conoha.jp/v/privatenetwork/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: プライベートネットワーク機能として分離されたプライベート通信が可能。
+- provider_id: conoha-vps
+  feature_id: vlan
+  value: true
+  source_type: official
+  source_url: https://support.conoha.jp/v/privatenetwork/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: プライベートネットワーク（VLAN相当）として最大10セグメント作成可能。
+- provider_id: conoha-vps
+  feature_id: load_balancer
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: conoha-vps
+  feature_id: floating_ip
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: conoha-vps
+  feature_id: firewall_feature
+  value: true
+  source_type: official
+  source_url: https://support.conoha.jp/v/v3-security-securitygroup/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: セキュリティグループ機能としてファイアウォールを提供。
+- provider_id: xserver-vps
+  feature_id: ipv4
+  value: 静的グローバルIPv4 1個標準付与
+  source_type: official
+  source_url: https://vps.xserver.ne.jp/spec.php
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: 各VPSにグローバルIPv4アドレスを標準で1個付与。
+- provider_id: xserver-vps
+  feature_id: additional_ipv4
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: xserver-vps
+  feature_id: reverse_dns
+  value: true
+  source_type: official
+  source_url: https://vps.xserver.ne.jp/feature.php
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: コントロールパネルから逆引きDNS設定が可能。
+- provider_id: xserver-vps
+  feature_id: traffic_limit
+  value: 転送量制限なし（ベストエフォート）
+  source_type: official
+  source_url: https://vps.xserver.ne.jp/xserver-vps.php
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: 月間転送量の制限は設けていない（ベストエフォート型）。
+- provider_id: xserver-vps
+  feature_id: local_network
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: xserver-vps
+  feature_id: private_network
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: xserver-vps
+  feature_id: vlan
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: xserver-vps
+  feature_id: load_balancer
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: xserver-vps
+  feature_id: floating_ip
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: xserver-vps
+  feature_id: firewall_feature
+  value: true
+  source_type: official
+  source_url: https://vps.xserver.ne.jp/feature.php
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: パケットフィルター機能を提供。
+- provider_id: webarena-indigo
+  feature_id: ipv4
+  value: 768MBプランはなし（IPv6のみ）/ 1GB以上は1個
+  source_type: official
+  source_url: https://web.arena.ne.jp/indigo/spec/
+  verified_at: '2026-07-07'
+  verification_status: verified
+- provider_id: webarena-indigo
+  feature_id: additional_ipv4
+  value: false
+  source_type: official
+  source_url: https://web.arena.ne.jp/indigo/spec/
+  verified_at: '2026-07-07'
+  verification_status: verified
+- provider_id: webarena-indigo
+  feature_id: reverse_dns
+  value: false
+  source_type: official
+  source_url: https://web.arena.ne.jp/indigo/spec/
+  verified_at: '2026-07-07'
+  verification_status: verified
+  notes: 逆引きDNSは既定値が設定済みで、利用者による変更は不可。
+- provider_id: webarena-indigo
+  feature_id: traffic_limit
+  value: 無制限
+  source_type: official
+  source_url: https://web.arena.ne.jp/indigo/spec/
+  verified_at: '2026-07-07'
+  verification_status: verified
+- provider_id: webarena-indigo
+  feature_id: local_network
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: webarena-indigo
+  feature_id: private_network
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: webarena-indigo
+  feature_id: vlan
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: webarena-indigo
+  feature_id: load_balancer
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: webarena-indigo
+  feature_id: floating_ip
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: webarena-indigo
+  feature_id: firewall_feature
+  value: true
+  source_type: official
+  source_url: https://web.arena.ne.jp/indigo/spec/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: セキュリティグループ機能としてファイアウォールを提供。
+- provider_id: kagoya-cloud-vps
+  feature_id: ipv4
+  value: 静的グローバルIPv4 1個標準付与
+  source_type: official
+  source_url: https://www.kagoya.jp/vps/function-plan/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: 各インスタンスにグローバルIPv4アドレスを標準で1個付与。
+- provider_id: kagoya-cloud-vps
+  feature_id: additional_ipv4
+  value: true
+  source_type: official
+  source_url: https://support.kagoya.jp/vps/manual/index.php?action=artikel&cat=18&id=69
+  verified_at: '2026-07-07'
+  verification_status: verified
+  notes: 追加IPv4（フローティングIP）を提供。
+- provider_id: kagoya-cloud-vps
+  feature_id: reverse_dns
+  value: true
+  source_type: official
+  source_url: https://support.kagoya.jp/vps/manual/index.php?action=artikel&cat=40&id=51
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: コントロールパネルからインスタンスごとに逆引きDNS（PTR）設定が可能。
+- provider_id: kagoya-cloud-vps
+  feature_id: traffic_limit
+  value: 無制限
+  source_type: official
+  source_url: https://www.kagoya.jp/vps/
+  verified_at: '2026-07-07'
+  verification_status: verified
+- provider_id: kagoya-cloud-vps
+  feature_id: local_network
+  value: true
+  source_type: official
+  source_url: https://support.kagoya.jp/vps/manual/index.php?action=artikel&cat=55&id=130
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: ローカルネットワーク機能を提供。NVMeモデルで最大5個のローカルネットワークを作成可能。
+- provider_id: kagoya-cloud-vps
+  feature_id: private_network
+  value: true
+  source_type: official
+  source_url: https://support.kagoya.jp/vps/charge/index.html
+  verified_at: '2026-07-07'
+  verification_status: verified
+  notes: ローカルネットワーク（KVMローカルネットワーク）を提供。
+- provider_id: kagoya-cloud-vps
+  feature_id: vlan
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: kagoya-cloud-vps
+  feature_id: load_balancer
+  value: true
+  source_type: official
+  source_url: https://support.kagoya.jp/vps/charge/index.html
+  verified_at: '2026-07-07'
+  verification_status: verified
+- provider_id: kagoya-cloud-vps
+  feature_id: floating_ip
+  value: true
+  source_type: official
+  source_url: https://support.kagoya.jp/vps/manual/index.php?action=artikel&cat=18&id=69
+  verified_at: '2026-07-07'
+  verification_status: verified
+- provider_id: kagoya-cloud-vps
+  feature_id: firewall_feature
+  value: true
+  source_type: official
+  source_url: https://www.kagoya.jp/vps/feature/security/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: セキュリティグループ機能としてファイアウォールを提供。
+- provider_id: sakura-vps
+  feature_id: waf_feature
+  value: true
+  source_type: official
+  source_url: https://manual.sakura.ad.jp/vps/server/siteguard/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: SiteGuard Server Editionによる有料WAF機能を提供。
+- provider_id: sakura-vps
+  feature_id: security_group
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: sakura-vps
+  feature_id: admin_console_2fa
+  value: true
+  source_type: official
+  source_url: https://manual.sakura.ad.jp/vps/controlpanel/index.html
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: さくらのVPSコントロールパネルへのログインに二段階認証を設定可能。
+- provider_id: sakura-vps
+  feature_id: api_token
+  value: true
+  source_type: official
+  source_url: https://manual.sakura.ad.jp/vps/api/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: VPS APIにAPIキーを利用したトークン認証を採用。
+- provider_id: sakura-vps
+  feature_id: iam_rbac
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: sakura-vps
+  feature_id: audit_log
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: sakura-vps
+  feature_id: iso27001
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: sakura-vps
+  feature_id: isms
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: sakura-vps
+  feature_id: soc2
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: sakura-vps
+  feature_id: pci_dss
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: sakura-vps
+  feature_id: datacenter_certification
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: conoha-vps
+  feature_id: waf_feature
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: conoha-vps
+  feature_id: security_group
+  value: true
+  source_type: official
+  source_url: https://support.conoha.jp/v/v3-security-securitygroup/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: 「セキュリティグループ」機能として明示的に提供。
+- provider_id: conoha-vps
+  feature_id: admin_console_2fa
+  value: true
+  source_type: official
+  source_url: https://support.conoha.jp/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: ConoHaアカウントログインに二段階認証対応。
+- provider_id: conoha-vps
+  feature_id: api_token
+  value: true
+  source_type: official
+  source_url: https://www.conoha.jp/vps/function/api/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: APIアクセスにAPIユーザー/トークン認証を採用。
+- provider_id: conoha-vps
+  feature_id: iam_rbac
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: conoha-vps
+  feature_id: audit_log
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: conoha-vps
+  feature_id: iso27001
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: conoha-vps
+  feature_id: isms
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: conoha-vps
+  feature_id: soc2
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: conoha-vps
+  feature_id: pci_dss
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: conoha-vps
+  feature_id: datacenter_certification
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: xserver-vps
+  feature_id: waf_feature
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: xserver-vps
+  feature_id: security_group
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: xserver-vps
+  feature_id: admin_console_2fa
+  value: true
+  source_type: official
+  source_url: https://vps.xserver.ne.jp/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: XServerアカウントで二段階認証を設定可能。
+- provider_id: xserver-vps
+  feature_id: api_token
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: xserver-vps
+  feature_id: iam_rbac
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: xserver-vps
+  feature_id: audit_log
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: xserver-vps
+  feature_id: iso27001
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: xserver-vps
+  feature_id: isms
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: xserver-vps
+  feature_id: soc2
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: xserver-vps
+  feature_id: pci_dss
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: xserver-vps
+  feature_id: datacenter_certification
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: webarena-indigo
+  feature_id: waf_feature
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: webarena-indigo
+  feature_id: security_group
+  value: true
+  source_type: official
+  source_url: https://web.arena.ne.jp/indigo/spec/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: 「セキュリティグループ」機能として明示的に提供。最大10グループ・各グループ30ルール。
+- provider_id: webarena-indigo
+  feature_id: admin_console_2fa
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: webarena-indigo
+  feature_id: api_token
+  value: true
+  source_type: official
+  source_url: https://web.arena.ne.jp/indigo/spec/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: REST APIアクセスにトークン認証を使用。
+- provider_id: webarena-indigo
+  feature_id: iam_rbac
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: webarena-indigo
+  feature_id: audit_log
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: webarena-indigo
+  feature_id: iso27001
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: webarena-indigo
+  feature_id: isms
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: webarena-indigo
+  feature_id: soc2
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: webarena-indigo
+  feature_id: pci_dss
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: webarena-indigo
+  feature_id: datacenter_certification
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: kagoya-cloud-vps
+  feature_id: waf_feature
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: kagoya-cloud-vps
+  feature_id: security_group
+  value: true
+  source_type: official
+  source_url: https://www.kagoya.jp/vps/feature/security/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: 「セキュリティグループ」機能として明示的に提供。
+- provider_id: kagoya-cloud-vps
+  feature_id: admin_console_2fa
+  value: true
+  source_type: official
+  source_url: https://support.kagoya.jp/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: KAGOYA会員サイトで二段階認証設定が可能。
+- provider_id: kagoya-cloud-vps
+  feature_id: api_token
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: kagoya-cloud-vps
+  feature_id: iam_rbac
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: kagoya-cloud-vps
+  feature_id: audit_log
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: kagoya-cloud-vps
+  feature_id: iso27001
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: kagoya-cloud-vps
+  feature_id: isms
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: kagoya-cloud-vps
+  feature_id: soc2
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: kagoya-cloud-vps
+  feature_id: pci_dss
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: kagoya-cloud-vps
+  feature_id: datacenter_certification
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: sakura-vps
+  feature_id: sla_document_url
+  value: https://vps.sakura.ad.jp/agreement/
+  source_type: official
+  source_url: https://vps.sakura.ad.jp/agreement/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: さくらのVPS利用規約（SLA記載）。
+- provider_id: sakura-vps
+  feature_id: status_page
+  value: true
+  source_type: official
+  source_url: https://www.sakura.ad.jp/status/
+  verified_at: '2026-07-08'
+  verification_status: unverified
+- provider_id: sakura-vps
+  feature_id: incident_page
+  value: true
+  source_type: official
+  source_url: https://support.sakura.ad.jp/mainte/
+  verified_at: '2026-07-08'
+  verification_status: unverified
+- provider_id: sakura-vps
+  feature_id: maintenance_page
+  value: true
+  source_type: official
+  source_url: https://support.sakura.ad.jp/mainte/
+  verified_at: '2026-07-08'
+  verification_status: unverified
+- provider_id: sakura-vps
+  feature_id: email_notification
+  value: true
+  source_type: official
+  source_url: https://help.sakura.ad.jp/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: 障害・メンテナンス情報をメールで通知するサービスを提供。
+- provider_id: sakura-vps
+  feature_id: support_contact
+  value: メール・チャット・電話（コールバック）
+  source_type: official
+  source_url: https://help.sakura.ad.jp/
+  verified_at: '2026-07-08'
+  verification_status: verified
+- provider_id: sakura-vps
+  feature_id: phone_support
+  value: true
+  source_type: official
+  source_url: https://help.sakura.ad.jp/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: コールバック方式の電話サポートを提供（平日10:00〜18:00）。
+- provider_id: sakura-vps
+  feature_id: chat_support
+  value: true
+  source_type: official
+  source_url: https://help.sakura.ad.jp/purpose_beginner/2580/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: チャットサポートを提供（ボット24時間、有人10:00〜18:00）。
+- provider_id: sakura-vps
+  feature_id: inquiry_form
+  value: true
+  source_type: official
+  source_url: https://help.sakura.ad.jp/contact/
+  verified_at: '2026-07-08'
+  verification_status: verified
+- provider_id: sakura-vps
+  feature_id: enterprise_support
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: sakura-vps
+  feature_id: japanese_support
+  value: true
+  source_type: official
+  source_url: https://help.sakura.ad.jp/
+  verified_at: '2026-07-08'
+  verification_status: verified
+- provider_id: sakura-vps
+  feature_id: knowledge_base
+  value: true
+  source_type: official
+  source_url: https://help.sakura.ad.jp/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: 公式サポート情報サイト・マニュアルが提供されている。
+- provider_id: conoha-vps
+  feature_id: sla_document_url
+  value: https://www.conoha.jp/vps/agreement/
+  source_type: official
+  source_url: https://www.conoha.jp/vps/agreement/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: ConoHa VPS利用規約（SLA記載）。
+- provider_id: conoha-vps
+  feature_id: status_page
+  value: true
+  source_type: official
+  source_url: https://status.conoha.jp/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: ConoHaサービスステータスページが公開されている。
+- provider_id: conoha-vps
+  feature_id: incident_page
+  value: true
+  source_type: official
+  source_url: https://www.conoha.jp/news/
+  verified_at: '2026-07-08'
+  verification_status: unverified
+- provider_id: conoha-vps
+  feature_id: maintenance_page
+  value: true
+  source_type: official
+  source_url: https://www.conoha.jp/news/
+  verified_at: '2026-07-08'
+  verification_status: unverified
+- provider_id: conoha-vps
+  feature_id: email_notification
+  value: true
+  source_type: official
+  source_url: https://support.conoha.jp/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: 障害・メンテナンス情報をメールで通知。
+- provider_id: conoha-vps
+  feature_id: support_contact
+  value: メール・チャット
+  source_type: official
+  source_url: https://support.conoha.jp/help/contact/
+  verified_at: '2026-07-08'
+  verification_status: verified
+- provider_id: conoha-vps
+  feature_id: phone_support
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: conoha-vps
+  feature_id: chat_support
+  value: true
+  source_type: official
+  source_url: https://support.conoha.jp/help/contact/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: チャットサポートを提供（平日10:00〜18:00）。
+- provider_id: conoha-vps
+  feature_id: inquiry_form
+  value: true
+  source_type: official
+  source_url: https://support.conoha.jp/inquiry/
+  verified_at: '2026-07-08'
+  verification_status: verified
+- provider_id: conoha-vps
+  feature_id: enterprise_support
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: conoha-vps
+  feature_id: japanese_support
+  value: true
+  source_type: official
+  source_url: https://support.conoha.jp/
+  verified_at: '2026-07-08'
+  verification_status: verified
+- provider_id: conoha-vps
+  feature_id: knowledge_base
+  value: true
+  source_type: official
+  source_url: https://support.conoha.jp/vps/guide/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: 公式サポートサイトでガイド・FAQを提供。
+- provider_id: xserver-vps
+  feature_id: sla_document_url
+  value: https://vps.xserver.ne.jp/support/manual/man_order_sla.php
+  source_type: official
+  source_url: https://vps.xserver.ne.jp/support/manual/man_order_sla.php
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: XServer VPS SLA（品質保証制度）マニュアルページ。ビジネスプラン対象。
+- provider_id: xserver-vps
+  feature_id: status_page
+  value: true
+  source_type: official
+  source_url: https://vps.xserver.ne.jp/support/information/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: 障害・メンテナンス情報ページが公式サイトで公開されている。
+- provider_id: xserver-vps
+  feature_id: incident_page
+  value: true
+  source_type: official
+  source_url: https://vps.xserver.ne.jp/support/information/
+  verified_at: '2026-07-08'
+  verification_status: unverified
+- provider_id: xserver-vps
+  feature_id: maintenance_page
+  value: true
+  source_type: official
+  source_url: https://vps.xserver.ne.jp/support/information/
+  verified_at: '2026-07-08'
+  verification_status: unverified
+- provider_id: xserver-vps
+  feature_id: email_notification
+  value: true
+  source_type: official
+  source_url: https://vps.xserver.ne.jp/support/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: 障害・メンテナンス情報をメールで通知。
+- provider_id: xserver-vps
+  feature_id: support_contact
+  value: メール・チャット・電話
+  source_type: official
+  source_url: https://vps.xserver.ne.jp/support/
+  verified_at: '2026-07-08'
+  verification_status: verified
+- provider_id: xserver-vps
+  feature_id: phone_support
+  value: true
+  source_type: official
+  source_url: https://vps.xserver.ne.jp/support/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: 電話サポートを提供（平日10:00〜18:00）。
+- provider_id: xserver-vps
+  feature_id: chat_support
+  value: true
+  source_type: official
+  source_url: https://vps.xserver.ne.jp/support/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: チャットサポートを提供（ボット24時間、有人平日10:00〜18:00）。
+- provider_id: xserver-vps
+  feature_id: inquiry_form
+  value: true
+  source_type: official
+  source_url: https://vps.xserver.ne.jp/support/
+  verified_at: '2026-07-08'
+  verification_status: verified
+- provider_id: xserver-vps
+  feature_id: enterprise_support
+  value: true
+  source_type: official
+  source_url: https://vps.xserver.ne.jp/business.php
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: ビジネスプランとして法人向けSLA・自動バックアップ付きプランを提供。
+- provider_id: xserver-vps
+  feature_id: japanese_support
+  value: true
+  source_type: official
+  source_url: https://vps.xserver.ne.jp/support/
+  verified_at: '2026-07-08'
+  verification_status: verified
+- provider_id: xserver-vps
+  feature_id: knowledge_base
+  value: true
+  source_type: official
+  source_url: https://vps.xserver.ne.jp/support/manual/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: 公式マニュアルサイトが提供されている。
+- provider_id: webarena-indigo
+  feature_id: sla_document_url
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: webarena-indigo
+  feature_id: status_page
+  value: true
+  source_type: official
+  source_url: https://web.arena.ne.jp/info/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: WebARENA障害・工事情報ページが公開されている。
+- provider_id: webarena-indigo
+  feature_id: incident_page
+  value: true
+  source_type: official
+  source_url: https://help.arena.ne.jp/hc/ja/sections/900000494023
+  verified_at: '2026-07-08'
+  verification_status: unverified
+- provider_id: webarena-indigo
+  feature_id: maintenance_page
+  value: true
+  source_type: official
+  source_url: https://help.arena.ne.jp/hc/ja/sections/900000494023
+  verified_at: '2026-07-08'
+  verification_status: unverified
+- provider_id: webarena-indigo
+  feature_id: email_notification
+  value: true
+  source_type: official
+  source_url: https://web.arena.ne.jp/indigo/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: メンテナンス・障害情報をメールで通知。
+- provider_id: webarena-indigo
+  feature_id: support_contact
+  value: メール
+  source_type: official
+  source_url: https://web.arena.ne.jp/indigo/support/
+  verified_at: '2026-07-08'
+  verification_status: verified
+- provider_id: webarena-indigo
+  feature_id: phone_support
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: webarena-indigo
+  feature_id: chat_support
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: webarena-indigo
+  feature_id: inquiry_form
+  value: true
+  source_type: official
+  source_url: https://web.arena.ne.jp/support/indigo/
+  verified_at: '2026-07-08'
+  verification_status: verified
+- provider_id: webarena-indigo
+  feature_id: enterprise_support
+  value: true
+  source_type: official
+  source_url: https://web.arena.ne.jp/indigopro/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: WebARENA IndigoProとして法人向けSLA・バックアップ付きクラウドサービスを提供。
+- provider_id: webarena-indigo
+  feature_id: japanese_support
+  value: true
+  source_type: official
+  source_url: https://web.arena.ne.jp/indigo/support/
+  verified_at: '2026-07-08'
+  verification_status: verified
+- provider_id: webarena-indigo
+  feature_id: knowledge_base
+  value: true
+  source_type: official
+  source_url: https://web.arena.ne.jp/support/indigo/faq/index.html
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: 公式FAQ・マニュアルが提供されている。
+- provider_id: kagoya-cloud-vps
+  feature_id: sla_document_url
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
+- provider_id: kagoya-cloud-vps
+  feature_id: status_page
+  value: true
+  source_type: official
+  source_url: https://www.kagoya.jp/news/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: お知らせページで障害・メンテナンス情報を公開。
+- provider_id: kagoya-cloud-vps
+  feature_id: incident_page
+  value: true
+  source_type: official
+  source_url: https://www.kagoya.jp/news/
+  verified_at: '2026-07-08'
+  verification_status: unverified
+- provider_id: kagoya-cloud-vps
+  feature_id: maintenance_page
+  value: true
+  source_type: official
+  source_url: https://www.kagoya.jp/news/
+  verified_at: '2026-07-08'
+  verification_status: unverified
+- provider_id: kagoya-cloud-vps
+  feature_id: email_notification
+  value: true
+  source_type: official
+  source_url: https://www.kagoya.jp/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: メンテナンス・障害情報をメールで通知。
+- provider_id: kagoya-cloud-vps
+  feature_id: support_contact
+  value: メール・チャット・電話
+  source_type: official
+  source_url: https://www.kagoya.jp/support/
+  verified_at: '2026-07-08'
+  verification_status: verified
+- provider_id: kagoya-cloud-vps
+  feature_id: phone_support
+  value: true
+  source_type: official
+  source_url: https://www.kagoya.jp/support/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: 電話サポートを提供（平日10:00〜17:00）。
+- provider_id: kagoya-cloud-vps
+  feature_id: chat_support
+  value: true
+  source_type: official
+  source_url: https://webchat.kagoya.jp/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: オンラインチャットサポートを提供。
+- provider_id: kagoya-cloud-vps
+  feature_id: inquiry_form
+  value: true
+  source_type: official
+  source_url: https://support.kagoya.jp/contact/
+  verified_at: '2026-07-08'
+  verification_status: verified
+- provider_id: kagoya-cloud-vps
+  feature_id: enterprise_support
+  value: true
+  source_type: official
+  source_url: https://www.kagoya.jp/vps/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: 電話サポート・専用コントロールパネル等、法人向けの柔軟なサポートを提供。
+- provider_id: kagoya-cloud-vps
+  feature_id: japanese_support
+  value: true
+  source_type: official
+  source_url: https://www.kagoya.jp/support/
+  verified_at: '2026-07-08'
+  verification_status: verified
+- provider_id: kagoya-cloud-vps
+  feature_id: knowledge_base
+  value: true
+  source_type: official
+  source_url: https://support.kagoya.jp/vps/manual/
+  verified_at: '2026-07-08'
+  verification_status: verified
+  notes: 公式マニュアル・FAQサイトが提供されている。

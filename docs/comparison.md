@@ -74,7 +74,7 @@
 | 3 | Windows公式対応 | 不明 | 不明 | 不明 | 不明 | 不明 |
 | 4 | コンソール / VNC | 不明 | 不明 | 不明 | 不明 | 不明 |
 | 5 | スタートアップスクリプト | ✅ [公式](https://manual.sakura.ad.jp/vps/startupscript/startupscript.html)<br>(2026-07-07) | ✅ [公式](https://vps.conoha.jp/function/startupscript/)<br>(2026-07-07) | 不明 | 不明 | ✅ [公式](https://www.kagoya.jp/cloud/vps/manual/instance/)<br>(2026-07-07) |
-| 6 | cloud-init明記 | 不明 | 不明 | 不明 | ✅ [公式](https://web.arena.ne.jp/indigo/spec/)<br>(2026-07-07) | ✅ [公式](https://www.kagoya.jp/cloud/vps/manual/instance/)<br>(2026-07-07) |
+| 6 | cloud-init明記 | 不明 | ✅ [公式](https://support.conoha.jp/v/startupscript/)<br>(2026-07-08) | 不明 | ✅ [公式](https://web.arena.ne.jp/indigo/spec/)<br>(2026-07-07) | ✅ [公式](https://www.kagoya.jp/cloud/vps/manual/instance/)<br>(2026-07-07) |
 
 ## OS / テンプレート
 
@@ -82,7 +82,7 @@
 | --- | --- | --- | --- | --- | --- | --- |
 | 1 | 標準OSテンプレート | AlmaLinux, Rocky Linux, Ubuntu, Debian, FreeBSD [公式](https://vps.sakura.ad.jp/specification/#specification_os)<br>(2026-07-07) | AlmaLinux, Rocky Linux, Ubuntu, Debian, Fedora, FreeBSD, Windows Server [公式](https://vps.conoha.jp/function/template/?btn_id=top--function_function-template)<br>(2026-07-07) | AlmaLinux, Rocky Linux, Ubuntu, Debian, Fedora [公式](https://vps.xserver.ne.jp/os-list.php)<br>(2026-07-07) | AlmaLinux, Rocky Linux, Ubuntu, Debian, Windows Server [公式](https://web.arena.ne.jp/indigo/spec/os.html)<br>(2026-07-07) | AlmaLinux, Rocky Linux, Ubuntu [公式](https://www.kagoya.jp/cloud/vps/manual/list/)<br>(2026-07-07) |
 | 2 | OSテンプレート数 | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 3 | アプリテンプレート | ✅ [公式](https://vps.sakura.ad.jp/specification/#specification_application)<br>(2026-07-07) | ✅ [公式](https://vps.conoha.jp/function/template/?btn_id=top--function_function-template)<br>(2026-07-07) | ✅ [公式](https://vps.xserver.ne.jp/os-list.php)<br>(2026-07-07) | 不明 | 不明 |
+| 3 | アプリテンプレート | ✅ [公式](https://vps.sakura.ad.jp/specification/#specification_application)<br>(2026-07-07) | ✅ [公式](https://vps.conoha.jp/function/template/?btn_id=top--function_function-template)<br>(2026-07-07) | ✅ [公式](https://vps.xserver.ne.jp/os-list.php)<br>(2026-07-07) | ✅ [公式](https://web.arena.ne.jp/indigo/spec/kusanagi.html)<br>(2026-07-08) | 不明 |
 | 4 | KUSANAGIテンプレート | ✅ [公式](https://vps.sakura.ad.jp/specification/#specification_application)<br>(2026-07-07) | ✅ [公式](https://vps.conoha.jp/function/template/?btn_id=top--function_function-template)<br>(2026-07-07) | ✅ [公式](https://vps.xserver.ne.jp/support/manual/man_server_app_use_kusanagi.php)<br>(2026-07-07) | ✅ [公式](https://web.arena.ne.jp/indigo/spec/kusanagi.html)<br>(2026-07-07) | 不明 |
 | 5 | Docker系テンプレート | ✅ [公式](https://vps.sakura.ad.jp/specification/#specification_application)<br>(2026-07-07) | ✅ [公式](https://vps.conoha.jp/function/template/?btn_id=top--function_function-template)<br>(2026-07-07) | ✅ [公式](https://vps.xserver.ne.jp/os-list.php)<br>(2026-07-07) | 不明 | 不明 |
 | 6 | AI系テンプレート | 不明 | 不明 | 不明 | 不明 | 不明 |
@@ -115,30 +115,30 @@
 | # | 項目 | さくらのVPS | ConoHa VPS | Xserver VPS | WebARENA Indigo | KAGOYA CLOUD VPS |
 | --- | --- | --- | --- | --- | --- | --- |
 | 1 | ディスク容量（GB） | 25 [公式](https://vps.sakura.ad.jp/specification/)<br>(2026-07-03) | 30 [公式](https://www.conoha.jp/vps/pricing/)<br>(2026-07-03) | 50 [公式](https://vps.xserver.ne.jp/price/)<br>(2026-07-03) | 20 [公式](https://web.arena.ne.jp/indigo/price/)<br>(2026-07-03) | 100 [公式](https://www.kagoya.jp/vps/)<br>(2026-07-03) |
-| 2 | ストレージ種別 | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 3 | NVMe明記 | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 4 | SSD明記 | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 5 | ディスク追加 | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 6 | ディスク拡張 | 不明 | 不明 | 不明 | 不明 | 不明 |
+| 2 | ストレージ種別 | SSD（NVMe対応） [公式](https://vps.sakura.ad.jp/specification/)<br>(2026-07-08) | NVMe SSD（分散ストレージ） [公式](https://doc.conoha.jp/products/vps-v3/storage-v3/boot-storage-v3/)<br>(2026-07-08) | NVMe SSD [公式](https://vps.xserver.ne.jp/feature.php)<br>(2026-07-08) | SSD [公式](https://web.arena.ne.jp/indigo/spec/)<br>(2026-07-08) | NVMe SSD [公式](https://www.kagoya.jp/vps/function-plan/)<br>(2026-07-08) |
+| 3 | NVMe明記 | ✅ [公式](https://vps.sakura.ad.jp/specification/)<br>(2026-07-08) | ✅ [公式](https://doc.conoha.jp/products/vps-v3/storage-v3/boot-storage-v3/)<br>(2026-07-08) | ✅ [公式](https://vps.xserver.ne.jp/feature.php)<br>(2026-07-08) | 不明 | ✅ [公式](https://www.kagoya.jp/vps/)<br>(2026-07-08) |
+| 4 | SSD明記 | ✅ [公式](https://vps.sakura.ad.jp/specification/)<br>(2026-07-08) | ✅ [公式](https://doc.conoha.jp/products/vps-v3/storage-v3/boot-storage-v3/)<br>(2026-07-08) | ✅ [公式](https://vps.xserver.ne.jp/feature.php)<br>(2026-07-08) | ✅ [公式](https://web.arena.ne.jp/indigo/spec/)<br>(2026-07-08) | ✅ [公式](https://www.kagoya.jp/vps/function-plan/)<br>(2026-07-08) |
+| 5 | ディスク追加 | ✅ [公式](https://vps.sakura.ad.jp/feature/nfs.html)<br>(2026-07-08) | ✅ [公式](https://support.conoha.jp/v/addssd/)<br>(2026-07-08) | 不明 | 不明 | 不明 |
+| 6 | ディスク拡張 | ✅ [公式](https://manual.sakura.ad.jp/vps/server/storage-change-option.html)<br>(2026-07-08) | ✅ [公式](https://support.conoha.jp/v/changedisk/)<br>(2026-07-08) | ✅ [公式](https://vps.xserver.ne.jp/support/manual/man_server_storage_expansion.php)<br>(2026-07-08) | 不明 | ✅ [公式](https://support.kagoya.jp/vps/charge/index.html)<br>(2026-07-08) |
 | 7 | スナップショット | ✅ [公式](https://vps.sakura.ad.jp/)<br>(2024-01-01) | ✅ [公式](https://www.conoha.jp/vps/function/)<br>(2024-01-01) | ✅ [公式](https://vps.xserver.ne.jp/support/manual/man_server_image.php)<br>(2026-07-07) | ✅ [公式](https://web.arena.ne.jp/indigo/spec/)<br>(2026-07-07) | ✅ [公式](https://www.kagoya.jp/vps/feature/customize/)<br>(2026-07-07) |
 | 8 | 自動スナップショット | 不明 | ❌ [公式](https://support.conoha.jp/v/snapshot/)<br>(2026-07-07) | 不明 | 不明 | ✅ [公式](https://www.kagoya.jp/vps/feature/customize/)<br>(2026-07-07) |
-| 9 | バックアップ機能 | ✅ [公式](https://vps.sakura.ad.jp/feature/backup/)<br>(2026-07-07) | ✅ [公式](https://support.conoha.jp/v/vps-autobackup/)<br>(2026-07-07) | ✅ [公式](https://vps.xserver.ne.jp/support/faq/service_server_backup.php)<br>(2026-07-07) | 不明 | ✅ [公式](https://www.kagoya.jp/vps/feature/customize/)<br>(2026-07-07) |
-| 10 | イメージ保存 | 不明 | 不明 | ✅ [公式](https://vps.xserver.ne.jp/support/manual/man_server_image.php)<br>(2026-07-07) | 不明 | ✅ [公式](https://www.kagoya.jp/vps/feature/customize/)<br>(2026-07-07) |
-| 11 | オブジェクトストレージ連携 | 不明 | 不明 | 不明 | 不明 | 不明 |
+| 9 | バックアップ機能 | ✅ [公式](https://vps.sakura.ad.jp/feature/backup/)<br>(2026-07-07) | ✅ [公式](https://support.conoha.jp/v/vps-autobackup/)<br>(2026-07-07) | ✅ [公式](https://vps.xserver.ne.jp/support/faq/service_server_backup.php)<br>(2026-07-07) | ✅ [公式](https://web.arena.ne.jp/indigo/spec/)<br>(2026-07-08) | ✅ [公式](https://www.kagoya.jp/vps/feature/customize/)<br>(2026-07-07) |
+| 10 | イメージ保存 | 不明 | ✅ [公式](https://vps.conoha.jp/function/)<br>(2026-07-08) | ✅ [公式](https://vps.xserver.ne.jp/support/manual/man_server_image.php)<br>(2026-07-07) | ✅ [公式](https://web.arena.ne.jp/indigo/spec/)<br>(2026-07-08) | ✅ [公式](https://www.kagoya.jp/vps/feature/customize/)<br>(2026-07-07) |
+| 11 | オブジェクトストレージ連携 | 不明 | ✅ [公式](https://support.conoha.jp/vps/guide/objectstorage/)<br>(2026-07-08) | 不明 | 不明 | 不明 |
 
 ## ネットワーク
 
 | # | 項目 | さくらのVPS | ConoHa VPS | Xserver VPS | WebARENA Indigo | KAGOYA CLOUD VPS |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | IPv4 | 不明 | 不明 | 不明 | 768MBプランはなし（IPv6のみ）/ 1GB以上は1個 [公式](https://web.arena.ne.jp/indigo/spec/)<br>(2026-07-07) | 不明 |
-| 2 | IPv6 | ✅ [公式](https://manual.sakura.ad.jp/vps/network/index.html)<br>(2026-07-07) | ✅ [公式](https://doc.conoha.jp/products/vps-v3/network-v3/ipv6-v3/)<br>(2026-07-07) | 不明 | ✅ [公式](https://web.arena.ne.jp/indigo/spec/)<br>(2026-07-07) | ✅ [公式](https://support.kagoya.jp/vps/charge/index.html)<br>(2026-07-07) |
+| 1 | IPv4 | 静的グローバルIPv4 1個標準付与 [公式](https://vps.sakura.ad.jp/specification/)<br>(2026-07-08) | 静的グローバルIPv4 1個標準付与 [公式](https://vps.conoha.jp/spec/)<br>(2026-07-08) | 静的グローバルIPv4 1個標準付与 [公式](https://vps.xserver.ne.jp/spec.php)<br>(2026-07-08) | 768MBプランはなし（IPv6のみ）/ 1GB以上は1個 [公式](https://web.arena.ne.jp/indigo/spec/)<br>(2026-07-07) | 静的グローバルIPv4 1個標準付与 [公式](https://www.kagoya.jp/vps/function-plan/)<br>(2026-07-08) |
+| 2 | IPv6 | ✅ [公式](https://manual.sakura.ad.jp/vps/network/index.html)<br>(2026-07-07) | ✅ [公式](https://doc.conoha.jp/products/vps-v3/network-v3/ipv6-v3/)<br>(2026-07-07) | ✅ [公式](https://vps.xserver.ne.jp/support/news_detail.php?view_id=11190)<br>(2026-07-08) | ✅ [公式](https://web.arena.ne.jp/indigo/spec/)<br>(2026-07-07) | ✅ [公式](https://support.kagoya.jp/vps/charge/index.html)<br>(2026-07-07) |
 | 3 | 追加IPv4 | ❌ [公式](https://manual.sakura.ad.jp/vps/support/technical/ip-address.html)<br>(2026-07-07) | ✅ [公式](https://doc.conoha.jp/products/vps-v2/network-v2/addip-v2/)<br>(2026-07-07) | 不明 | ❌ [公式](https://web.arena.ne.jp/indigo/spec/)<br>(2026-07-07) | ✅ [公式](https://support.kagoya.jp/vps/manual/index.php?action=artikel&cat=18&id=69)<br>(2026-07-07) |
-| 4 | 逆引きDNS | ✅ [公式](https://manual.sakura.ad.jp/vps/support/technical/ip-address.html)<br>(2026-07-07) | ✅ [公式](https://support.conoha.jp/vps/faq/ip-q/)<br>(2026-07-07) | 不明 | ❌ [公式](https://web.arena.ne.jp/indigo/spec/)<br>(2026-07-07) | 不明 |
-| 5 | 転送量制限 | 不明 | 不明 | 不明 | 無制限 [公式](https://web.arena.ne.jp/indigo/spec/)<br>(2026-07-07) | 無制限 [公式](https://www.kagoya.jp/vps/)<br>(2026-07-07) |
+| 4 | 逆引きDNS | ✅ [公式](https://manual.sakura.ad.jp/vps/support/technical/ip-address.html)<br>(2026-07-07) | ✅ [公式](https://support.conoha.jp/vps/faq/ip-q/)<br>(2026-07-07) | ✅ [公式](https://vps.xserver.ne.jp/feature.php)<br>(2026-07-08) | ❌ [公式](https://web.arena.ne.jp/indigo/spec/)<br>(2026-07-07) | ✅ [公式](https://support.kagoya.jp/vps/manual/index.php?action=artikel&cat=40&id=51)<br>(2026-07-08) |
+| 5 | 転送量制限 | 転送量制限なし（著しい高負荷時は帯域制限の場合あり） [公式](https://manual.sakura.ad.jp/vps/support/technical/resource-limit.html)<br>(2026-07-08) | 転送量制限なし（ベストエフォート） [公式](https://support.conoha.jp/vps/faq/vps-q/)<br>(2026-07-08) | 転送量制限なし（ベストエフォート） [公式](https://vps.xserver.ne.jp/xserver-vps.php)<br>(2026-07-08) | 無制限 [公式](https://web.arena.ne.jp/indigo/spec/)<br>(2026-07-07) | 無制限 [公式](https://www.kagoya.jp/vps/)<br>(2026-07-07) |
 | 6 | 帯域目安（Gbps） | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 7 | ローカルネットワーク | ✅ [公式](https://manual.sakura.ad.jp/vps/network/index.html)<br>(2026-07-07) | 不明 | 不明 | 不明 | 不明 |
-| 8 | プライベートネットワーク | 不明 | 不明 | 不明 | 不明 | ✅ [公式](https://support.kagoya.jp/vps/charge/index.html)<br>(2026-07-07) |
-| 9 | VLAN | 不明 | 不明 | 不明 | 不明 | 不明 |
+| 7 | ローカルネットワーク | ✅ [公式](https://manual.sakura.ad.jp/vps/network/index.html)<br>(2026-07-07) | ✅ [公式](https://support.conoha.jp/v/privatenetwork/)<br>(2026-07-08) | 不明 | 不明 | ✅ [公式](https://support.kagoya.jp/vps/manual/index.php?action=artikel&cat=55&id=130)<br>(2026-07-08) |
+| 8 | プライベートネットワーク | ✅ [公式](https://manual.sakura.ad.jp/vps/network/localnetwork.html)<br>(2026-07-08) | ✅ [公式](https://support.conoha.jp/v/privatenetwork/)<br>(2026-07-08) | 不明 | 不明 | ✅ [公式](https://support.kagoya.jp/vps/charge/index.html)<br>(2026-07-07) |
+| 9 | VLAN | ✅ [公式](https://manual.sakura.ad.jp/vps/network/index.html)<br>(2026-07-08) | ✅ [公式](https://support.conoha.jp/v/privatenetwork/)<br>(2026-07-08) | 不明 | 不明 | 不明 |
 | 10 | ロードバランサー | 不明 | 不明 | 不明 | 不明 | ✅ [公式](https://support.kagoya.jp/vps/charge/index.html)<br>(2026-07-07) |
 | 11 | Floating IP | 不明 | 不明 | 不明 | 不明 | ✅ [公式](https://support.kagoya.jp/vps/manual/index.php?action=artikel&cat=18&id=69)<br>(2026-07-07) |
 
@@ -147,12 +147,12 @@
 | # | 項目 | さくらのVPS | ConoHa VPS | Xserver VPS | WebARENA Indigo | KAGOYA CLOUD VPS |
 | --- | --- | --- | --- | --- | --- | --- |
 | 1 | SSH鍵ログイン | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 2 | ファイアウォール機能 | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 3 | DDoS保護 | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 4 | WAF | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 5 | セキュリティグループ | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 6 | 二要素認証（管理画面） | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 7 | APIトークン | 不明 | 不明 | 不明 | 不明 | 不明 |
+| 2 | ファイアウォール機能 | ✅ [公式](https://vps.sakura.ad.jp/feature/packetfilter.html)<br>(2026-07-08) | ✅ [公式](https://support.conoha.jp/v/v3-security-securitygroup/)<br>(2026-07-08) | ✅ [公式](https://vps.xserver.ne.jp/feature.php)<br>(2026-07-08) | ✅ [公式](https://web.arena.ne.jp/indigo/spec/)<br>(2026-07-08) | ✅ [公式](https://www.kagoya.jp/vps/feature/security/)<br>(2026-07-08) |
+| 3 | DDoS保護 | 不明 | あり（DDoS攻撃対策システムを標準搭載） [公式](https://vps.conoha.jp/features/)<br>(2026-07-08) | あり（グローバル規模のDDoS対策システム標準提供） [公式](https://vps.xserver.ne.jp/support/news_detail.php?view_id=15098)<br>(2026-07-08) | 不明 | 不明 |
+| 4 | WAF | ✅ [公式](https://manual.sakura.ad.jp/vps/server/siteguard/)<br>(2026-07-08) | 不明 | 不明 | 不明 | 不明 |
+| 5 | セキュリティグループ | 不明 | ✅ [公式](https://support.conoha.jp/v/v3-security-securitygroup/)<br>(2026-07-08) | 不明 | ✅ [公式](https://web.arena.ne.jp/indigo/spec/)<br>(2026-07-08) | ✅ [公式](https://www.kagoya.jp/vps/feature/security/)<br>(2026-07-08) |
+| 6 | 二要素認証（管理画面） | ✅ [公式](https://manual.sakura.ad.jp/vps/controlpanel/index.html)<br>(2026-07-08) | ✅ [公式](https://support.conoha.jp/)<br>(2026-07-08) | ✅ [公式](https://vps.xserver.ne.jp/)<br>(2026-07-08) | 不明 | ✅ [公式](https://support.kagoya.jp/)<br>(2026-07-08) |
+| 7 | APIトークン | ✅ [公式](https://manual.sakura.ad.jp/vps/api/)<br>(2026-07-08) | ✅ [公式](https://www.conoha.jp/vps/function/api/)<br>(2026-07-08) | 不明 | ✅ [公式](https://web.arena.ne.jp/indigo/spec/)<br>(2026-07-08) | 不明 |
 | 8 | IAM / 権限管理 | 不明 | 不明 | 不明 | 不明 | 不明 |
 | 9 | 監査ログ | 不明 | 不明 | 不明 | 不明 | 不明 |
 | 10 | ISO27001 | 不明 | 不明 | 不明 | 不明 | 不明 |
@@ -166,16 +166,16 @@
 | # | 項目 | さくらのVPS | ConoHa VPS | Xserver VPS | WebARENA Indigo | KAGOYA CLOUD VPS |
 | --- | --- | --- | --- | --- | --- | --- |
 | 1 | 手動バックアップ | ✅ [公式](https://vps.sakura.ad.jp/contents/info/acronis-cyber-protect-cloud-acronis-hosted/)<br>(2026-07-07) | ✅ [公式](https://support.conoha.jp/v/snapshot/)<br>(2026-07-07) | ✅ [公式](https://vps.xserver.ne.jp/support/manual/man_server_image.php)<br>(2026-07-07) | ✅ [公式](https://web.arena.ne.jp/indigo/spec/)<br>(2026-07-07) | ✅ [公式](https://www.kagoya.jp/vps/feature/customize/)<br>(2026-07-07) |
-| 2 | 自動バックアップ | ✅ [公式](https://vps.sakura.ad.jp/contents/info/acronis-cyber-protect-cloud-acronis-hosted/)<br>(2026-07-07) | ✅ [公式](https://support.conoha.jp/v/vps-autobackup/)<br>(2026-07-07) | ✅ [公式](https://vps.xserver.ne.jp/support/faq/service_server_backup.php)<br>(2026-07-07) | 不明 | ✅ [公式](https://www.kagoya.jp/vps/feature/customize/)<br>(2026-07-07) |
-| 3 | バックアップスケジュール設定 | ✅ [公式](https://vps.sakura.ad.jp/contents/info/acronis-cyber-protect-cloud-acronis-hosted/)<br>(2026-07-07) | ❌ [公式](https://doc.conoha.jp/products/vps-v3/storage-v3/autobackup-v3/)<br>(2026-07-07) | 不明 | 不明 | 不明 |
+| 2 | 自動バックアップ | ✅ [公式](https://vps.sakura.ad.jp/contents/info/acronis-cyber-protect-cloud-acronis-hosted/)<br>(2026-07-07) | ✅ [公式](https://support.conoha.jp/v/vps-autobackup/)<br>(2026-07-07) | ✅ [公式](https://vps.xserver.ne.jp/support/faq/service_server_backup.php)<br>(2026-07-07) | ✅ [公式](https://web.arena.ne.jp/indigo/spec/)<br>(2026-07-08) | ✅ [公式](https://www.kagoya.jp/vps/feature/customize/)<br>(2026-07-07) |
+| 3 | バックアップスケジュール設定 | ✅ [公式](https://vps.sakura.ad.jp/contents/info/acronis-cyber-protect-cloud-acronis-hosted/)<br>(2026-07-07) | ❌ [公式](https://doc.conoha.jp/products/vps-v3/storage-v3/autobackup-v3/)<br>(2026-07-07) | 不明 | 不明 | ✅ [公式](https://www.kagoya.jp/option/backup/)<br>(2026-07-08) |
 | 4 | バックアップ保持期間 | 不明 | 不明 | 不明 | 不明 | 不明 |
 | 5 | バックアップ世代数 | 不明 | 14世代（デフォルト）、最大30世代（VPS 3.0） [公式](https://doc.conoha.jp/products/vps-v3/storage-v3/autobackup-v3/)<br>(2026-07-07) | ビジネスプラン標準1世代、バックアップ拡張オプションで最大3世代 [公式](https://vps.xserver.ne.jp/support/faq/service_server_backup.php)<br>(2026-07-07) | 最大5個/インスタンス（スナップショット） [公式](https://web.arena.ne.jp/indigo/spec/)<br>(2026-07-07) | 最大7世代（定期スナップショット） [公式](https://www.kagoya.jp/vps/feature/customize/)<br>(2026-07-07) |
-| 6 | バックアップからの復元 | ✅ [公式](https://vps.sakura.ad.jp/contents/info/acronis-cyber-protect-cloud-acronis-hosted/)<br>(2026-07-07) | ✅ [公式](https://support.conoha.jp/v/vps-autobackup/)<br>(2026-07-07) | 不明 | ✅ [公式](https://web.arena.ne.jp/indigo/spec/)<br>(2026-07-07) | ✅ [公式](https://www.kagoya.jp/vps/feature/customize/)<br>(2026-07-07) |
+| 6 | バックアップからの復元 | ✅ [公式](https://vps.sakura.ad.jp/contents/info/acronis-cyber-protect-cloud-acronis-hosted/)<br>(2026-07-07) | ✅ [公式](https://support.conoha.jp/v/vps-autobackup/)<br>(2026-07-07) | ✅ [公式](https://vps.xserver.ne.jp/business.php)<br>(2026-07-08) | ✅ [公式](https://web.arena.ne.jp/indigo/spec/)<br>(2026-07-07) | ✅ [公式](https://www.kagoya.jp/vps/feature/customize/)<br>(2026-07-07) |
 | 7 | バックアップ暗号化 | 不明 | 不明 | 不明 | 不明 | 不明 |
 | 8 | オブジェクトストレージへのバックアップ | 不明 | 不明 | 不明 | 不明 | 不明 |
 | 9 | リージョン間バックアップ | 不明 | 不明 | 不明 | 不明 | 不明 |
 | 10 | DR（災害復旧）対応 | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 11 | バックアップ課金 | 有料オプション（Acronis Cyber Protect Cloud: 1,760円/月〜(100GB)） [公式](https://vps.sakura.ad.jp/contents/info/acronis-cyber-protect-cloud-acronis-hosted/)<br>(2026-07-07) | 有料オプション（世代数により料金変動） [公式](https://support.conoha.jp/v/vps-autobackup/)<br>(2026-07-07) | 不明 | 不明 | 有料（容量課金：スナップショット10GBあたり日額4.4円） [公式](https://www.kagoya.jp/vps/feature/customize/)<br>(2026-07-07) |
+| 11 | バックアップ課金 | 有料オプション（Acronis Cyber Protect Cloud: 1,760円/月〜(100GB)） [公式](https://vps.sakura.ad.jp/contents/info/acronis-cyber-protect-cloud-acronis-hosted/)<br>(2026-07-07) | 有料オプション（世代数により料金変動） [公式](https://support.conoha.jp/v/vps-autobackup/)<br>(2026-07-07) | ビジネスプラン料金に含む（追加世代は有料オプション） [公式](https://vps.xserver.ne.jp/support/manual/man_server_auto_backup_gene.php)<br>(2026-07-08) | 有料オプション [公式](https://web.arena.ne.jp/indigo/spec/)<br>(2026-07-08) | 有料（容量課金：スナップショット10GBあたり日額4.4円） [公式](https://www.kagoya.jp/vps/feature/customize/)<br>(2026-07-07) |
 
 ## API / CLI / Terraform
 
@@ -183,7 +183,7 @@
 | --- | --- | --- | --- | --- | --- | --- |
 | 1 | REST API | ✅ [公式](https://manual.sakura.ad.jp/vps/api/)<br>(2026-07-07) | ✅ [公式](https://www.conoha.jp/vps/function/api/)<br>(2026-07-07) | 不明 | ✅ [公式](https://web.arena.ne.jp/indigo/spec/)<br>(2026-07-07) | 不明 |
 | 2 | OpenAPI公開 | ✅ [公式](https://manual.sakura.ad.jp/vps/api/api-doc/index.html)<br>(2026-07-07) | ✅ [公式](https://github.com/gmo-internet/conoha_vps_openapi)<br>(2026-07-07) | 不明 | 不明 | 不明 |
-| 3 | CLI | 不明 | 不明 | 不明 | 不明 | 不明 |
+| 3 | CLI | 不明 | ✅ [公式](https://doc.conoha.jp/reference/openstack-cli/)<br>(2026-07-08) | 不明 | 不明 | 不明 |
 | 4 | Terraform Provider | 不明 | ✅ [公式](https://vps.conoha.jp/terraform_provider/)<br>(2026-07-07) | 不明 | 不明 | 不明 |
 | 5 | Pulumi対応 | 不明 | 不明 | 不明 | 不明 | 不明 |
 | 6 | Ansible対応 | 不明 | 不明 | 不明 | 不明 | 不明 |
@@ -198,19 +198,19 @@
 
 | # | 項目 | さくらのVPS | ConoHa VPS | Xserver VPS | WebARENA Indigo | KAGOYA CLOUD VPS |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | SLA稼働率（%） | 99.99 [公式](https://vps.sakura.ad.jp/agreement/)<br>(2024-01-01) | 99.99 [公式](https://www.conoha.jp/vps/agreement/)<br>(2024-01-01) | 99.99 [公式](https://vps.xserver.ne.jp/agreement/)<br>(2024-01-01) | 不明 | 不明 |
-| 2 | SLA文書URL | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 3 | ステータスページ | ✅ [公式](https://www.sakura.ad.jp/status/)<br>(2026-07-08) | 不明 | 不明 | 不明 | 不明 |
+| 1 | SLA稼働率（%） | 99.99 [公式](https://vps.sakura.ad.jp/agreement/)<br>(2024-01-01) | 99.99 [公式](https://www.conoha.jp/vps/agreement/)<br>(2024-01-01) | 99.99 [公式](https://vps.xserver.ne.jp/agreement/)<br>(2024-01-01) | 不明 | 99.999 [公式](https://www.kagoya.jp/vps/)<br>(2026-07-08) |
+| 2 | SLA文書URL | https://vps.sakura.ad.jp/agreement/ [公式](https://vps.sakura.ad.jp/agreement/)<br>(2026-07-08) | https://www.conoha.jp/vps/agreement/ [公式](https://www.conoha.jp/vps/agreement/)<br>(2026-07-08) | https://vps.xserver.ne.jp/support/manual/man_order_sla.php [公式](https://vps.xserver.ne.jp/support/manual/man_order_sla.php)<br>(2026-07-08) | 不明 | 不明 |
+| 3 | ステータスページ | ✅ [公式](https://www.sakura.ad.jp/status/)<br>(2026-07-08) | ✅ [公式](https://status.conoha.jp/)<br>(2026-07-08) | ✅ [公式](https://vps.xserver.ne.jp/support/information/)<br>(2026-07-08) | ✅ [公式](https://web.arena.ne.jp/info/)<br>(2026-07-08) | ✅ [公式](https://www.kagoya.jp/news/)<br>(2026-07-08) |
 | 4 | 障害情報ページ | ✅ [公式](https://support.sakura.ad.jp/mainte/)<br>(2026-07-08) | ✅ [公式](https://www.conoha.jp/news/)<br>(2026-07-08) | ✅ [公式](https://vps.xserver.ne.jp/support/information/)<br>(2026-07-08) | ✅ [公式](https://help.arena.ne.jp/hc/ja/sections/900000494023)<br>(2026-07-08) | ✅ [公式](https://www.kagoya.jp/news/)<br>(2026-07-08) |
 | 5 | メンテナンス情報ページ | ✅ [公式](https://support.sakura.ad.jp/mainte/)<br>(2026-07-08) | ✅ [公式](https://www.conoha.jp/news/)<br>(2026-07-08) | ✅ [公式](https://vps.xserver.ne.jp/support/information/)<br>(2026-07-08) | ✅ [公式](https://help.arena.ne.jp/hc/ja/sections/900000494023)<br>(2026-07-08) | ✅ [公式](https://www.kagoya.jp/news/)<br>(2026-07-08) |
-| 6 | メール通知 | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 7 | サポート窓口 | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 8 | 電話サポート | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 9 | チャットサポート | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 10 | 問い合わせフォーム | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 11 | 法人向けサポート | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 12 | 日本語サポート | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 13 | ナレッジベース / FAQ | 不明 | 不明 | 不明 | 不明 | 不明 |
+| 6 | メール通知 | ✅ [公式](https://help.sakura.ad.jp/)<br>(2026-07-08) | ✅ [公式](https://support.conoha.jp/)<br>(2026-07-08) | ✅ [公式](https://vps.xserver.ne.jp/support/)<br>(2026-07-08) | ✅ [公式](https://web.arena.ne.jp/indigo/)<br>(2026-07-08) | ✅ [公式](https://www.kagoya.jp/)<br>(2026-07-08) |
+| 7 | サポート窓口 | メール・チャット・電話（コールバック） [公式](https://help.sakura.ad.jp/)<br>(2026-07-08) | メール・チャット [公式](https://support.conoha.jp/help/contact/)<br>(2026-07-08) | メール・チャット・電話 [公式](https://vps.xserver.ne.jp/support/)<br>(2026-07-08) | メール [公式](https://web.arena.ne.jp/indigo/support/)<br>(2026-07-08) | メール・チャット・電話 [公式](https://www.kagoya.jp/support/)<br>(2026-07-08) |
+| 8 | 電話サポート | ✅ [公式](https://help.sakura.ad.jp/)<br>(2026-07-08) | 不明 | ✅ [公式](https://vps.xserver.ne.jp/support/)<br>(2026-07-08) | 不明 | ✅ [公式](https://www.kagoya.jp/support/)<br>(2026-07-08) |
+| 9 | チャットサポート | ✅ [公式](https://help.sakura.ad.jp/purpose_beginner/2580/)<br>(2026-07-08) | ✅ [公式](https://support.conoha.jp/help/contact/)<br>(2026-07-08) | ✅ [公式](https://vps.xserver.ne.jp/support/)<br>(2026-07-08) | 不明 | ✅ [公式](https://webchat.kagoya.jp/)<br>(2026-07-08) |
+| 10 | 問い合わせフォーム | ✅ [公式](https://help.sakura.ad.jp/contact/)<br>(2026-07-08) | ✅ [公式](https://support.conoha.jp/inquiry/)<br>(2026-07-08) | ✅ [公式](https://vps.xserver.ne.jp/support/)<br>(2026-07-08) | ✅ [公式](https://web.arena.ne.jp/support/indigo/)<br>(2026-07-08) | ✅ [公式](https://support.kagoya.jp/contact/)<br>(2026-07-08) |
+| 11 | 法人向けサポート | 不明 | 不明 | ✅ [公式](https://vps.xserver.ne.jp/business.php)<br>(2026-07-08) | ✅ [公式](https://web.arena.ne.jp/indigopro/)<br>(2026-07-08) | ✅ [公式](https://www.kagoya.jp/vps/)<br>(2026-07-08) |
+| 12 | 日本語サポート | ✅ [公式](https://help.sakura.ad.jp/)<br>(2026-07-08) | ✅ [公式](https://support.conoha.jp/)<br>(2026-07-08) | ✅ [公式](https://vps.xserver.ne.jp/support/)<br>(2026-07-08) | ✅ [公式](https://web.arena.ne.jp/indigo/support/)<br>(2026-07-08) | ✅ [公式](https://www.kagoya.jp/support/)<br>(2026-07-08) |
+| 13 | ナレッジベース / FAQ | ✅ [公式](https://help.sakura.ad.jp/)<br>(2026-07-08) | ✅ [公式](https://support.conoha.jp/vps/guide/)<br>(2026-07-08) | ✅ [公式](https://vps.xserver.ne.jp/support/manual/)<br>(2026-07-08) | ✅ [公式](https://web.arena.ne.jp/support/indigo/faq/index.html)<br>(2026-07-08) | ✅ [公式](https://support.kagoya.jp/vps/manual/)<br>(2026-07-08) |
 
 ## データセンター / リージョン
 
