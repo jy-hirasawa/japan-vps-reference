@@ -200,11 +200,16 @@ official_urls:
 
 ## 公式URLリンクチェック
 
-`scripts/check_links.py` は `providers.yml` の `official_urls` を順に確認し、HTTPステータスを検証します。
+`scripts/check_links.py` は以下の URL を確認し、HTTP ステータスを検証します。
+
+- `providers.yml` の `official_urls[*].url`
+- `evidence.yml` の `source_url`
 
 - 成功: `2xx` / `3xx`
 - 失敗: `4xx` / `5xx` / タイムアウト / 接続エラー
-- `url: unknown` はチェック対象外
+- `unknown` / 空値 / URL 形式でない値はチェック対象外
+- 同じ URL が複数箇所で使われていても HTTP リクエストは 1 回だけ実行
+- `403` / `429` / `5xx` / タイムアウト / 接続エラーは、リンク切れとは別に一時的な失敗として識別して出力
 
 実行方法:
 
@@ -218,13 +223,15 @@ GitHub Actions で手動実行する場合:
 2. **Check Links（手動実行）** ワークフローを選択する
 3. **Run workflow** をクリックして実行する
 
-失敗時は、以下のように `provider_id` と `url` が出力されます。
+失敗時は、以下のように URL と参照元が出力されます。
 
 ```text
-[FAIL] provider_id=example-vps url=https://example.com/xxx (status=404)
+[FAIL] url=https://example.com/old-page/ kind=broken status=404
+  - providers: example-vps / pricing
+  - evidence: example-vps / api_available
 ```
 
-一時的な外部要因で失敗する場合があるため、時間を置いて再実行し、それでも失敗する場合は `providers.yml` のURL変更有無を確認してください。
+Bot 対策や一時的な外部要因で失敗する場合があるため、`kind=temporary` が出たときは時間を置いて再実行してください。`kind=broken` が継続する場合は、`providers.yml` または `evidence.yml` に記録された URL 変更有無を確認してください。
 
 ## Evidence 管理ルール
 
