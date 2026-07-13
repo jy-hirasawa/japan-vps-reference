@@ -6,6 +6,7 @@ check_links.py — providers.yml / evidence.yml の URL リンク状態を確認
     python scripts/check_links.py
 """
 
+import http.client
 import socket
 import sys
 from collections import defaultdict
@@ -106,14 +107,14 @@ def request_status(url: str, method: str) -> tuple[int | None, str | None]:
             return resp.getcode(), None
     except error.HTTPError as exc:
         return exc.code, None
-    except (error.URLError, TimeoutError, socket.timeout) as exc:
+    except (error.URLError, TimeoutError, socket.timeout, http.client.HTTPException) as exc:
         reason = getattr(exc, "reason", exc)
         return None, str(reason)
 
 
 def check_url(url: str) -> tuple[bool, str]:
     status, reason = request_status(url, method="HEAD")
-    if status == 405:
+    if status in {400, 403, 405}:
         status, reason = request_status(url, method="GET")
 
     if status is None:

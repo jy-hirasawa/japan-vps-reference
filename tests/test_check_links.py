@@ -6,6 +6,7 @@ import io
 import sys
 import tempfile
 import unittest
+import http.client
 from contextlib import redirect_stderr, redirect_stdout
 from pathlib import Path
 from unittest.mock import patch
@@ -16,6 +17,47 @@ import check_links
 
 
 class TestCheckLinksHelpers(unittest.TestCase):
+
+    def test_request_status_returns_status_on_success(self):
+        class DummyResponse:
+            def __enter__(self):
+                return self
+
+            def __exit__(self, exc_type, exc, tb):
+                return False
+
+            def getcode(self):
+                return 204
+
+        with patch("check_links.request.urlopen", return_value=DummyResponse()):
+            self.assertEqual(
+                check_links.request_status("https://example.com/ok", method="HEAD"),
+                (204, None),
+            )
+
+    def test_request_status_returns_status_on_http_error(self):
+        http_error = check_links.error.HTTPError(
+            url="https://example.com/missing",
+            code=404,
+            msg="Not Found",
+            hdrs=None,
+            fp=None,
+        )
+        with patch("check_links.request.urlopen", side_effect=http_error):
+            self.assertEqual(
+                check_links.request_status("https://example.com/missing", method="HEAD"),
+                (404, None),
+            )
+
+    def test_request_status_handles_http_exception_as_temporary_error(self):
+        with patch(
+            "check_links.request.urlopen",
+            side_effect=http.client.IncompleteRead(b"partial", 10),
+        ):
+            status, reason = check_links.request_status("https://example.com/broken", method="HEAD")
+
+        self.assertIsNone(status)
+        self.assertIn("IncompleteRead", reason)
 
     def test_is_check_target_url(self):
         self.assertTrue(check_links.is_check_target_url("https://example.com/path"))
@@ -135,6 +177,35 @@ class TestCheckLinksHelpers(unittest.TestCase):
                 check_links.check_url("https://example.com/timeout"),
                 (False, "kind=temporary error=timed out"),
             )
+
+        with patch.object(check_links, "request_status", return_value=(503, None)):
+            self.assertEqual(
+                check_links.check_url("https://example.com/unavailable"),
+                (False, "kind=temporary status=503"),
+            )
+
+        with patch.object(check_links, "request_status", return_value=(200, None)):
+            self.assertEqual(
+                check_links.check_url("https://example.com/ok"),
+                (True, "status=200"),
+            )
+
+    def test_check_url_falls_back_to_get_for_head_specific_failures(self):
+        for status in (400, 403, 405):
+            with self.subTest(status=status):
+                with patch.object(
+                    check_links,
+                    "request_status",
+                    side_effect=[(status, None), (200, None)],
+                ) as mock_request_status:
+                    self.assertEqual(
+                        check_links.check_url("https://example.com/fallback"),
+                        (True, "status=200"),
+                    )
+
+                self.assertEqual(mock_request_status.call_count, 2)
+                self.assertEqual(mock_request_status.call_args_list[0].kwargs["method"], "HEAD")
+                self.assertEqual(mock_request_status.call_args_list[1].kwargs["method"], "GET")
 
 
 class TestCheckLinksMain(unittest.TestCase):
