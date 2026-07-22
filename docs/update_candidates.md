@@ -118,28 +118,28 @@
 
 | Provider | Item | URL | verified_at | Status |
 | --- | --- | --- | --- | --- |
-| さくらのVPS | top | https://vps.sakura.ad.jp/ | unknown | UNKNOWN |
-| さくらのVPS | pricing | https://vps.sakura.ad.jp/specification/ | unknown | UNKNOWN |
-| さくらのVPS | specs | https://vps.sakura.ad.jp/specification/ | unknown | UNKNOWN |
-| さくらのVPS | support | unknown | unknown | UNKNOWN |
-| さくらのVPS | terms | https://vps.sakura.ad.jp/agreement/ | unknown | UNKNOWN |
-| ConoHa VPS | top | https://www.conoha.jp/vps/ | unknown | UNKNOWN |
-| ConoHa VPS | pricing | https://www.conoha.jp/vps/pricing/ | unknown | UNKNOWN |
-| ConoHa VPS | specs | https://www.conoha.jp/vps/pricing/ | unknown | UNKNOWN |
-| ConoHa VPS | support | unknown | unknown | UNKNOWN |
-| ConoHa VPS | terms | https://www.conoha.jp/vps/agreement/ | unknown | UNKNOWN |
-| Xserver VPS | top | https://vps.xserver.ne.jp/ | unknown | UNKNOWN |
-| Xserver VPS | pricing | https://vps.xserver.ne.jp/price/ | unknown | UNKNOWN |
-| Xserver VPS | specs | https://vps.xserver.ne.jp/price/ | unknown | UNKNOWN |
-| Xserver VPS | support | unknown | unknown | UNKNOWN |
-| Xserver VPS | terms | https://vps.xserver.ne.jp/agreement/ | unknown | UNKNOWN |
-| WebARENA Indigo | top | https://web.arena.ne.jp/indigo/ | unknown | UNKNOWN |
-| WebARENA Indigo | pricing | https://web.arena.ne.jp/indigo/price/ | unknown | UNKNOWN |
-| WebARENA Indigo | specs | https://web.arena.ne.jp/indigo/price/ | unknown | UNKNOWN |
-| WebARENA Indigo | support | unknown | unknown | UNKNOWN |
-| WebARENA Indigo | terms | unknown | unknown | UNKNOWN |
-| KAGOYA CLOUD VPS | top | https://www.kagoya.jp/cloud/vps/ | unknown | UNKNOWN |
-| KAGOYA CLOUD VPS | pricing | https://www.kagoya.jp/vps/function-plan/ | unknown | UNKNOWN |
-| KAGOYA CLOUD VPS | specs | https://www.kagoya.jp/vps/function-plan/ | unknown | UNKNOWN |
-| KAGOYA CLOUD VPS | support | unknown | unknown | UNKNOWN |
-| KAGOYA CLOUD VPS | terms | unknown | unknown | UNKNOWN |
+| さくらのVPS | top | https://vps.sakura.ad.jp/ | 2026-07-22 | VERIFIED |
+| さくらのVPS | pricing | https://vps.sakura.ad.jp/specification/ | 2026-07-22 | VERIFIED |
+| さくらのVPS | specs | https://vps.sakura.ad.jp/specification/ | 2026-07-22 | VERIFIED |
+| さくらのVPS | support | https://manual.sakura.ad.jp/vps/ | 2026-07-22 | VERIFIED |
+| さくらのVPS | terms | https://vps.sakura.ad.jp/agreement/ | 2026-07-22 | VERIFIED |
+| ConoHa VPS | top | https://www.conoha.jp/vps/ | 2026-07-22 | VERIFIED |
+| ConoHa VPS | pricing | https://www.conoha.jp/vps/pricing/ | 2026-07-22 | VERIFIED |
+| ConoHa VPS | specs | https://www.conoha.jp/vps/pricing/ | 2026-07-22 | VERIFIED |
+| ConoHa VPS | support | https://support.conoha.jp/vps/ | 2026-07-22 | VERIFIED |
+| ConoHa VPS | terms | https://www.conoha.jp/vps/agreement/ | 2026-07-22 | VERIFIED |
+| Xserver VPS | top | https://vps.xserver.ne.jp/ | 2026-07-22 | VERIFIED |
+| Xserver VPS | pricing | https://vps.xserver.ne.jp/price/ | 2026-07-22 | VERIFIED |
+| Xserver VPS | specs | https://vps.xserver.ne.jp/price/ | 2026-07-22 | VERIFIED |
+| Xserver VPS | support | https://vps.xserver.ne.jp/support/ | 2026-07-22 | VERIFIED |
+| Xserver VPS | terms | https://vps.xserver.ne.jp/agreement/ | 2026-07-22 | VERIFIED |
+| WebARENA Indigo | top | https://web.arena.ne.jp/indigo/ | 2026-07-22 | VERIFIED |
+| WebARENA Indigo | pricing | https://web.arena.ne.jp/indigo/price/ | 2026-07-22 | VERIFIED |
+| WebARENA Indigo | specs | https://web.arena.ne.jp/indigo/price/ | 2026-07-22 | VERIFIED |
+| WebARENA Indigo | support | https://web.arena.ne.jp/indigo/support/ | 2026-07-22 | VERIFIED |
+| WebARENA Indigo | terms | https://web.arena.ne.jp/rule/ | 2026-07-22 | VERIFIED |
+| KAGOYA CLOUD VPS | top | https://www.kagoya.jp/cloud/vps/ | 2026-07-22 | VERIFIED |
+| KAGOYA CLOUD VPS | pricing | https://www.kagoya.jp/vps/function-plan/ | 2026-07-22 | VERIFIED |
+| KAGOYA CLOUD VPS | specs | https://www.kagoya.jp/vps/function-plan/ | 2026-07-22 | VERIFIED |
+| KAGOYA CLOUD VPS | support | https://support.kagoya.jp/vps/ | 2026-07-22 | VERIFIED |
+| KAGOYA CLOUD VPS | terms | https://www.kagoya.jp/terms/vps/ | 2026-07-22 | VERIFIED |

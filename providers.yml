@@ -10,19 +10,19 @@ providers:
     official_urls:
       top:
         url: https://vps.sakura.ad.jp/
-        verified_at: unknown
+        verified_at: "2026-07-22"
       pricing:
         url: https://vps.sakura.ad.jp/specification/
-        verified_at: unknown
+        verified_at: "2026-07-22"
       specs:
         url: https://vps.sakura.ad.jp/specification/
-        verified_at: unknown
+        verified_at: "2026-07-22"
       support:
-        url: unknown
-        verified_at: unknown
+        url: https://manual.sakura.ad.jp/vps/
+        verified_at: "2026-07-22"
       terms:
         url: https://vps.sakura.ad.jp/agreement/
-        verified_at: unknown
+        verified_at: "2026-07-22"
     datacenter_locations:
       - 石狩（北海道）
       - 東京
@@ -39,19 +39,19 @@ providers:
     official_urls:
       top:
         url: https://www.conoha.jp/vps/
-        verified_at: unknown
+        verified_at: "2026-07-22"
       pricing:
         url: https://www.conoha.jp/vps/pricing/
-        verified_at: unknown
+        verified_at: "2026-07-22"
       specs:
         url: https://www.conoha.jp/vps/pricing/
-        verified_at: unknown
+        verified_at: "2026-07-22"
       support:
-        url: unknown
-        verified_at: unknown
+        url: https://support.conoha.jp/vps/
+        verified_at: "2026-07-22"
       terms:
         url: https://www.conoha.jp/vps/agreement/
-        verified_at: unknown
+        verified_at: "2026-07-22"
     datacenter_locations:
       - 東京
       - 大阪
@@ -68,19 +68,19 @@ providers:
     official_urls:
       top:
         url: https://vps.xserver.ne.jp/
-        verified_at: unknown
+        verified_at: "2026-07-22"
       pricing:
         url: https://vps.xserver.ne.jp/price/
-        verified_at: unknown
+        verified_at: "2026-07-22"
       specs:
         url: https://vps.xserver.ne.jp/price/
-        verified_at: unknown
+        verified_at: "2026-07-22"
       support:
-        url: unknown
-        verified_at: unknown
+        url: https://vps.xserver.ne.jp/support/
+        verified_at: "2026-07-22"
       terms:
         url: https://vps.xserver.ne.jp/agreement/
-        verified_at: unknown
+        verified_at: "2026-07-22"
     datacenter_locations:
       - 大阪
     support_language:
@@ -95,19 +95,19 @@ providers:
     official_urls:
       top:
         url: https://web.arena.ne.jp/indigo/
-        verified_at: unknown
+        verified_at: "2026-07-22"
       pricing:
         url: https://web.arena.ne.jp/indigo/price/
-        verified_at: unknown
+        verified_at: "2026-07-22"
       specs:
         url: https://web.arena.ne.jp/indigo/price/
-        verified_at: unknown
+        verified_at: "2026-07-22"
       support:
-        url: unknown
-        verified_at: unknown
+        url: https://web.arena.ne.jp/indigo/support/
+        verified_at: "2026-07-22"
       terms:
-        url: unknown
-        verified_at: unknown
+        url: https://web.arena.ne.jp/rule/
+        verified_at: "2026-07-22"
     datacenter_locations:
       - unknown
     support_language:
@@ -122,19 +122,19 @@ providers:
     official_urls:
       top:
         url: https://www.kagoya.jp/cloud/vps/
-        verified_at: unknown
+        verified_at: "2026-07-22"
       pricing:
         url: https://www.kagoya.jp/vps/function-plan/
-        verified_at: unknown
+        verified_at: "2026-07-22"
       specs:
         url: https://www.kagoya.jp/vps/function-plan/
-        verified_at: unknown
+        verified_at: "2026-07-22"
       support:
-        url: unknown
-        verified_at: unknown
+        url: https://support.kagoya.jp/vps/
+        verified_at: "2026-07-22"
       terms:
-        url: unknown
-        verified_at: unknown
+        url: https://www.kagoya.jp/terms/vps/
+        verified_at: "2026-07-22"
     datacenter_locations:
       - unknown
     support_language:
