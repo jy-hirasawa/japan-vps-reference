@@ -89,7 +89,6 @@
 | バックアップ暗号化 | 不明 | 不明 | 不明 | 不明 | 不明 |
 | オブジェクトストレージへのバックアップ | 不明 | 不明 | 不明 | 不明 | 不明 |
 | リージョン間バックアップ | 不明 | 不明 | 不明 | 不明 | 不明 |
-| DR（災害復旧）対応 | 不明 | 不明 | 不明 | 不明 | 不明 |
 | スナップショット | ✅ [公式](https://vps.sakura.ad.jp/)<br>(2024-01-01) | ✅ [公式](https://www.conoha.jp/vps/function/)<br>(2024-01-01) | ✅ [公式](https://vps.xserver.ne.jp/support/manual/man_server_image.php)<br>(2026-07-07) | ✅ [公式](https://web.arena.ne.jp/indigo/spec/)<br>(2026-07-07) | ✅ [公式](https://www.kagoya.jp/vps/feature/customize/)<br>(2026-07-07) |
 | 自動スナップショット | 不明 | ❌ [公式](https://support.conoha.jp/v/snapshot/)<br>(2026-07-07) | 不明 | 不明 | ✅ [公式](https://www.kagoya.jp/vps/feature/customize/)<br>(2026-07-07) |
 | バックアップ課金 | 有料オプション（Acronis Cyber Protect Cloud: 1,760円/月〜(100GB)） [公式](https://vps.sakura.ad.jp/contents/info/acronis-cyber-protect-cloud-acronis-hosted/)<br>(2026-07-07) | 有料オプション（世代数により料金変動） [公式](https://support.conoha.jp/v/vps-autobackup/)<br>(2026-07-07) | ビジネスプラン料金に含む（追加世代は有料オプション） [公式](https://vps.xserver.ne.jp/support/manual/man_server_auto_backup_gene.php)<br>(2026-07-08) | 有料オプション [公式](https://web.arena.ne.jp/indigo/spec/)<br>(2026-07-08) | 有料（容量課金：スナップショット10GBあたり日額4.4円） [公式](https://www.kagoya.jp/vps/feature/customize/)<br>(2026-07-07) |

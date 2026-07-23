@@ -623,7 +623,6 @@ USE_CASES: list[dict] = [
             "backup_encryption",
             "backup_to_object_storage",
             "cross_region_backup",
-            "dr_support",
             "full_disk_snapshot",
             "auto_snapshot",
             "backup_billing",

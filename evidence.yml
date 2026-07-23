@@ -212,13 +212,6 @@ evidence:
   verified_at: unknown
   verification_status: unknown
 - provider_id: sakura-vps
-  feature_id: os_templates
-  value: unknown
-  source_type: unknown
-  source_url: unknown
-  verified_at: unknown
-  verification_status: unknown
-- provider_id: sakura-vps
   feature_id: standard_os_template
   value: AlmaLinux, Rocky Linux, Ubuntu, Debian, FreeBSD
   source_type: official
@@ -550,13 +543,6 @@ evidence:
   verified_at: '2026-07-08'
   verification_status: verified
   notes: ConoHa Object Storageと連携した利用方法が公式ガイドに掲載。swift/REST API経由でアクセス可能。
-- provider_id: conoha-vps
-  feature_id: os_templates
-  value: unknown
-  source_type: unknown
-  source_url: unknown
-  verified_at: unknown
-  verification_status: unknown
 - provider_id: conoha-vps
   feature_id: standard_os_template
   value: AlmaLinux, Rocky Linux, Ubuntu, Debian, Fedora, FreeBSD, Windows Server
@@ -982,13 +968,6 @@ evidence:
   verified_at: unknown
   verification_status: unknown
 - provider_id: xserver-vps
-  feature_id: os_templates
-  value: unknown
-  source_type: unknown
-  source_url: unknown
-  verified_at: unknown
-  verification_status: unknown
-- provider_id: xserver-vps
   feature_id: standard_os_template
   value: AlmaLinux, Rocky Linux, Ubuntu, Debian, Fedora
   source_type: official
@@ -1308,13 +1287,6 @@ evidence:
   verified_at: unknown
   verification_status: unknown
 - provider_id: webarena-indigo
-  feature_id: os_templates
-  value: unknown
-  source_type: unknown
-  source_url: unknown
-  verified_at: unknown
-  verification_status: unknown
-- provider_id: webarena-indigo
   feature_id: standard_os_template
   value: AlmaLinux, Rocky Linux, Ubuntu, Debian, Windows Server
   source_type: official
@@ -1609,13 +1581,6 @@ evidence:
   verified_at: unknown
   verification_status: unknown
 - provider_id: sakura-vps
-  feature_id: dr_support
-  value: unknown
-  source_type: unknown
-  source_url: unknown
-  verified_at: unknown
-  verification_status: unknown
-- provider_id: sakura-vps
   feature_id: backup_billing
   value: '有料オプション（Acronis Cyber Protect Cloud: 1,760円/月〜(100GB)）'
   source_type: official
@@ -1684,13 +1649,6 @@ evidence:
   verification_status: unknown
 - provider_id: conoha-vps
   feature_id: cross_region_backup
-  value: unknown
-  source_type: unknown
-  source_url: unknown
-  verified_at: unknown
-  verification_status: unknown
-- provider_id: conoha-vps
-  feature_id: dr_support
   value: unknown
   source_type: unknown
   source_url: unknown
@@ -1770,13 +1728,6 @@ evidence:
   verified_at: unknown
   verification_status: unknown
 - provider_id: xserver-vps
-  feature_id: dr_support
-  value: unknown
-  source_type: unknown
-  source_url: unknown
-  verified_at: unknown
-  verification_status: unknown
-- provider_id: xserver-vps
   feature_id: backup_billing
   value: ビジネスプラン料金に含む（追加世代は有料オプション）
   source_type: official
@@ -1845,13 +1796,6 @@ evidence:
   verification_status: unknown
 - provider_id: webarena-indigo
   feature_id: cross_region_backup
-  value: unknown
-  source_type: unknown
-  source_url: unknown
-  verified_at: unknown
-  verification_status: unknown
-- provider_id: webarena-indigo
-  feature_id: dr_support
   value: unknown
   source_type: unknown
   source_url: unknown
@@ -1933,26 +1877,12 @@ evidence:
   verified_at: unknown
   verification_status: unknown
 - provider_id: kagoya-cloud-vps
-  feature_id: dr_support
-  value: unknown
-  source_type: unknown
-  source_url: unknown
-  verified_at: unknown
-  verification_status: unknown
-- provider_id: kagoya-cloud-vps
   feature_id: backup_billing
   value: 有料（容量課金：スナップショット10GBあたり日額4.4円）
   source_type: official
   source_url: https://www.kagoya.jp/vps/feature/customize/
   verified_at: '2026-07-07'
   verification_status: verified
-- provider_id: kagoya-cloud-vps
-  feature_id: os_templates
-  value: unknown
-  source_type: unknown
-  source_url: unknown
-  verified_at: unknown
-  verification_status: unknown
 - provider_id: kagoya-cloud-vps
   feature_id: standard_os_template
   value: AlmaLinux, Rocky Linux, Ubuntu
@@ -2505,13 +2435,6 @@ evidence:
   source_url: unknown
   verified_at: unknown
   verification_status: unknown
-- provider_id: sakura-vps
-  feature_id: datacenter_certification
-  value: unknown
-  source_type: unknown
-  source_url: unknown
-  verified_at: unknown
-  verification_status: unknown
 - provider_id: conoha-vps
   feature_id: waf_feature
   value: unknown
@@ -2585,13 +2508,6 @@ evidence:
   source_url: unknown
   verified_at: unknown
   verification_status: unknown
-- provider_id: conoha-vps
-  feature_id: datacenter_certification
-  value: unknown
-  source_type: unknown
-  source_url: unknown
-  verified_at: unknown
-  verification_status: unknown
 - provider_id: xserver-vps
   feature_id: waf_feature
   value: unknown
@@ -2658,13 +2574,6 @@ evidence:
   verification_status: unknown
 - provider_id: xserver-vps
   feature_id: pci_dss
-  value: unknown
-  source_type: unknown
-  source_url: unknown
-  verified_at: unknown
-  verification_status: unknown
-- provider_id: xserver-vps
-  feature_id: datacenter_certification
   value: unknown
   source_type: unknown
   source_url: unknown
@@ -2742,13 +2651,6 @@ evidence:
   source_url: unknown
   verified_at: unknown
   verification_status: unknown
-- provider_id: webarena-indigo
-  feature_id: datacenter_certification
-  value: unknown
-  source_type: unknown
-  source_url: unknown
-  verified_at: unknown
-  verification_status: unknown
 - provider_id: kagoya-cloud-vps
   feature_id: waf_feature
   value: unknown
@@ -2816,13 +2718,6 @@ evidence:
   verification_status: unknown
 - provider_id: kagoya-cloud-vps
   feature_id: pci_dss
-  value: unknown
-  source_type: unknown
-  source_url: unknown
-  verified_at: unknown
-  verification_status: unknown
-- provider_id: kagoya-cloud-vps
-  feature_id: datacenter_certification
   value: unknown
   source_type: unknown
   source_url: unknown
@@ -3275,7 +3170,6 @@ evidence:
   verified_at: '2026-07-08'
   verification_status: verified
   notes: 公式マニュアル・FAQサイトが提供されている。
-# datacenter / region evidence
 - provider_id: sakura-vps
   feature_id: domestic_region_count
   value: 3
