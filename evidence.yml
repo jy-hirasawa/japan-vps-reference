@@ -3282,7 +3282,7 @@ evidence:
   source_type: official
   source_url: https://vps.sakura.ad.jp/specification/
   verified_at: '2026-07-22'
-  verification_status: unverified
+  verification_status: verified
   notes: 石狩（北海道）、東京、大阪の3リージョンが公式仕様ページに記載。
 - provider_id: sakura-vps
   feature_id: overseas_regions
@@ -3297,7 +3297,7 @@ evidence:
   source_type: official
   source_url: https://vps.sakura.ad.jp/specification/
   verified_at: '2026-07-22'
-  verification_status: unverified
+  verification_status: verified
   notes: 公式仕様ページに3リージョンの所在地が記載されている。
 - provider_id: sakura-vps
   feature_id: region_selection
@@ -3305,7 +3305,7 @@ evidence:
   source_type: official
   source_url: https://vps.sakura.ad.jp/specification/
   verified_at: '2026-07-22'
-  verification_status: unverified
+  verification_status: verified
   notes: サーバー申込時に石狩・東京・大阪から選択可能。
 - provider_id: sakura-vps
   feature_id: zone_selection
@@ -3369,7 +3369,7 @@ evidence:
   source_type: official
   source_url: https://www.conoha.jp/vps/function/
   verified_at: '2026-07-22'
-  verification_status: unverified
+  verification_status: verified
   notes: 東京・大阪の国内2リージョン（シンガポールは海外リージョン）。
 - provider_id: conoha-vps
   feature_id: overseas_regions
@@ -3377,7 +3377,7 @@ evidence:
   source_type: official
   source_url: https://www.conoha.jp/vps/function/
   verified_at: '2026-07-22'
-  verification_status: unverified
+  verification_status: verified
   notes: 公式機能一覧ページにシンガポールリージョンが記載されている。
 - provider_id: conoha-vps
   feature_id: datacenter_location
@@ -3385,7 +3385,7 @@ evidence:
   source_type: official
   source_url: https://www.conoha.jp/vps/function/
   verified_at: '2026-07-22'
-  verification_status: unverified
+  verification_status: verified
   notes: 公式機能一覧ページに3リージョンの所在地が記載されている。
 - provider_id: conoha-vps
   feature_id: region_selection
@@ -3393,7 +3393,7 @@ evidence:
   source_type: official
   source_url: https://www.conoha.jp/vps/function/
   verified_at: '2026-07-22'
-  verification_status: unverified
+  verification_status: verified
   notes: サーバー作成時に東京・大阪・シンガポールから選択可能。
 - provider_id: conoha-vps
   feature_id: zone_selection
@@ -3460,19 +3460,18 @@ evidence:
   verification_status: unknown
 - provider_id: xserver-vps
   feature_id: overseas_regions
-  value: なし
-  source_type: official
-  source_url: https://vps.xserver.ne.jp/support/faq/support_datacenter.php
-  verified_at: '2026-07-22'
-  verification_status: unverified
-  notes: 公式FAQに「国内有数のデータセンターに設置、運用しています」と明記。
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
 - provider_id: xserver-vps
   feature_id: datacenter_location
   value: 日本国内（詳細非公開）
   source_type: official
   source_url: https://vps.xserver.ne.jp/support/faq/support_datacenter.php
   verified_at: '2026-07-22'
-  verification_status: unverified
+  verification_status: verified
   notes: 公式FAQに「国内大手のデータセンター」と記載されているが、具体的な都市名・住所は非公開。
 - provider_id: xserver-vps
   feature_id: region_selection
@@ -3543,23 +3542,22 @@ evidence:
   source_type: official
   source_url: https://web.arena.ne.jp/indigo/
   verified_at: '2026-07-22'
-  verification_status: unverified
+  verification_status: verified
   notes: 東京リージョンのみ提供。
 - provider_id: webarena-indigo
   feature_id: overseas_regions
-  value: なし
-  source_type: official
-  source_url: https://web.arena.ne.jp/indigo/
-  verified_at: '2026-07-22'
-  verification_status: unverified
-  notes: 東京リージョンのみ提供であり、海外リージョンは存在しない。
+  value: unknown
+  source_type: unknown
+  source_url: unknown
+  verified_at: unknown
+  verification_status: unknown
 - provider_id: webarena-indigo
   feature_id: datacenter_location
   value: 東京
   source_type: official
   source_url: https://web.arena.ne.jp/indigo/
   verified_at: '2026-07-22'
-  verification_status: unverified
+  verification_status: verified
   notes: 公式サービスページに東京リージョンと記載。
 - provider_id: webarena-indigo
   feature_id: region_selection
