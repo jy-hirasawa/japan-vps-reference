@@ -8,10 +8,10 @@
 
 | Provider | 最終確認日 |
 | --- | --- |
-| さくらのVPS | 2026-07-08 |
-| ConoHa VPS | 2026-07-08 |
-| Xserver VPS | 2026-07-08 |
-| WebARENA Indigo | 2026-07-08 |
+| さくらのVPS | 2026-07-22 |
+| ConoHa VPS | 2026-07-22 |
+| Xserver VPS | 2026-07-22 |
+| WebARENA Indigo | 2026-07-22 |
 | KAGOYA CLOUD VPS | 2026-07-08 |
 
 ## 公式URL
@@ -223,10 +223,10 @@
 
 | # | 項目 | さくらのVPS | ConoHa VPS | Xserver VPS | WebARENA Indigo | KAGOYA CLOUD VPS |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | 国内リージョン数 | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 2 | 海外リージョン | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 3 | データセンター所在地 | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 4 | リージョン選択 | 不明 | 不明 | 不明 | 不明 | 不明 |
+| 1 | 国内リージョン数 | 3 [公式](https://vps.sakura.ad.jp/specification/)<br>(2026-07-22) | 2 [公式](https://www.conoha.jp/vps/function/)<br>(2026-07-22) | 不明 | 1 [公式](https://web.arena.ne.jp/indigo/)<br>(2026-07-22) | 不明 |
+| 2 | 海外リージョン | 不明 | シンガポール [公式](https://www.conoha.jp/vps/function/)<br>(2026-07-22) | なし [公式](https://vps.xserver.ne.jp/support/faq/support_datacenter.php)<br>(2026-07-22) | なし [公式](https://web.arena.ne.jp/indigo/)<br>(2026-07-22) | 不明 |
+| 3 | データセンター所在地 | 石狩（北海道）、東京、大阪 [公式](https://vps.sakura.ad.jp/specification/)<br>(2026-07-22) | 東京、大阪、シンガポール [公式](https://www.conoha.jp/vps/function/)<br>(2026-07-22) | 日本国内（詳細非公開） [公式](https://vps.xserver.ne.jp/support/faq/support_datacenter.php)<br>(2026-07-22) | 東京 [公式](https://web.arena.ne.jp/indigo/)<br>(2026-07-22) | 不明 |
+| 4 | リージョン選択 | ✅ [公式](https://vps.sakura.ad.jp/specification/)<br>(2026-07-22) | ✅ [公式](https://www.conoha.jp/vps/function/)<br>(2026-07-22) | 不明 | 不明 | 不明 |
 | 5 | ゾーン選択 | 不明 | 不明 | 不明 | 不明 | 不明 |
 | 6 | 同一リージョン内冗長 | 不明 | 不明 | 不明 | 不明 | 不明 |
 | 7 | 複数リージョン構成 | 不明 | 不明 | 不明 | 不明 | 不明 |

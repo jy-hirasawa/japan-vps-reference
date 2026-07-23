@@ -69,7 +69,7 @@
 | DDoS保護 | 不明 | あり（DDoS攻撃対策システムを標準搭載） [公式](https://vps.conoha.jp/features/)<br>(2026-07-08) | あり（グローバル規模のDDoS対策システム標準提供） [公式](https://vps.xserver.ne.jp/support/news_detail.php?view_id=15098)<br>(2026-07-08) | 不明 | 不明 |
 | ステータスページ | ✅ [公式](https://www.sakura.ad.jp/status/)<br>(2026-07-08) | ✅ [公式](https://status.conoha.jp/)<br>(2026-07-08) | ✅ [公式](https://vps.xserver.ne.jp/support/information/)<br>(2026-07-08) | ✅ [公式](https://web.arena.ne.jp/info/)<br>(2026-07-08) | ✅ [公式](https://www.kagoya.jp/news/)<br>(2026-07-08) |
 | 障害情報ページ | ✅ [公式](https://support.sakura.ad.jp/mainte/)<br>(2026-07-08) | ✅ [公式](https://www.conoha.jp/news/)<br>(2026-07-08) | ✅ [公式](https://vps.xserver.ne.jp/support/information/)<br>(2026-07-08) | ✅ [公式](https://help.arena.ne.jp/hc/ja/sections/900000494023)<br>(2026-07-08) | ✅ [公式](https://www.kagoya.jp/news/)<br>(2026-07-08) |
-| 国内リージョン数 | 不明 | 不明 | 不明 | 不明 | 不明 |
+| 国内リージョン数 | 3 [公式](https://vps.sakura.ad.jp/specification/)<br>(2026-07-22) | 2 [公式](https://www.conoha.jp/vps/function/)<br>(2026-07-22) | 不明 | 1 [公式](https://web.arena.ne.jp/indigo/)<br>(2026-07-22) | 不明 |
 | 複数リージョン構成 | 不明 | 不明 | 不明 | 不明 | 不明 |
 | ISO27001 | 不明 | 不明 | 不明 | 不明 | 不明 |
 | ISMS | 不明 | 不明 | 不明 | 不明 | 不明 |
