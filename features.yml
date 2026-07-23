@@ -80,12 +80,6 @@ features:
     description: "提供している主要な標準OSテンプレートの一覧（例: Ubuntu, CentOS, Debian 等）。不明な場合は \"unknown\"。"
     type: string
 
-  - id: os_templates
-    category: OS_TEMPLATE
-    label: OSテンプレート数
-    description: 選択可能なOSテンプレートの種類数。不明な場合は "unknown"。
-    type: number
-
   - id: app_template
     category: OS_TEMPLATE
     label: アプリテンプレート
@@ -114,12 +108,6 @@ features:
     category: OS_TEMPLATE
     label: カスタムISO
     description: ユーザーが独自のISOイメージを使用してインスタンスを起動できるか。
-    type: boolean
-
-  - id: iso_upload
-    category: OS_TEMPLATE
-    label: ISOアップロード
-    description: ユーザーが独自のISOイメージをアップロードできるか。
     type: boolean
 
   - id: min_price_jpy
@@ -371,31 +359,25 @@ features:
   - id: iso27001
     category: SECURITY
     label: ISO27001
-    description: ISO/IEC 27001 の認証取得状況。不明な場合は "unknown"。
+    description: "ISO/IEC 27001 の認証取得状況（事業者または利用データセンターの認証）。VPSサービス固有の認証とは限らない。不明な場合は \"unknown\"。"
     type: string
 
   - id: isms
     category: SECURITY
     label: ISMS
-    description: ISMS認証の取得状況。不明な場合は "unknown"。
+    description: "ISMS認証（JIPDEC）の取得状況（事業者または利用データセンターの認証）。VPSサービス固有の認証とは限らない。不明な場合は \"unknown\"。"
     type: string
 
   - id: soc2
     category: SECURITY
     label: SOC 2
-    description: SOC 2 の監査報告・適合状況。不明な場合は "unknown"。
+    description: "SOC 2 の監査報告・適合状況（事業者または利用データセンターの認証）。VPSサービス固有の認証とは限らない。不明な場合は \"unknown\"。"
     type: string
 
   - id: pci_dss
     category: SECURITY
     label: PCI DSS
-    description: PCI DSS の準拠・認証状況。不明な場合は "unknown"。
-    type: string
-
-  - id: datacenter_certification
-    category: SECURITY
-    label: データセンター認証
-    description: "利用データセンターの第三者認証（例: ISO27001 等）。不明な場合は \"unknown\"。"
+    description: "PCI DSS の準拠・認証状況（事業者または利用データセンターの認証）。VPSサービス固有の認証とは限らない。不明な場合は \"unknown\"。"
     type: string
 
   - id: manual_backup
@@ -451,12 +433,6 @@ features:
     label: リージョン間バックアップ
     description: バックアップを別リージョンに保存・転送できるか。
     type: boolean
-
-  - id: dr_support
-    category: BACKUP
-    label: DR（災害復旧）対応
-    description: "DR（Disaster Recovery）向けの機能・構成オプションが提供されているか。不明な場合は \"unknown\"。"
-    type: string
 
   - id: backup_billing
     category: BACKUP

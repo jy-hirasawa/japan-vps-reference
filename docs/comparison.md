@@ -88,13 +88,11 @@
 | # | 項目 | さくらのVPS | ConoHa VPS | Xserver VPS | WebARENA Indigo | KAGOYA CLOUD VPS |
 | --- | --- | --- | --- | --- | --- | --- |
 | 1 | 標準OSテンプレート | AlmaLinux, Rocky Linux, Ubuntu, Debian, FreeBSD [公式](https://vps.sakura.ad.jp/specification/#specification_os)<br>(2026-07-07) | AlmaLinux, Rocky Linux, Ubuntu, Debian, Fedora, FreeBSD, Windows Server [公式](https://vps.conoha.jp/function/template/?btn_id=top--function_function-template)<br>(2026-07-07) | AlmaLinux, Rocky Linux, Ubuntu, Debian, Fedora [公式](https://vps.xserver.ne.jp/os-list.php)<br>(2026-07-07) | AlmaLinux, Rocky Linux, Ubuntu, Debian, Windows Server [公式](https://web.arena.ne.jp/indigo/spec/os.html)<br>(2026-07-07) | AlmaLinux, Rocky Linux, Ubuntu [公式](https://www.kagoya.jp/cloud/vps/manual/list/)<br>(2026-07-07) |
-| 2 | OSテンプレート数 | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 3 | アプリテンプレート | ✅ [公式](https://vps.sakura.ad.jp/specification/#specification_application)<br>(2026-07-07) | ✅ [公式](https://vps.conoha.jp/function/template/?btn_id=top--function_function-template)<br>(2026-07-07) | ✅ [公式](https://vps.xserver.ne.jp/os-list.php)<br>(2026-07-07) | ✅ [公式](https://web.arena.ne.jp/indigo/spec/kusanagi.html)<br>(2026-07-08) | 不明 |
-| 4 | KUSANAGIテンプレート | ✅ [公式](https://vps.sakura.ad.jp/specification/#specification_application)<br>(2026-07-07) | ✅ [公式](https://vps.conoha.jp/function/template/?btn_id=top--function_function-template)<br>(2026-07-07) | ✅ [公式](https://vps.xserver.ne.jp/support/manual/man_server_app_use_kusanagi.php)<br>(2026-07-07) | ✅ [公式](https://web.arena.ne.jp/indigo/spec/kusanagi.html)<br>(2026-07-07) | 不明 |
-| 5 | Docker系テンプレート | ✅ [公式](https://vps.sakura.ad.jp/specification/#specification_application)<br>(2026-07-07) | ✅ [公式](https://vps.conoha.jp/function/template/?btn_id=top--function_function-template)<br>(2026-07-07) | ✅ [公式](https://vps.xserver.ne.jp/os-list.php)<br>(2026-07-07) | 不明 | 不明 |
-| 6 | AI系テンプレート | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 7 | カスタムISO | ✅ [公式](https://manual.sakura.ad.jp/vps/os-reinstall/iso-install.html)<br>(2026-07-07) | ✅ [公式](https://support.conoha.jp/vps/iso-upload/)<br>(2026-07-07) | 不明 | 不明 | ✅ [公式](https://www.kagoya.jp/support/category/cloud/vps/vps_manual/iso/)<br>(2026-07-07) |
-| 8 | ISOアップロード | 不明 | 不明 | 不明 | 不明 | 不明 |
+| 2 | アプリテンプレート | ✅ [公式](https://vps.sakura.ad.jp/specification/#specification_application)<br>(2026-07-07) | ✅ [公式](https://vps.conoha.jp/function/template/?btn_id=top--function_function-template)<br>(2026-07-07) | ✅ [公式](https://vps.xserver.ne.jp/os-list.php)<br>(2026-07-07) | ✅ [公式](https://web.arena.ne.jp/indigo/spec/kusanagi.html)<br>(2026-07-08) | 不明 |
+| 3 | KUSANAGIテンプレート | ✅ [公式](https://vps.sakura.ad.jp/specification/#specification_application)<br>(2026-07-07) | ✅ [公式](https://vps.conoha.jp/function/template/?btn_id=top--function_function-template)<br>(2026-07-07) | ✅ [公式](https://vps.xserver.ne.jp/support/manual/man_server_app_use_kusanagi.php)<br>(2026-07-07) | ✅ [公式](https://web.arena.ne.jp/indigo/spec/kusanagi.html)<br>(2026-07-07) | 不明 |
+| 4 | Docker系テンプレート | ✅ [公式](https://vps.sakura.ad.jp/specification/#specification_application)<br>(2026-07-07) | ✅ [公式](https://vps.conoha.jp/function/template/?btn_id=top--function_function-template)<br>(2026-07-07) | ✅ [公式](https://vps.xserver.ne.jp/os-list.php)<br>(2026-07-07) | 不明 | 不明 |
+| 5 | AI系テンプレート | 不明 | 不明 | 不明 | 不明 | 不明 |
+| 6 | カスタムISO | ✅ [公式](https://manual.sakura.ad.jp/vps/os-reinstall/iso-install.html)<br>(2026-07-07) | ✅ [公式](https://support.conoha.jp/vps/iso-upload/)<br>(2026-07-07) | 不明 | 不明 | ✅ [公式](https://www.kagoya.jp/support/category/cloud/vps/vps_manual/iso/)<br>(2026-07-07) |
 
 ## 料金
 
@@ -166,7 +164,6 @@
 | 11 | ISMS | 不明 | 不明 | 不明 | 不明 | 不明 |
 | 12 | SOC 2 | 不明 | 不明 | 不明 | 不明 | 不明 |
 | 13 | PCI DSS | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 14 | データセンター認証 | 不明 | 不明 | 不明 | 不明 | 不明 |
 
 ## バックアップ / イメージ保存
 
@@ -181,8 +178,7 @@
 | 7 | バックアップ暗号化 | 不明 | 不明 | 不明 | 不明 | 不明 |
 | 8 | オブジェクトストレージへのバックアップ | 不明 | 不明 | 不明 | 不明 | 不明 |
 | 9 | リージョン間バックアップ | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 10 | DR（災害復旧）対応 | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 11 | バックアップ課金 | 有料オプション（Acronis Cyber Protect Cloud: 1,760円/月〜(100GB)） [公式](https://vps.sakura.ad.jp/contents/info/acronis-cyber-protect-cloud-acronis-hosted/)<br>(2026-07-07) | 有料オプション（世代数により料金変動） [公式](https://support.conoha.jp/v/vps-autobackup/)<br>(2026-07-07) | ビジネスプラン料金に含む（追加世代は有料オプション） [公式](https://vps.xserver.ne.jp/support/manual/man_server_auto_backup_gene.php)<br>(2026-07-08) | 有料オプション [公式](https://web.arena.ne.jp/indigo/spec/)<br>(2026-07-08) | 有料（容量課金：スナップショット10GBあたり日額4.4円） [公式](https://www.kagoya.jp/vps/feature/customize/)<br>(2026-07-07) |
+| 10 | バックアップ課金 | 有料オプション（Acronis Cyber Protect Cloud: 1,760円/月〜(100GB)） [公式](https://vps.sakura.ad.jp/contents/info/acronis-cyber-protect-cloud-acronis-hosted/)<br>(2026-07-07) | 有料オプション（世代数により料金変動） [公式](https://support.conoha.jp/v/vps-autobackup/)<br>(2026-07-07) | ビジネスプラン料金に含む（追加世代は有料オプション） [公式](https://vps.xserver.ne.jp/support/manual/man_server_auto_backup_gene.php)<br>(2026-07-08) | 有料オプション [公式](https://web.arena.ne.jp/indigo/spec/)<br>(2026-07-08) | 有料（容量課金：スナップショット10GBあたり日額4.4円） [公式](https://www.kagoya.jp/vps/feature/customize/)<br>(2026-07-07) |
 
 ## API / CLI / Terraform
 

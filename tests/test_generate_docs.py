@@ -214,7 +214,6 @@ class TestGenerateComparisonTable(unittest.TestCase):
             "ISMS",
             "SOC 2",
             "PCI DSS",
-            "データセンター認証",
         ]:
             self.assertIn(label, md)
 
