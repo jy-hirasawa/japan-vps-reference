@@ -170,8 +170,9 @@
 | OSテンプレート数 | `os_templates` | 削除 | カウント値は管理画面でしか確認できず公式情報から取得困難。頻繁に変動するため維持コストが高い。主要テンプレートは `standard_os_template` で記録可能 |
 | DR（災害復旧）対応 | `dr_support` | 削除 | 定義が曖昧でVPSサービスのDR対応は明確な概念ではない。地理的冗長性は `cross_region_backup` 等で表現可能 |
 | データセンター認証（SECURITY） | `datacenter_certification` | 削除 | `datacenter` カテゴリの `dc_certification` と重複。`dc_certification` を正とする |
+| ISO 27001認証 | `iso27001` | `isms` に統合 | `isms`（ISO/IEC 27001に基づくISMS認証）と重複。`isms` に一本化 |
 
-以下の項目は定義を明確化しました（項目IDは変更なし）：
+以下の認証・監査・準拠関連項目について、統合または定義の明確化を行いました。
 
 | 項目 | 変更内容 |
 | --- | --- |
