@@ -210,11 +210,9 @@ class TestGenerateComparisonTable(unittest.TestCase):
             "APIトークン",
             "IAM / 権限管理",
             "監査ログ",
-            "ISO27001",
-            "ISMS",
+            "ISMS（ISO/IEC 27001）",
             "SOC 2",
             "PCI DSS",
-            "データセンター認証",
         ]:
             self.assertIn(label, md)
 
