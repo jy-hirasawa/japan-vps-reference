@@ -8,10 +8,10 @@
 
 | Provider | 最終確認日 |
 | --- | --- |
-| さくらのVPS | 2026-07-22 |
+| さくらのVPS | 2026-08-04 |
 | ConoHa VPS | 2026-07-22 |
 | Xserver VPS | 2026-07-22 |
-| WebARENA Indigo | 2026-07-22 |
+| WebARENA Indigo | 2026-08-04 |
 | KAGOYA CLOUD VPS | 2026-07-08 |
 
 ## 公式URL
@@ -129,7 +129,7 @@
 | 8 | 自動スナップショット | 不明 | ❌ [公式](https://support.conoha.jp/v/snapshot/)<br>(2026-07-07) | 不明 | 不明 | ✅ [公式](https://www.kagoya.jp/vps/feature/customize/)<br>(2026-07-07) |
 | 9 | バックアップ機能 | ✅ [公式](https://vps.sakura.ad.jp/feature/backup/)<br>(2026-07-07) | ✅ [公式](https://support.conoha.jp/v/vps-autobackup/)<br>(2026-07-07) | ✅ [公式](https://vps.xserver.ne.jp/support/faq/service_server_backup.php)<br>(2026-07-07) | ✅ [公式](https://web.arena.ne.jp/indigo/spec/)<br>(2026-07-08) | ✅ [公式](https://www.kagoya.jp/vps/feature/customize/)<br>(2026-07-07) |
 | 10 | イメージ保存 | 不明 | ✅ [公式](https://vps.conoha.jp/function/)<br>(2026-07-08) | ✅ [公式](https://vps.xserver.ne.jp/support/manual/man_server_image.php)<br>(2026-07-07) | ✅ [公式](https://web.arena.ne.jp/indigo/spec/)<br>(2026-07-08) | ✅ [公式](https://www.kagoya.jp/vps/feature/customize/)<br>(2026-07-07) |
-| 11 | オブジェクトストレージ連携 | 不明 | ✅ [公式](https://support.conoha.jp/vps/guide/objectstorage/)<br>(2026-07-08) | 不明 | 不明 | 不明 |
+| 11 | オブジェクトストレージ連携 | ✅ [公式](https://cloud.sakura.ad.jp/products/object-storage/)<br>(2026-08-04) | ✅ [公式](https://support.conoha.jp/vps/guide/objectstorage/)<br>(2026-07-08) | 不明 | ✅ [公式](https://web.arena.ne.jp/wasabi/)<br>(2026-08-04) | 不明 |
 
 ## ネットワーク
 

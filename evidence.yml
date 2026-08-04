@@ -206,11 +206,12 @@ evidence:
   verification_status: unknown
 - provider_id: sakura-vps
   feature_id: object_storage_integration
-  value: unknown
-  source_type: unknown
-  source_url: unknown
-  verified_at: unknown
-  verification_status: unknown
+  value: true
+  source_type: official
+  source_url: https://cloud.sakura.ad.jp/products/object-storage/
+  verified_at: '2026-08-04'
+  verification_status: verified
+  notes: さくらのクラウド オブジェクトストレージ（S3互換API）をさくらのVPSから利用可能。公式製品ページにてVPS・専用サーバPHY間のデータ転送料無料と明記。インターネット経由でのアクセス。別途さくらのクラウドアカウントが必要。
 - provider_id: sakura-vps
   feature_id: standard_os_template
   value: AlmaLinux, Rocky Linux, Ubuntu, Debian, FreeBSD
@@ -967,6 +968,7 @@ evidence:
   source_url: unknown
   verified_at: unknown
   verification_status: unknown
+  notes: Xserverブランドのオブジェクトストレージサービスは確認できず。XserverビジネスやXserver クラウドでの案内も確認できなかった。公式サイト（vps.xserver.ne.jp）にオブジェクトストレージ連携の案内なし。
 - provider_id: xserver-vps
   feature_id: standard_os_template
   value: AlmaLinux, Rocky Linux, Ubuntu, Debian, Fedora
@@ -1281,11 +1283,12 @@ evidence:
   notes: スナップショット機能として最大5個のイメージを保存可能。バックアップ・複製に利用できる。
 - provider_id: webarena-indigo
   feature_id: object_storage_integration
-  value: unknown
-  source_type: unknown
-  source_url: unknown
-  verified_at: unknown
-  verification_status: unknown
+  value: true
+  source_type: official
+  source_url: https://web.arena.ne.jp/wasabi/
+  verified_at: '2026-08-04'
+  verification_status: verified
+  notes: WasabiオブジェクトストレージとのS3互換API連携が公式に案内されている。WebARENA管理画面からWasabiを追加契約可能（同一管理画面で一元管理）。公式ヘルプ（help.arena.ne.jp）にてIndigoユーザー向けの追加手順を案内。インターネット経由でのアクセス。データ転送料・API課金なし。
 - provider_id: webarena-indigo
   feature_id: standard_os_template
   value: AlmaLinux, Rocky Linux, Ubuntu, Debian, Windows Server
@@ -1513,6 +1516,7 @@ evidence:
   source_url: unknown
   verified_at: unknown
   verification_status: unknown
+  notes: カゴヤ・ジャパン公式サイト（www.kagoya.jp）にオブジェクトストレージサービスの提供および連携案内は確認できなかった。
 - provider_id: sakura-vps
   feature_id: manual_backup
   value: true
