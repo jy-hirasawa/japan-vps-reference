@@ -356,28 +356,22 @@ features:
     description: 操作履歴などの監査ログを確認できるか。
     type: boolean
 
-  - id: iso27001
-    category: SECURITY
-    label: ISO27001
-    description: "ISO/IEC 27001 の認証取得状況（事業者または利用データセンターの認証）。VPSサービス固有の認証とは限らない。不明な場合は \"unknown\"。"
-    type: string
-
   - id: isms
     category: SECURITY
-    label: ISMS
-    description: "ISMS認証（JIPDEC）の取得状況（事業者または利用データセンターの認証）。VPSサービス固有の認証とは限らない。不明な場合は \"unknown\"。"
+    label: ISMS（ISO/IEC 27001）
+    description: "ISO/IEC 27001に基づくISMS認証の取得状況。事業者全体または利用データセンターの認証であり、VPSサービス固有の認証とは限らない。適用範囲が不明な場合は notes に補足情報を記載する。不明な場合は \"unknown\"。"
     type: string
 
   - id: soc2
     category: SECURITY
     label: SOC 2
-    description: "SOC 2 の監査報告・適合状況（事業者または利用データセンターの認証）。VPSサービス固有の認証とは限らない。不明な場合は \"unknown\"。"
+    description: "事業者または対象サービスに関するSOC 2報告書の取得・提供状況。SOC 2は認証ではなく監査報告書であり、報告書の対象範囲にVPSサービスが含まれるとは限らない。不明な場合は \"unknown\"。"
     type: string
 
   - id: pci_dss
     category: SECURITY
     label: PCI DSS
-    description: "PCI DSS の準拠・認証状況（事業者または利用データセンターの認証）。VPSサービス固有の認証とは限らない。不明な場合は \"unknown\"。"
+    description: "事業者または対象サービスにおけるPCI DSS準拠・検証状況。VPSサービスが評価対象範囲に含まれるとは限らない。事業者・データセンター・VPSサービスのどこまでが対象範囲か公式情報から確認できない場合は notes に記録する。不明な場合は \"unknown\"。"
     type: string
 
   - id: manual_backup

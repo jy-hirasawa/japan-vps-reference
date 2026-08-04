@@ -71,8 +71,7 @@
 | 障害情報ページ | ✅ [公式](https://support.sakura.ad.jp/mainte/)<br>(2026-07-08) | ✅ [公式](https://www.conoha.jp/news/)<br>(2026-07-08) | ✅ [公式](https://vps.xserver.ne.jp/support/information/)<br>(2026-07-08) | ✅ [公式](https://help.arena.ne.jp/hc/ja/sections/900000494023)<br>(2026-07-08) | ✅ [公式](https://www.kagoya.jp/news/)<br>(2026-07-08) |
 | 国内リージョン数 | 3 [公式](https://vps.sakura.ad.jp/specification/)<br>(2026-07-22) | 2 [公式](https://www.conoha.jp/vps/function/)<br>(2026-07-22) | 不明 | 1 [公式](https://web.arena.ne.jp/indigo/)<br>(2026-07-22) | 不明 |
 | 複数リージョン構成 | 不明 | 不明 | 不明 | 不明 | 不明 |
-| ISO27001 | 不明 | 不明 | 不明 | 不明 | 不明 |
-| ISMS | 不明 | 不明 | 不明 | 不明 | 不明 |
+| ISMS（ISO/IEC 27001） | 不明 | 不明 | 不明 | 不明 | 不明 |
 
 ## バックアップ・DR重視
 

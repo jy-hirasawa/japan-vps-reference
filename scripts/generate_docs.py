@@ -605,7 +605,6 @@ USE_CASES: list[dict] = [
             "incident_page",
             "domestic_region_count",
             "multi_region_deployment",
-            "iso27001",
             "isms",
         ],
     },

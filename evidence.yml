@@ -2408,13 +2408,6 @@ evidence:
   verified_at: unknown
   verification_status: unknown
 - provider_id: sakura-vps
-  feature_id: iso27001
-  value: unknown
-  source_type: unknown
-  source_url: unknown
-  verified_at: unknown
-  verification_status: unknown
-- provider_id: sakura-vps
   feature_id: isms
   value: unknown
   source_type: unknown
@@ -2481,13 +2474,6 @@ evidence:
   verified_at: unknown
   verification_status: unknown
 - provider_id: conoha-vps
-  feature_id: iso27001
-  value: unknown
-  source_type: unknown
-  source_url: unknown
-  verified_at: unknown
-  verification_status: unknown
-- provider_id: conoha-vps
   feature_id: isms
   value: unknown
   source_type: unknown
@@ -2546,13 +2532,6 @@ evidence:
   verification_status: unknown
 - provider_id: xserver-vps
   feature_id: audit_log
-  value: unknown
-  source_type: unknown
-  source_url: unknown
-  verified_at: unknown
-  verification_status: unknown
-- provider_id: xserver-vps
-  feature_id: iso27001
   value: unknown
   source_type: unknown
   source_url: unknown
@@ -2624,13 +2603,6 @@ evidence:
   verified_at: unknown
   verification_status: unknown
 - provider_id: webarena-indigo
-  feature_id: iso27001
-  value: unknown
-  source_type: unknown
-  source_url: unknown
-  verified_at: unknown
-  verification_status: unknown
-- provider_id: webarena-indigo
   feature_id: isms
   value: unknown
   source_type: unknown
@@ -2690,13 +2662,6 @@ evidence:
   verification_status: unknown
 - provider_id: kagoya-cloud-vps
   feature_id: audit_log
-  value: unknown
-  source_type: unknown
-  source_url: unknown
-  verified_at: unknown
-  verification_status: unknown
-- provider_id: kagoya-cloud-vps
-  feature_id: iso27001
   value: unknown
   source_type: unknown
   source_url: unknown

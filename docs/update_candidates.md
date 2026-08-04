@@ -24,17 +24,17 @@
 | 高 | CPU / メモリ | 0 / 10 | 0% |
 | 中 | API / CLI / Terraform | 52 / 60 | 86% |
 | 中 | データセンター / リージョン | 50 / 60 | 83% |
-| 中 | セキュリティ | 47 / 65 | 72% |
+| 中 | セキュリティ | 42 / 60 | 70% |
 
 ## プロバイダー別 unknown 集計
 
 | Provider | 高 | 中 | 低 | 合計 |
 | --- | --- | --- | --- | --- |
-| WebARENA Indigo | 29 | 31 | 0 | 60 |
-| Xserver VPS | 23 | 33 | 0 | 56 |
-| KAGOYA CLOUD VPS | 18 | 34 | 0 | 52 |
-| さくらのVPS | 18 | 27 | 0 | 45 |
-| ConoHa VPS | 14 | 24 | 0 | 38 |
+| WebARENA Indigo | 29 | 30 | 0 | 59 |
+| Xserver VPS | 23 | 32 | 0 | 55 |
+| KAGOYA CLOUD VPS | 18 | 33 | 0 | 51 |
+| さくらのVPS | 18 | 26 | 0 | 44 |
+| ConoHa VPS | 14 | 23 | 0 | 37 |
 
 ## 次に調査すべき項目（優先度: 高）
 
@@ -91,8 +91,7 @@
 | 中 | API / CLI / Terraform | Webhook |
 | 中 | API / CLI / Terraform | メタデータサービス |
 | 中 | セキュリティ | IAM / 権限管理 |
-| 中 | セキュリティ | ISMS |
-| 中 | セキュリティ | ISO27001 |
+| 中 | セキュリティ | ISMS（ISO/IEC 27001） |
 | 中 | セキュリティ | PCI DSS |
 | 中 | セキュリティ | SOC 2 |
 | 中 | セキュリティ | SSH鍵ログイン |

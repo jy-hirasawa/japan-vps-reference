@@ -144,11 +144,15 @@
 * 公式情報から確認できないことを、「非対応」と判断しない
 * 比較利用者にとって判断材料となり得る項目は維持する
 
-### 認証・セキュリティ関連項目の扱い
+### 認証・監査・準拠関連項目の扱い
 
-`iso27001`・`isms`・`soc2`・`pci_dss` の各認証項目は、VPSサービス固有の認証ではなく、事業者全体または利用データセンターの認証取得状況を示す場合があります。証明書の適用範囲がVPSサービスに及ぶかどうかは、公式情報からは判断できないことがあるため、`notes` フィールドに補足情報を記載してください。
+セキュリティ関連項目は「認証」「監査報告書」「準拠・検証」の3種類に分けて扱います。
 
-企業全体の認証情報とVPSサービスへの適用範囲を混同しないよう注意してください。
+* **ISMS（ISO/IEC 27001）**：ISO/IEC 27001に基づくISMS認証の取得状況。事業者全体または利用データセンターの認証であり、VPSサービス固有の認証とは限らない。
+* **SOC 2**：認証ではなく監査報告書の取得・提供状況。報告書の対象範囲にVPSサービスが含まれるとは限らない。
+* **PCI DSS**：認証ではなく準拠・検証状況。事業者・データセンター・VPSサービスのどこまでが評価対象範囲に含まれるかは公式情報から判断できないことがある。
+
+いずれも、企業全体・利用データセンター・VPSサービスのどこに適用される情報なのかを区別することが重要です。適用範囲が不明な場合は `notes` フィールドに補足情報を記載してください。
 
 ### データセンター設備関連項目の扱い
 
@@ -171,14 +175,14 @@
 
 | 項目 | 変更内容 |
 | --- | --- |
-| `iso27001` | 事業者または利用データセンターの認証であり、VPSサービス固有の認証とは限らない旨を追記 |
-| `isms` | 同上 |
-| `soc2` | 同上 |
-| `pci_dss` | 同上 |
+| `iso27001` | `isms` に一本化。`isms` の label を「ISMS（ISO/IEC 27001）」に変更し、ISO/IEC 27001に基づくISMS認証であることを明記 |
+| `isms` | label を「ISMS（ISO/IEC 27001）」に変更。ISO/IEC 27001に基づく認証取得状況であることを明記。`iso27001` と統合 |
+| `soc2` | SOC 2は認証ではなく監査報告書であることを明記。報告書の対象範囲にVPSサービスが含まれるとは限らない旨を追記 |
+| `pci_dss` | PCI DSSは認証ではなく準拠・検証状況であることを明記。評価対象範囲の不明な場合は notes に記録する方針を追記 |
 
 以下の項目は全プロバイダーで `unknown` のまま残っていますが、比較価値があるため維持します：
 
 * `bandwidth_gbps`（帯域目安）、`backup_retention_period`（バックアップ保持期間）、`backup_encryption`（バックアップ暗号化）、`cross_region_backup`（リージョン間バックアップ）、`backup_to_object_storage`（オブジェクトストレージへのバックアップ）
 * `ansible_support`・`pulumi_support`・`webhook`・`metadata_service`・各SDK
-* `iam_rbac`・`audit_log`・`iso27001`・`isms`・`soc2`・`pci_dss`
+* `iam_rbac`・`audit_log`・`isms`・`soc2`・`pci_dss`
 * `green_energy`・`zone_selection`・`network_redundancy`・`power_redundancy`・`seismic_resistance`・`same_region_redundancy`・`multi_region_deployment`・`dc_certification`
