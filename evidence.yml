@@ -109,6 +109,38 @@ evidence:
   verified_at: '2026-07-03'
   verification_status: verified
 - provider_id: sakura-vps
+  feature_id: root_access
+  value: true
+  source_type: official
+  source_url: https://vps.sakura.ad.jp/specification/
+  verified_at: '2026-08-05'
+  verification_status: verified
+  notes: 公式仕様ページで「root権限付き」と案内。
+- provider_id: sakura-vps
+  feature_id: linux_support
+  value: true
+  source_type: official
+  source_url: https://vps.sakura.ad.jp/specification/#specification_os
+  verified_at: '2026-08-05'
+  verification_status: verified
+  notes: 公式仕様ページの標準OSとしてAlmaLinux、Rocky Linux、Ubuntu、Debian等を案内。
+- provider_id: sakura-vps
+  feature_id: windows_official
+  value: true
+  source_type: official
+  source_url: https://vps.sakura.ad.jp/windows/specification/
+  verified_at: '2026-08-05'
+  verification_status: verified
+  notes: 「さくらのVPS for Windows Server」を公式提供。
+- provider_id: sakura-vps
+  feature_id: console_vnc
+  value: true
+  source_type: official
+  source_url: https://manual.sakura.ad.jp/vps/server/console.html
+  verified_at: '2026-08-05'
+  verification_status: verified
+  notes: コントロールパネルのコンソール機能からVNCコンソールを利用可能。
+- provider_id: sakura-vps
   feature_id: api_available
   value: true
   source_type: official

@@ -8,7 +8,7 @@
 
 | Provider | 最終確認日 |
 | --- | --- |
-| さくらのVPS | 2026-08-04 |
+| さくらのVPS | 2026-08-05 |
 | ConoHa VPS | 2026-07-22 |
 | Xserver VPS | 2026-08-04 |
 | WebARENA Indigo | 2026-08-04 |
@@ -76,10 +76,10 @@
 
 | # | 項目 | さくらのVPS | ConoHa VPS | Xserver VPS | WebARENA Indigo | KAGOYA CLOUD VPS |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | root権限 | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 2 | Linux対応 | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 3 | Windows公式対応 | 不明 | 不明 | 不明 | 不明 | 不明 |
-| 4 | コンソール / VNC | 不明 | 不明 | 不明 | 不明 | 不明 |
+| 1 | root権限 | ✅ [公式](https://vps.sakura.ad.jp/specification/)<br>(2026-08-05) | 不明 | 不明 | 不明 | 不明 |
+| 2 | Linux対応 | ✅ [公式](https://vps.sakura.ad.jp/specification/#specification_os)<br>(2026-08-05) | 不明 | 不明 | 不明 | 不明 |
+| 3 | Windows公式対応 | ✅ [公式](https://vps.sakura.ad.jp/windows/specification/)<br>(2026-08-05) | 不明 | 不明 | 不明 | 不明 |
+| 4 | コンソール / VNC | ✅ [公式](https://manual.sakura.ad.jp/vps/server/console.html)<br>(2026-08-05) | 不明 | 不明 | 不明 | 不明 |
 | 5 | スタートアップスクリプト | ✅ [公式](https://manual.sakura.ad.jp/vps/startupscript/startupscript.html)<br>(2026-07-07) | ✅ [公式](https://vps.conoha.jp/function/startupscript/)<br>(2026-07-07) | 不明 | 不明 | ✅ [公式](https://www.kagoya.jp/cloud/vps/manual/instance/)<br>(2026-07-07) |
 | 6 | cloud-init明記 | 不明 | ✅ [公式](https://support.conoha.jp/v/startupscript/)<br>(2026-07-08) | 不明 | ✅ [公式](https://web.arena.ne.jp/indigo/spec/)<br>(2026-07-07) | ✅ [公式](https://www.kagoya.jp/cloud/vps/manual/instance/)<br>(2026-07-07) |
 
