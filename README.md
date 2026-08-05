@@ -61,11 +61,13 @@ python scripts/generate_docs.py
 4. `python scripts/generate_docs.py` で `docs/` 以下を更新します。
 5. プルリクエストを作成します。CIが自動でYAMLを検証します。
 
+「不明」項目の棚卸し方針・優先順位・子Issue分割案は [`docs/unknown-investigation-plan.md`](docs/unknown-investigation-plan.md) を参照してください。
+
 ## 生成ドキュメントの運用ルール
 
 `docs/` 以下のMarkdownファイルのうち、`comparison.md` / `providers.md` / `update_candidates.md` / `use-cases.md` は `scripts/generate_docs.py` により自動生成される **生成物** です。手動で編集しないでください。
 
-`docs/data-policy.md` は手動で管理するポリシードキュメントです。生成スクリプトの対象外です。
+`docs/data-policy.md` と `docs/unknown-investigation-plan.md` は手動で管理するドキュメントです。生成スクリプトの対象外です。
 
 ### PRを作成する前に必ず実行してください
 
