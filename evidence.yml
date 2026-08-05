@@ -206,11 +206,12 @@ evidence:
   verification_status: unknown
 - provider_id: sakura-vps
   feature_id: object_storage_integration
-  value: unknown
-  source_type: unknown
-  source_url: unknown
-  verified_at: unknown
-  verification_status: unknown
+  value: true
+  source_type: official
+  source_url: https://cloud.sakura.ad.jp/products/object-storage/
+  verified_at: '2026-08-04'
+  verification_status: verified
+  notes: さくらのVPSからデータ保存先として利用可能。Amazon S3互換APIを提供。さくらのVPSとのデータ転送量が無料。利用には、さくらのクラウドでオブジェクトストレージの契約が必要。
 - provider_id: sakura-vps
   feature_id: standard_os_template
   value: AlmaLinux, Rocky Linux, Ubuntu, Debian, FreeBSD
@@ -963,10 +964,11 @@ evidence:
 - provider_id: xserver-vps
   feature_id: object_storage_integration
   value: unknown
-  source_type: unknown
-  source_url: unknown
-  verified_at: unknown
+  source_type: official
+  source_url: https://vps.xserver.ne.jp/
+  verified_at: '2026-08-04'
   verification_status: unknown
+  notes: 公式サイト（vps.xserver.ne.jp）および公式マニュアルを調査したが、Xserver VPSから利用できるオブジェクトストレージサービスまたは連携案内を確認できなかった。
 - provider_id: xserver-vps
   feature_id: standard_os_template
   value: AlmaLinux, Rocky Linux, Ubuntu, Debian, Fedora
@@ -1281,11 +1283,12 @@ evidence:
   notes: スナップショット機能として最大5個のイメージを保存可能。バックアップ・複製に利用できる。
 - provider_id: webarena-indigo
   feature_id: object_storage_integration
-  value: unknown
-  source_type: unknown
-  source_url: unknown
-  verified_at: unknown
-  verification_status: unknown
+  value: true
+  source_type: official
+  source_url: https://web.arena.ne.jp/wasabi/
+  verified_at: '2026-08-04'
+  verification_status: verified
+  notes: 'WasabiオブジェクトストレージとのS3互換API連携が公式に案内されている。WebARENA管理画面からWasabiを追加契約可能（同一管理画面で一元管理）。追加の公式ヘルプ: https://help.arena.ne.jp/hc/ja/articles/4404849820569'
 - provider_id: webarena-indigo
   feature_id: standard_os_template
   value: AlmaLinux, Rocky Linux, Ubuntu, Debian, Windows Server
@@ -1509,10 +1512,11 @@ evidence:
 - provider_id: kagoya-cloud-vps
   feature_id: object_storage_integration
   value: unknown
-  source_type: unknown
-  source_url: unknown
-  verified_at: unknown
+  source_type: official
+  source_url: https://www.kagoya.jp/vps/
+  verified_at: '2026-08-04'
   verification_status: unknown
+  notes: 公式サイト（www.kagoya.jp/vps/）を調査したが、KAGOYA CLOUD VPSから利用できるオブジェクトストレージサービスまたは連携案内を確認できなかった。
 - provider_id: sakura-vps
   feature_id: manual_backup
   value: true
